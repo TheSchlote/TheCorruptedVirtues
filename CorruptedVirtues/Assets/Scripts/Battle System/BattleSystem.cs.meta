@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: a55e534d6606f3843b7105394bfafa62
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EnemySlotContainer: {instanceID: 0}
+  - PlayerSlotContainer: {instanceID: 0}
+  - EnemyPrefab1: {fileID: 9157706704239190588, guid: 71f67a1ce1a2ad24a814744d981075ed, type: 3}
+  - EnemyPrefab2: {instanceID: 0}
+  - EnemyPrefab3: {instanceID: 0}
+  - EnemyPrefab4: {instanceID: 0}
+  - EnemyPrefab5: {instanceID: 0}
+  - enemyGO1: {instanceID: 0}
+  - enemyGO2: {instanceID: 0}
+  - enemyGO3: {instanceID: 0}
+  - enemyGO4: {instanceID: 0}
+  - enemyGO5: {instanceID: 0}
+  - PlayerPrefab1: {instanceID: 0}
+  - PlayerPrefab2: {instanceID: 0}
+  - PlayerPrefab3: {instanceID: 0}
+  - playerGO1: {instanceID: 0}
+  - playerGO2: {instanceID: 0}
+  - playerGO3: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
