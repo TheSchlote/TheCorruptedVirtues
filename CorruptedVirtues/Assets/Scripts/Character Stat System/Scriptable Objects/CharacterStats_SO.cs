@@ -20,6 +20,7 @@ public class CharacterStats_SO : ScriptableObject
 
     public bool SetManualy = false;
     public bool saveDataOnClose = false;
+    public bool Enemy = true;
 
     public ItemPickUp weapon { get; private set; }
     public ItemPickUp shield { get; private set; }

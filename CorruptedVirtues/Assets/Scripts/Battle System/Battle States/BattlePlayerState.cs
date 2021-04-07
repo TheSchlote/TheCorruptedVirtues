@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class BattlePlayerState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
         Debug.Log("PlayerState - who do you want to attack?!");
-        //Debug.Log("Player Attacks! /n who do you want to attack?");
     }
 
     public override void Update(BattleSystem battleSystem)
@@ -65,13 +65,16 @@ public class BattlePlayerState : BattleBaseState
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
         Debug.Log(Enemy.name + " Health: " + Enemy.characterDefinition.currentHealth);
 
+        battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
+        battleSystem.DidEveryoneTakeATurn();
+
         if (Enemy.characterDefinition.currentHealth <= 0)
         {
             battleSystem.TransitionToState(battleSystem.endState);
         }
         else
         {
-            battleSystem.TransitionToState(battleSystem.enemyState);
+            battleSystem.WhosNext();
         }
     }
 }

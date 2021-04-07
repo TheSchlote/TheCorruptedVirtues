@@ -15,7 +15,7 @@ MonoBehaviour:
   SetManualy: 0
   saveDataOnClose: 0
   maxHealth: 100
-  currentHealth: 49
+  currentHealth: 45
   maxMagic: 25
   currentMagic: 10
   Wealth: 500
@@ -24,7 +24,7 @@ MonoBehaviour:
   baseDefense: 0
   currentDefense: 0
   baseSpeed: 0
-  currentSpeed: 1
+  currentSpeed: 5
   charExperience: 0
   charLevel: 1
   charLevelUps: []

@@ -247,9 +247,9 @@ MonoBehaviour:
   enemyGO3: {fileID: 0}
   enemyGO4: {fileID: 0}
   enemyGO5: {fileID: 0}
-  PlayerPrefab1: {fileID: 6835462380323617286, guid: 6fc8aae4da6cc9f4b8976c95db9a115a, type: 3}
-  PlayerPrefab2: {fileID: 0}
-  PlayerPrefab3: {fileID: 0}
+  PlayerPrefab1: {fileID: 6835462380323617286, guid: 0bdac34add9344c49b9275a74c750064, type: 3}
+  PlayerPrefab2: {fileID: 6835462380323617286, guid: 65867497bcae8ab42b785312b92a193f, type: 3}
+  PlayerPrefab3: {fileID: 6835462380323617286, guid: b4318b7c604ffd6499c064c7b4437404, type: 3}
   playerGO1: {fileID: 0}
   playerGO2: {fileID: 0}
   playerGO3: {fileID: 0}
