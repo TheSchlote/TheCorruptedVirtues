@@ -41,24 +41,66 @@ public class BattlePlayerState : BattleBaseState
 
     private static void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
     {
+        //Use current Player Character
         CharacterStats Player = battleSystem.PlayerPrefab1.GetComponent<CharacterStats>();
         CharacterStats Enemy = null;
         switch (EnemySlot) 
         {
             case 1:
-                Enemy = battleSystem.EnemyPrefab1.GetComponent<CharacterStats>();
+                if (battleSystem.EnemyPrefab1 != null)
+                {
+                    Enemy = battleSystem.EnemyPrefab1.GetComponent<CharacterStats>();
+                }
+                else
+                {
+                    Debug.Log("This Enemy in slot " + EnemySlot + " is already dead!");
+                    return;
+                }
                 break;
             case 2:
-                Enemy = battleSystem.EnemyPrefab2.GetComponent<CharacterStats>();
+                if (battleSystem.EnemyPrefab2 != null)
+                {
+                    Enemy = battleSystem.EnemyPrefab2.GetComponent<CharacterStats>();
+                }
+                else
+                {
+                    Debug.Log("This Enemy in slot " + EnemySlot + " is already dead!");
+                    return;
+                }
+                
                 break;
             case 3:
-                Enemy = battleSystem.EnemyPrefab3.GetComponent<CharacterStats>();
+                if (battleSystem.EnemyPrefab3 != null)
+                {
+                    Enemy = battleSystem.EnemyPrefab3.GetComponent<CharacterStats>();
+                }
+                else
+                {
+                    Debug.Log("This Enemy in slot " + EnemySlot + " is already dead!");
+                    return;
+                }
                 break;
             case 4:
-                Enemy = battleSystem.EnemyPrefab4.GetComponent<CharacterStats>();
+                if (battleSystem.EnemyPrefab4 != null)
+                {
+                    Enemy = battleSystem.EnemyPrefab4.GetComponent<CharacterStats>();
+                }
+                else
+                {
+                    Debug.Log("This Enemy in slot " + EnemySlot + " is already dead!");
+                    return;
+                }
                 break;
             case 5:
-                Enemy = battleSystem.EnemyPrefab5.GetComponent<CharacterStats>();
+                if (battleSystem.EnemyPrefab5 != null)
+                {
+                    Enemy = battleSystem.EnemyPrefab5.GetComponent<CharacterStats>();
+                }
+                else
+                {
+                    Debug.Log("This Enemy in slot " + EnemySlot + " is already dead!");
+                    return;
+                }
                 break;
         }
 
@@ -69,7 +111,10 @@ public class BattlePlayerState : BattleBaseState
         battleSystem.DidEveryoneTakeATurn();
 
         if (Enemy.characterDefinition.currentHealth <= 0)
-        {
+            battleSystem.DestroyEnemy(EnemySlot);
+
+        if (battleSystem.AreAllEnemiesDead())
+        { 
             battleSystem.TransitionToState(battleSystem.endState);
         }
         else

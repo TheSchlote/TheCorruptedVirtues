@@ -20,18 +20,18 @@ public class BattleSystem : MonoBehaviour
     public GameObject EnemyPrefab3;
     public GameObject EnemyPrefab4;
     public GameObject EnemyPrefab5;
-    public GameObject enemyGO1;
-    public GameObject enemyGO2;
-    public GameObject enemyGO3;
-    public GameObject enemyGO4;
-    public GameObject enemyGO5;
+    private GameObject enemyGO1;
+    private GameObject enemyGO2;
+    private GameObject enemyGO3;
+    private GameObject enemyGO4;
+    private GameObject enemyGO5;
 
     public GameObject PlayerPrefab1;
     public GameObject PlayerPrefab2;
     public GameObject PlayerPrefab3;
-    public GameObject playerGO1;
-    public GameObject playerGO2;
-    public GameObject playerGO3;
+    private GameObject playerGO1;
+    private GameObject playerGO2;
+    private GameObject playerGO3;
 
     public readonly BattleStartState startState = new BattleStartState();
     public readonly BattlePlayerState playerState = new BattlePlayerState();
@@ -46,16 +46,24 @@ public class BattleSystem : MonoBehaviour
         int BackLine = 1;
         Debug.Log("Setting Up Battle");
         #region Instatiate Characters
-        //Eventually check for nulls
-        enemyGO1 = Instantiate(EnemyPrefab1, EnemySlotContainer.transform.GetChild(0).transform.GetChild(FrontLine));
-        enemyGO2 = Instantiate(EnemyPrefab2, EnemySlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
-        enemyGO3 = Instantiate(EnemyPrefab3, EnemySlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
-        enemyGO4 = Instantiate(EnemyPrefab4, EnemySlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
-        enemyGO5 = Instantiate(EnemyPrefab5, EnemySlotContainer.transform.GetChild(4).transform.GetChild(FrontLine));
 
-        playerGO1 = Instantiate(PlayerPrefab1, PlayerSlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
-        playerGO2 = Instantiate(PlayerPrefab2, PlayerSlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
-        playerGO3 = Instantiate(PlayerPrefab3, PlayerSlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
+        if(EnemyPrefab1 != null)
+            enemyGO1 = Instantiate(EnemyPrefab1, EnemySlotContainer.transform.GetChild(0).transform.GetChild(FrontLine));
+        if(EnemyPrefab2 != null)
+            enemyGO2 = Instantiate(EnemyPrefab2, EnemySlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
+        if (EnemyPrefab3 != null)
+            enemyGO3 = Instantiate(EnemyPrefab3, EnemySlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
+        if (EnemyPrefab4 != null)
+            enemyGO4 = Instantiate(EnemyPrefab4, EnemySlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
+        if (EnemyPrefab5 != null)
+            enemyGO5 = Instantiate(EnemyPrefab5, EnemySlotContainer.transform.GetChild(4).transform.GetChild(FrontLine));
+        
+        if (PlayerPrefab1 != null)
+            playerGO1 = Instantiate(PlayerPrefab1, PlayerSlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
+        if (PlayerPrefab2 != null)
+            playerGO2 = Instantiate(PlayerPrefab2, PlayerSlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
+        if (PlayerPrefab3 != null)
+            playerGO3 = Instantiate(PlayerPrefab3, PlayerSlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
         #endregion
 
         #region Order Characters By Speed Stat
@@ -119,6 +127,50 @@ public class BattleSystem : MonoBehaviour
         else
         {
             TransitionToState(enemyState);
+        }
+    }
+
+    public bool AreAllEnemiesDead()
+    {
+        if(EnemyPrefab1 == null && EnemyPrefab2 == null && EnemyPrefab3 == null && EnemyPrefab4 == null && EnemyPrefab5 == null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void DestroyEnemy(int CharacterSlot)
+    {
+        switch (CharacterSlot)
+        {
+            case 1:
+                Destroy(enemyGO1);
+                charactersInBattle.Remove(enemyGO1);
+                EnemyPrefab1 = null;
+                break;
+            case 2:
+                Destroy(enemyGO2);
+                charactersInBattle.Remove(enemyGO2);
+                EnemyPrefab2 = null;
+                break;
+            case 3:
+                Destroy(enemyGO3);
+                charactersInBattle.Remove(enemyGO3);
+                EnemyPrefab3 = null;
+                break;
+            case 4:
+                Destroy(enemyGO4);
+                charactersInBattle.Remove(enemyGO4);
+                EnemyPrefab4 = null;
+                break;
+            case 5:
+                Destroy(enemyGO5);
+                charactersInBattle.Remove(enemyGO5);
+                EnemyPrefab5 = null;
+                break;
         }
     }
 }

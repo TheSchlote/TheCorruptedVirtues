@@ -34,12 +34,13 @@ public class BattleEnemyState : BattleBaseState
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
         Debug.Log("Player Health: " + Player.characterDefinition.currentHealth);
 
-        //remove character after their turn is over
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
         battleSystem.DidEveryoneTakeATurn();
 
         if (Player.characterDefinition.currentHealth <= 0)
         {
+            //Destory player on death
+            //check to see if other player characters are alive
             //clear list probably
             battleSystem.TransitionToState(battleSystem.endState);
         }

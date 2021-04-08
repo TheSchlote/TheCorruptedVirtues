@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SetManualy: 0
   saveDataOnClose: 0
+  Enemy: 1
   maxHealth: 100
-  currentHealth: 42
+  currentHealth: 0
   maxMagic: 25
   currentMagic: 10
   Wealth: 500
