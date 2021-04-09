@@ -8,10 +8,6 @@ public class BattleEnemyState : BattleBaseState
     public override void EnterState(BattleSystem battleSystem)
     {
         Debug.Log("EnemyState");
-    }
-
-    public override void Update(BattleSystem battleSystem)
-    {
         //Whos turn is it?
         if (battleSystem.charactersInBattle.Count == 0)
         {
@@ -21,6 +17,11 @@ public class BattleEnemyState : BattleBaseState
         {
             EnemyTurnAction(battleSystem);
         }
+    }
+
+    public override void Update(BattleSystem battleSystem)
+    {
+
 
     }
 
@@ -28,6 +29,7 @@ public class BattleEnemyState : BattleBaseState
     {
         CharacterStats Enemy = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
 
+        //Make them choose a player to attack
         CharacterStats Player = battleSystem.PlayerPrefab1.GetComponent<CharacterStats>();
 
         Debug.Log(battleSystem.charactersInBattle.First().name + " Attacks!");

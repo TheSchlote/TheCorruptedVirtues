@@ -21,7 +21,7 @@ MonoBehaviour:
   currentMagic: 10
   Wealth: 500
   baseAttack: 1
-  currentAttack: 1
+  currentAttack: 50
   baseDefense: 0
   currentDefense: 0
   baseSpeed: 3
