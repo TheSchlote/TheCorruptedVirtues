@@ -16,12 +16,12 @@ MonoBehaviour:
   saveDataOnClose: 0
   Enemy: 0
   maxHealth: 100
-  currentHealth: 50
+  currentHealth: 0
   maxMagic: 25
   currentMagic: 10
   Wealth: 500
   baseAttack: 1
-  currentAttack: 50
+  currentAttack: 1
   baseDefense: 0
   currentDefense: 0
   baseSpeed: 3

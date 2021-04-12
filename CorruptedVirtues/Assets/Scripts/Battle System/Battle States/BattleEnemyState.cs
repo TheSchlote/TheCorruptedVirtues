@@ -16,6 +16,7 @@ public class BattleEnemyState : BattleBaseState
         else
         {
             EnemyTurnAction(battleSystem);
+            battleSystem.WhosNext();
         }
     }
 
@@ -29,17 +30,26 @@ public class BattleEnemyState : BattleBaseState
     {
         CharacterStats Enemy = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
 
-        //Make them choose a player to attack
-        CharacterStats Player = battleSystem.PlayerPrefab1.GetComponent<CharacterStats>();
+        int PlayerSlot = Random.Range(0, 3);
+        if(battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
+        {
+            Debug.Log("You Dummy! Player in slot " + PlayerSlot + " is already dead! Turn Skipped");
+            return;
+        }
+        CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();
+        
 
         Debug.Log(battleSystem.charactersInBattle.First().name + " Attacks!");
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
-        Debug.Log("Player Health: " + Player.characterDefinition.currentHealth);
+        Debug.Log(Player.name + " Health: " + Player.characterDefinition.currentHealth);
 
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
         battleSystem.DidEveryoneTakeATurn();
 
         if (Player.characterDefinition.currentHealth <= 0)
+            battleSystem.DestroyPlayer(PlayerSlot);
+
+        if (battleSystem.AreAllPlayerDead())
         {
             //Destory player on death
             //check to see if other player characters are alive
@@ -48,7 +58,7 @@ public class BattleEnemyState : BattleBaseState
         }
         else
         {
-            battleSystem.WhosNext();
+            return;
         }
     }
 }

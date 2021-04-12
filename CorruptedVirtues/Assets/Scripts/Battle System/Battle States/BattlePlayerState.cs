@@ -7,7 +7,7 @@ public class BattlePlayerState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Debug.Log("PlayerState - who do you want to attack?!");
+        Debug.Log(battleSystem.charactersInBattle.First().name + "'s PlayerState - who do you want to attack?!");
     }
 
     public override void Update(BattleSystem battleSystem)

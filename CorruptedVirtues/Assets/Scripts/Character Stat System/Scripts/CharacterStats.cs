@@ -20,7 +20,7 @@ public class CharacterStats : MonoBehaviour
         if (!characterDefinition.SetManualy)
         {
             characterDefinition.maxHealth = 100;
-            characterDefinition.currentHealth = 50;
+            characterDefinition.currentHealth = 3;
 
             characterDefinition.maxMagic = 25;
             characterDefinition.currentMagic = 10;

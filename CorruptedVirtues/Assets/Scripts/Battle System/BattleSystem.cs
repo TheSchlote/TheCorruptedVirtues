@@ -163,20 +163,38 @@ public class BattleSystem : MonoBehaviour
 
     public bool AreAllEnemiesDead()
     {
-        if(EnemyPrefab1 == null && EnemyPrefab2 == null && EnemyPrefab3 == null && EnemyPrefab4 == null && EnemyPrefab5 == null)
+        for (int i = 0; i < 5; i++)
         {
-            return true;
+            if (EnemyPrefabsInBattle[i] != null)
+                return false;
         }
-        else
-        {
-            return false;
-        }
+        return true;
     }
 
     public void DestroyEnemy(int CharacterSlot)
     {
+        Debug.Log("Yeah! " + EnemyPrefabsInBattle[CharacterSlot - 1].name + " Got Got! He's dead");
         EnemyPrefabsInBattle[CharacterSlot - 1] = null;
         Destroy(EnemyGameObjectsInBattle[CharacterSlot - 1]);
         charactersInBattle.Remove(EnemyGameObjectsInBattle[CharacterSlot - 1]);
+    }
+    //Combine these /\-\/
+    //Actually combine them into one.. then seperate them on enemy&&state checks
+    public bool AreAllPlayerDead()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            if (PlayerPrefabsInBattle[i] != null)
+                return false;
+        }
+        return true;
+    }
+
+    public void DestroyPlayer(int CharacterSlot)
+    {
+        Debug.Log("Oh No! " + PlayerPrefabsInBattle[CharacterSlot].name + " Got Got! He's dead");
+        PlayerPrefabsInBattle[CharacterSlot] = null;
+        Destroy(PlayerGameObjectsInBattle[CharacterSlot]);
+        charactersInBattle.Remove(PlayerGameObjectsInBattle[CharacterSlot]);
     }
 }
