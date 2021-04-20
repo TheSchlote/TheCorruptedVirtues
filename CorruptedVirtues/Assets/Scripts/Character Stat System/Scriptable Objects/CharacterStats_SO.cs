@@ -79,6 +79,19 @@ public class CharacterStats_SO : ScriptableObject
         Wealth += wealthAmount;
     }
 
+    public void ApplyExperience(int xpAmount)
+    {
+        if ((charExperience + xpAmount) >= 100)//for now
+        {
+            LevelUp();
+            charExperience = charExperience + xpAmount - 100;
+        }
+        else
+        {
+            charExperience += xpAmount;
+        }
+    }
+
     //public void EquipWeapon(ItemPickUp weaponPickUp, CharacterInventory charInventory, GameObject weaponSlot)
     //{
     //    weapon = weaponPickUp;
@@ -191,11 +204,14 @@ public class CharacterStats_SO : ScriptableObject
     {
         charLevel += 1;
         //display levelup Animation
-        maxHealth = charLevelUps[charLevel - 1].maxHealth;
-        maxMagic = charLevelUps[charLevel - 1].maxMagic;
-        baseAttack = charLevelUps[charLevel - 1].baseSpeed;
-        baseDefense = charLevelUps[charLevel - 1].baseDefense;
-        baseSpeed = charLevelUps[charLevel - 1].baseSpeed;
+        if (charLevelUps[charLevel - 1] != null)//this doesnt work but you get the idea..
+        {
+            maxHealth = charLevelUps[charLevel - 1].maxHealth;
+            maxMagic = charLevelUps[charLevel - 1].maxMagic;
+            baseAttack = charLevelUps[charLevel - 1].baseSpeed;
+            baseDefense = charLevelUps[charLevel - 1].baseDefense;
+            baseSpeed = charLevelUps[charLevel - 1].baseSpeed;
+        }
     }
     #endregion
 

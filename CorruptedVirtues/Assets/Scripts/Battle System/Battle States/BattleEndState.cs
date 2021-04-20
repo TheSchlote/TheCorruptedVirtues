@@ -16,6 +16,9 @@ public class BattleEndState : BattleBaseState
         else
         {
             Debug.Log("Player Wins! :D");
+            Debug.Log(Player.name + " gained 100 XP!");
+            Player.GainExperience(100);
+            Debug.Log( Player.name + " Leveled up! ");
         }
     }
 
