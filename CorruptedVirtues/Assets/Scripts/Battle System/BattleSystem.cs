@@ -20,8 +20,8 @@ public class BattleSystem : MonoBehaviour
     public GameObject EnemyPrefab3;
     public GameObject EnemyPrefab4;
     public GameObject EnemyPrefab5;
-    private GameObject enemyGO1;
-    private GameObject enemyGO2;
+    public GameObject enemyGO1;
+    public GameObject enemyGO2;
     private GameObject enemyGO3;
     private GameObject enemyGO4;
     private GameObject enemyGO5;
@@ -38,7 +38,7 @@ public class BattleSystem : MonoBehaviour
     public readonly BattleEnemyState enemyState = new BattleEnemyState();
     public readonly BattleEndState endState = new BattleEndState();
 
-    public List<GameObject> charactersInBattle;
+    public List<GameObject> charactersInBattle = new List<GameObject>();
     public GameObject[] EnemyPrefabsInBattle = new GameObject[5];
     public GameObject[] EnemyGameObjectsInBattle = new GameObject[5];
     public GameObject[] PlayerGameObjectsInBattle = new GameObject[3];
@@ -46,14 +46,60 @@ public class BattleSystem : MonoBehaviour
 
     private void Awake()
     {
+        InstantiateCharactersForBattle();
+
+        PopulateEnemyPrefabsInBattle();
+
+        PopulateEnemyGameObjectsInBattle();
+
+        PopulatePlayerGameObjectsInBattle();
+
+        PopulatePlayerPrefabsInBattle();
+
+        PopulateCharactersInBattle();
+    }
+
+    public void PopulatePlayerPrefabsInBattle()
+    {
+        PlayerPrefabsInBattle[0] = PlayerPrefab1;
+        PlayerPrefabsInBattle[1] = PlayerPrefab2;
+        PlayerPrefabsInBattle[2] = PlayerPrefab3;
+    }
+
+    public void PopulatePlayerGameObjectsInBattle()
+    {
+        PlayerGameObjectsInBattle[0] = playerGO1;
+        PlayerGameObjectsInBattle[1] = playerGO2;
+        PlayerGameObjectsInBattle[2] = playerGO3;
+    }
+
+    public void PopulateEnemyGameObjectsInBattle()
+    {
+        EnemyGameObjectsInBattle[0] = enemyGO1;
+        EnemyGameObjectsInBattle[1] = enemyGO2;
+        EnemyGameObjectsInBattle[2] = enemyGO3;
+        EnemyGameObjectsInBattle[3] = enemyGO4;
+        EnemyGameObjectsInBattle[4] = enemyGO5;
+    }
+
+    public void PopulateEnemyPrefabsInBattle()
+    {
+        EnemyPrefabsInBattle[0] = EnemyPrefab1;
+        EnemyPrefabsInBattle[1] = EnemyPrefab2;
+        EnemyPrefabsInBattle[2] = EnemyPrefab3;
+        EnemyPrefabsInBattle[3] = EnemyPrefab4;
+        EnemyPrefabsInBattle[4] = EnemyPrefab5;
+    }
+
+    public void InstantiateCharactersForBattle()
+    {
         int FrontLine = 0;
         int BackLine = 1;
         Debug.Log("Setting Up Battle");
-        #region Instatiate Characters
 
-        if(EnemyPrefab1 != null)
+        if (EnemyPrefab1 != null)
             enemyGO1 = Instantiate(EnemyPrefab1, EnemySlotContainer.transform.GetChild(0).transform.GetChild(FrontLine));
-        if(EnemyPrefab2 != null)
+        if (EnemyPrefab2 != null)
             enemyGO2 = Instantiate(EnemyPrefab2, EnemySlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
         if (EnemyPrefab3 != null)
             enemyGO3 = Instantiate(EnemyPrefab3, EnemySlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
@@ -61,45 +107,13 @@ public class BattleSystem : MonoBehaviour
             enemyGO4 = Instantiate(EnemyPrefab4, EnemySlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
         if (EnemyPrefab5 != null)
             enemyGO5 = Instantiate(EnemyPrefab5, EnemySlotContainer.transform.GetChild(4).transform.GetChild(FrontLine));
-        
+
         if (PlayerPrefab1 != null)
             playerGO1 = Instantiate(PlayerPrefab1, PlayerSlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
         if (PlayerPrefab2 != null)
             playerGO2 = Instantiate(PlayerPrefab2, PlayerSlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
         if (PlayerPrefab3 != null)
             playerGO3 = Instantiate(PlayerPrefab3, PlayerSlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
-        #endregion
-
-        //2D Array Idea
-        //GameObject[,] CharactersInBattle = {
-        //    {enemyGO1, playerGO1 },
-        //    {enemyGO2, playerGO2 },
-        //    {enemyGO3, playerGO3 },
-        //    {enemyGO4, null },
-        //    {enemyGO5, null }
-        //};
-        EnemyPrefabsInBattle[0] = EnemyPrefab1;
-        EnemyPrefabsInBattle[1] = EnemyPrefab2;
-        EnemyPrefabsInBattle[2] = EnemyPrefab3;
-        EnemyPrefabsInBattle[3] = EnemyPrefab4;
-        EnemyPrefabsInBattle[4] = EnemyPrefab5;
-
-        EnemyGameObjectsInBattle[0] = enemyGO1;
-        EnemyGameObjectsInBattle[1] = enemyGO2;
-        EnemyGameObjectsInBattle[2] = enemyGO3;
-        EnemyGameObjectsInBattle[3] = enemyGO4;
-        EnemyGameObjectsInBattle[4] = enemyGO5;
-
-        PlayerGameObjectsInBattle[0] = playerGO1;
-        PlayerGameObjectsInBattle[1] = playerGO2;
-        PlayerGameObjectsInBattle[2] = playerGO3;
-
-        PlayerPrefabsInBattle[0] = PlayerPrefab1;
-        PlayerPrefabsInBattle[1] = PlayerPrefab2;
-        PlayerPrefabsInBattle[2] = PlayerPrefab3;
-
-        PopulateCharactersInBattle();
-        
     }
 
     public void PopulateCharactersInBattle()
@@ -121,7 +135,7 @@ public class BattleSystem : MonoBehaviour
         if (playerGO3 != null)
             charactersInBattle.Add(playerGO3);
 
-        charactersInBattle.OrderBy(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
+        charactersInBattle =  charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
         Debug.Log(charactersInBattle.First() + " is first!");
     }
     //maybe make a bool?
