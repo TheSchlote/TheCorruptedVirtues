@@ -39,14 +39,13 @@ public class BattlePlayerState : BattleBaseState
         }
     }
 
-    private static void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
+    public void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
     {
-        //Use current Player Character
-        CharacterStats Player = battleSystem.PlayerPrefab1.GetComponent<CharacterStats>();
+        CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
         if (battleSystem.EnemyPrefabsInBattle[EnemySlot - 1] != null)
         {
-            Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot-1].GetComponent<CharacterStats>();
+            Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
         }
         else
         {
@@ -57,19 +56,11 @@ public class BattlePlayerState : BattleBaseState
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
         Debug.Log(Enemy.name + " Health: " + Enemy.characterDefinition.currentHealth);
 
-        battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
-        battleSystem.DidEveryoneTakeATurn();
-
         if (Enemy.characterDefinition.currentHealth <= 0)
             battleSystem.DestroyEnemy(EnemySlot);
 
-        if (battleSystem.AreAllEnemiesDead())
-        { 
-            battleSystem.TransitionToState(battleSystem.endState);
-        }
-        else
-        {
-            battleSystem.WhosNext();
-        }
+        battleSystem.EndOfPlayersTurn();
     }
+
+
 }

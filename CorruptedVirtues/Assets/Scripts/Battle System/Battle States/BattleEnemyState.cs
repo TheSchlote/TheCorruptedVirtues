@@ -34,6 +34,7 @@ public class BattleEnemyState : BattleBaseState
         if(battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
         {
             Debug.Log("You Dummy! Player in slot " + PlayerSlot + " is already dead! Turn Skipped");
+            battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
             return;
         }
         CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();

@@ -22,16 +22,16 @@ public class BattleSystem : MonoBehaviour
     public GameObject EnemyPrefab5;
     public GameObject enemyGO1;
     public GameObject enemyGO2;
-    private GameObject enemyGO3;
-    private GameObject enemyGO4;
-    private GameObject enemyGO5;
+    public GameObject enemyGO3;
+    public GameObject enemyGO4;
+    public GameObject enemyGO5;
 
     public GameObject PlayerPrefab1;
     public GameObject PlayerPrefab2;
     public GameObject PlayerPrefab3;
-    private GameObject playerGO1;
-    private GameObject playerGO2;
-    private GameObject playerGO3;
+    public GameObject playerGO1;
+    public GameObject playerGO2;
+    public GameObject playerGO3;
 
     public readonly BattleStartState startState = new BattleStartState();
     public readonly BattlePlayerState playerState = new BattlePlayerState();
@@ -165,13 +165,20 @@ public class BattleSystem : MonoBehaviour
 
     public void WhosNext()
     {
-        if (charactersInBattle.First().GetComponent<CharacterStats>().characterDefinition.Enemy == false)
+        if (charactersInBattle.Count != 0)
         {
-            TransitionToState(playerState);
+            if (charactersInBattle.First().GetComponent<CharacterStats>().characterDefinition.Enemy == false)
+            {
+                TransitionToState(playerState);
+            }
+            else
+            {
+                TransitionToState(enemyState);
+            }
         }
         else
         {
-            TransitionToState(enemyState);
+            TransitionToState(endState);
         }
     }
 
@@ -210,5 +217,20 @@ public class BattleSystem : MonoBehaviour
         PlayerPrefabsInBattle[CharacterSlot] = null;
         Destroy(PlayerGameObjectsInBattle[CharacterSlot]);
         charactersInBattle.Remove(PlayerGameObjectsInBattle[CharacterSlot]);
+    }
+
+    public void EndOfPlayersTurn()
+    {
+        charactersInBattle.Remove(charactersInBattle.First());
+        DidEveryoneTakeATurn();
+
+        if (AreAllEnemiesDead())
+        {
+            TransitionToState(endState);
+        }
+        else
+        {
+            WhosNext();
+        }
     }
 }
