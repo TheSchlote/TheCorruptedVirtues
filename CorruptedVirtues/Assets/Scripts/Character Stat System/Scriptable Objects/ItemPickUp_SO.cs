@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum ItemTypeDefinitions { HEALTH, WEALTH, MAGIC, WEAPON, SHEILD, ACCESSORY, BUFF }

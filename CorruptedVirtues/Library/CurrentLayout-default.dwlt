@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1920
-    y: 45
+    x: 0
+    y: 43
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Scene
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 863
     height: 374
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 573
     width: 1408
     height: 374
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 104
+  controlID: 21
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -96,10 +96,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 504, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
-  controlID: 51
+  controlID: 104
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -119,14 +119,14 @@ MonoBehaviour:
     y: 0
     width: 512
     height: 947
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,8 +146,8 @@ MonoBehaviour:
     y: 0
     width: 349
     height: 573
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -201,7 +201,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -274,10 +274,10 @@ MonoBehaviour:
     y: 0
     width: 1408
     height: 947
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 77
+  controlID: 20
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,10 +299,10 @@ MonoBehaviour:
     y: 0
     width: 1408
     height: 573
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 78
+  controlID: 110
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,8 +322,8 @@ MonoBehaviour:
     y: 0
     width: 1059
     height: 573
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -351,13 +351,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -512
-    y: 75
+    x: 1408
+    y: 73
     width: 511
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 205
+    ID: 202
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -441,7 +441,7 @@ MonoBehaviour:
       name: CorruptedVirtues
       fullName: CorruptedVirtues
       resultStatus: 1
-      duration: 0.091094
+      duration: 0.0896021
       messages: 
       output: 
       stacktrace: 
@@ -457,7 +457,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.0543758
+      duration: 0.0593188
       messages: 
       output: 
       stacktrace: 
@@ -473,7 +473,7 @@ MonoBehaviour:
       name: BattlePlayerStateTests+AttackEnemy_Method
       fullName: BattlePlayerStateTests+AttackEnemy_Method
       resultStatus: 1
-      duration: 0.0071508
+      duration: 0.0057458
       messages: 
       output: 
       stacktrace: 
@@ -489,21 +489,21 @@ MonoBehaviour:
       name: Enemy_Takes_Damage
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
       resultStatus: 1
-      duration: 0.0032456
+      duration: 0.0031574
       messages: 
       output: 'Player (UnityEngine.GameObject) is first!
 
-        Enemy Health:
-        5
+        Enemy Health: 5
 
         EnemyState
 
-        You Dummy! Player in slot 2 is already dead!
-        Turn Skipped
+        You
+        Dummy! Player in slot 2 is already dead! Turn Skipped
 
         EndState
 
-        Enemy Wins :(
+        Enemy
+        Wins :(
 
 '
       stacktrace: 
@@ -520,7 +520,7 @@ MonoBehaviour:
       name: BattleSceneTests+DidEveryoneTakeATurn_Method
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method
       resultStatus: 1
-      duration: 0.009731
+      duration: 0.0093307
       messages: 
       output: 
       stacktrace: 
@@ -536,7 +536,7 @@ MonoBehaviour:
       name: A_List_With_Characters_DoesNot_Repopulate
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.A_List_With_Characters_DoesNot_Repopulate
       resultStatus: 1
-      duration: 0.0003884
+      duration: 0.00039
       messages: 
       output: 
       stacktrace: 
@@ -553,7 +553,7 @@ MonoBehaviour:
       name: An_Empty_List_Repopulates
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.An_Empty_List_Repopulates
       resultStatus: 1
-      duration: 0.0007638
+      duration: 0.0008281
       messages: 
       output: 'test (UnityEngine.GameObject) is first!
 
@@ -572,7 +572,7 @@ MonoBehaviour:
       name: BattleSceneTests+InstantiateCharactersForBattle_Method
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
       resultStatus: 1
-      duration: 0.0097644
+      duration: 0.0101164
       messages: 
       output: 
       stacktrace: 
@@ -588,7 +588,7 @@ MonoBehaviour:
       name: If_EnemyPrefab1_IsNull_enemyGO1_IsNull
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.If_EnemyPrefab1_IsNull_enemyGO1_IsNull
       resultStatus: 1
-      duration: 0.0008267
+      duration: 0.0009236
       messages: 
       output: 'Setting Up Battle
 
@@ -607,7 +607,7 @@ MonoBehaviour:
       name: Set_EnemyPrefab1_To_testGO
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Set_EnemyPrefab1_To_testGO
       resultStatus: 1
-      duration: 0.0002304
+      duration: 0.0002516
       messages: 
       output: 
       stacktrace: 
@@ -624,7 +624,7 @@ MonoBehaviour:
       name: BattleSceneTests+PopulateCharactersInBattle_Method
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method
       resultStatus: 1
-      duration: 0.0105675
+      duration: 0.013764
       messages: 
       output: 
       stacktrace: 
@@ -640,7 +640,7 @@ MonoBehaviour:
       name: enemyGO1_Is_First
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First
       resultStatus: 1
-      duration: 0.000887
+      duration: 0.0009155
       messages: 
       output: 'test (UnityEngine.GameObject) is first!
 
@@ -659,7 +659,7 @@ MonoBehaviour:
       name: enemyGO1_Is_First_When_Faster_Than_Others
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First_When_Faster_Than_Others
       resultStatus: 1
-      duration: 0.0007108
+      duration: 0.0007156
       messages: 
       output: 'test (UnityEngine.GameObject) is first!
 
@@ -678,7 +678,7 @@ MonoBehaviour:
       name: enemyGO2_Is_Not_First_When_Slower_Than_Others
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others
       resultStatus: 1
-      duration: 0.0007058
+      duration: 0.0027025
       messages: 
       output: 'test2 (UnityEngine.GameObject) is first!
 
@@ -697,7 +697,7 @@ MonoBehaviour:
       name: BattleSceneTests+PopulateEnemyPrefabsInBattle_Method
       fullName: BattleSceneTests+PopulateEnemyPrefabsInBattle_Method
       resultStatus: 1
-      duration: 0.0077736
+      duration: 0.0093216
       messages: 
       output: 
       stacktrace: 
@@ -713,7 +713,7 @@ MonoBehaviour:
       name: First_Prefab_Fills_0_Slot
       fullName: BattleSceneTests+PopulateEnemyPrefabsInBattle_Method.First_Prefab_Fills_0_Slot
       resultStatus: 1
-      duration: 0.0003359
+      duration: 0.0003203
       messages: 
       output: 
       stacktrace: 
@@ -725,20 +725,28 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1004
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateEnemyPrefabsInBattle_Method][suite]
-    m_ResultText: "Enemy_Dies_When_Health_0 (9.551s)\n---\nExpected: <Enemy (UnityEngine.GameObject)>\r\n 
-      But was:  null\n---\nat BattlePlayerStateTests+AttackEnemy_Method.Enemy_Dies_When_Health_0
-      () [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:72\n---\nPlayer
-      (UnityEngine.GameObject) is first!\r\nEnemy Health: 5\r\nEnemyState\r\nYou
-      Dummy! Player in slot 2 is already dead! Turn Skipped\r\nEndState\r\nEnemy
-      Wins :("
-    m_ResultStacktrace: 'at BattlePlayerStateTests+AttackEnemy_Method.Enemy_Dies_When_Health_0
-      () [0x00014] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattlePlayerStateTests.cs:72
+    m_ResultText: 'Enemy_Takes_Damage (0.003s)
 
-'
+      ---
+
+      Player (UnityEngine.GameObject)
+      is first!
+
+      Enemy Health: 5
+
+      EnemyState
+
+      You Dummy! Player
+      in slot 2 is already dead! Turn Skipped
+
+      EndState
+
+      Enemy Wins :('
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ed912a5c
-      m_LastClickedID: 1546293741
+      m_SelectedIDs: 8d48e759
+      m_LastClickedID: 1508329613
       m_ExpandedIDs: 261825be0ed96ac23e973306048c4b2aa787ce41ab6eb0448aa5cf4b23b4a06e3f36ee7cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -810,8 +818,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
-    y: 648
+    x: 0
+    y: 646
     width: 544
     height: 353
   m_ViewDataDictionary: {fileID: 0}
@@ -828,22 +836,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests/EditMode
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Tests/EditMode
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 7}
-    m_SelectedIDs: da410000
-    m_LastClickedID: 16858
-    m_ExpandedIDs: 00000000b8410000ba410000bc410000be410000c0410000c241000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 5c400000
+    m_LastClickedID: 16476
+    m_ExpandedIDs: 0000000056400000584000005a4000005c4000005e4000006040000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -871,7 +879,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8410000ba410000bc410000be410000c0410000c2410000
+    m_ExpandedIDs: 0000000056400000584000005a4000005c4000005e40000060400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -898,7 +906,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -947,8 +955,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -512
-    y: 75
+    x: 1408
+    y: 73
     width: 511
     height: 926
   m_ViewDataDictionary: {fileID: 0}
@@ -958,7 +966,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 16880
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
@@ -984,17 +992,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
-    y: 75
+    x: 0
+    y: 73
     width: 348
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0410000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 34dfffffbee0ffff0ce2fffff8e2ffffa6e4ffff90e5ffffd4e6ffff8ee8ffff26eaffff1eebffff08ecffff50edffff44eeffff2eefffff70f0ffff64f1ffff54f2ffff96f3ffff8ef4ffff90f6ffff42fbffff
+      m_SelectedIDs: d83f0000
+      m_LastClickedID: 16344
+      m_ExpandedIDs: 42fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1038,8 +1046,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1571
-    y: 75
+    x: 349
+    y: 73
     width: 1057
     height: 552
   m_ViewDataDictionary: {fileID: 0}
@@ -1054,9 +1062,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.18267006, y: -1.3891152, z: -0.5403051}
+    m_Target: {x: 0.40479892, y: -0.9862475, z: -1.9010278}
     speed: 2
-    m_Value: {x: 0.18267006, y: -1.3891152, z: -0.5403051}
+    m_Value: {x: 0.5432991, y: -1.0752833, z: -1.8789928}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1107,9 +1115,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.3263254
+    m_Target: 5.845418
     speed: 2
-    m_Value: 6.3263254
+    m_Value: 6.1208563
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1243,8 +1251,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1375
-    y: 648
+    x: 545
+    y: 646
     width: 861
     height: 353
   m_ViewDataDictionary: {fileID: 0}

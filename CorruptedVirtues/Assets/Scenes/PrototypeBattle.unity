@@ -254,6 +254,26 @@ MonoBehaviour:
   playerGO2: {fileID: 0}
   playerGO3: {fileID: 0}
   charactersInBattle: []
+  EnemyPrefabsInBattle:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  EnemyGameObjectsInBattle:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  PlayerGameObjectsInBattle:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  PlayerPrefabsInBattle:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &948290990
 Transform:
   m_ObjectHideFlags: 0

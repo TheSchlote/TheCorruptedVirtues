@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrototypeBattle.unity
     guid: 2bed265ae04fc7942a3426e8f7bff66e
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 9b0e2f68406534e4a9393a55b832c6d3
   m_configObjects: {}

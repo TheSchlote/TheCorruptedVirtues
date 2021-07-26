@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 //using UnityEditor;
 
@@ -52,7 +50,7 @@ public class CharacterStats_SO : ScriptableObject
     #region Stat Increasers
     public void ApplyHealth(int healthAmount)
     {
-        if((currentHealth + healthAmount) > maxHealth)
+        if ((currentHealth + healthAmount) > maxHealth)
         {
             currentHealth = maxHealth;
         }
@@ -64,7 +62,7 @@ public class CharacterStats_SO : ScriptableObject
 
     public void ApplyMagic(int magicAmount)
     {
-        if((currentMagic + magicAmount) > maxMagic)
+        if ((currentMagic + magicAmount) > maxMagic)
         {
             currentMagic = maxMagic;
         }
@@ -153,7 +151,7 @@ public class CharacterStats_SO : ScriptableObject
                     {
                         previousItemSame = true;
                     }
-                    Object.Destroy(Slot.transform.GetChild(0).gameObject);
+                    Destroy(Slot.transform.GetChild(0).gameObject);
                     weapon = null;
                     currentAttack = baseAttack;
                 }
@@ -165,7 +163,7 @@ public class CharacterStats_SO : ScriptableObject
                     {
                         previousItemSame = true;
                     }
-                    Object.Destroy(Slot.transform.GetChild(0).gameObject);
+                    Destroy(Slot.transform.GetChild(0).gameObject);
                     shield = null;
                     currentDefense = baseDefense;
                 }
@@ -177,7 +175,7 @@ public class CharacterStats_SO : ScriptableObject
                     {
                         previousItemSame = true;
                     }
-                    Object.Destroy(Slot.transform.GetChild(0).gameObject);
+                    Destroy(Slot.transform.GetChild(0).gameObject);
                     accessory = null;
                     currentSpeed = baseSpeed;
                 }
