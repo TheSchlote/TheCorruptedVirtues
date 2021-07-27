@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Test Runner
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 331, y: 271}
   m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 21
+  controlID: 112
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -96,10 +96,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 18001, y: 14042}
+  m_MinSize: {x: 503, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 104
+  controlID: 105
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -119,14 +119,14 @@ MonoBehaviour:
     y: 0
     width: 512
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 20
+  controlID: 56
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 110
+  controlID: 57
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,8 +322,8 @@ MonoBehaviour:
     y: 0
     width: 1059
     height: 573
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -357,7 +357,7 @@ MonoBehaviour:
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 202
+    ID: 1608
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -440,9 +440,9 @@ MonoBehaviour:
       uniqueId: '[CorruptedVirtues][suite]'
       name: CorruptedVirtues
       fullName: CorruptedVirtues
-      resultStatus: 1
-      duration: 0.0896021
-      messages: 
+      resultStatus: 2
+      duration: 0.0674589
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -456,9 +456,9 @@ MonoBehaviour:
       uniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
       name: EditMode.dll
       fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
-      resultStatus: 1
-      duration: 0.0593188
-      messages: 
+      resultStatus: 2
+      duration: 0.0354324
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
       name: BattlePlayerStateTests+AttackEnemy_Method
       fullName: BattlePlayerStateTests+AttackEnemy_Method
-      resultStatus: 1
-      duration: 0.0057458
-      messages: 
+      resultStatus: 2
+      duration: 0.0309071
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -488,25 +488,21 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage]
       name: Enemy_Takes_Damage
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
-      resultStatus: 1
-      duration: 0.0031574
-      messages: 
+      resultStatus: 2
+      duration: 0.012763
+      messages: 'SetUp : System.NullReferenceException : Object reference not set
+        to an instance of an object'
       output: 'Player (UnityEngine.GameObject) is first!
 
-        Enemy Health: 5
-
-        EnemyState
-
-        You
-        Dummy! Player in slot 2 is already dead! Turn Skipped
-
-        EndState
-
-        Enemy
-        Wins :(
-
 '
-      stacktrace: 
+      stacktrace: "--SetUp\r\n  at BattleSystem.PopulatePlayerPrefabsInBattle ()
+        [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:55 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
+        () [0x0010d] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:35
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -520,7 +516,7 @@ MonoBehaviour:
       name: BattleSceneTests+DidEveryoneTakeATurn_Method
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method
       resultStatus: 1
-      duration: 0.0093307
+      duration: 0.024399
       messages: 
       output: 
       stacktrace: 
@@ -536,7 +532,7 @@ MonoBehaviour:
       name: A_List_With_Characters_DoesNot_Repopulate
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.A_List_With_Characters_DoesNot_Repopulate
       resultStatus: 1
-      duration: 0.00039
+      duration: 0.010546
       messages: 
       output: 
       stacktrace: 
@@ -553,7 +549,7 @@ MonoBehaviour:
       name: An_Empty_List_Repopulates
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.An_Empty_List_Repopulates
       resultStatus: 1
-      duration: 0.0008281
+      duration: 0.0009499
       messages: 
       output: 'test (UnityEngine.GameObject) is first!
 
@@ -567,64 +563,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1010
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1001
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-      name: BattleSceneTests+InstantiateCharactersForBattle_Method
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
-      resultStatus: 1
-      duration: 0.0101164
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1003
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.If_EnemyPrefab1_IsNull_enemyGO1_IsNull]
-      name: If_EnemyPrefab1_IsNull_enemyGO1_IsNull
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.If_EnemyPrefab1_IsNull_enemyGO1_IsNull
-      resultStatus: 1
-      duration: 0.0009236
-      messages: 
-      output: 'Setting Up Battle
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1002
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Set_EnemyPrefab1_To_testGO]
-      name: Set_EnemyPrefab1_To_testGO
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Set_EnemyPrefab1_To_testGO
-      resultStatus: 1
-      duration: 0.0002516
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
     - id: 1006
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
       name: BattleSceneTests+PopulateCharactersInBattle_Method
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method
       resultStatus: 1
-      duration: 0.013764
+      duration: 0.0154488
       messages: 
       output: 
       stacktrace: 
@@ -640,7 +584,7 @@ MonoBehaviour:
       name: enemyGO1_Is_First
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First
       resultStatus: 1
-      duration: 0.0009155
+      duration: 0.0011761
       messages: 
       output: 'test (UnityEngine.GameObject) is first!
 
@@ -659,7 +603,7 @@ MonoBehaviour:
       name: enemyGO1_Is_First_When_Faster_Than_Others
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First_When_Faster_Than_Others
       resultStatus: 1
-      duration: 0.0007156
+      duration: 0.0009378
       messages: 
       output: 'test (UnityEngine.GameObject) is first!
 
@@ -678,7 +622,7 @@ MonoBehaviour:
       name: enemyGO2_Is_Not_First_When_Slower_Than_Others
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others
       resultStatus: 1
-      duration: 0.0027025
+      duration: 0.00089
       messages: 
       output: 'test2 (UnityEngine.GameObject) is first!
 
@@ -692,57 +636,24 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateEnemyPrefabsInBattle_Method][suite]
-      name: BattleSceneTests+PopulateEnemyPrefabsInBattle_Method
-      fullName: BattleSceneTests+PopulateEnemyPrefabsInBattle_Method
-      resultStatus: 1
-      duration: 0.0093216
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1006
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1005
-      uniqueId: EditMode.dll/BattleSceneTests+PopulateEnemyPrefabsInBattle_Method/[EditMode][BattleSceneTests+PopulateEnemyPrefabsInBattle_Method.First_Prefab_Fills_0_Slot]
-      name: First_Prefab_Fills_0_Slot
-      fullName: BattleSceneTests+PopulateEnemyPrefabsInBattle_Method.First_Prefab_Fills_0_Slot
-      resultStatus: 1
-      duration: 0.0003203
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateEnemyPrefabsInBattle_Method][suite]
-    m_ResultText: 'Enemy_Takes_Damage (0.003s)
-
-      ---
-
-      Player (UnityEngine.GameObject)
-      is first!
-
-      Enemy Health: 5
-
-      EnemyState
-
-      You Dummy! Player
-      in slot 2 is already dead! Turn Skipped
-
-      EndState
-
-      Enemy Wins :('
-    m_ResultStacktrace: 
+    m_ResultText: "Enemy_Takes_Damage (0.013s)\n---\nSetUp : System.NullReferenceException
+      : Object reference not set to an instance of an object\n---\n--SetUp\r\n  at
+      BattleSystem.PopulatePlayerPrefabsInBattle () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+      System\\BattleSystem.cs:55 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
+      () [0x0010d] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:35
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0\n---\nPlayer (UnityEngine.GameObject)
+      is first!"
+    m_ResultStacktrace: "--SetUp\r\n  at BattleSystem.PopulatePlayerPrefabsInBattle
+      () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+      System\\BattleSystem.cs:55 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
+      () [0x0010d] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:35
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 8d48e759
@@ -836,22 +747,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Tests/EditMode
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Tests/EditMode
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5c400000
-    m_LastClickedID: 16476
-    m_ExpandedIDs: 0000000056400000584000005a4000005c4000005e4000006040000000ca9a3b
+    scrollPos: {x: 0, y: 83}
+    m_SelectedIDs: 7c400000
+    m_LastClickedID: 16508
+    m_ExpandedIDs: 0000000056400000584000005a4000005c4000005e400000604000006a4000007440000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -906,7 +817,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1000,9 +911,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d83f0000
-      m_LastClickedID: 16344
-      m_ExpandedIDs: 42fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d4e1ffffc4ebffff16ecffff1aecffff3eecffffdaecffff78edffff42fbfffff4ffffffcc530000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1062,9 +973,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.40479892, y: -0.9862475, z: -1.9010278}
+    m_Target: {x: -0.32057965, y: -0.88082355, z: -2.0008755}
     speed: 2
-    m_Value: {x: 0.5432991, y: -1.0752833, z: -1.8789928}
+    m_Value: {x: -0.32057965, y: -0.88082355, z: -2.0008755}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1115,9 +1026,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.845418
+    m_Target: 6.370416
     speed: 2
-    m_Value: 6.1208563
+    m_Value: 6.370416
   m_Ortho:
     m_Target: 1
     speed: 2

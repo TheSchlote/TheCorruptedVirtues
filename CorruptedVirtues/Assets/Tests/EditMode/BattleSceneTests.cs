@@ -15,22 +15,22 @@ public class BattleSceneTests
         {
             _battleSystem = new GameObject().AddComponent<BattleSystem>();
             testGo = new GameObject("test");
-            go = (GameObject)Object.Instantiate(testGo,Vector3.zero,Quaternion.identity);
+            go = Object.Instantiate(testGo, Vector3.zero, Quaternion.identity);
         }
-        [Test]
-        public void Set_EnemyPrefab1_To_testGO()
-        {
-            _battleSystem.EnemyPrefab1 = testGo;
-            Assert.AreEqual(_battleSystem.EnemyPrefab1, testGo);
-        }
+        //[Test]
+        //public void Set_EnemyPrefab1_To_testGO()
+        //{
+        //    _battleSystem.EnemyPrefab1 = testGo;
+        //    Assert.AreEqual(_battleSystem.EnemyPrefab1, testGo);
+        //}
 
-        [Test]
-        public void If_EnemyPrefab1_IsNull_enemyGO1_IsNull()
-        {
-            _battleSystem.EnemyPrefab1 = null;
-            _battleSystem.InstantiateCharactersForBattle();
-            Assert.AreEqual(_battleSystem.enemyGO1, null);
-        }
+        //[Test]
+        //public void If_EnemyPrefab1_IsNull_enemyGO1_IsNull()
+        //{
+        //    _battleSystem.EnemyPrefab1 = null;
+        //    _battleSystem.InstantiateCharactersForBattle();
+        //    Assert.AreEqual(_battleSystem.enemyGO1, null);
+        //}
         //[Test]
         //public void InstantiateCharactersForBattle_Test()
         //{
@@ -41,8 +41,8 @@ public class BattleSceneTests
         [TearDown]
         public void AfterEveryTest()
         {
-            UnityEngine.Object.DestroyImmediate(go);
-            UnityEngine.Object.DestroyImmediate(testGo);
+            Object.DestroyImmediate(go);
+            Object.DestroyImmediate(testGo);
         }
     }
     public class PopulateEnemyPrefabsInBattle_Method
@@ -58,18 +58,18 @@ public class BattleSceneTests
             testGo = new GameObject("test");
             go = (GameObject)Object.Instantiate(testGo, Vector3.zero, Quaternion.identity);
         }
-        [Test]
-        public void First_Prefab_Fills_0_Slot()
-        {
-            _battleSystem.EnemyPrefab1 = testGo;
-            _battleSystem.PopulateEnemyPrefabsInBattle();
-            Assert.AreEqual(_battleSystem.EnemyPrefabsInBattle[0], _battleSystem.EnemyPrefab1);
-        }
+        //[Test]
+        //public void First_Prefab_Fills_0_Slot()
+        //{
+        //    _battleSystem.EnemyPrefab1 = testGo;
+        //    _battleSystem.PopulateEnemyPrefabsInBattle();
+        //    Assert.AreEqual(_battleSystem.EnemyPrefabsInBattle[0], _battleSystem.EnemyPrefab1);
+        //}
         [TearDown]
         public void AfterEveryTest()
         {
-            UnityEngine.Object.DestroyImmediate(go);
-            UnityEngine.Object.DestroyImmediate(testGo);
+            Object.DestroyImmediate(go);
+            Object.DestroyImmediate(testGo);
         }
     }
     public class PopulateCharactersInBattle_Method
@@ -124,7 +124,7 @@ public class BattleSceneTests
         [TearDown]
         public void AfterEveryTest()
         {
-            UnityEngine.Object.DestroyImmediate(testGo);
+            Object.DestroyImmediate(testGo);
         }
     }
     public class DidEveryoneTakeATurn_Method
@@ -158,7 +158,7 @@ public class BattleSceneTests
         [TearDown]
         public void AfterEveryTest()
         {
-            UnityEngine.Object.DestroyImmediate(testGo);
+            Object.DestroyImmediate(testGo);
         }
     }
 }

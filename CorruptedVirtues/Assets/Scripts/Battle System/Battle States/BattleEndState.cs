@@ -5,7 +5,7 @@ public class BattleEndState : BattleBaseState
     public override void EnterState(BattleSystem battleSystem)
     {
         Debug.Log("EndState");
-        CharacterStats Player = battleSystem.PlayerPrefab1.GetComponent<CharacterStats>();
+        CharacterStats Player = GameManger.gameManger.party.PlayerParty[0].GetComponent<CharacterStats>();
         //CharacterStats Enemy = battleSystem.EnemyPrefab1.GetComponent<CharacterStats>();
         if (Player.characterDefinition.currentHealth <= 0)
         {

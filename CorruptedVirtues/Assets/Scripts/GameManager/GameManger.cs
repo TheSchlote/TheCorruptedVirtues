@@ -1,9 +1,28 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManger : MonoBehaviour
 {
     public static GameManger gameManger;
+    
+    public PartyData party;
+    [Serializable]
+    public class PartyData
+    {
+        public int maxPartySize = 3;
+        public List<GameObject> PlayerParty = new List<GameObject>();
+    }
+
+    public AreaData areaData;
+    [Serializable]
+    public class AreaData
+    {
+        public string regionName;
+        public int maxAmountEnemys = 5;
+        public List<GameObject> possibleEnemys = new List<GameObject>();
+    }
 
     public GameObject OverWorldCharacter;
 

@@ -32,10 +32,8 @@ public class BattlePlayerStateTests
 
             _battleSystem.PopulateCharactersInBattle();
 
-            _battleSystem.PlayerPrefab1 = testPlayerGo;
             _battleSystem.PopulatePlayerPrefabsInBattle();
 
-            _battleSystem.EnemyPrefab1 = testEnemyGo;
             _battleSystem.PopulateEnemyPrefabsInBattle();
         }
 

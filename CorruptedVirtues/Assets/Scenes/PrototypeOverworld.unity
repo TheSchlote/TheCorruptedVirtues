@@ -745,5 +745,45 @@ PrefabInstance:
       propertyPath: OverWorldCharacter
       value: 
       objectReference: {fileID: 4142343678533103500, guid: 2fa18c7765eb44f4b8f1c0fdeb8db7a8, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: party.PlayerParty.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: party.PlayerParty.Array.data[0]
+      value: 
+      objectReference: {fileID: 6835462380323617286, guid: 0bdac34add9344c49b9275a74c750064, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: party.PlayerParty.Array.data[1]
+      value: 
+      objectReference: {fileID: 6835462380323617286, guid: 65867497bcae8ab42b785312b92a193f, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: party.PlayerParty.Array.data[2]
+      value: 
+      objectReference: {fileID: 6835462380323617286, guid: b4318b7c604ffd6499c064c7b4437404, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: areaData.possibleEnemys.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: areaData.possibleEnemys.Array.data[0]
+      value: 
+      objectReference: {fileID: 9157706704239190588, guid: 71f67a1ce1a2ad24a814744d981075ed, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: areaData.possibleEnemys.Array.data[1]
+      value: 
+      objectReference: {fileID: 9157706704239190588, guid: 7cf63e3dfb415544d88816164cb89c90, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: areaData.possibleEnemys.Array.data[2]
+      value: 
+      objectReference: {fileID: 9157706704239190588, guid: 11f0e60dbbd78dc4385edc3eb5ca3be4, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: areaData.possibleEnemys.Array.data[3]
+      value: 
+      objectReference: {fileID: 9157706704239190588, guid: 6aef56aebba4fe3499f2dd2adc19b976, type: 3}
+    - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
+      propertyPath: areaData.possibleEnemys.Array.data[4]
+      value: 
+      objectReference: {fileID: 9157706704239190588, guid: 263797d812fe48a4ba74c6fd0d97adce, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56174873405f7ae4fb75d2951e417334, type: 3}

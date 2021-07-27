@@ -14,20 +14,12 @@ public class BattleSystem : MonoBehaviour
     public GameObject EnemySlotContainer;
     public GameObject PlayerSlotContainer;
 
-    public GameObject EnemyPrefab1;
-    public GameObject EnemyPrefab2;
-    public GameObject EnemyPrefab3;
-    public GameObject EnemyPrefab4;
-    public GameObject EnemyPrefab5;
     public GameObject enemyGO1;
     public GameObject enemyGO2;
     public GameObject enemyGO3;
     public GameObject enemyGO4;
     public GameObject enemyGO5;
 
-    public GameObject PlayerPrefab1;
-    public GameObject PlayerPrefab2;
-    public GameObject PlayerPrefab3;
     public GameObject playerGO1;
     public GameObject playerGO2;
     public GameObject playerGO3;
@@ -60,9 +52,9 @@ public class BattleSystem : MonoBehaviour
 
     public void PopulatePlayerPrefabsInBattle()
     {
-        PlayerPrefabsInBattle[0] = PlayerPrefab1;
-        PlayerPrefabsInBattle[1] = PlayerPrefab2;
-        PlayerPrefabsInBattle[2] = PlayerPrefab3;
+        PlayerPrefabsInBattle[0] = GameManger.gameManger.party.PlayerParty[0];
+        PlayerPrefabsInBattle[1] = GameManger.gameManger.party.PlayerParty[1];
+        PlayerPrefabsInBattle[2] = GameManger.gameManger.party.PlayerParty[2];
     }
 
     public void PopulatePlayerGameObjectsInBattle()
@@ -83,11 +75,11 @@ public class BattleSystem : MonoBehaviour
 
     public void PopulateEnemyPrefabsInBattle()
     {
-        EnemyPrefabsInBattle[0] = EnemyPrefab1;
-        EnemyPrefabsInBattle[1] = EnemyPrefab2;
-        EnemyPrefabsInBattle[2] = EnemyPrefab3;
-        EnemyPrefabsInBattle[3] = EnemyPrefab4;
-        EnemyPrefabsInBattle[4] = EnemyPrefab5;
+        EnemyPrefabsInBattle[0] = GameManger.gameManger.areaData.possibleEnemys[0];
+        EnemyPrefabsInBattle[1] = GameManger.gameManger.areaData.possibleEnemys[1];
+        EnemyPrefabsInBattle[2] = GameManger.gameManger.areaData.possibleEnemys[2];
+        EnemyPrefabsInBattle[3] = GameManger.gameManger.areaData.possibleEnemys[3];
+        EnemyPrefabsInBattle[4] = GameManger.gameManger.areaData.possibleEnemys[4];
     }
 
     public void InstantiateCharactersForBattle()
@@ -96,23 +88,37 @@ public class BattleSystem : MonoBehaviour
         int BackLine = 1;
         Debug.Log("Setting Up Battle");
 
-        if (EnemyPrefab1 != null)
-            enemyGO1 = Instantiate(EnemyPrefab1, EnemySlotContainer.transform.GetChild(0).transform.GetChild(FrontLine));
-        if (EnemyPrefab2 != null)
-            enemyGO2 = Instantiate(EnemyPrefab2, EnemySlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
-        if (EnemyPrefab3 != null)
-            enemyGO3 = Instantiate(EnemyPrefab3, EnemySlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
-        if (EnemyPrefab4 != null)
-            enemyGO4 = Instantiate(EnemyPrefab4, EnemySlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
-        if (EnemyPrefab5 != null)
-            enemyGO5 = Instantiate(EnemyPrefab5, EnemySlotContainer.transform.GetChild(4).transform.GetChild(FrontLine));
+        if (GameManger.gameManger.areaData.possibleEnemys[0] != null)
+            enemyGO1 = Instantiate(GameManger.gameManger.areaData.possibleEnemys[0], EnemySlotContainer.transform.GetChild(0).transform.GetChild(FrontLine));
+        if (GameManger.gameManger.areaData.possibleEnemys[1] != null)
+            enemyGO2 = Instantiate(GameManger.gameManger.areaData.possibleEnemys[1], EnemySlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
 
-        if (PlayerPrefab1 != null)
-            playerGO1 = Instantiate(PlayerPrefab1, PlayerSlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
-        if (PlayerPrefab2 != null)
-            playerGO2 = Instantiate(PlayerPrefab2, PlayerSlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
-        if (PlayerPrefab3 != null)
-            playerGO3 = Instantiate(PlayerPrefab3, PlayerSlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
+        if (GameManger.gameManger.EncounteredEnemy != null)
+        {
+            foreach(GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
+            {
+                if(GameManger.gameManger.EncounteredEnemy == enemy.name)
+                {
+                    enemyGO3 = Instantiate(enemy, EnemySlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
+                }
+            }
+        }
+        else if (GameManger.gameManger.areaData.possibleEnemys[2] != null)
+        {
+            enemyGO3 = Instantiate(GameManger.gameManger.areaData.possibleEnemys[2], EnemySlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
+        }
+
+        if (GameManger.gameManger.areaData.possibleEnemys[3] != null)
+            enemyGO4 = Instantiate(GameManger.gameManger.areaData.possibleEnemys[3], EnemySlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
+        if (GameManger.gameManger.areaData.possibleEnemys[4] != null)
+            enemyGO5 = Instantiate(GameManger.gameManger.areaData.possibleEnemys[4], EnemySlotContainer.transform.GetChild(4).transform.GetChild(FrontLine));
+
+        if (GameManger.gameManger.party.PlayerParty[0] != null)
+            playerGO1 = Instantiate(GameManger.gameManger.party.PlayerParty[0], PlayerSlotContainer.transform.GetChild(2).transform.GetChild(FrontLine));
+        if (GameManger.gameManger.party.PlayerParty[1] != null)
+            playerGO2 = Instantiate(GameManger.gameManger.party.PlayerParty[1], PlayerSlotContainer.transform.GetChild(1).transform.GetChild(BackLine));
+        if (GameManger.gameManger.party.PlayerParty[2] != null)
+            playerGO3 = Instantiate(GameManger.gameManger.party.PlayerParty[2], PlayerSlotContainer.transform.GetChild(3).transform.GetChild(BackLine));
     }
 
     public void PopulateCharactersInBattle()
