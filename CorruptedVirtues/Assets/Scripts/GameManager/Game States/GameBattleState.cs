@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameBattleState : GameBaseState
 {
@@ -13,8 +14,11 @@ public class GameBattleState : GameBaseState
 
     public override void Update(GameManger gameManger)
     {
-        //BattleSystem handles this
+        if (!gameManger.battleHasStarted)
+        {
 
-        //Get out of State
+            SceneManager.LoadScene(1);//Battle scene
+            gameManger.TransistinoToState(gameManger.OverWorldState);
+        }
     }
 }

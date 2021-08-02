@@ -17,11 +17,15 @@ public class BattleEndState : BattleBaseState
             Debug.Log(Player.name + " gained 100 XP!");
             Player.GainExperience(100);
             Debug.Log( Player.name + " Leveled up! ");
+            Debug.Log("Press Enter to Return to OverWorld");
         }
     }
 
     public override void Update(BattleSystem battleSystem)
     {
-        
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            GameManger.gameManger.battleHasStarted = false;
+        }
     }
 }

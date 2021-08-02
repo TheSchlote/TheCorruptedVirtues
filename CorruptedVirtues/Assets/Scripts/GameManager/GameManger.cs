@@ -39,7 +39,7 @@ public class GameManger : MonoBehaviour
     public readonly GameMenuState MenuState = new GameMenuState();
 
     public bool battleHasStarted = false;
-    public string EncounteredEnemy;
+    public List<string> EncounteredEnemyNames = new List<string>();
 
     private void Awake()
     {

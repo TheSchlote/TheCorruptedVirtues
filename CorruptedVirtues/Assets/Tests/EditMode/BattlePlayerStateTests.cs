@@ -21,20 +21,18 @@ public class BattlePlayerStateTests
             testPlayerGo.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
             testPlayerGo.GetComponent<CharacterStats>().characterDefinition.currentAttack = 5;
             testPlayerGo.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 2;
-            _battleSystem.playerGO1 = testPlayerGo;
+            //_battleSystem.playerGO1 = testPlayerGo;
 
             testEnemyGo = new GameObject("Enemy");
             testEnemyGo.AddComponent<CharacterStats>();
             testEnemyGo.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
             testEnemyGo.GetComponent<CharacterStats>().characterDefinition.currentHealth = 10;
             testEnemyGo.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 1;
-            _battleSystem.enemyGO1 = testEnemyGo;
+            //_battleSystem.enemyGO1 = testEnemyGo;
 
             _battleSystem.PopulateCharactersInBattle();
 
-            _battleSystem.PopulatePlayerPrefabsInBattle();
-
-            _battleSystem.PopulateEnemyPrefabsInBattle();
+            _battleSystem.PopulatePrefabsInBattle();
         }
 
         [Test]

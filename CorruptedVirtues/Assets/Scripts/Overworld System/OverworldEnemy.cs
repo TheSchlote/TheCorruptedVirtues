@@ -10,7 +10,7 @@ public class OverworldEnemy : MonoBehaviour
             Debug.Log("You touched an Enemy!");
 
             GameManger.gameManger.battleHasStarted = true;
-            GameManger.gameManger.EncounteredEnemy = gameObject.name;
+            GameManger.gameManger.EncounteredEnemyNames.Add(gameObject.name);
             //Destory Object that was touched
         }
 

@@ -87,7 +87,7 @@ public class BattleSceneTests
             testGo.AddComponent<CharacterStats>();
             testGo.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
             testGo.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 2;
-            _battleSystem.enemyGO1 = testGo;
+            //_battleSystem.enemyGO1 = testGo;
         }
         [Test]
         public void enemyGO1_Is_First()
@@ -103,7 +103,7 @@ public class BattleSceneTests
             testGo2.AddComponent<CharacterStats>();
             testGo2.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
             testGo2.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 1;
-            _battleSystem.enemyGO2 = testGo2;
+            //_battleSystem.enemyGO2 = testGo2;
 
             _battleSystem.PopulateCharactersInBattle();
             Assert.AreEqual(_battleSystem.charactersInBattle.First(), testGo);
@@ -116,7 +116,7 @@ public class BattleSceneTests
             testGo2.AddComponent<CharacterStats>();
             testGo2.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
             testGo2.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 3;
-            _battleSystem.enemyGO2 = testGo2;
+            //_battleSystem.enemyGO2 = testGo2;
 
             _battleSystem.PopulateCharactersInBattle();
             Assert.AreEqual(_battleSystem.charactersInBattle.First(), testGo2);
@@ -140,7 +140,7 @@ public class BattleSceneTests
             testGo.AddComponent<CharacterStats>();
             testGo.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
             testGo.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 2;
-            _battleSystem.enemyGO1 = testGo;
+            //_battleSystem.enemyGO1 = testGo;
         }
         [Test]
         public void An_Empty_List_Repopulates()
@@ -151,7 +151,7 @@ public class BattleSceneTests
         [Test]
         public void A_List_With_Characters_DoesNot_Repopulate()
         {
-            _battleSystem.charactersInBattle.Add(_battleSystem.enemyGO1);
+            //_battleSystem.charactersInBattle.Add(_battleSystem.enemyGO1);
             _battleSystem.DidEveryoneTakeATurn();
             Assert.AreEqual(_battleSystem.charactersInBattle.First(), testGo);
         }
