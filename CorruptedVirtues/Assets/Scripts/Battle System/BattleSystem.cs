@@ -43,9 +43,10 @@ public class BattleSystem : MonoBehaviour
             {
                 foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
                 {
-                    if (GameManger.gameManger.EncounteredEnemyNames.Contains(enemy.name))
+                    if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
                     {
-                        EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy, EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
+                        EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy,
+                                                                       EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
                         break;
                     }
                 }
@@ -57,7 +58,8 @@ public class BattleSystem : MonoBehaviour
             if (GameManger.gameManger.party.PlayerParty[i] != null)
             {
                 //dont use coinflip save this info somewhere in gamemanager
-                PlayerCloneGameObjectsInBattle[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i], PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
+                PlayerCloneGameObjectsInBattle[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i],
+                                                                PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
             }
         }
     }
@@ -105,16 +107,8 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
-        charactersInBattle =  charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
+        charactersInBattle = charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
         Debug.Log(charactersInBattle.First() + " is first!");
-    }
-    //maybe make a bool?
-    public void DidEveryoneTakeATurn()
-    {
-        if (charactersInBattle.Count == 0)
-        {
-            PopulateCharactersInBattle();
-        }
     }
 
     private void Start()
@@ -131,6 +125,19 @@ public class BattleSystem : MonoBehaviour
     {
         currentState = state;
         currentState.EnterState(this);
+    }
+
+        public bool DidEveryoneTakeATurn()
+    {
+        if (charactersInBattle.Count == 0)
+        {
+            PopulateCharactersInBattle();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void WhosNext()

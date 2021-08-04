@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab82d414f61a98b4ca0fc1b2030a4a10, type: 3}
+  m_Name: ProtoWolf
+  m_EditorClassIdentifier: 
+  SetManualy: 1
+  saveDataOnClose: 0
+  Enemy: 1
+  maxHealth: 13
+  currentHealth: 13
+  maxMagic: 0
+  currentMagic: 0
+  Wealth: 0
+  baseAttack: 4
+  currentAttack: 4
+  baseDefense: 2
+  currentDefense: 2
+  baseSpeed: 1
+  currentSpeed: 1
+  charExperience: 5
+  charLevel: 0
+  charLevelUps: []

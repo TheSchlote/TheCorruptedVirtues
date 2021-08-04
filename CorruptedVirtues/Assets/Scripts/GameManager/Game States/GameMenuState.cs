@@ -2,11 +2,14 @@ public class GameMenuState : GameBaseState
 {
     public override void EnterState(GameManger gameManger)
     {
-        throw new System.NotImplementedException();
+        GameManger.gameManger.inMenuScreen = true;
     }
 
     public override void Update(GameManger gameManger)
     {
-        throw new System.NotImplementedException();
+        if (!GameManger.gameManger.inMenuScreen)
+        {
+            GameManger.gameManger.TransistinoToState(gameManger.OverWorldState);
+        }
     }
 }

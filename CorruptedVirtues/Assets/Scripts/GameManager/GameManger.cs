@@ -39,6 +39,7 @@ public class GameManger : MonoBehaviour
     public readonly GameMenuState MenuState = new GameMenuState();
 
     public bool battleHasStarted = false;
+    public bool inMenuScreen;
     public List<string> EncounteredEnemyNames = new List<string>();
 
     private void Awake()
@@ -49,7 +50,7 @@ public class GameManger : MonoBehaviour
 
     private void Start()
     {
-        TransistinoToState(OverWorldState); //eventually this should be Menu
+        TransistinoToState(MenuState); //eventually this should be Menu
     }
 
     private void Update()
