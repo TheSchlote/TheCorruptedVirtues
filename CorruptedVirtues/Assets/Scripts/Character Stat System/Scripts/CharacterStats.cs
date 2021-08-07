@@ -15,54 +15,7 @@ public class CharacterStats : MonoBehaviour
     #region Initializations
     private void Start()
     {
-        //keep for testing
-        if (!characterDefinition.SetManualy)
-        {
-            if (characterDefinition.Enemy)
-            {
-                characterDefinition.maxHealth = 100;
-                characterDefinition.currentHealth = 50;
 
-                characterDefinition.maxMagic = 25;
-                characterDefinition.currentMagic = 10;
-
-                characterDefinition.Wealth = 500;
-
-                characterDefinition.baseAttack = 1;
-                characterDefinition.currentAttack = 1;
-
-                characterDefinition.baseDefense = 0;
-                characterDefinition.currentDefense = 0;
-
-                characterDefinition.baseSpeed = 0;
-                characterDefinition.currentSpeed = 1;
-
-                characterDefinition.charExperience = 0;
-                characterDefinition.charLevel = 1;
-            }
-            if (!characterDefinition.Enemy)
-            {
-                characterDefinition.maxHealth = 1000;
-                characterDefinition.currentHealth = 999;
-
-                characterDefinition.maxMagic = 25;
-                characterDefinition.currentMagic = 10;
-
-                characterDefinition.Wealth = 500;
-
-                characterDefinition.baseAttack = 1;
-                characterDefinition.currentAttack = 50;
-
-                characterDefinition.baseDefense = 0;
-                characterDefinition.currentDefense = 0;
-
-                characterDefinition.baseSpeed = 10;
-                characterDefinition.currentSpeed = 100;
-
-                characterDefinition.charExperience = 0;
-                characterDefinition.charLevel = 1;
-            }
-        }
     }
     #endregion
 

@@ -31,16 +31,16 @@ public class BattleEnemyState : BattleBaseState
         int PlayerSlot = Random.Range(0, 3);
         if(battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
         {
-            Debug.Log("You Dummy! Player in slot " + PlayerSlot + " is already dead! Turn Skipped");
+            Debug.Log($"You Dummy! Player in slot {PlayerSlot} is already dead! Turn Skipped");
             battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
             return;
         }
         CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();
         
 
-        Debug.Log(battleSystem.charactersInBattle.First().name + " Attacks!");
+        Debug.Log($"{battleSystem.charactersInBattle.First().name} Attacks!");
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
-        Debug.Log(Player.name + " Health: " + Player.characterDefinition.currentHealth);
+        Debug.Log($"{Player.name} Health: {Player.characterDefinition.currentHealth}");
 
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
         battleSystem.DidEveryoneTakeATurn();

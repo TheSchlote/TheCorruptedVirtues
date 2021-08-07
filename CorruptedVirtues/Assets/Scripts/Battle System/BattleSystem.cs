@@ -11,6 +11,8 @@ public class BattleSystem : MonoBehaviour
         get { return currentState; }
     }
 
+    public int TotalEnemyXP;
+
     public GameObject EnemySlotContainer;
     public GameObject PlayerSlotContainer;
 
@@ -32,7 +34,30 @@ public class BattleSystem : MonoBehaviour
         PopulatePrefabsInBattle();
 
         PopulateCharactersInBattle();
+
+        ResetCharactersHealthToFull();
     }
+
+    private void ResetCharactersHealthToFull()
+    {
+        for (int i = 0; i < EnemyCloneGameObjectsInBattle.Length; i++)
+        {
+            if (EnemyCloneGameObjectsInBattle[i] != null)
+            {
+                EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().characterDefinition.FullyHealCharacter();
+            }
+        }
+
+        //For testing
+        for (int i = 0; i < PlayerCloneGameObjectsInBattle.Length; i++)
+        {
+            if (PlayerCloneGameObjectsInBattle[i] != null)
+            {
+                PlayerCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().characterDefinition.FullyHealCharacter();
+            }
+        }
+    }
+
     public void InstantiateCharactersForBattle()
     {
         Debug.Log("Setting Up Battle");
@@ -108,7 +133,7 @@ public class BattleSystem : MonoBehaviour
         }
 
         charactersInBattle = charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
-        Debug.Log(charactersInBattle.First() + " is first!");
+        Debug.Log($"{charactersInBattle.First()} is first!");
     }
 
     private void Start()
@@ -127,7 +152,7 @@ public class BattleSystem : MonoBehaviour
         currentState.EnterState(this);
     }
 
-        public bool DidEveryoneTakeATurn()
+    public bool DidEveryoneTakeATurn()
     {
         if (charactersInBattle.Count == 0)
         {
@@ -161,17 +186,19 @@ public class BattleSystem : MonoBehaviour
 
     public bool AreAllEnemiesDead()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
         {
             if (EnemyPrefabsInBattle[i] != null)
+            {
                 return false;
+            }
         }
         return true;
     }
 
     public void DestroyEnemy(int CharacterSlot)
     {
-        Debug.Log("Yeah! " + EnemyPrefabsInBattle[CharacterSlot - 1].name + " Got Got! He's dead");
+        Debug.Log($"Yeah! {EnemyPrefabsInBattle[CharacterSlot - 1].name} Got Got! He's dead");
         EnemyPrefabsInBattle[CharacterSlot - 1] = null;
         Destroy(EnemyCloneGameObjectsInBattle[CharacterSlot - 1]);
         charactersInBattle.Remove(EnemyCloneGameObjectsInBattle[CharacterSlot - 1]);
@@ -180,7 +207,7 @@ public class BattleSystem : MonoBehaviour
     //Actually combine them into one.. then seperate them on enemy&&state checks
     public bool AreAllPlayerDead()
     {
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
         {
             if (PlayerPrefabsInBattle[i] != null)
                 return false;
@@ -190,7 +217,7 @@ public class BattleSystem : MonoBehaviour
 
     public void DestroyPlayer(int CharacterSlot)
     {
-        Debug.Log("Oh No! " + PlayerPrefabsInBattle[CharacterSlot].name + " Got Got! He's dead");
+        Debug.Log($"Oh No! {PlayerPrefabsInBattle[CharacterSlot].name} Got Got! He's dead");
         PlayerPrefabsInBattle[CharacterSlot] = null;
         Destroy(PlayerCloneGameObjectsInBattle[CharacterSlot]);
         charactersInBattle.Remove(PlayerCloneGameObjectsInBattle[CharacterSlot]);

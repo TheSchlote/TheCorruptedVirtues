@@ -5,6 +5,7 @@ public class GameOverWorldState : GameBaseState
 {
     public override void EnterState(GameManger gameManger)
     {
+        GameManger.gameManger.EncounteredEnemyNames.Clear();
         Debug.Log("GameOverWorldState");
         
     }

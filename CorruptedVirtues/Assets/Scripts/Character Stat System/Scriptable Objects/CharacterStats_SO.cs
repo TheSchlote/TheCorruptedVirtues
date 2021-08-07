@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 //using UnityEditor;
 
@@ -79,15 +80,21 @@ public class CharacterStats_SO : ScriptableObject
 
     public void ApplyExperience(int xpAmount)
     {
-        if ((charExperience + xpAmount) >= 100)//for now
+        bool hasEnoughXptoLevelup = (charExperience + xpAmount) >= (charLevel + 1) * 10;
+        if (!IsMaxLevel() && hasEnoughXptoLevelup)
         {
             LevelUp();
-            charExperience = charExperience + xpAmount - 100;
+            charExperience = IsMaxLevel() ? 0 : charExperience + xpAmount - (charLevel * 10);
         }
         else
         {
             charExperience += xpAmount;
         }
+    }
+
+    public bool IsMaxLevel()
+    {
+        return charLevel + 1 >= charLevelUps.Length + 1;
     }
 
     //public void EquipWeapon(ItemPickUp weaponPickUp, CharacterInventory charInventory, GameObject weaponSlot)
@@ -200,16 +207,25 @@ public class CharacterStats_SO : ScriptableObject
 
     private void LevelUp()
     {
-        charLevel += 1;
-        //display levelup Animation
-        if (charLevelUps[charLevel - 1] != null)//this doesnt work but you get the idea..
-        {
-            maxHealth = charLevelUps[charLevel - 1].maxHealth;
-            maxMagic = charLevelUps[charLevel - 1].maxMagic;
-            baseAttack = charLevelUps[charLevel - 1].baseSpeed;
-            baseDefense = charLevelUps[charLevel - 1].baseDefense;
-            baseSpeed = charLevelUps[charLevel - 1].baseSpeed;
-        }
+        charLevel++;
+
+        maxHealth += charLevelUps[charLevel - 1].maxHealth;
+        Debug.Log("Health increased by " + charLevelUps[charLevel - 1].maxHealth + " Max Health is now " + maxHealth);
+        maxMagic += charLevelUps[charLevel - 1].maxMagic;
+        baseAttack += charLevelUps[charLevel - 1].baseAttack;
+        Debug.Log("Attack increased by " + charLevelUps[charLevel - 1].baseAttack + " Attack is now " + baseAttack);
+        baseDefense += charLevelUps[charLevel - 1].baseDefense;
+        Debug.Log("Defense increased by " + charLevelUps[charLevel - 1].baseDefense + " Defense is now " + baseDefense);
+        baseSpeed += charLevelUps[charLevel - 1].baseSpeed;
+        Debug.Log("Speed increased by " + charLevelUps[charLevel - 1].baseSpeed + " Speed is now " + baseSpeed);
+
+        FullyHealCharacter();
+    }
+
+    public void FullyHealCharacter()
+    {
+        currentHealth = maxHealth;
+        currentMagic = maxMagic;
     }
     #endregion
 

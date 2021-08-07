@@ -5,7 +5,7 @@ public class BattlePlayerState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Debug.Log(battleSystem.charactersInBattle.First().name + "'s PlayerState - who do you want to attack?!");
+        Debug.Log($"{battleSystem.charactersInBattle.First().name}'s PlayerState - who do you want to attack?!");
     }
 
     public override void Update(BattleSystem battleSystem)
@@ -47,15 +47,18 @@ public class BattlePlayerState : BattleBaseState
         }
         else
         {
-            Debug.Log("This Enemy in slot " + EnemySlot + " is already dead!");
+            Debug.Log($"This Enemy in slot {EnemySlot} is already dead!");
             return;
         }
 
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
-        Debug.Log(Enemy.name + " Health: " + Enemy.characterDefinition.currentHealth);
+        Debug.Log($"{Enemy.name} Health: {Enemy.characterDefinition.currentHealth}");
 
         if (Enemy.characterDefinition.currentHealth <= 0)
+        {
             battleSystem.DestroyEnemy(EnemySlot);
+            battleSystem.TotalEnemyXP += Enemy.characterDefinition.charExperience;
+        }
 
         battleSystem.EndOfPlayersTurn();
     }
