@@ -60,8 +60,33 @@ public class BattlePlayerState : BattleBaseState
             battleSystem.TotalEnemyXP += Enemy.characterDefinition.charExperience;
         }
 
-        battleSystem.EndOfPlayersTurn();
+        EndOfPlayersTurn(battleSystem);
     }
 
+    public void EndOfPlayersTurn(BattleSystem battleSystem)
+    {
+        battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
+        battleSystem.DidEveryoneTakeATurn();
 
+        if (AreAllEnemiesDead(battleSystem))
+        {
+            battleSystem.TransitionToState(battleSystem.endState);
+        }
+        else
+        {
+            battleSystem.WhosNext();
+        }
+    }
+
+    public bool AreAllEnemiesDead(BattleSystem battleSystem)
+    {
+        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+        {
+            if (battleSystem.EnemyPrefabsInBattle[i] != null)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }

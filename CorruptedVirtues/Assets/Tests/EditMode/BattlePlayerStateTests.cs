@@ -32,7 +32,7 @@ public class BattlePlayerStateTests
 
             _battleSystem.PopulateCharactersInBattle();
 
-            _battleSystem.PopulatePrefabsInBattle();
+            //_battleSystem.PopulatePrefabsInBattle();
         }
 
         [Test]

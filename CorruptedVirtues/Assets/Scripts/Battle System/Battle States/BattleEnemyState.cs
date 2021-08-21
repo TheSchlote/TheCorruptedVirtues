@@ -24,7 +24,7 @@ public class BattleEnemyState : BattleBaseState
 
     }
 
-    private static void EnemyTurnAction(BattleSystem battleSystem)
+    public void EnemyTurnAction(BattleSystem battleSystem)
     {
         CharacterStats Enemy = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
 
@@ -46,9 +46,11 @@ public class BattleEnemyState : BattleBaseState
         battleSystem.DidEveryoneTakeATurn();
 
         if (Player.characterDefinition.currentHealth <= 0)
+        {
             battleSystem.DestroyPlayer(PlayerSlot);
+        }
 
-        if (battleSystem.AreAllPlayerDead())
+        if (AreAllPlayerDead(battleSystem))
         {
             //Destory player on death
             //check to see if other player characters are alive
@@ -59,5 +61,14 @@ public class BattleEnemyState : BattleBaseState
         {
             return;
         }
+    }
+    public bool AreAllPlayerDead(BattleSystem battleSystem)
+    {
+        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
+        {
+            if (battleSystem.PlayerPrefabsInBattle[i] != null)
+                return false;
+        }
+        return true;
     }
 }

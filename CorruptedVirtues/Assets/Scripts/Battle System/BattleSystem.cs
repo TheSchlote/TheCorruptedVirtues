@@ -30,32 +30,6 @@ public class BattleSystem : MonoBehaviour
     private void Awake()
     {
         InstantiateCharactersForBattle();
-
-        PopulatePrefabsInBattle();
-
-        PopulateCharactersInBattle();
-
-        ResetCharactersHealthToFull();
-    }
-
-    private void ResetCharactersHealthToFull()
-    {
-        for (int i = 0; i < EnemyCloneGameObjectsInBattle.Length; i++)
-        {
-            if (EnemyCloneGameObjectsInBattle[i] != null)
-            {
-                EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().characterDefinition.FullyHealCharacter();
-            }
-        }
-
-        //For testing
-        for (int i = 0; i < PlayerCloneGameObjectsInBattle.Length; i++)
-        {
-            if (PlayerCloneGameObjectsInBattle[i] != null)
-            {
-                PlayerCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().characterDefinition.FullyHealCharacter();
-            }
-        }
     }
 
     public void InstantiateCharactersForBattle()
@@ -86,26 +60,6 @@ public class BattleSystem : MonoBehaviour
                 PlayerCloneGameObjectsInBattle[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i],
                                                                 PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
             }
-        }
-    }
-
-    public void PopulatePrefabsInBattle()
-    {
-        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
-        {
-            foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
-            {
-                if (GameManger.gameManger.EncounteredEnemyNames.Contains(enemy.name))
-                {
-                    EnemyPrefabsInBattle[i] = enemy;
-                    break;
-                }
-            }
-        }
-        
-        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
-        {
-            PlayerPrefabsInBattle[i] = GameManger.gameManger.party.PlayerParty[i];
         }
     }
 
@@ -184,35 +138,12 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    public bool AreAllEnemiesDead()
-    {
-        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
-        {
-            if (EnemyPrefabsInBattle[i] != null)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public void DestroyEnemy(int CharacterSlot)
     {
         Debug.Log($"Yeah! {EnemyPrefabsInBattle[CharacterSlot - 1].name} Got Got! He's dead");
         EnemyPrefabsInBattle[CharacterSlot - 1] = null;
         Destroy(EnemyCloneGameObjectsInBattle[CharacterSlot - 1]);
         charactersInBattle.Remove(EnemyCloneGameObjectsInBattle[CharacterSlot - 1]);
-    }
-    //Combine these /\-\/
-    //Actually combine them into one.. then seperate them on enemy&&state checks
-    public bool AreAllPlayerDead()
-    {
-        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
-        {
-            if (PlayerPrefabsInBattle[i] != null)
-                return false;
-        }
-        return true;
     }
 
     public void DestroyPlayer(int CharacterSlot)
@@ -221,20 +152,5 @@ public class BattleSystem : MonoBehaviour
         PlayerPrefabsInBattle[CharacterSlot] = null;
         Destroy(PlayerCloneGameObjectsInBattle[CharacterSlot]);
         charactersInBattle.Remove(PlayerCloneGameObjectsInBattle[CharacterSlot]);
-    }
-
-    public void EndOfPlayersTurn()
-    {
-        charactersInBattle.Remove(charactersInBattle.First());
-        DidEveryoneTakeATurn();
-
-        if (AreAllEnemiesDead())
-        {
-            TransitionToState(endState);
-        }
-        else
-        {
-            WhosNext();
-        }
     }
 }

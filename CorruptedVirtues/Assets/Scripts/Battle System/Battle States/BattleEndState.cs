@@ -7,8 +7,6 @@ public class BattleEndState : BattleBaseState
     {
         Debug.Log("EndState");
 
-        CharacterStats Player = GameManger.gameManger.party.PlayerParty[0].GetComponent<CharacterStats>();
-        //CharacterStats Enemy = battleSystem.EnemyPrefab1.GetComponent<CharacterStats>();
         if (EveryPlayerIsDead())
         {
             Debug.Log("Enemy Wins :(");
