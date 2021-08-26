@@ -6,10 +6,7 @@ public class BattleSystem : MonoBehaviour
 {
     private BattleBaseState currentState;
 
-    public BattleBaseState CurrentState 
-    { 
-        get { return currentState; }
-    }
+    public BattleBaseState CurrentState{get { return currentState; }}
 
     public int TotalEnemyXP;
 
@@ -45,7 +42,7 @@ public class BattleSystem : MonoBehaviour
                     if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
                     {
                         EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy,
-                                                                       EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
+                                                                       EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
                         break;
                     }
                 }
@@ -58,15 +55,28 @@ public class BattleSystem : MonoBehaviour
             {
                 //dont use coinflip save this info somewhere in gamemanager
                 PlayerCloneGameObjectsInBattle[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i],
-                                                                PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip()));
+                                                                PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
             }
         }
     }
 
-    private int CoinFlip()
+    private void Start()
     {
-        return Random.Range(0, 2);
+        TransitionToState(startState);
     }
+
+    private void Update()
+    {
+        currentState.Update(this);
+    }
+
+    public void TransitionToState(BattleBaseState state)
+    {
+        currentState = state;
+        currentState.EnterState(this);
+    }
+
+    private int CoinFlip => Random.Range(0, 2);
 
     public void PopulateCharactersInBattle()
     {
@@ -88,22 +98,6 @@ public class BattleSystem : MonoBehaviour
 
         charactersInBattle = charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
         Debug.Log($"{charactersInBattle.First()} is first!");
-    }
-
-    private void Start()
-    {
-        TransitionToState(startState);
-    }
-
-    private void Update()
-    {
-        currentState.Update(this);
-    }
-
-    public void TransitionToState(BattleBaseState state)
-    {
-        currentState = state;
-        currentState.EnterState(this);
     }
 
     public bool DidEveryoneTakeATurn()

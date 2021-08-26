@@ -50,7 +50,7 @@ public class GameManger : MonoBehaviour
 
     private void Start()
     {
-        TransistinoToState(MenuState); //eventually this should be Menu
+        TransistinoToState(MenuState);
     }
 
     private void Update()

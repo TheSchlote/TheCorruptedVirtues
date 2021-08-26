@@ -9,38 +9,35 @@ public class BattlePlayerState : BattleBaseState
     }
 
     public override void Update(BattleSystem battleSystem)
-    {    
+    {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Debug.Log("Slot1 Attacked!");
             AttackEnemy(battleSystem, 1);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Debug.Log("Slot2 Attacked!");
             AttackEnemy(battleSystem, 2);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Debug.Log("Slot3 Attacked!");
             AttackEnemy(battleSystem, 3);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Debug.Log("Slot4 Attacked!");
             AttackEnemy(battleSystem, 4);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            Debug.Log("Slot5 Attacked!");
             AttackEnemy(battleSystem, 5);
         }
     }
 
     public void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
     {
+        Debug.Log($"Slot {EnemySlot} Attacked!");
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
+
         if (battleSystem.EnemyPrefabsInBattle[EnemySlot - 1] != null)
         {
             Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();

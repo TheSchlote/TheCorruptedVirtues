@@ -6,7 +6,6 @@ public class BattleEnemyState : BattleBaseState
     public override void EnterState(BattleSystem battleSystem)
     {
         Debug.Log("EnemyState");
-        //Whos turn is it?
         if (battleSystem.charactersInBattle.Count == 0)
         {
             battleSystem.PopulateCharactersInBattle();
@@ -20,8 +19,7 @@ public class BattleEnemyState : BattleBaseState
 
     public override void Update(BattleSystem battleSystem)
     {
-
-
+        //not waiting for input for Enemy turn
     }
 
     public void EnemyTurnAction(BattleSystem battleSystem)
@@ -29,14 +27,13 @@ public class BattleEnemyState : BattleBaseState
         CharacterStats Enemy = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
 
         int PlayerSlot = Random.Range(0, 3);
-        if(battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
+        if (battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
         {
-            Debug.Log($"You Dummy! Player in slot {PlayerSlot} is already dead! Turn Skipped");
+            Debug.Log($"The Enemy is not paying attention! Player in slot {PlayerSlot} is already dead! Turn Skipped");
             battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
             return;
         }
         CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();
-        
 
         Debug.Log($"{battleSystem.charactersInBattle.First().name} Attacks!");
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
@@ -52,9 +49,6 @@ public class BattleEnemyState : BattleBaseState
 
         if (AreAllPlayerDead(battleSystem))
         {
-            //Destory player on death
-            //check to see if other player characters are alive
-            //clear list probably
             battleSystem.TransitionToState(battleSystem.endState);
         }
         else
@@ -67,7 +61,9 @@ public class BattleEnemyState : BattleBaseState
         for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
         {
             if (battleSystem.PlayerPrefabsInBattle[i] != null)
+            {
                 return false;
+            }
         }
         return true;
     }

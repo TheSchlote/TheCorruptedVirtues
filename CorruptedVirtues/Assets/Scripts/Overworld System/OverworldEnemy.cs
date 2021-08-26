@@ -12,6 +12,8 @@ public class OverworldEnemy : MonoBehaviour
 
             GameManger.gameManger.battleHasStarted = true;
             //Destory Object that was touched
+
+
         }
 
     }
