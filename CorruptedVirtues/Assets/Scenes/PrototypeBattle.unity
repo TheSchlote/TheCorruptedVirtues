@@ -235,24 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55e534d6606f3843b7105394bfafa62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TotalEnemyXP: 0
   EnemySlotContainer: {fileID: 1101476188022209460}
   PlayerSlotContainer: {fileID: 2320130570324307233}
-  EnemyPrefab1: {fileID: 9157706704239190588, guid: 71f67a1ce1a2ad24a814744d981075ed, type: 3}
-  EnemyPrefab2: {fileID: 9157706704239190588, guid: 7cf63e3dfb415544d88816164cb89c90, type: 3}
-  EnemyPrefab3: {fileID: 9157706704239190588, guid: 11f0e60dbbd78dc4385edc3eb5ca3be4, type: 3}
-  EnemyPrefab4: {fileID: 9157706704239190588, guid: 6aef56aebba4fe3499f2dd2adc19b976, type: 3}
-  EnemyPrefab5: {fileID: 9157706704239190588, guid: 263797d812fe48a4ba74c6fd0d97adce, type: 3}
-  enemyGO1: {fileID: 0}
-  enemyGO2: {fileID: 0}
-  enemyGO3: {fileID: 0}
-  enemyGO4: {fileID: 0}
-  enemyGO5: {fileID: 0}
-  PlayerPrefab1: {fileID: 6835462380323617286, guid: 0bdac34add9344c49b9275a74c750064, type: 3}
-  PlayerPrefab2: {fileID: 6835462380323617286, guid: 65867497bcae8ab42b785312b92a193f, type: 3}
-  PlayerPrefab3: {fileID: 6835462380323617286, guid: b4318b7c604ffd6499c064c7b4437404, type: 3}
-  playerGO1: {fileID: 0}
-  playerGO2: {fileID: 0}
-  playerGO3: {fileID: 0}
   charactersInBattle: []
   EnemyPrefabsInBattle:
   - {fileID: 0}
@@ -260,13 +245,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  EnemyGameObjectsInBattle:
+  EnemyCloneGameObjectsInBattle:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  PlayerGameObjectsInBattle:
+  PlayerCloneGameObjectsInBattle:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

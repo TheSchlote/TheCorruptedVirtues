@@ -37,10 +37,12 @@ public class BattlePlayerState : BattleBaseState
         Debug.Log($"Slot {EnemySlot} Attacked!");
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
+        CharacterStats EnemyOnScreen;
 
         if (battleSystem.EnemyPrefabsInBattle[EnemySlot - 1] != null)
         {
             Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
+            EnemyOnScreen = battleSystem.EnemyCloneGameObjectsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
         }
         else
         {
@@ -49,6 +51,7 @@ public class BattlePlayerState : BattleBaseState
         }
 
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
+        EnemyOnScreen.healthbar.SetHeatlh(Enemy.characterDefinition);
         Debug.Log($"{Enemy.name} Health: {Enemy.characterDefinition.currentHealth}");
 
         if (Enemy.characterDefinition.currentHealth <= 0)

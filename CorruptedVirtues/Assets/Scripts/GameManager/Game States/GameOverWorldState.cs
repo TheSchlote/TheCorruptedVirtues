@@ -7,7 +7,6 @@ public class GameOverWorldState : GameBaseState
     {
         GameManger.gameManger.EncounteredEnemyNames.Clear();
         Debug.Log("GameOverWorldState");
-        
     }
 
     public override void Update(GameManger gameManger)
@@ -20,7 +19,6 @@ public class GameOverWorldState : GameBaseState
     {
         if (gameManger.battleHasStarted)
         {
-            
             SceneManager.LoadScene(2);//Battle scene
             gameManger.TransistinoToState(gameManger.BattleState);
         }

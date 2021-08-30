@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BattleStartState : BattleBaseState
@@ -11,8 +12,41 @@ public class BattleStartState : BattleBaseState
 
         ResetCharactersHealthToFull(battleSystem);
 
+        GiveCharactersInBattleHealthbars(battleSystem);
+
         battleSystem.WhosNext();
-    } 
+    }
+
+    public void GiveCharactersInBattleHealthbars(BattleSystem battleSystem)
+    {
+        //prolly switch to using characters in battle
+        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+        {
+            if (GameManger.gameManger.EncounteredEnemyNames[i] != null)
+            {
+                foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
+                {
+                    if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
+                    {
+                        Healthbar enemyHealthbar = battleSystem.EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar;
+                        CharacterStats_SO enemyCharacterDefinition = enemy.GetComponent<CharacterStats>().characterDefinition;
+                        enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
+                        break;
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
+        {
+            if (GameManger.gameManger.party.PlayerParty[i] != null)
+            {
+                Healthbar playerHealthbar = battleSystem.PlayerCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar;
+                CharacterStats_SO playerCharacterDefinition = GameManger.gameManger.party.PlayerParty[i].GetComponent<CharacterStats>().characterDefinition;
+                playerHealthbar.SetHeatlh(playerCharacterDefinition);
+            }
+        }
+    }
 
     public override void Update(BattleSystem battleSystem)
     {
@@ -25,7 +59,7 @@ public class BattleStartState : BattleBaseState
         {
             foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
             {
-                if (GameManger.gameManger.EncounteredEnemyNames.Contains(enemy.name))
+                if (GameManger.gameManger.EncounteredEnemyNames.ToArray()[i] == enemy.name)
                 {
                     battleSystem.EnemyPrefabsInBattle[i] = enemy;
                     break;

@@ -34,9 +34,11 @@ public class BattleEnemyState : BattleBaseState
             return;
         }
         CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();
+        CharacterStats PlayerOnScreen = battleSystem.PlayerCloneGameObjectsInBattle[PlayerSlot].GetComponent<CharacterStats>();
 
         Debug.Log($"{battleSystem.charactersInBattle.First().name} Attacks!");
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
+        PlayerOnScreen.healthbar.SetHeatlh(Player.characterDefinition);
         Debug.Log($"{Player.name} Health: {Player.characterDefinition.currentHealth}");
 
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());

@@ -85,7 +85,6 @@ public class GameManger : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
 
     public void LoadNextScene()

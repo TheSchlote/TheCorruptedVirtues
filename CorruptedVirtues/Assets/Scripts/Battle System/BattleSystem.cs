@@ -43,6 +43,7 @@ public class BattleSystem : MonoBehaviour
                     {
                         EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy,
                                                                        EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
+                        //EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar.SetHeatlh(enemy.GetComponent<CharacterStats>().characterDefinition);
                         break;
                     }
                 }
@@ -56,6 +57,7 @@ public class BattleSystem : MonoBehaviour
                 //dont use coinflip save this info somewhere in gamemanager
                 PlayerCloneGameObjectsInBattle[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i],
                                                                 PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
+                //PlayerCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar.SetHeatlh(GameManger.gameManger.party.PlayerParty[i].GetComponent<CharacterStats>().characterDefinition);
             }
         }
     }

@@ -5,6 +5,7 @@ public class CharacterStats : MonoBehaviour
     public CharacterStats_SO characterDefinition;
     public CharacterInventory charInv;
     public GameObject characterItemSlot;
+    public Healthbar healthbar;
     #region Constructor
     public CharacterStats()
     {
@@ -20,13 +21,10 @@ public class CharacterStats : MonoBehaviour
     #endregion
 
     #region Updates
-    //private void Update()
-    //{
-    //    if (Input.GetMouseButtonDown(2))
-    //    {
-    //        characterDefinition.saveCharacterData();
-    //    }
-    //}
+    private void Update()
+    {
+
+    }
     #endregion
 
     #region Stat Increasers
