@@ -1,0 +1,7 @@
+#include "il2cpp-config.h"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\mono\MonoPosixHelper.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\mono\ThreadPool\ThreadPoolMonitorThread.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\mono\ThreadPool\ThreadPoolWorkerThread.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\mono\ThreadPool\threadpool-ms-io-poll.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\mono\ThreadPool\threadpool-ms-io.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\mono\ThreadPool\threadpool-ms.cpp"

@@ -1,0 +1,8 @@
+#include "il2cpp-config.h"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\BlobReader.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\Debugger.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\NativeDelegateMethodCache.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\NativeSymbol.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\VmStringUtils.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\icalls\mscorlib\System.Threading\Interlocked.cpp"
+#include "U:\2020.2.5f1\Editor\Data\il2cpp\libil2cpp\vm-utils\icalls\mscorlib\System\Math.cpp"
