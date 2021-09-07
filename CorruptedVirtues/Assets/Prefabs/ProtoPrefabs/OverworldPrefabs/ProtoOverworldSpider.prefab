@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 722530072870473066}
   m_Layer: 0
   m_Name: ProtoOverworldSpider
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
   characterDefinition: {fileID: 11400000, guid: 582f41cf5f83c314ebb7308a2f7a43da, type: 2}
   charInv: {fileID: 3827753236897979695}
   characterItemSlot: {fileID: 3827753236185818016}
+  healthbar: {fileID: 0}
 --- !u!114 &5639529487745806025
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,18 +20,28 @@ public class BattleStartState : BattleBaseState
     public void GiveCharactersInBattleHealthbars(BattleSystem battleSystem)
     {
         //prolly switch to using characters in battle
-        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+        if (GameManger.gameManger.bossBattle)
         {
-            if (GameManger.gameManger.EncounteredEnemyNames[i] != null)
+            GameObject boss = GameManger.gameManger.areaData.possibleEnemys[5];
+            Healthbar enemyHealthbar = battleSystem.EnemyCloneGameObjectsInBattle[2].GetComponent<CharacterStats>().healthbar;
+            CharacterStats_SO enemyCharacterDefinition = boss.GetComponent<CharacterStats>().characterDefinition;
+            enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
+        }
+        else
+        {
+            for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
             {
-                foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
+                if (GameManger.gameManger.EncounteredEnemyNames[i] != null)
                 {
-                    if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
+                    foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
                     {
-                        Healthbar enemyHealthbar = battleSystem.EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar;
-                        CharacterStats_SO enemyCharacterDefinition = enemy.GetComponent<CharacterStats>().characterDefinition;
-                        enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
-                        break;
+                        if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
+                        {
+                            Healthbar enemyHealthbar = battleSystem.EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar;
+                            CharacterStats_SO enemyCharacterDefinition = enemy.GetComponent<CharacterStats>().characterDefinition;
+                            enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
+                            break;
+                        }
                     }
                 }
             }
@@ -55,14 +65,22 @@ public class BattleStartState : BattleBaseState
 
     public void PopulatePrefabsInBattle(BattleSystem battleSystem)
     {
-        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+        if (GameManger.gameManger.bossBattle)
         {
-            foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
+            GameObject boss = GameManger.gameManger.areaData.possibleEnemys[5];
+            battleSystem.EnemyPrefabsInBattle[2] = boss;
+        }
+        else
+        {
+            for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
             {
-                if (GameManger.gameManger.EncounteredEnemyNames.ToArray()[i] == enemy.name)
+                foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
                 {
-                    battleSystem.EnemyPrefabsInBattle[i] = enemy;
-                    break;
+                    if (GameManger.gameManger.EncounteredEnemyNames.ToArray()[i] == enemy.name)
+                    {
+                        battleSystem.EnemyPrefabsInBattle[i] = enemy;
+                        break;
+                    }
                 }
             }
         }

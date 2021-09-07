@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 5983583274773471565}
   m_Layer: 0
   m_Name: ProtoOverworldWolf
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
   characterDefinition: {fileID: 11400000, guid: 188b09ae2d656484eb49b9765a0c6350, type: 2}
   charInv: {fileID: 3137134322058230328}
   characterItemSlot: {fileID: 3137134321025254583}
+  healthbar: {fileID: 0}
 --- !u!114 &652879476290178014
 MonoBehaviour:
   m_ObjectHideFlags: 0

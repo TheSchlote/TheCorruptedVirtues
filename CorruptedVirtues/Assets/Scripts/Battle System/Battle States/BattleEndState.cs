@@ -9,13 +9,20 @@ public class BattleEndState : BattleBaseState
 
         if (EveryPlayerIsDead())
         {
-            Debug.Log("Enemy Wins :(");
+            Debug.Log("Enemy Wins :( GAME OVER");
         }
         else
         {
             Debug.Log("Player Wins! :D");
-            GiveXPToAlivePlayers(battleSystem);
-            Debug.Log("Press Enter to Return to OverWorld");
+            if (GameManger.gameManger.bossBattle)
+            {
+                Debug.Log("Player Wins! :o GAME COMPLETE");
+            }
+            else
+            {
+                GiveXPToAlivePlayers(battleSystem);
+                Debug.Log("Press Enter to Return to OverWorld");
+            }
         }
     }
 
@@ -33,7 +40,7 @@ public class BattleEndState : BattleBaseState
 
     public override void Update(BattleSystem battleSystem)
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && !GameManger.gameManger.bossBattle)
         {
             GameManger.gameManger.battleHasStarted = false;
         }

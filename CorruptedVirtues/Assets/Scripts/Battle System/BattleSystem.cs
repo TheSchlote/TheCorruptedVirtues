@@ -32,22 +32,30 @@ public class BattleSystem : MonoBehaviour
     public void InstantiateCharactersForBattle()
     {
         Debug.Log("Setting Up Battle");
-
-        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+        if (GameManger.gameManger.bossBattle)
         {
-            if (GameManger.gameManger.EncounteredEnemyNames[i] != null)
+            GameObject boss = GameManger.gameManger.areaData.possibleEnemys[5];
+            EnemyCloneGameObjectsInBattle[2] = Instantiate(boss, EnemySlotContainer.transform.GetChild(2).transform.GetChild(0));
+        }
+        else
+        {
+            for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
             {
-                foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
+                if (GameManger.gameManger.EncounteredEnemyNames[i] != null)
                 {
-                    if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
+                    foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
                     {
-                        EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy,
-                                                                       EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
-                        break;
+                        if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
+                        {
+                            EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy,
+                                                                           EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
+                            break;
+                        }
                     }
                 }
             }
         }
+        
 
         for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
         {

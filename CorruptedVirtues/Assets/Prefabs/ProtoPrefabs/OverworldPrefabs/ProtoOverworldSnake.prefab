@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 8633859688154295537}
   m_Layer: 0
   m_Name: ProtoOverworldSnake
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +177,7 @@ MonoBehaviour:
   characterDefinition: {fileID: 11400000, guid: 5ca8ce13496c01849bdbe84479b40f4a, type: 2}
   charInv: {fileID: 5129338762431081556}
   characterItemSlot: {fileID: 5129338763394831067}
+  healthbar: {fileID: 0}
 --- !u!114 &242452565716763699
 MonoBehaviour:
   m_ObjectHideFlags: 0

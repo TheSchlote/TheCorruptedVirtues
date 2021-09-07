@@ -80,7 +80,7 @@ public class BattlePlayerState : BattleBaseState
 
     public bool AreAllEnemiesDead(BattleSystem battleSystem)
     {
-        for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+        for (int i = 0; i < 5; i++)
         {
             if (battleSystem.EnemyPrefabsInBattle[i] != null)
             {

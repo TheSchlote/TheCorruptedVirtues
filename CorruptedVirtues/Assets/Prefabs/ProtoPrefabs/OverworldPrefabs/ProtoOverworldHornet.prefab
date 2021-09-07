@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1393798070921651261}
   m_Layer: 0
   m_Name: ProtoOverworldHornet
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
   characterDefinition: {fileID: 11400000, guid: 5ea0bf5b4362b6a439863c84f137a74a, type: 2}
   charInv: {fileID: 1172443760464152358}
   characterItemSlot: {fileID: 1172443759733127593}
+  healthbar: {fileID: 0}
 --- !u!58 &1393798070921651258
 CircleCollider2D:
   m_ObjectHideFlags: 0

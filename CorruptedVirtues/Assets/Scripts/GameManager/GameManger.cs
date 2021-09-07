@@ -39,6 +39,7 @@ public class GameManger : MonoBehaviour
     public readonly GameMenuState MenuState = new GameMenuState();
 
     public bool battleHasStarted = false;
+    public bool bossBattle = false;
     public bool inMenuScreen;
     public List<string> EncounteredEnemyNames = new List<string>();
 
