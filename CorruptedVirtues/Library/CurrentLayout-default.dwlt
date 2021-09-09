@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -145,10 +145,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 851, y: 492}
-  m_MaxSize: {x: 22006, y: 14042}
+  m_MinSize: {x: 846, y: 492}
+  m_MaxSize: {x: 22001, y: 14042}
   vertical: 0
-  controlID: 207
+  controlID: 21
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,10 +170,10 @@ MonoBehaviour:
     y: 0
     width: 1408
     height: 947
-  m_MinSize: {x: 575, y: 492}
-  m_MaxSize: {x: 18005, y: 14042}
+  m_MinSize: {x: 571, y: 492}
+  m_MaxSize: {x: 18001, y: 14042}
   vertical: 1
-  controlID: 128
+  controlID: 30
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 129
+  controlID: 31
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,10 +275,10 @@ MonoBehaviour:
     y: 573
     width: 1408
     height: 374
-  m_MinSize: {x: 575, y: 271}
-  m_MaxSize: {x: 18005, y: 10021}
+  m_MinSize: {x: 571, y: 271}
+  m_MaxSize: {x: 18001, y: 10021}
   vertical: 0
-  controlID: 174
+  controlID: 135
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -506,9 +506,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 4c650000
       m_LastClickedID: 0
-      m_ExpandedIDs: 36e0ffffd2f0ffff96f1ffffb6f1ffff92f2ffffb2f2ffffe4f2ffff42fbffff
+      m_ExpandedIDs: d4cdffff86cfffff4ad0ffff08d4ffffc4d6ffff88d7ffff5edaffff7adeffffc4e0ffff88e1ffff8ee2ffffece9ffff0ceaffffeaeaffffb0ebffff88edfffff4ffffff6e7b0000807c00004a800000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -568,9 +568,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.876883, y: 2.237613, z: -28.444126}
+    m_Target: {x: 1.430124, y: 0.48903263, z: -28.731182}
     speed: 2
-    m_Value: {x: -2.259478, y: 2.2563677, z: -28.412378}
+    m_Value: {x: 1.430124, y: 0.48903263, z: -28.731182}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -621,9 +621,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.422013
+    m_Target: 5.3143444
     speed: 2
-    m_Value: 8.818862
+    m_Value: 5.3143444
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -711,22 +711,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Tile Maps/Exterior Tile Map
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/Tile Maps/Exterior Tile Map
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: G:\Unity\TheCorruptedVirtues\CorruptedVirtues
+  m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c5e0000
-    m_LastClickedID: 24092
-    m_ExpandedIDs: 00000000d2440000d4440000d6440000d8440000da440000dc440000e8440000ec44000000ca9a3b
+    m_SelectedIDs: e6640000
+    m_LastClickedID: 25830
+    m_ExpandedIDs: 00000000d2640000d4640000d6640000d8640000da640000dc640000e864000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -754,7 +754,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2440000d4440000d6440000d8440000da440000dc440000
+    m_ExpandedIDs: 00000000d2640000d4640000d6640000d8640000da640000dc640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -806,7 +806,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 5583}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 188

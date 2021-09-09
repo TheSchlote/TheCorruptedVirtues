@@ -1,2054 +1,422 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.5f1 (e2c53f129de5) revision 14861631'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 32718 MB
+OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16333 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-G:\Unity\2020.2.5f1\Editor\Unity.exe
+U:\2020.2.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-G:/Unity/TheCorruptedVirtues/CorruptedVirtues
+U:/Repos/TheCorruptedVirtues/CorruptedVirtues
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55857
-Successfully changed project path to: G:/Unity/TheCorruptedVirtues/CorruptedVirtues
-G:/Unity/TheCorruptedVirtues/CorruptedVirtues
+63364
+Successfully changed project path to: U:/Repos/TheCorruptedVirtues/CorruptedVirtues
+U:/Repos/TheCorruptedVirtues/CorruptedVirtues
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 35.19 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.5f1 (e2c53f129de5)
-[Subsystems] Discovering subsystems at path G:/Unity/2020.2.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path G:/Unity/TheCorruptedVirtues/CorruptedVirtues/Assets
+[Subsystems] Discovering subsystems at path U:/2020.2.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX Vega (ID=0x687f)
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
     Vendor:   
-    VRAM:     8119 MB
-    Driver:   27.20.22025.1006
+    VRAM:     8011 MB
+    Driver:   30.0.14.7196
 Initialize mono
-Mono path[0] = 'G:/Unity/2020.2.5f1/Editor/Data/Managed'
-Mono path[1] = 'G:/Unity/2020.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'G:/Unity/2020.2.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Mono path[0] = 'U:/2020.2.5f1/Editor/Data/Managed'
+Mono path[1] = 'U:/2020.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'U:/2020.2.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: G:/Unity/2020.2.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: G:/Unity/2020.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001144 seconds.
+Register platform support module: U:/2020.2.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: U:/2020.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000972 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 35.61 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 37.85 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
+- Completed reload, in  1.321 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000765 seconds.
+Registered in 0.000732 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 35.59 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 38.60 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.733 seconds
+- Completed reload, in  0.811 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1819 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.0 MB.
 System memory in use after: 85.0 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2262.
-Total: 1.863900 ms (FindLiveObjects: 0.189200 ms CreateObjectMapping: 0.064400 ms MarkObjects: 1.515100 ms  DeleteObjects: 0.094300 ms)
+Total: 2.175300 ms (FindLiveObjects: 0.396100 ms CreateObjectMapping: 0.047500 ms MarkObjects: 1.622500 ms  DeleteObjects: 0.107900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/Tile Maps/Interior Tile Maps
-  artifactKey: Guid(12759e33d43271847af68bc5be5c7ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Interior Tile Maps using Guid(12759e33d43271847af68bc5be5c7ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d3faeb09bc00743ec12879cbd75b75') in 0.007795 seconds
-  Import took 0.010226 seconds .
+  path: Assets/Scenes/PrototypeBattle.unity
+  artifactKey: Guid(2bed265ae04fc7942a3426e8f7bff66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PrototypeBattle.unity using Guid(2bed265ae04fc7942a3426e8f7bff66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5642a2ce7c72f3d5d519b1340e94b5bc') in 0.014029 seconds
+  Import took 0.016533 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.947536 seconds.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Scenes/PrototypeOverworld.unity
+  artifactKey: Guid(d08e59dc04870e94eb436137c17f5e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PrototypeOverworld.unity using Guid(d08e59dc04870e94eb436137c17f5e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2e665fb580447e65ad9b10e31e65ba') in 0.004814 seconds
+  Import took 0.007039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.291396 seconds.
   path: Assets/Scenes/Town.unity
   artifactKey: Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Town.unity using Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb5407790eeb8725343ba67850fc760') in 0.014082 seconds
-  Import took 0.016641 seconds .
+Start importing Assets/Scenes/Town.unity using Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40a55ed9fb964bb28bfe970e58bfb26') in 0.005344 seconds
+  Import took 0.007992 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.707820 seconds.
-  path: Assets/Scenes/Town.unity
-  artifactKey: Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Town.unity using Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39ec10ba82257536ed4eb86662b727c') in 0.001697 seconds
-  Import took 0.004161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Scenes/Town.unity
-  artifactKey: Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Town.unity using Guid(9b0e2f68406534e4a9393a55b832c6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39ec10ba82257536ed4eb86662b727c') in 0.001498 seconds
-  Import took 0.003403 seconds .
+  Time since last request: 2.994735 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7829b572204b1630695d5ef1e6b2bc45') in 0.004915 seconds
+  Import took 0.007528 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000679 seconds.
+Registered in 0.000727 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.657 seconds
+- Completed reload, in  0.674 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.0 MB.
 System memory in use after: 85.0 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2265.
-Total: 1.998000 ms (FindLiveObjects: 0.193300 ms CreateObjectMapping: 0.043700 ms MarkObjects: 1.660100 ms  DeleteObjects: 0.100000 ms)
+Total: 1.773500 ms (FindLiveObjects: 0.208300 ms CreateObjectMapping: 0.041400 ms MarkObjects: 1.419200 ms  DeleteObjects: 0.103800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 440.222678 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map
-  artifactKey: Guid(b4ca5b5388b9b3d4fa55faa38d35f11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map using Guid(b4ca5b5388b9b3d4fa55faa38d35f11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d400d95451d640e791c8520c69725a') in 0.007134 seconds
-  Import took 0.009722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001428 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map
-  artifactKey: Guid(b4ca5b5388b9b3d4fa55faa38d35f11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map using Guid(b4ca5b5388b9b3d4fa55faa38d35f11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d400d95451d640e791c8520c69725a') in 0.001488 seconds
-  Import took 0.004045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.257384 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png
-  artifactKey: Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png using Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30ddd4ee3b19d01d152aab18b4e0992') in 0.111457 seconds
-  Import took 0.114032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.858347 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png
-  artifactKey: Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png using Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ebb6121814be9515259fa8c2c2fa0b') in 0.011695 seconds
-  Import took 0.014240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.111387 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png
-  artifactKey: Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png using Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42982068f1ca38bd7c9e546bd40a0db2') in 0.009077 seconds
-  Import took 0.011626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023468 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png
-  artifactKey: Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png using Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42982068f1ca38bd7c9e546bd40a0db2') in 0.008099 seconds
-  Import took 0.010741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.402044 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png
-  artifactKey: Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1.png using Guid(8972771f43e7e3249ac16c2b1697c040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcda28c21ba44f85690c37f9999e257c') in 0.187241 seconds
-  Import took 0.190476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.506293 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png
-  artifactKey: Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png using Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6f5a3ff59a0219e12b90e44042983d') in 0.008058 seconds
-  Import took 0.010667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021446 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png
-  artifactKey: Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png using Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6f5a3ff59a0219e12b90e44042983d') in 0.007535 seconds
-  Import took 0.010341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.852936 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png
-  artifactKey: Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_B_Exteriors.png using Guid(d3368715668fd2f4ab9e66c7fbb6443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f45929a407eb53a29935b5d4d9ccc6b') in 0.203066 seconds
-  Import took 0.206417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 117.538001 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_0.asset
-  artifactKey: Guid(411b5d70ba9a51c4dbcd422784f0e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_0.asset using Guid(411b5d70ba9a51c4dbcd422784f0e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148834186bb29c0ae65838a20ab35399') in 0.070670 seconds
-  Import took 0.073455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_10.asset
-  artifactKey: Guid(38a206f9a321a5e46af411f24b7968bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_10.asset using Guid(38a206f9a321a5e46af411f24b7968bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202e4d67923c5c787cbaa022ffca2522') in 0.006896 seconds
-  Import took 0.009455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_12.asset
-  artifactKey: Guid(e5c59288ca75a3e4fa6b101e13b1d09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_12.asset using Guid(e5c59288ca75a3e4fa6b101e13b1d09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b0ca53d623e8f13206f5708cad421a') in 0.007353 seconds
-  Import took 0.009624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_1.asset
-  artifactKey: Guid(13ec742a07d236f4f94e6504a6f1c9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_1.asset using Guid(13ec742a07d236f4f94e6504a6f1c9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99bc1ec58bc425c3821bf23612a5814') in 0.006543 seconds
-  Import took 0.009370 seconds .
+  Time since last request: 56.618985 seconds.
+  path: Assets/Sprites/Baby Dragon 7.png
+  artifactKey: Guid(201fa0254221b5e46a2ae4b30b4c371b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Baby Dragon 7.png using Guid(201fa0254221b5e46a2ae4b30b4c371b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e6a6c51c0242f6f70c7ea3586144c7') in 0.108220 seconds
+  Import took 0.110979 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000148 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_11.asset
-  artifactKey: Guid(e87ad5bc1b5034544abb01c3241efdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_11.asset using Guid(e87ad5bc1b5034544abb01c3241efdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd2a2dc90901c8eec2aa8235e451bc1') in 0.006997 seconds
-  Import took 0.009593 seconds .
+  path: Assets/Sprites/proto title screen.png
+  artifactKey: Guid(f1ecea44be672f84c8ddb343d859f49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/proto title screen.png using Guid(f1ecea44be672f84c8ddb343d859f49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8dd92389349776ec1c2faa714862c4') in 0.013092 seconds
+  Import took 0.015400 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_7.asset
-  artifactKey: Guid(83f01deadccdb9940afc986a0960bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_7.asset using Guid(83f01deadccdb9940afc986a0960bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2937a51bff7fb322fc5bc7d8d17d735') in 0.006614 seconds
-  Import took 0.008880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_9.asset
-  artifactKey: Guid(ec814e931325e1e4a9cedc6a37048b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_9.asset using Guid(ec814e931325e1e4a9cedc6a37048b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19320c8aeedd3c2f4ffad09914e706f6') in 0.007462 seconds
-  Import took 0.009895 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_3.asset
-  artifactKey: Guid(ad9c4a7fcd3c2f449ae9b7eea18eaac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_3.asset using Guid(ad9c4a7fcd3c2f449ae9b7eea18eaac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f627ca38cbec2d8c8b92e03f6293f30') in 0.006272 seconds
-  Import took 0.008708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_2.asset
-  artifactKey: Guid(702c6c07e5b54e049bdbaea6c5039fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_2.asset using Guid(702c6c07e5b54e049bdbaea6c5039fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd60f3c1a964274de601fcac4533830b') in 0.006222 seconds
-  Import took 0.008641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_14.asset
-  artifactKey: Guid(733a95bb10888bf469de4f4b9ad4c70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_14.asset using Guid(733a95bb10888bf469de4f4b9ad4c70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2548a8e96892ef930290873b628e2a4b') in 0.006813 seconds
-  Import took 0.009073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_6.asset
-  artifactKey: Guid(d62657011401c1045836f7d8b65bb86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_6.asset using Guid(d62657011401c1045836f7d8b65bb86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3f0c646cd522f16a2b92ccdd176f58') in 0.006436 seconds
-  Import took 0.008812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_4.asset
-  artifactKey: Guid(4c664c1eee8bb6f44b4111b924e5eb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_4.asset using Guid(4c664c1eee8bb6f44b4111b924e5eb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc71ce21edadad17c5193f1489aba2a') in 0.006421 seconds
-  Import took 0.008703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_13.asset
-  artifactKey: Guid(158b3394c80a08344811b4da3dddf542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_13.asset using Guid(158b3394c80a08344811b4da3dddf542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18993eadec627f7079529ccee2c29991') in 0.006644 seconds
-  Import took 0.009091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_8.asset
-  artifactKey: Guid(d11b0f90aad024a48a18b9c23f2c97c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_8.asset using Guid(d11b0f90aad024a48a18b9c23f2c97c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc04d2d14494adfc5e939fefa4478bd3') in 0.006870 seconds
-  Import took 0.009413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_5.asset
-  artifactKey: Guid(f03d550f91f0045429920ba11bc927ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_5.asset using Guid(f03d550f91f0045429920ba11bc927ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b62abd7d069e9958a53d66b55c0c31') in 0.006564 seconds
-  Import took 0.008825 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 253.099490 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_15.asset
-  artifactKey: Guid(38eb4293c3af81841b7b21cafd100b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_15.asset using Guid(38eb4293c3af81841b7b21cafd100b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6396bcaba5369b2ec16df36aac0e992b') in 0.007524 seconds
-  Import took 0.010451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_17.asset
-  artifactKey: Guid(dd19131c6080b074e89e66551972a057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_17.asset using Guid(dd19131c6080b074e89e66551972a057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4403960b5a42aefc45942e3669345ec2') in 0.006337 seconds
-  Import took 0.008930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_16.asset
-  artifactKey: Guid(cc9cf78d8536e644fbb87fdacc6f0f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_16.asset using Guid(cc9cf78d8536e644fbb87fdacc6f0f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3fb5b533040f16dbe0f373e94de6854') in 0.006694 seconds
-  Import took 0.009017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_19.asset
-  artifactKey: Guid(4bf16042b66f2ec4da8f9bdcc8a19d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_19.asset using Guid(4bf16042b66f2ec4da8f9bdcc8a19d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea8e0cbff0610b148fd810529d4424e') in 0.006425 seconds
-  Import took 0.008827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_18.asset
-  artifactKey: Guid(d8369bcf8d132c643a288e3b4a0e170e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_18.asset using Guid(d8369bcf8d132c643a288e3b4a0e170e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c0addd16b0876b28a0661375b89b63') in 0.007272 seconds
-  Import took 0.009551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_23.asset
-  artifactKey: Guid(2eb4d3fc93394f943b998153675c71c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_23.asset using Guid(2eb4d3fc93394f943b998153675c71c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1bddbae14b86c64aea29eb2b8b8d56') in 0.008049 seconds
-  Import took 0.010722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_20.asset
-  artifactKey: Guid(9e3f2d85755b99a4c959d030a95720c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_20.asset using Guid(9e3f2d85755b99a4c959d030a95720c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92fe770c457e0801b09ca1a10ba469a') in 0.006519 seconds
-  Import took 0.008941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_24.asset
-  artifactKey: Guid(a19002abd499fe749a05a532d6f6b2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_24.asset using Guid(a19002abd499fe749a05a532d6f6b2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16cff3c19bc68d4db860ff6660178ac') in 0.006783 seconds
-  Import took 0.009095 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_22.asset
-  artifactKey: Guid(515c93bcc8edb0c4f901a3e112e8ff9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_22.asset using Guid(515c93bcc8edb0c4f901a3e112e8ff9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385c18c1e2107a930e4d3dfab8a3393b') in 0.006734 seconds
-  Import took 0.009117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_26.asset
-  artifactKey: Guid(0fee61d5f33f7b24995c11d0cb99952c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_26.asset using Guid(0fee61d5f33f7b24995c11d0cb99952c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c8316d20f6e51fca3c06c8ae13e835') in 0.006510 seconds
-  Import took 0.009006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_29.asset
-  artifactKey: Guid(b039c84a67a574849abc77e63b1ae7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_29.asset using Guid(b039c84a67a574849abc77e63b1ae7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848e79b34ad932daaead63b9c4a9a789') in 0.006470 seconds
-  Import took 0.009090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_28.asset
-  artifactKey: Guid(816f97c2c6e5599419ea09964a69b63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_28.asset using Guid(816f97c2c6e5599419ea09964a69b63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1771f34999dd0873d6dab32b93597ab3') in 0.005845 seconds
-  Import took 0.008171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_21.asset
-  artifactKey: Guid(86b926344133a864085bec4225401acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_21.asset using Guid(86b926344133a864085bec4225401acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572b61b6c23f933e5596446ebc04af6c') in 0.007190 seconds
-  Import took 0.009466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_27.asset
-  artifactKey: Guid(599f3e500f54b3a459fa28661b5681aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_27.asset using Guid(599f3e500f54b3a459fa28661b5681aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea02014875f1a654a568e343fa6ec907') in 0.006274 seconds
-  Import took 0.008942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_15.asset
-  artifactKey: Guid(38eb4293c3af81841b7b21cafd100b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_15.asset using Guid(38eb4293c3af81841b7b21cafd100b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6396bcaba5369b2ec16df36aac0e992b') in 0.004127 seconds
-  Import took 0.007010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_25.asset
-  artifactKey: Guid(3f59caddbf0f3b440a6eb308b65f085a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_25.asset using Guid(3f59caddbf0f3b440a6eb308b65f085a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9021fd02b50f24383e467b5b2d850463') in 0.006613 seconds
-  Import took 0.009178 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.228911 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_30.asset
-  artifactKey: Guid(b814bd7c151467c4597f2e9be224af3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_30.asset using Guid(b814bd7c151467c4597f2e9be224af3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ccffc432272036881b83c77cde1347a') in 0.006875 seconds
-  Import took 0.009599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_32.asset
-  artifactKey: Guid(be4f9bb0c30532e4ba570c357a0e9bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_32.asset using Guid(be4f9bb0c30532e4ba570c357a0e9bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bebc1eda763b183e526d37a6fb49df9') in 0.006959 seconds
-  Import took 0.009531 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_31.asset
-  artifactKey: Guid(6701c7048a21c7444aa4dabb15b92a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_31.asset using Guid(6701c7048a21c7444aa4dabb15b92a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a600497250622210dcd5007c1962c35f') in 0.006259 seconds
-  Import took 0.008917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020427 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_33.asset
-  artifactKey: Guid(11bf5c2b42eb55941a68148b193265a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_33.asset using Guid(11bf5c2b42eb55941a68148b193265a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90600cb1ea422daa06bdfc147ade2d0') in 0.006456 seconds
-  Import took 0.009202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_35.asset
-  artifactKey: Guid(bf81608d02756754da3dbb72fb7035ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_35.asset using Guid(bf81608d02756754da3dbb72fb7035ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3722eecf6ded4835ff9465baf4c3e0b') in 0.006197 seconds
-  Import took 0.008908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_34.asset
-  artifactKey: Guid(480d0e620a05352408e46cd7a6859fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_34.asset using Guid(480d0e620a05352408e46cd7a6859fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946ee016f637cf4982d846265acb67aa') in 0.006770 seconds
-  Import took 0.009459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.054749 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_36.asset
-  artifactKey: Guid(3cc12d0b7d40bfd42af89dc2985dc871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_36.asset using Guid(3cc12d0b7d40bfd42af89dc2985dc871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e33837b9e0e9e380647d2c043a827da') in 0.006623 seconds
-  Import took 0.009269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_38.asset
-  artifactKey: Guid(bbb3af92e7033e345ac97c1bea1300a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_38.asset using Guid(bbb3af92e7033e345ac97c1bea1300a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd362f12a1e09a93849caee0abb651f') in 0.006524 seconds
-  Import took 0.008878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_37.asset
-  artifactKey: Guid(4a3a19d6d761c3f49b0888fab666f1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_37.asset using Guid(4a3a19d6d761c3f49b0888fab666f1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728b7e4bb9fbeaa2528bf7e04c557540') in 0.007030 seconds
-  Import took 0.009366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.275174 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_39.asset
-  artifactKey: Guid(7ccf019903429804abf84bed1e8f36fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_39.asset using Guid(7ccf019903429804abf84bed1e8f36fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c119dd178b4c1c3d4de7c2d315197c') in 0.007315 seconds
-  Import took 0.010249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_40.asset
-  artifactKey: Guid(893c9d2fffef3084eb70cf1556c1f874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_40.asset using Guid(893c9d2fffef3084eb70cf1556c1f874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9301c00c654b3949ff0825622a7f676') in 0.006833 seconds
-  Import took 0.009239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_41.asset
-  artifactKey: Guid(d4484a3dc307145408cbb96b07cd652d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_41.asset using Guid(d4484a3dc307145408cbb96b07cd652d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd9fe36b1715627a145e7e32389b106') in 0.006817 seconds
-  Import took 0.009512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015263 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_42.asset
-  artifactKey: Guid(2db4824ec56f71747b3dad16f1fad1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_42.asset using Guid(2db4824ec56f71747b3dad16f1fad1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9edfc11374ff623f80b98c0ae26f92') in 0.007010 seconds
-  Import took 0.009760 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_46.asset
-  artifactKey: Guid(9baba72b3ef29a04f8e5781773d3878e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_46.asset using Guid(9baba72b3ef29a04f8e5781773d3878e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ecf1780fcc8cc332600fe609ff7b78') in 0.007253 seconds
-  Import took 0.009880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_43.asset
-  artifactKey: Guid(93e95894899f2ba4a97e5ae3706df237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_43.asset using Guid(93e95894899f2ba4a97e5ae3706df237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7112fc423f806b8c18ba7fdf8989d4') in 0.006656 seconds
-  Import took 0.009035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_50.asset
-  artifactKey: Guid(51ff5d3dc2edaaf428ced592636738d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_50.asset using Guid(51ff5d3dc2edaaf428ced592636738d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ece40b7c658c00fe2e47b10e75bd89c') in 0.006518 seconds
-  Import took 0.008905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_48.asset
-  artifactKey: Guid(559718f39d3d7f44b9b7a449c1336b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_48.asset using Guid(559718f39d3d7f44b9b7a449c1336b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8ec7f59ca25a91c779aa9a1c3c02e7') in 0.006471 seconds
-  Import took 0.009066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_47.asset
-  artifactKey: Guid(e5a7b71ce932e2640b5bc70313c21bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_47.asset using Guid(e5a7b71ce932e2640b5bc70313c21bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39b190c0f841446fe5a2799ba239a5f') in 0.007783 seconds
-  Import took 0.010538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_44.asset
-  artifactKey: Guid(b6525400e43e7fb448f97a3e3c30bcd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_44.asset using Guid(b6525400e43e7fb448f97a3e3c30bcd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b510f0f3fd3618eed2ae5a2409bc07ec') in 0.006504 seconds
-  Import took 0.009295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_45.asset
-  artifactKey: Guid(6d0ec50ee17fcca478859ebcccb1870a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_45.asset using Guid(6d0ec50ee17fcca478859ebcccb1870a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df934c6f654fcd26b1138c234d2086c5') in 0.006513 seconds
-  Import took 0.008773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_49.asset
-  artifactKey: Guid(e853bac4cf5cdab44bd3d53720150a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_49.asset using Guid(e853bac4cf5cdab44bd3d53720150a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ad271b4ce9ed7f041bfec8f5aa36e1') in 0.006194 seconds
-  Import took 0.008855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_52.asset
-  artifactKey: Guid(41243f35688488f45981bd5e26042425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_52.asset using Guid(41243f35688488f45981bd5e26042425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ba73f80a796816093e4b2793ab97a0') in 0.007495 seconds
-  Import took 0.010117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_53.asset
-  artifactKey: Guid(6c0b024ebfe01474abd0aaf57094dac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_53.asset using Guid(6c0b024ebfe01474abd0aaf57094dac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da37c3d1f69a6ff0d186db0b04ed659f') in 0.007039 seconds
-  Import took 0.009530 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_51.asset
-  artifactKey: Guid(c70fc0ca34d30324eb82b973600cf74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_51.asset using Guid(c70fc0ca34d30324eb82b973600cf74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325b5067108f8a19df173ae89ae4cd3e') in 0.006345 seconds
-  Import took 0.008660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.436538 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_54.asset
-  artifactKey: Guid(fef1e2f2fd0d0a549a9660b300a51754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_54.asset using Guid(fef1e2f2fd0d0a549a9660b300a51754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f614c668e0de574f1c81ce5338d42649') in 0.006786 seconds
-  Import took 0.009462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_56.asset
-  artifactKey: Guid(7a7a977e56f22d84fa756eefdfe1561a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_56.asset using Guid(7a7a977e56f22d84fa756eefdfe1561a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf4a6cfa2c3576c7a75567691ccd018') in 0.006081 seconds
-  Import took 0.008703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_55.asset
-  artifactKey: Guid(0f923fecc84aa294abac2a49ce200582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_55.asset using Guid(0f923fecc84aa294abac2a49ce200582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d037027ff560cff38e09102b16ba114') in 0.006483 seconds
-  Import took 0.009221 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_54.asset
-  artifactKey: Guid(fef1e2f2fd0d0a549a9660b300a51754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_54.asset using Guid(fef1e2f2fd0d0a549a9660b300a51754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f614c668e0de574f1c81ce5338d42649') in 0.003516 seconds
-  Import took 0.005789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008074 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_57.asset
-  artifactKey: Guid(268407506f7c46e41a35444b893e6520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_57.asset using Guid(268407506f7c46e41a35444b893e6520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de338cdcc3580c82d2f44965c82cf86d') in 0.006918 seconds
-  Import took 0.009590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_59.asset
-  artifactKey: Guid(1a9a864e42244294bb5c51bb1bdc9504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_59.asset using Guid(1a9a864e42244294bb5c51bb1bdc9504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00bb8dd9e0461063c0d09c47507901ff') in 0.006154 seconds
-  Import took 0.008441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_65.asset
-  artifactKey: Guid(4964ca34ae81ab24382556d84df3d8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_65.asset using Guid(4964ca34ae81ab24382556d84df3d8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee485a43a9dbcaf5753e8e1344cad81') in 0.006841 seconds
-  Import took 0.009635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_66.asset
-  artifactKey: Guid(5e00a4469e97fa64eaaeec3c0fba0f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_66.asset using Guid(5e00a4469e97fa64eaaeec3c0fba0f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f283c828eb4a25b1e4d51ba004b0489f') in 0.006632 seconds
-  Import took 0.008978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_71.asset
-  artifactKey: Guid(36df51e31c548454093841c2bf56ede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_71.asset using Guid(36df51e31c548454093841c2bf56ede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3660e25b44be4cf7ce0fc86a4cb0f3c7') in 0.006975 seconds
-  Import took 0.009563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_67.asset
-  artifactKey: Guid(42c99d2f4b4f65e459f100bd2a5c1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_67.asset using Guid(42c99d2f4b4f65e459f100bd2a5c1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9289148e7b8f4078d1c86fca53c5986f') in 0.006509 seconds
-  Import took 0.008943 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_77.asset
-  artifactKey: Guid(00390eb2a6907a645ae5abd3622ff575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_77.asset using Guid(00390eb2a6907a645ae5abd3622ff575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1183bb653bb1ef9ecc44fe10e9b41ea') in 0.006684 seconds
-  Import took 0.009381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_60.asset
-  artifactKey: Guid(2a5dca6658570d749bc7bc681ee03284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_60.asset using Guid(2a5dca6658570d749bc7bc681ee03284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8cbb6aebb46c19a15dddf6088dbaab') in 0.006348 seconds
-  Import took 0.008823 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_64.asset
-  artifactKey: Guid(0a0f167e6ce393c4b86119cd51c27347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_64.asset using Guid(0a0f167e6ce393c4b86119cd51c27347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5fa664a862fcbe146745fe61c6af7e') in 0.006645 seconds
-  Import took 0.009233 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_69.asset
-  artifactKey: Guid(d4297a861d4ea2642a8b770feed1cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_69.asset using Guid(d4297a861d4ea2642a8b770feed1cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66684480833959373e387a94e0661c46') in 0.006350 seconds
-  Import took 0.008601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_58.asset
-  artifactKey: Guid(b1a68052d2d14dd45b6c9819ed980afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_58.asset using Guid(b1a68052d2d14dd45b6c9819ed980afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac5a25a1a883fd3c128a3ed2e39de00') in 0.007037 seconds
-  Import took 0.009524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_82.asset
-  artifactKey: Guid(dd9567de01446cc48b16ad2aa1158ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_82.asset using Guid(dd9567de01446cc48b16ad2aa1158ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56dd6f320cc15afdfdfb6fb6fba14693') in 0.006760 seconds
-  Import took 0.009455 seconds .
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sprites/Boss Dragon 7.png
+  artifactKey: Guid(1b0355e278cc98f40aebcce5dd867a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Boss Dragon 7.png using Guid(1b0355e278cc98f40aebcce5dd867a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f45321b05fdaa6c0ec3ab352039757c') in 0.021029 seconds
+  Import took 0.023467 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000163 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_81.asset
-  artifactKey: Guid(e4f42c95d16fb0547bc51d0eee08fa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_81.asset using Guid(e4f42c95d16fb0547bc51d0eee08fa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae8afd73f10bb3501f248eb6cb664e0') in 0.005747 seconds
-  Import took 0.008425 seconds .
+  path: Assets/Sprites/Calm 7.png
+  artifactKey: Guid(aad510ca6cb63ea4f9524faf564aea6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Calm 7.png using Guid(aad510ca6cb63ea4f9524faf564aea6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f7686963b6ce8efe7cc752e05fc1ff') in 0.012553 seconds
+  Import took 0.014895 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000130 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_83.asset
-  artifactKey: Guid(bfb57ea8b2cfd5941b49e58089bb7cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_83.asset using Guid(bfb57ea8b2cfd5941b49e58089bb7cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f272c1a487e9969563eef7d6999d5d8b') in 0.006487 seconds
-  Import took 0.008905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_75.asset
-  artifactKey: Guid(9f70336ef3252e449a6892d116e39da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_75.asset using Guid(9f70336ef3252e449a6892d116e39da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302a5e5e2ef0f38f94f0fab899dedad5') in 0.006952 seconds
-  Import took 0.009384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_78.asset
-  artifactKey: Guid(9e897ab10cb057445a341e99e29e218c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_78.asset using Guid(9e897ab10cb057445a341e99e29e218c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2a384a25d3209718ec01ef4a6f6243') in 0.006531 seconds
-  Import took 0.009105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_68.asset
-  artifactKey: Guid(6d126c87af6b125459c37ae5be585c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_68.asset using Guid(6d126c87af6b125459c37ae5be585c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04eefecf7adbb85f13318df06268e927') in 0.006497 seconds
-  Import took 0.009032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_79.asset
-  artifactKey: Guid(71cbaff832bcdf04caf88176bc1908b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_79.asset using Guid(71cbaff832bcdf04caf88176bc1908b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2184817240afaaf86b1370b40253d2b8') in 0.006356 seconds
-  Import took 0.009207 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_80.asset
-  artifactKey: Guid(139591b15adf07047a423ef5a4d92c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_80.asset using Guid(139591b15adf07047a423ef5a4d92c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ae1b1ba8f22fd1e9f9261e3391678f') in 0.007645 seconds
-  Import took 0.010058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_73.asset
-  artifactKey: Guid(c64ff54505913234ca478d48cce832c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_73.asset using Guid(c64ff54505913234ca478d48cce832c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43653a432f5f9ee9698479dce458c70e') in 0.006842 seconds
-  Import took 0.009716 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_70.asset
-  artifactKey: Guid(5aebfdc0e47b8694987b4adc99f136f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_70.asset using Guid(5aebfdc0e47b8694987b4adc99f136f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7fcf5c3b93ff6e247aeb714e511df2') in 0.006861 seconds
-  Import took 0.009466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_61.asset
-  artifactKey: Guid(cbadadd09bfd2364ea64c47aa6885362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_61.asset using Guid(cbadadd09bfd2364ea64c47aa6885362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35f5bcaa613ae9b05aad05afa902f0f') in 0.006927 seconds
-  Import took 0.009210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_63.asset
-  artifactKey: Guid(9da9de2bcce74bc44bef5587e8f22146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_63.asset using Guid(9da9de2bcce74bc44bef5587e8f22146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7cd899b496d260c0aa17fdcf49f1891') in 0.007114 seconds
-  Import took 0.009564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_74.asset
-  artifactKey: Guid(ee96af5a2fb91ca49bdcf060129f32a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_74.asset using Guid(ee96af5a2fb91ca49bdcf060129f32a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d750a6b0aeb2e94a5af18e0bcce9042') in 0.006410 seconds
-  Import took 0.009133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_76.asset
-  artifactKey: Guid(a555812c73e9d334abb41c1333798f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_76.asset using Guid(a555812c73e9d334abb41c1333798f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb2ba232f4377a31bf9e3ff1ca78c5b') in 0.007089 seconds
-  Import took 0.009557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_62.asset
-  artifactKey: Guid(ac124b1218343154ca43ddd2d9ea722f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_62.asset using Guid(ac124b1218343154ca43ddd2d9ea722f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd481cac7fd1942eaa7d47ad6056a72e6') in 0.006590 seconds
-  Import took 0.009198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_72.asset
-  artifactKey: Guid(89265554d186029478bd8b711553fbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_72.asset using Guid(89265554d186029478bd8b711553fbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f28f36750d24a31170ecbe2d51383cd') in 0.006812 seconds
-  Import took 0.009207 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.286458 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_84.asset
-  artifactKey: Guid(63501640d93a55c4bb0bc2a19d3195b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_84.asset using Guid(63501640d93a55c4bb0bc2a19d3195b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3358d4adde03e2d140b9363f24cf92c8') in 0.006902 seconds
-  Import took 0.009630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_86.asset
-  artifactKey: Guid(c350a43e7341d244fa8959667ad991a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_86.asset using Guid(c350a43e7341d244fa8959667ad991a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ad098cb0dabb25acbb8e41ff02ada1') in 0.006802 seconds
-  Import took 0.009656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_84.asset
-  artifactKey: Guid(63501640d93a55c4bb0bc2a19d3195b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_84.asset using Guid(63501640d93a55c4bb0bc2a19d3195b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3358d4adde03e2d140b9363f24cf92c8') in 0.003664 seconds
-  Import took 0.006187 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_87.asset
-  artifactKey: Guid(ef2346bcd8582b148b9330b7b0a86eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_87.asset using Guid(ef2346bcd8582b148b9330b7b0a86eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1b099c6131baa6104e0293fa885790') in 0.007344 seconds
-  Import took 0.010133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_85.asset
-  artifactKey: Guid(8a17cf612e3df8b4b9bf2e46cc170685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_85.asset using Guid(8a17cf612e3df8b4b9bf2e46cc170685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfc44cb9b5a818933a399a1a0a68dbd') in 0.006591 seconds
-  Import took 0.008989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_88.asset
-  artifactKey: Guid(00d275ea3aff0f54484e31de1b1a99fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_88.asset using Guid(00d275ea3aff0f54484e31de1b1a99fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be2606e290ea5e359f19bdb658bc350') in 0.006310 seconds
-  Import took 0.008919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_90.asset
-  artifactKey: Guid(8a6d63a9e74d33f4cbf7e50727a4c1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_90.asset using Guid(8a6d63a9e74d33f4cbf7e50727a4c1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64ec31ea05f8ac03b2c705ab82796c1') in 0.007223 seconds
-  Import took 0.009956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_92.asset
-  artifactKey: Guid(6cf9e8bd693ff3f419b09e5a58b0d76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_92.asset using Guid(6cf9e8bd693ff3f419b09e5a58b0d76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73c41d4edd0da9221ece675ec381ebe') in 0.007294 seconds
-  Import took 0.009597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_91.asset
-  artifactKey: Guid(cff1d92793ab6fa4faca4b9ec3c5c1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_91.asset using Guid(cff1d92793ab6fa4faca4b9ec3c5c1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2ea5894230bdd105379fa4eaf69ed6') in 0.006808 seconds
-  Import took 0.009538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_93.asset
-  artifactKey: Guid(bf6fe32fed00e3c418fc0727acb04661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_93.asset using Guid(bf6fe32fed00e3c418fc0727acb04661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620e4260330dc75ff96a6528dca151d6') in 0.006857 seconds
-  Import took 0.009364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_94.asset
-  artifactKey: Guid(89e3e9952ab91d34d8cb5c542425e60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_94.asset using Guid(89e3e9952ab91d34d8cb5c542425e60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77799e24d468540e4fa8bfd9818d71fc') in 0.006035 seconds
-  Import took 0.008398 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_95.asset
-  artifactKey: Guid(ff9cabe1798d9274fba9c2ddf492740f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_95.asset using Guid(ff9cabe1798d9274fba9c2ddf492740f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd7851e059a5f01da57ab48adb9aa04') in 0.007428 seconds
-  Import took 0.010266 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_89.asset
-  artifactKey: Guid(185db8ba8990ef04bba9077617c9ae61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_89.asset using Guid(185db8ba8990ef04bba9077617c9ae61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d13f5d28d2344cb00039d1b0c97695') in 0.006658 seconds
-  Import took 0.009485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.256163 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_96.asset
-  artifactKey: Guid(0c17f76013bfb1f4ea5afefc60a10e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_96.asset using Guid(0c17f76013bfb1f4ea5afefc60a10e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d662417ed996deca8dfadc7a382f0dc') in 0.006760 seconds
-  Import took 0.009718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_97.asset
-  artifactKey: Guid(5099b7f1b1afa1c448fc44c586447013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_97.asset using Guid(5099b7f1b1afa1c448fc44c586447013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e7238b9369848bee65ad9c40235c28') in 0.006046 seconds
-  Import took 0.008604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_96.asset
-  artifactKey: Guid(0c17f76013bfb1f4ea5afefc60a10e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_96.asset using Guid(0c17f76013bfb1f4ea5afefc60a10e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d662417ed996deca8dfadc7a382f0dc') in 0.003684 seconds
-  Import took 0.006133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_97.asset
-  artifactKey: Guid(5099b7f1b1afa1c448fc44c586447013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_97.asset using Guid(5099b7f1b1afa1c448fc44c586447013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e7238b9369848bee65ad9c40235c28') in 0.003493 seconds
-  Import took 0.006015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_98.asset
-  artifactKey: Guid(6d0495d34ddfef74d8ec72b1bd1185a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_98.asset using Guid(6d0495d34ddfef74d8ec72b1bd1185a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb10a577973be284c8448baf5705f03') in 0.006545 seconds
-  Import took 0.009193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_100.asset
-  artifactKey: Guid(3ae1d9451f6d28e4f913de92d57f596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_100.asset using Guid(3ae1d9451f6d28e4f913de92d57f596f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3fb6eca38178cc4f07217b4dbc893a') in 0.006798 seconds
-  Import took 0.009393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_102.asset
-  artifactKey: Guid(8dae9b6934ca0c546a9f142e2510a9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_102.asset using Guid(8dae9b6934ca0c546a9f142e2510a9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a612ac55c8a7761717edbe3d1fc69eec') in 0.006911 seconds
-  Import took 0.009264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_104.asset
-  artifactKey: Guid(bc8128f0fe7c27a4d8e1ff9b9384012c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_104.asset using Guid(bc8128f0fe7c27a4d8e1ff9b9384012c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3182a264a4296e32eb0d35d6578ff6ea') in 0.007114 seconds
-  Import took 0.009830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_106.asset
-  artifactKey: Guid(4abf20767e8d046468d0da925ff93a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_106.asset using Guid(4abf20767e8d046468d0da925ff93a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d442097004eba1c585a25222d77dd80') in 0.006927 seconds
-  Import took 0.009626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_113.asset
-  artifactKey: Guid(b5f8025a566a10843acdfbbb28a2b845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_113.asset using Guid(b5f8025a566a10843acdfbbb28a2b845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7331399f29bc205df191fa5431d7e791') in 0.006445 seconds
-  Import took 0.008736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_108.asset
-  artifactKey: Guid(c8e60dcc85a912547b3051d8b08fc5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_108.asset using Guid(c8e60dcc85a912547b3051d8b08fc5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc732d4a5fb8736e9a0f7ebf3650ac53') in 0.007570 seconds
-  Import took 0.010160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_112.asset
-  artifactKey: Guid(3a508e4138d7007448aa02514d7db606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_112.asset using Guid(3a508e4138d7007448aa02514d7db606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004aa489d3a605631b1fffd970526e82') in 0.006863 seconds
-  Import took 0.009600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_123.asset
-  artifactKey: Guid(dfaecb1a351774a48897621a0b130efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_123.asset using Guid(dfaecb1a351774a48897621a0b130efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d831e2d2ab984b20d873cea13bd051') in 0.006715 seconds
-  Import took 0.009353 seconds .
+  path: Assets/Sprites/Evil King 7.png
+  artifactKey: Guid(c20d64490fb990742a6c923a9a1aa5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Evil King 7.png using Guid(c20d64490fb990742a6c923a9a1aa5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '338112a87049ea189c86443031c5cf43') in 0.019139 seconds
+  Import took 0.021531 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000140 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_119.asset
-  artifactKey: Guid(dad2a409f39d56e4a973f465abdd868b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_119.asset using Guid(dad2a409f39d56e4a973f465abdd868b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b417991a84ca440cab4f64923c3e3b92') in 0.006262 seconds
-  Import took 0.008501 seconds .
+  path: Assets/Sprites/Goblin with Helm 7.png
+  artifactKey: Guid(bbeb679758d1569448395112a58f5b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Goblin with Helm 7.png using Guid(bbeb679758d1569448395112a58f5b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5abd09690081c25ae15ce126ddd45538') in 0.013613 seconds
+  Import took 0.016077 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_118.asset
-  artifactKey: Guid(fa801eacf0e647b40981414d61aacebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_118.asset using Guid(fa801eacf0e647b40981414d61aacebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923d1bb358c062ca7d4e0133821970d8') in 0.006901 seconds
-  Import took 0.009313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_126.asset
-  artifactKey: Guid(034ef92a3dcee174c9f27587421d18b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_126.asset using Guid(034ef92a3dcee174c9f27587421d18b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9de1e9f451011819201ed8d4019922d') in 0.006531 seconds
-  Import took 0.008816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_131.asset
-  artifactKey: Guid(ace0f4130b7e23b44aa8d271c2f1b321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_131.asset using Guid(ace0f4130b7e23b44aa8d271c2f1b321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517b96dc8ce4e961d360d55cecb36a95') in 0.006779 seconds
-  Import took 0.009520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_132.asset
-  artifactKey: Guid(d8709e38171764340ac86119a83bb4fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_132.asset using Guid(d8709e38171764340ac86119a83bb4fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b21005e8aaa6a20686137302ab4426') in 0.006824 seconds
-  Import took 0.009427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_129.asset
-  artifactKey: Guid(54e1a7a76149d0e41a3d5e27600a3861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_129.asset using Guid(54e1a7a76149d0e41a3d5e27600a3861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c3d3d65d4984eaac2c72e7ede86056') in 0.006977 seconds
-  Import took 0.009648 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_107.asset
-  artifactKey: Guid(b6f614571de323b4f9da4519f96ab3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_107.asset using Guid(b6f614571de323b4f9da4519f96ab3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eddce255b27fb067b2143c4cc8447720') in 0.006360 seconds
-  Import took 0.009215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_136.asset
-  artifactKey: Guid(20a5ef931895798469f977f12ca4326b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_136.asset using Guid(20a5ef931895798469f977f12ca4326b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd587575b658bf10c92ba843892eb3b0') in 0.007409 seconds
-  Import took 0.010305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_135.asset
-  artifactKey: Guid(9d17209996f8c5c459f1686c08bac001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_135.asset using Guid(9d17209996f8c5c459f1686c08bac001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57dd43757789cde800dfbb9e79c202e6') in 0.006401 seconds
-  Import took 0.009155 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_110.asset
-  artifactKey: Guid(03059db5ceb5ede43b1e6290d782deb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_110.asset using Guid(03059db5ceb5ede43b1e6290d782deb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb54bc84103bccb8a86bc6a685ef36f') in 0.007219 seconds
-  Import took 0.009670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_143.asset
-  artifactKey: Guid(dedabb7f7874cb0478e5fcbd3ec3d41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_143.asset using Guid(dedabb7f7874cb0478e5fcbd3ec3d41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba5d7232752d69d03f5fe353a1ba61c') in 0.006707 seconds
-  Import took 0.009363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_139.asset
-  artifactKey: Guid(934b67bf97ad84948914ea4e60d2381c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_139.asset using Guid(934b67bf97ad84948914ea4e60d2381c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b1df77042faa646c7995fb09826171') in 0.007007 seconds
-  Import took 0.010139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_140.asset
-  artifactKey: Guid(3018873b1ba7c5f4fb206338749ddf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_140.asset using Guid(3018873b1ba7c5f4fb206338749ddf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defd0d5da4c2d289dea232d82351322b') in 0.006497 seconds
-  Import took 0.009075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_130.asset
-  artifactKey: Guid(4091fb75ba087a248b4472b983ff9088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_130.asset using Guid(4091fb75ba087a248b4472b983ff9088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367ba21f5d99651f1c518a175222f5c2') in 0.006196 seconds
-  Import took 0.008451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_124.asset
-  artifactKey: Guid(365fb32c8209d7541aabe3db2a14fabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_124.asset using Guid(365fb32c8209d7541aabe3db2a14fabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed07410569b744f222db81e32bd1de3') in 0.006643 seconds
-  Import took 0.009625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_127.asset
-  artifactKey: Guid(1d9cd4c0d3b846d4cbad96c237a924da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_127.asset using Guid(1d9cd4c0d3b846d4cbad96c237a924da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f06c9064dd0bfec0d68ef8690c1785') in 0.006601 seconds
-  Import took 0.009252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_128.asset
-  artifactKey: Guid(67e116bdde7bcf6468cc16af0f32dc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_128.asset using Guid(67e116bdde7bcf6468cc16af0f32dc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df390a3706ae000d671d2686669df5a') in 0.007364 seconds
-  Import took 0.010172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_116.asset
-  artifactKey: Guid(644b034c3bd762749974dcf4fb294f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_116.asset using Guid(644b034c3bd762749974dcf4fb294f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1f19face275515f4d4a74b7e836296') in 0.006140 seconds
-  Import took 0.008360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_114.asset
-  artifactKey: Guid(ea9b511e100fc28499c111d2794c6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_114.asset using Guid(ea9b511e100fc28499c111d2794c6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeffd03844efe8700b8d9fe6d647bad3') in 0.006494 seconds
-  Import took 0.008997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_115.asset
-  artifactKey: Guid(c1495ca914d60c040b046db233f53622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_115.asset using Guid(c1495ca914d60c040b046db233f53622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c69b97a979f37872956a7d119e3f8f') in 0.006079 seconds
-  Import took 0.008613 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_125.asset
-  artifactKey: Guid(fbb94549ec6be3b4792e6f8ee852abb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_125.asset using Guid(fbb94549ec6be3b4792e6f8ee852abb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d791360122b386e1d28b7a9ce06246c') in 0.006250 seconds
-  Import took 0.009045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_109.asset
-  artifactKey: Guid(3c7d0c5b56086c64594340a10b8e43e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_109.asset using Guid(3c7d0c5b56086c64594340a10b8e43e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb39eabb1e5bfc024b45668ef5ef3183') in 0.006731 seconds
-  Import took 0.009099 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000100 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_105.asset
-  artifactKey: Guid(574eeeb616482d6419e18d95eeed7ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_105.asset using Guid(574eeeb616482d6419e18d95eeed7ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1628dc01cde4f0614b2b0b2ef226c5e') in 0.006203 seconds
-  Import took 0.008608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_122.asset
-  artifactKey: Guid(0e9b975b41596b74a86c7e8a94123eaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_122.asset using Guid(0e9b975b41596b74a86c7e8a94123eaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30a6937058fb19cf33a83c2e64c481b') in 0.007162 seconds
-  Import took 0.009496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_101.asset
-  artifactKey: Guid(d2b76717158f6884eb0fbdaf8cbb7116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_101.asset using Guid(d2b76717158f6884eb0fbdaf8cbb7116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95781d9494e7e2d3e71fdb4231f682c') in 0.006611 seconds
-  Import took 0.009749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_137.asset
-  artifactKey: Guid(6761971817cdca6478b316bc3c8a5db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_137.asset using Guid(6761971817cdca6478b316bc3c8a5db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc9d0dee0632700bc84c7cab371d27d') in 0.006487 seconds
-  Import took 0.009280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_138.asset
-  artifactKey: Guid(e952d05c85f7a4543a5a5e3b75c91ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_138.asset using Guid(e952d05c85f7a4543a5a5e3b75c91ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c144eb1d634865458eb68769e60a751e') in 0.006448 seconds
-  Import took 0.009346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_133.asset
-  artifactKey: Guid(c1ce10ca1ec807342a941504642a0a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_133.asset using Guid(c1ce10ca1ec807342a941504642a0a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3c439e842e95109f561d381e0c19008') in 0.006309 seconds
-  Import took 0.008893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_120.asset
-  artifactKey: Guid(fc93f9786e4b4ac409f76f3a9b3e3f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_120.asset using Guid(fc93f9786e4b4ac409f76f3a9b3e3f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2002dae8aa99a86199b08be66ac9ba9') in 0.006429 seconds
-  Import took 0.009181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_111.asset
-  artifactKey: Guid(f7fe74948eacff34894346157a0f3b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_111.asset using Guid(f7fe74948eacff34894346157a0f3b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d6345c4e955d26cb2ef80e84b0fc4d') in 0.006844 seconds
-  Import took 0.009446 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_141.asset
-  artifactKey: Guid(3fd2a05d81dcc784886ec806a1938178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_141.asset using Guid(3fd2a05d81dcc784886ec806a1938178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9c3b486708d5c4d44df690356d5eed') in 0.006557 seconds
-  Import took 0.008778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_103.asset
-  artifactKey: Guid(b70dbcf689bf36546904e13df57e1f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_103.asset using Guid(b70dbcf689bf36546904e13df57e1f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62be43dc0498228f0d9635c7d0e2ddb9') in 0.005987 seconds
-  Import took 0.008459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_99.asset
-  artifactKey: Guid(65eb41473e1d9fa4a94a2dbae5bdd454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_99.asset using Guid(65eb41473e1d9fa4a94a2dbae5bdd454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f14c11d5f537d869ca39cfeff10ec8e') in 0.006629 seconds
-  Import took 0.009116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_146.asset
-  artifactKey: Guid(5836e1f68befeef47a21cedb8d2c11f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_146.asset using Guid(5836e1f68befeef47a21cedb8d2c11f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838e56c1b336edf28134de41ebc58737') in 0.007230 seconds
-  Import took 0.009616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_145.asset
-  artifactKey: Guid(e8a14c6038360a044840724647a1eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_145.asset using Guid(e8a14c6038360a044840724647a1eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f594c39488db98ccbedfe9a112104622') in 0.006566 seconds
-  Import took 0.009024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_134.asset
-  artifactKey: Guid(44d6985250197984fbacda37792fd9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_134.asset using Guid(44d6985250197984fbacda37792fd9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd5bd470eaf49895c2c2c41cb45314c') in 0.007109 seconds
-  Import took 0.009789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_151.asset
-  artifactKey: Guid(5721f280c01cd954e906790610d7b2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_151.asset using Guid(5721f280c01cd954e906790610d7b2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b52562144c9032e82da6799c1fd22c6') in 0.006724 seconds
-  Import took 0.009458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_148.asset
-  artifactKey: Guid(cdf034ee7ecfcfe419d465eced3b146d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_148.asset using Guid(cdf034ee7ecfcfe419d465eced3b146d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a12b63e6ee7252aed27e325375c5cc') in 0.007575 seconds
-  Import took 0.010341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_153.asset
-  artifactKey: Guid(eb27fbc7c1d59174c8616a8f098338c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_153.asset using Guid(eb27fbc7c1d59174c8616a8f098338c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7f38b1ed50d3ac6ab20d5b70edc348') in 0.007227 seconds
-  Import took 0.009684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_150.asset
-  artifactKey: Guid(9dd57cea62a58c341b30dba9457265c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_150.asset using Guid(9dd57cea62a58c341b30dba9457265c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39331cf9004ccef9e1443267743cf863') in 0.005927 seconds
-  Import took 0.008700 seconds .
+  Time since last request: 0.000198 seconds.
+  path: Assets/Sprites/Dragon Horn 7.png
+  artifactKey: Guid(15ec975c254ee34498a26f79413a89ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dragon Horn 7.png using Guid(15ec975c254ee34498a26f79413a89ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b42976c0b5af3cfee0af06c57e8612') in 0.013466 seconds
+  Import took 0.016291 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000138 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_147.asset
-  artifactKey: Guid(17994a2ac1074de469b67460717ba561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_147.asset using Guid(17994a2ac1074de469b67460717ba561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185e229211b8211be06902d3d72e60d4') in 0.006595 seconds
-  Import took 0.008976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_156.asset
-  artifactKey: Guid(d4b49cab576c1c645adc37fb6e2ee9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_156.asset using Guid(d4b49cab576c1c645adc37fb6e2ee9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30fa3680575d8d4b8ff5c810cb1cecf') in 0.007600 seconds
-  Import took 0.010748 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_158.asset
-  artifactKey: Guid(4d23f700322b887439513b78d56db554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_158.asset using Guid(4d23f700322b887439513b78d56db554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970c0510f714277c085dd6ecb5ada1c7') in 0.006191 seconds
-  Import took 0.008545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_149.asset
-  artifactKey: Guid(1c09161990c74fe419d9d049fce91d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_149.asset using Guid(1c09161990c74fe419d9d049fce91d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012cd8860aed710f396e0859dcaec49e') in 0.006549 seconds
-  Import took 0.008827 seconds .
+  path: Assets/Sprites/Behemoth 7.png
+  artifactKey: Guid(df3a4b06803965346b53a2088677cb8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Behemoth 7.png using Guid(df3a4b06803965346b53a2088677cb8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9fa7aee06a208dc54b557b3779d7db6') in 0.014982 seconds
+  Import took 0.017372 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_160.asset
-  artifactKey: Guid(7bba1d97bdb13554caadb1e1451060e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_160.asset using Guid(7bba1d97bdb13554caadb1e1451060e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f255505e971404035d0be368f79cb2a8') in 0.006437 seconds
-  Import took 0.008797 seconds .
+  path: Assets/Sprites/Blue Dragon 7.png
+  artifactKey: Guid(4a5c2385307548e4d9a650f16626488e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Blue Dragon 7.png using Guid(4a5c2385307548e4d9a650f16626488e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8506dee1e642aff6278e4b2ea9099277') in 0.016192 seconds
+  Import took 0.018623 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.660 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 88.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2290.
+Total: 1.723900 ms (FindLiveObjects: 0.196600 ms CreateObjectMapping: 0.040100 ms MarkObjects: 1.399700 ms  DeleteObjects: 0.086800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000903 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.731 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2293.
+Total: 1.918500 ms (FindLiveObjects: 0.254900 ms CreateObjectMapping: 0.041000 ms MarkObjects: 1.511800 ms  DeleteObjects: 0.109900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_161.asset
-  artifactKey: Guid(0e736ea2d60a1bd418b4b655395866f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_161.asset using Guid(0e736ea2d60a1bd418b4b655395866f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87bee712f0c6da7f1b2100f486155e9a') in 0.006169 seconds
-  Import took 0.008535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_159.asset
-  artifactKey: Guid(443f7e4c6aff94641ae1d6eb6d487427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_159.asset using Guid(443f7e4c6aff94641ae1d6eb6d487427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ce2e44c1c9f957daa0a2830455be84') in 0.007019 seconds
-  Import took 0.009612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_152.asset
-  artifactKey: Guid(13b836df02ab2d546b0a5f091c69e989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_152.asset using Guid(13b836df02ab2d546b0a5f091c69e989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3facca05e40fb431734725d4e90a48e') in 0.006887 seconds
-  Import took 0.009551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_154.asset
-  artifactKey: Guid(e34753a4d71406642ab27ade9342e9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_154.asset using Guid(e34753a4d71406642ab27ade9342e9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff29fb4f84f87fd720eba9a590f6a798') in 0.006658 seconds
-  Import took 0.009435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_157.asset
-  artifactKey: Guid(1c16d3b054d737a49b4592954c2c1535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_157.asset using Guid(1c16d3b054d737a49b4592954c2c1535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01f2c73b57b80558da38b75f6583192') in 0.007112 seconds
-  Import took 0.009837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_121.asset
-  artifactKey: Guid(ccb112cde5bb2e4449fa3e80249e0d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_121.asset using Guid(ccb112cde5bb2e4449fa3e80249e0d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c2a69c1e108ee2e1866c6839c81c24') in 0.006463 seconds
-  Import took 0.008978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_142.asset
-  artifactKey: Guid(8f8755f196bb70443bc849a161570f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_142.asset using Guid(8f8755f196bb70443bc849a161570f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c93c47b2ac3fc5569b92eb8328ac567') in 0.005843 seconds
-  Import took 0.008098 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_155.asset
-  artifactKey: Guid(77e02d2b664acc342b193853f278cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_155.asset using Guid(77e02d2b664acc342b193853f278cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf1cf4b550351a2e75f2216092d883c') in 0.006200 seconds
-  Import took 0.008502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_117.asset
-  artifactKey: Guid(72c375550126f3c4c81f55edfcdcf39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_117.asset using Guid(72c375550126f3c4c81f55edfcdcf39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c4fc4012511d395ef36677720e7434') in 0.006151 seconds
-  Import took 0.008803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_144.asset
-  artifactKey: Guid(72441510e85f25949a157a5ff468f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_144.asset using Guid(72441510e85f25949a157a5ff468f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6fb008b1aa9114ba0021524d4e00cc6') in 0.006644 seconds
-  Import took 0.009320 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.279254 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_162.asset
-  artifactKey: Guid(6451a8dbab8d1c744a149c429da70fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_162.asset using Guid(6451a8dbab8d1c744a149c429da70fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b414eddf686ce10fad6d572779c3d758') in 0.005896 seconds
-  Import took 0.008444 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_163.asset
-  artifactKey: Guid(ee594f3e9d2b1654d9201150dc97cc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_163.asset using Guid(ee594f3e9d2b1654d9201150dc97cc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43e454c5ab2f4bab715e37540222804') in 0.005776 seconds
-  Import took 0.008709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_164.asset
-  artifactKey: Guid(dd4d7ea50ae905c41814b35f28da9281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_164.asset using Guid(dd4d7ea50ae905c41814b35f28da9281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cb87c359172b52c17648f7a1a0f04f') in 0.006842 seconds
-  Import took 0.009483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024064 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_165.asset
-  artifactKey: Guid(0edfd5d87a1de374f8a544703da40807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_165.asset using Guid(0edfd5d87a1de374f8a544703da40807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5385c03a98069c1060df4df30db3b739') in 0.006027 seconds
-  Import took 0.008731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_172.asset
-  artifactKey: Guid(d41276bb929993345b5a3413972b8ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_172.asset using Guid(d41276bb929993345b5a3413972b8ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816759d90e2be12e649dfb005e950c96') in 0.006891 seconds
-  Import took 0.009542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_174.asset
-  artifactKey: Guid(5bffcecd7f0836948ae0f1e2a609de2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_174.asset using Guid(5bffcecd7f0836948ae0f1e2a609de2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53cb0f3a0773c1cf3f51d558c6f77f51') in 0.006848 seconds
-  Import took 0.009501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_180.asset
-  artifactKey: Guid(dca883607e4363a43a126daaa2ed644f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_180.asset using Guid(dca883607e4363a43a126daaa2ed644f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f96b0352de1b97e9350a9b6f4a5bd6f') in 0.006872 seconds
-  Import took 0.009167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_181.asset
-  artifactKey: Guid(3829fad366d2d184db17397b92961899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_181.asset using Guid(3829fad366d2d184db17397b92961899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae401c624618ffa941d456dbf8523d63') in 0.005739 seconds
-  Import took 0.007997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_184.asset
-  artifactKey: Guid(928ddba3a3a3efa41b6116935de1a44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_184.asset using Guid(928ddba3a3a3efa41b6116935de1a44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c22284ac0fc42be93cdd931dad83376') in 0.006394 seconds
-  Import took 0.008958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_194.asset
-  artifactKey: Guid(6d0a246cd8ba7e140be7596ca7bb5311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_194.asset using Guid(6d0a246cd8ba7e140be7596ca7bb5311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b1f5fa8b2ad2fd57f830993269049a') in 0.006795 seconds
-  Import took 0.009358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_176.asset
-  artifactKey: Guid(e632bb85f50d0f340a21ef5d9bdaaf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_176.asset using Guid(e632bb85f50d0f340a21ef5d9bdaaf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f9f63fa2528c3d20e77f00ea9cd5e2') in 0.006885 seconds
-  Import took 0.009346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_170.asset
-  artifactKey: Guid(fe1c71c6e680d9741a0e74ba2f6fa342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_170.asset using Guid(fe1c71c6e680d9741a0e74ba2f6fa342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb857886a22f2eb064b4cd210bc9187') in 0.007735 seconds
-  Import took 0.010358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_198.asset
-  artifactKey: Guid(05d7817d371a75e4a8b6feb3e18f540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_198.asset using Guid(05d7817d371a75e4a8b6feb3e18f540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060e5af7e5bb3924be5e7466ba8da8cf') in 0.006974 seconds
-  Import took 0.009301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_200.asset
-  artifactKey: Guid(80d7341d5acdbf445868ada60efda6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_200.asset using Guid(80d7341d5acdbf445868ada60efda6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02755df07f9410236efd19c542ee91a5') in 0.006995 seconds
-  Import took 0.009486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_173.asset
-  artifactKey: Guid(8e1d3c6388dedd747958c82add584c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_173.asset using Guid(8e1d3c6388dedd747958c82add584c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b6e74b942a01bda69eddc2490eb25d') in 0.006177 seconds
-  Import took 0.008771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_186.asset
-  artifactKey: Guid(bf40347ba40b1d74bbc41e9f7008f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_186.asset using Guid(bf40347ba40b1d74bbc41e9f7008f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49961deb718fd9257b2af71be1aef9b3') in 0.006322 seconds
-  Import took 0.008968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_171.asset
-  artifactKey: Guid(109c8a344ca8e3744a17185b4106cfa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_171.asset using Guid(109c8a344ca8e3744a17185b4106cfa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e43dfb9d990c82567ff2bf0447665e') in 0.006311 seconds
-  Import took 0.008528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_191.asset
-  artifactKey: Guid(ca39843bde5872646bb6562ecd2433a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_191.asset using Guid(ca39843bde5872646bb6562ecd2433a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce36cbb06c4ca3e02fb9767e44338ed') in 0.006723 seconds
-  Import took 0.009278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_209.asset
-  artifactKey: Guid(9366e5686318f644b8164307de94fe57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_209.asset using Guid(9366e5686318f644b8164307de94fe57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add32cf1529f754e40c7561306b7f1ea') in 0.006611 seconds
-  Import took 0.009262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_216.asset
-  artifactKey: Guid(8f2c4a7e8c5441741b4f48da3642a9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_216.asset using Guid(8f2c4a7e8c5441741b4f48da3642a9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a26ff3ba685139d7e8a29265f15f9a') in 0.006854 seconds
-  Import took 0.009398 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_217.asset
-  artifactKey: Guid(261656e1c0059a54eb63e496f8d7de8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_217.asset using Guid(261656e1c0059a54eb63e496f8d7de8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800292e8156fbaecd28e7ab22b7139d6') in 0.006484 seconds
-  Import took 0.008754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_187.asset
-  artifactKey: Guid(73d0b595fe076d648a7e3fb35547887f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_187.asset using Guid(73d0b595fe076d648a7e3fb35547887f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a75531b621a347fd4bd6af1f887249d') in 0.007691 seconds
-  Import took 0.010379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_219.asset
-  artifactKey: Guid(199ae41d30dbbad49b7f3731e728e8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_219.asset using Guid(199ae41d30dbbad49b7f3731e728e8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a3a6e5177f69d5d7afa2db546d1574') in 0.007079 seconds
-  Import took 0.009702 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_195.asset
-  artifactKey: Guid(7fa825bf507c0f24caf3aa4e6b38ebbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_195.asset using Guid(7fa825bf507c0f24caf3aa4e6b38ebbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e311bf7f493800666fc7d753cb06cc7b') in 0.006248 seconds
-  Import took 0.008835 seconds .
+  Time since last request: 267.762402 seconds.
+  path: Assets/Prefabs/EnemyCharacter.prefab
+  artifactKey: Guid(03fa99adf4052544eb71045328c6260f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EnemyCharacter.prefab using Guid(03fa99adf4052544eb71045328c6260f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ffc0314be7c799a919c99080e6d99e8') in 0.047997 seconds
+  Import took 0.051006 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000144 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_199.asset
-  artifactKey: Guid(070ee07286adc1f4cb20f69a0dc0118b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_199.asset using Guid(070ee07286adc1f4cb20f69a0dc0118b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33c67d7ee536667629a4f73f96f2070') in 0.006628 seconds
-  Import took 0.009038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_197.asset
-  artifactKey: Guid(96aed0709c7c10748b71ffa13e4d62de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_197.asset using Guid(96aed0709c7c10748b71ffa13e4d62de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c7ace27065b54b7cf02755e231899a') in 0.006602 seconds
-  Import took 0.009388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_221.asset
-  artifactKey: Guid(7c5669f90e8e1f44d8448c5569b64e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_221.asset using Guid(7c5669f90e8e1f44d8448c5569b64e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e41e59f819a0f9e72c7de2be0d109d2') in 0.006692 seconds
-  Import took 0.009243 seconds .
+  path: Assets/Prefabs/GameManger.prefab
+  artifactKey: Guid(56174873405f7ae4fb75d2951e417334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManger.prefab using Guid(56174873405f7ae4fb75d2951e417334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1f16c17a7445f33df0c8107f89cb31') in 0.013656 seconds
+  Import took 0.016154 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000153 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_211.asset
-  artifactKey: Guid(262180b7a2505ba4eb862a80724685eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_211.asset using Guid(262180b7a2505ba4eb862a80724685eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8936ea1fb09b1e65fdbc960f40add559') in 0.007280 seconds
-  Import took 0.009850 seconds .
+  path: Assets/Prefabs/OverWorldPlayer.prefab
+  artifactKey: Guid(2fa18c7765eb44f4b8f1c0fdeb8db7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OverWorldPlayer.prefab using Guid(2fa18c7765eb44f4b8f1c0fdeb8db7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2e4d82fa6bfe6ae12b400380dc9860') in 0.009338 seconds
+  Import took 0.011981 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_190.asset
-  artifactKey: Guid(3d289b6319aafb5458c5fa9c488493d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_190.asset using Guid(3d289b6319aafb5458c5fa9c488493d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0bd45df4adb35fcd24506e12fede67') in 0.007143 seconds
-  Import took 0.009854 seconds .
+  Time since last request: 0.000134 seconds.
+  path: Assets/Prefabs/TestCharacter.prefab
+  artifactKey: Guid(99bd738a26b19dd40aa03aae5ea5c34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TestCharacter.prefab using Guid(99bd738a26b19dd40aa03aae5ea5c34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb430ff2d0c1739cccd29e352e28215') in 0.005837 seconds
+  Import took 0.008280 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_203.asset
-  artifactKey: Guid(36114dfedccae8447a506a410e7061a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_203.asset using Guid(36114dfedccae8447a506a410e7061a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af44c3ccaf3f12ff988e63d27df9b9d8') in 0.006657 seconds
-  Import took 0.009189 seconds .
+  Time since last request: 0.023114 seconds.
+  path: Assets/Prefabs/TestCharacter.prefab
+  artifactKey: Guid(99bd738a26b19dd40aa03aae5ea5c34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TestCharacter.prefab using Guid(99bd738a26b19dd40aa03aae5ea5c34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb430ff2d0c1739cccd29e352e28215') in 0.003467 seconds
+  Import took 0.006197 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000764 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.666 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2301.
+Total: 1.776900 ms (FindLiveObjects: 0.217700 ms CreateObjectMapping: 0.040300 ms MarkObjects: 1.420700 ms  DeleteObjects: 0.097300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_178.asset
-  artifactKey: Guid(e8e460beb5ee2314583f8e7defde0e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_178.asset using Guid(e8e460beb5ee2314583f8e7defde0e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1d2443b9ff49c6ad458fbe523851d3') in 0.006726 seconds
-  Import took 0.009341 seconds .
+  Time since last request: 544.105197 seconds.
+  path: Assets/Scenes/PrototypeOverworld.unity
+  artifactKey: Guid(d08e59dc04870e94eb436137c17f5e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PrototypeOverworld.unity using Guid(d08e59dc04870e94eb436137c17f5e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771f5baa3de66d3170b7451f21530693') in 0.013824 seconds
+  Import took 0.016594 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000813 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.656 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2304.
+Total: 1.765600 ms (FindLiveObjects: 0.217200 ms CreateObjectMapping: 0.040200 ms MarkObjects: 1.409200 ms  DeleteObjects: 0.098200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_192.asset
-  artifactKey: Guid(a5835f1094d92e642b3a7d84f73985a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_192.asset using Guid(a5835f1094d92e642b3a7d84f73985a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8072164c0755cc8bf885f3bb7b9623') in 0.007371 seconds
-  Import took 0.010085 seconds .
+  Time since last request: 145.318062 seconds.
+  path: Assets/Scripts/Scripts.asmdef
+  artifactKey: Guid(78eee74d2f00cdb4b806427fa131e0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scripts.asmdef using Guid(78eee74d2f00cdb4b806427fa131e0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdbc14c2aacf3f31abb53b06be18052c') in 0.008384 seconds
+  Import took 0.011183 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_175.asset
-  artifactKey: Guid(66d21d2926b452c439ab55a220b5ac89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_175.asset using Guid(66d21d2926b452c439ab55a220b5ac89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dab9ca75bb43822d0645ced6b88bcc6') in 0.006901 seconds
-  Import took 0.009246 seconds .
+  Time since last request: 2.699020 seconds.
+  path: Assets/Scripts/Battle System
+  artifactKey: Guid(c1025bb2ca0edc54c87b96640897019b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Battle System using Guid(c1025bb2ca0edc54c87b96640897019b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0052e4ca0ae139f5f08377e5fcdfc1') in 0.004701 seconds
+  Import took 0.007426 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_208.asset
-  artifactKey: Guid(ec78d85490030164e9c1d02d90db7c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_208.asset using Guid(ec78d85490030164e9c1d02d90db7c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c307232f7fc794b62ceb5dbfb201ef90') in 0.006269 seconds
-  Import took 0.008653 seconds .
+  Time since last request: 6.914648 seconds.
+  path: Assets/Scenes/PrototypeOverworld.unity
+  artifactKey: Guid(d08e59dc04870e94eb436137c17f5e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PrototypeOverworld.unity using Guid(d08e59dc04870e94eb436137c17f5e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208e243dd200dee3a62fe6e63e9a4f42') in 0.007559 seconds
+  Import took 0.010328 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_168.asset
-  artifactKey: Guid(7495e56248d18e049ba10ecf8dc246cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_168.asset using Guid(7495e56248d18e049ba10ecf8dc246cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6149448b3c07579aa558cca6ccb25468') in 0.006793 seconds
-  Import took 0.009482 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000798 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.666 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 1.742700 ms (FindLiveObjects: 0.182700 ms CreateObjectMapping: 0.043300 ms MarkObjects: 1.416600 ms  DeleteObjects: 0.099200 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_196.asset
-  artifactKey: Guid(5d01c60c296620240ad0303afeed267c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_196.asset using Guid(5d01c60c296620240ad0303afeed267c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9217d6b7bf91d0cb70fa9660ca86b026') in 0.007319 seconds
-  Import took 0.010115 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000772 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.673 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_213.asset
-  artifactKey: Guid(b040e6e0797521f4c9f4cc7be6b40992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_213.asset using Guid(b040e6e0797521f4c9f4cc7be6b40992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af49879944fc3966d8ddc035f2ea6e52') in 0.006473 seconds
-  Import took 0.009023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_201.asset
-  artifactKey: Guid(8ec0dd7bf601cee419150c63964f7bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_201.asset using Guid(8ec0dd7bf601cee419150c63964f7bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15268be5b1be91705bf478592109838b') in 0.006990 seconds
-  Import took 0.009618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_220.asset
-  artifactKey: Guid(cc95238b06d5c4442ac74ebbe9ec8ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_220.asset using Guid(cc95238b06d5c4442ac74ebbe9ec8ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21a7c56860d2dde8fe17f7c0b6464d0') in 0.006728 seconds
-  Import took 0.009495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_202.asset
-  artifactKey: Guid(81e5ad724425a8d41976ed72b262c9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_202.asset using Guid(81e5ad724425a8d41976ed72b262c9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9919cb1af8b6eefa9f349996b61e4e65') in 0.007199 seconds
-  Import took 0.009873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_204.asset
-  artifactKey: Guid(b99b98d3bdd1b2746a91eb7ffa7260d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_204.asset using Guid(b99b98d3bdd1b2746a91eb7ffa7260d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb299841270436febec35a723baacbe') in 0.006846 seconds
-  Import took 0.009226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_210.asset
-  artifactKey: Guid(8fba43c31564f3e45b06788591ef075e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_210.asset using Guid(8fba43c31564f3e45b06788591ef075e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5690c6ee03367362e06788b81fdea470') in 0.006669 seconds
-  Import took 0.009192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_212.asset
-  artifactKey: Guid(ee3a688f79f907449b46b4324b9dc47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_212.asset using Guid(ee3a688f79f907449b46b4324b9dc47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325cf10d90c6a546602a48cb973075d8') in 0.006490 seconds
-  Import took 0.008992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_214.asset
-  artifactKey: Guid(93f9bf85be098a349a0a2a320194c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_214.asset using Guid(93f9bf85be098a349a0a2a320194c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd391845b08967df89088a15cd96e6017') in 0.006689 seconds
-  Import took 0.009215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_222.asset
-  artifactKey: Guid(f734b8bfadaa9594f9005b4de663ac4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_222.asset using Guid(f734b8bfadaa9594f9005b4de663ac4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fabb313ec0194740148fce6760f3598e') in 0.006758 seconds
-  Import took 0.009198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_205.asset
-  artifactKey: Guid(3a10c938cccdfa64caf18e950a02888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_205.asset using Guid(3a10c938cccdfa64caf18e950a02888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09cabf3bcc6c73f0a53f89411cd4b0af') in 0.006591 seconds
-  Import took 0.008904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_183.asset
-  artifactKey: Guid(47f7519fb7714444393c44b5220de6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_183.asset using Guid(47f7519fb7714444393c44b5220de6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1f3a4551f41de1ba8e9e40dcc51a6c') in 0.006574 seconds
-  Import took 0.009187 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_207.asset
-  artifactKey: Guid(0de36ee0ed318cc4fad1aae0d6e83c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_207.asset using Guid(0de36ee0ed318cc4fad1aae0d6e83c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e5bfdfa229828619e41c63489f4977') in 0.006072 seconds
-  Import took 0.008553 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_193.asset
-  artifactKey: Guid(427f8f72c0baa714e945ccf7f3849447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_193.asset using Guid(427f8f72c0baa714e945ccf7f3849447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09aff69ed6cb25fda90f6a6cf4d99da9') in 0.006881 seconds
-  Import took 0.009335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_179.asset
-  artifactKey: Guid(2e220f269c44f2149b00fe8e4a8eeddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_179.asset using Guid(2e220f269c44f2149b00fe8e4a8eeddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177c556dedb6ec320fdfcee34586dd2e') in 0.006448 seconds
-  Import took 0.008965 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_218.asset
-  artifactKey: Guid(9cfecaeca254bdc41af1de9b89eb0d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_218.asset using Guid(9cfecaeca254bdc41af1de9b89eb0d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59bca8e17480b02b377e2742bc7a841') in 0.007172 seconds
-  Import took 0.009811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_182.asset
-  artifactKey: Guid(1c26acbeedab4f24cadb1bba6cd5e6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_182.asset using Guid(1c26acbeedab4f24cadb1bba6cd5e6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1412ff598de19df53930c6e3cb9cd3a2') in 0.006105 seconds
-  Import took 0.008396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_188.asset
-  artifactKey: Guid(ab00aa2578f7c7448a886090c1219075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_188.asset using Guid(ab00aa2578f7c7448a886090c1219075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac5f850c97da7a92a766388cc9499da') in 0.006846 seconds
-  Import took 0.009627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_169.asset
-  artifactKey: Guid(6d9804766816e234ba0b9f607fce7550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_169.asset using Guid(6d9804766816e234ba0b9f607fce7550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36442af0ac2a4b6bbddc14c2650b261a') in 0.006559 seconds
-  Import took 0.009069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_166.asset
-  artifactKey: Guid(e714cd8f121573a45ab4b7838a31de1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_166.asset using Guid(e714cd8f121573a45ab4b7838a31de1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b63140e6ca1aaf7eb4ae5ad4ff96f5') in 0.006564 seconds
-  Import took 0.009150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_185.asset
-  artifactKey: Guid(6dc7685707fa141499ac3267e64874b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_185.asset using Guid(6dc7685707fa141499ac3267e64874b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86c9fd84db27717a0334f936bbd8cf4') in 0.006981 seconds
-  Import took 0.009555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_177.asset
-  artifactKey: Guid(5606fc2d19f41ca4a93b744271fadee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_177.asset using Guid(5606fc2d19f41ca4a93b744271fadee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9412ddba26ddd9f86cb816fd47d43281') in 0.006819 seconds
-  Import took 0.009309 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_189.asset
-  artifactKey: Guid(3283784412f899d469c3b7b3d30dba80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_189.asset using Guid(3283784412f899d469c3b7b3d30dba80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d4a587cb58a34fcdcc1c058333c7225') in 0.006678 seconds
-  Import took 0.008975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_223.asset
-  artifactKey: Guid(c8507ba1e312a4e43b2743bf77dc2100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_223.asset using Guid(c8507ba1e312a4e43b2743bf77dc2100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2101ce74f30a9d669eb311879c4173') in 0.006797 seconds
-  Import took 0.009388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_167.asset
-  artifactKey: Guid(9f4c9112bb5f4a44e88447aac6a18972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_167.asset using Guid(9f4c9112bb5f4a44e88447aac6a18972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db75ee941848502767ff611fa211b1e4') in 0.006580 seconds
-  Import took 0.009173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_224.asset
-  artifactKey: Guid(9522b5aeeee8ee4469dfebc31cecd4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_224.asset using Guid(9522b5aeeee8ee4469dfebc31cecd4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bd597a2d99806d59d302b0215d1f8aa') in 0.006252 seconds
-  Import took 0.008556 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_215.asset
-  artifactKey: Guid(9320f66d64871e9419c6bc2e8a282ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_215.asset using Guid(9320f66d64871e9419c6bc2e8a282ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9986af9618a0f1fc62d3a5737fea59') in 0.006471 seconds
-  Import took 0.008969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_206.asset
-  artifactKey: Guid(a6d4c3c987e775d478cb42aee6c4a364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tile Maps/Exterior Tile Map/Set_A_Hills1_206.asset using Guid(a6d4c3c987e775d478cb42aee6c4a364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a809ac875e029b6d774b646b40762736') in 0.006399 seconds
-  Import took 0.009027 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 1.822800 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.044600 ms MarkObjects: 1.476700 ms  DeleteObjects: 0.099900 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
