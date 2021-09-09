@@ -45,7 +45,7 @@ public class OverworldEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (RegularEnemyTouchesPlayer(other))
+        if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("This Enemy will not be added to the battle " + EnemyName);
             GameManger.gameManger.EncounteredEnemyNames.Remove(EnemyName);
