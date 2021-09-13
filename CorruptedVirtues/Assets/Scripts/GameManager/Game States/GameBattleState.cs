@@ -17,7 +17,7 @@ public class GameBattleState : GameBaseState
         if (!gameManger.battleHasStarted)
         {
 
-            SceneManager.LoadScene(1);//Battle scene
+            SceneManager.LoadScene("PrototypeOverWorld");//OverWOrld
             gameManger.TransistinoToState(gameManger.OverWorldState);
         }
     }

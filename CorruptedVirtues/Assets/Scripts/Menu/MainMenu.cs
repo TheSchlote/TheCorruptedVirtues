@@ -9,13 +9,21 @@ public class MainMenu : MonoBehaviour
     public GameManger gameManger;
     public GameObject NewGameButton, panel, KnightButton, Knight, Wizard, WizardButton, Guardian;
 
+    void Start()
+    {
+        if (panel.activeSelf)
+        {
+            panel.SetActive(false);
+        }
+    }
+
     void Update()
     {
         if (KnightButton.activeSelf == false && WizardButton.activeSelf == false)
         {
             gameManger.party.PlayerParty.Add(Guardian);
             gameManger.inMenuScreen = false;
-            SceneManager.LoadScene(3); //Town
+            SceneManager.LoadScene("Town"); //Town
         }
     }
 

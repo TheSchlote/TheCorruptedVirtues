@@ -19,7 +19,7 @@ public class GameOverWorldState : GameBaseState
     {
         if (gameManger.battleHasStarted)
         {
-            SceneManager.LoadScene(2);//Battle scene
+            SceneManager.LoadScene("ProtoTypeBattle");//Battle scene
             gameManger.TransistinoToState(gameManger.BattleState);
         }
     }

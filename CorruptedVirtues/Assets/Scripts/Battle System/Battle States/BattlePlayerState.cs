@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class BattlePlayerState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Debug.Log($"{battleSystem.charactersInBattle.First().name}'s PlayerState - who do you want to attack?!");
+        battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name}'s Turn";
     }
 
     public override void Update(BattleSystem battleSystem)
@@ -34,7 +35,7 @@ public class BattlePlayerState : BattleBaseState
 
     public void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
     {
-        Debug.Log($"Slot {EnemySlot} Attacked!");
+        //battleSystem.statusText.text += $"\nSlot {EnemySlot} Attacked!";
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
         CharacterStats EnemyOnScreen;
@@ -46,13 +47,13 @@ public class BattlePlayerState : BattleBaseState
         }
         else
         {
-            Debug.Log($"This Enemy in slot {EnemySlot} is already dead!");
+            battleSystem.statusText.text += $"\nThis Enemy in slot {EnemySlot} is already dead!";
             return;
         }
 
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
         EnemyOnScreen.healthbar.SetHeatlh(Enemy.characterDefinition);
-        Debug.Log($"{Enemy.name} Health: {Enemy.characterDefinition.currentHealth}");
+        //battleSystem.statusText.text += $"\n{Enemy.name} Health: {Enemy.characterDefinition.currentHealth}";
 
         if (Enemy.characterDefinition.currentHealth <= 0)
         {

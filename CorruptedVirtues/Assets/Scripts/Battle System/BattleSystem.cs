@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class BattleSystem : MonoBehaviour
@@ -24,6 +25,8 @@ public class BattleSystem : MonoBehaviour
     public GameObject[] PlayerCloneGameObjectsInBattle = new GameObject[3];
     public GameObject[] PlayerPrefabsInBattle = new GameObject[3];
 
+    public Text statusText;
+
     private void Awake()
     {
         InstantiateCharactersForBattle();
@@ -31,11 +34,11 @@ public class BattleSystem : MonoBehaviour
 
     public void InstantiateCharactersForBattle()
     {
-        Debug.Log("Setting Up Battle");
         if (GameManger.gameManger.bossBattle)
         {
             GameObject boss = GameManger.gameManger.areaData.possibleEnemys[5];
             EnemyCloneGameObjectsInBattle[2] = Instantiate(boss, EnemySlotContainer.transform.GetChild(2).transform.GetChild(0));
+            EnemyCloneGameObjectsInBattle[2].name = boss.name;
         }
         else
         {
@@ -49,6 +52,7 @@ public class BattleSystem : MonoBehaviour
                         {
                             EnemyCloneGameObjectsInBattle[i] = Instantiate(enemy,
                                                                            EnemySlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
+                            EnemyCloneGameObjectsInBattle[i].name = enemy.name;
                             break;
                         }
                     }
@@ -64,6 +68,7 @@ public class BattleSystem : MonoBehaviour
                 //dont use coinflip save this info somewhere in gamemanager
                 PlayerCloneGameObjectsInBattle[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i],
                                                                 PlayerSlotContainer.transform.GetChild(i).transform.GetChild(CoinFlip));
+                PlayerCloneGameObjectsInBattle[i].name = GameManger.gameManger.party.PlayerParty[i].name;
             }
         }
     }
@@ -105,7 +110,7 @@ public class BattleSystem : MonoBehaviour
         }
 
         charactersInBattle = charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
-        Debug.Log($"{charactersInBattle.First()} is first!");
+        statusText.text += $"\n{charactersInBattle.First().name} is first!";
     }
 
     public bool DidEveryoneTakeATurn()
@@ -142,7 +147,7 @@ public class BattleSystem : MonoBehaviour
 
     public void DestroyEnemy(int CharacterSlot)
     {
-        Debug.Log($"Yeah! {EnemyPrefabsInBattle[CharacterSlot - 1].name} Got Got! He's dead");
+        statusText.text += $"\nYeah! {EnemyPrefabsInBattle[CharacterSlot - 1].name} Got Got! He's dead";
         EnemyPrefabsInBattle[CharacterSlot - 1] = null;
         Destroy(EnemyCloneGameObjectsInBattle[CharacterSlot - 1]);
         charactersInBattle.Remove(EnemyCloneGameObjectsInBattle[CharacterSlot - 1]);
@@ -150,7 +155,7 @@ public class BattleSystem : MonoBehaviour
 
     public void DestroyPlayer(int CharacterSlot)
     {
-        Debug.Log($"Oh No! {PlayerPrefabsInBattle[CharacterSlot].name} Got Got! He's dead");
+        statusText.text += $"\nOh No! {PlayerPrefabsInBattle[CharacterSlot].name} Got Got! He's dead";
         PlayerPrefabsInBattle[CharacterSlot] = null;
         Destroy(PlayerCloneGameObjectsInBattle[CharacterSlot]);
         charactersInBattle.Remove(PlayerCloneGameObjectsInBattle[CharacterSlot]);

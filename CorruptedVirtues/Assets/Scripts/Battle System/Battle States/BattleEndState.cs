@@ -1,28 +1,31 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleEndState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Debug.Log("EndState");
-
         if (EveryPlayerIsDead())
         {
-            Debug.Log("Enemy Wins :( GAME OVER");
+            battleSystem.statusText.text += "\nEnemy Wins :( GAME OVER";
         }
         else
         {
-            Debug.Log("Player Wins! :D");
-            if (GameManger.gameManger.bossBattle)
-            {
-                Debug.Log("Player Wins! :o GAME COMPLETE");
-            }
-            else
-            {
-                GiveXPToAlivePlayers(battleSystem);
-                Debug.Log("Press Enter to Return to OverWorld");
-            }
+            PlayerWins(battleSystem);
+        }
+    }
+
+    private void PlayerWins(BattleSystem battleSystem)
+    {
+        if (GameManger.gameManger.bossBattle)
+        {
+            battleSystem.statusText.text += "\nPlayer Wins! :o GAME COMPLETE";
+        }
+        else
+        {
+            GiveXPToAlivePlayers(battleSystem);
+            battleSystem.statusText.text += "\nPress Enter to Return to OverWorld";
         }
     }
 
@@ -55,10 +58,10 @@ public class BattleEndState : BattleBaseState
                 int LevelBeforeXP = Player.GetComponent<CharacterStats>().characterDefinition.charLevel;
                 Player.GetComponent<CharacterStats>().characterDefinition.ApplyExperience(battleSystem.TotalEnemyXP);
                 int LevelAfterXp = Player.GetComponent<CharacterStats>().characterDefinition.charLevel;
-                Debug.Log($"{Player.name} gained {battleSystem.TotalEnemyXP} XP!");
+                battleSystem.statusText.text += $"\n{Player.name} gained {battleSystem.TotalEnemyXP} XP!";
                 if (LevelBeforeXP < LevelAfterXp)
                 {
-                    Debug.Log($"{Player.name} leveled up to level {LevelAfterXp + 1}!");
+                    battleSystem.statusText.text += $"\n{Player.name} leveled up to level {LevelAfterXp + 1}!";
                 }
             }
         }

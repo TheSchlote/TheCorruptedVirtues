@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class BattleEnemyState : BattleBaseState
@@ -29,17 +30,17 @@ public class BattleEnemyState : BattleBaseState
         int PlayerSlot = Random.Range(0, 3);
         if (battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
         {
-            Debug.Log($"The Enemy is not paying attention! Player in slot {PlayerSlot} is already dead! Turn Skipped");
+            battleSystem.statusText.text += $"\n{Enemy.name} is not paying attention!";
             battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
             return;
         }
         CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();
         CharacterStats PlayerOnScreen = battleSystem.PlayerCloneGameObjectsInBattle[PlayerSlot].GetComponent<CharacterStats>();
 
-        Debug.Log($"{battleSystem.charactersInBattle.First().name} Attacks!");
+        battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name} Attacks {Player.name}!";
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
         PlayerOnScreen.healthbar.SetHeatlh(Player.characterDefinition);
-        Debug.Log($"{Player.name} Health: {Player.characterDefinition.currentHealth}");
+        //battleSystem.statusText.text += $"\n{Player.name} Health: {Player.characterDefinition.currentHealth}";
 
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
         battleSystem.DidEveryoneTakeATurn();
