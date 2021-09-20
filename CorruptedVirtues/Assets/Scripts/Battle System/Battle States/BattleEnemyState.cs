@@ -6,7 +6,7 @@ public class BattleEnemyState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Debug.Log("EnemyState");
+        //Debug.Log("EnemyState");
         if (battleSystem.charactersInBattle.Count == 0)
         {
             battleSystem.PopulateCharactersInBattle();

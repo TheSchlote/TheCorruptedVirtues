@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 850, y: 492}
-  m_MaxSize: {x: 22005, y: 14042}
+  m_MinSize: {x: 673, y: 492}
+  m_MaxSize: {x: 22003, y: 14042}
   vertical: 0
-  controlID: 154
+  controlID: 833
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,9 +45,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 349
-    y: 73
-    width: 1057
+    x: -1623
+    y: 77
+    width: 1389
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1057, y: 531}
+  m_TargetSize: {x: 1389, y: 531}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -71,8 +71,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -528.5
-    m_HBaseRangeMax: 528.5
+    m_HBaseRangeMin: -694.5
+    m_HBaseRangeMax: 694.5
     m_VBaseRangeMin: -265.5
     m_VBaseRangeMax: 265.5
     m_HAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1057
+      width: 1389
       height: 531
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 528.5, y: 265.5}
+    m_Translation: {x: 694.5, y: 265.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -528.5
+      x: -694.5
       y: -265.5
-      width: 1057
+      width: 1389
       height: 531
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1057, y: 552}
+  m_LastWindowPixelSize: {x: 1389, y: 552}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -133,12 +133,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1408
+    width: 1688
     height: 947
-  m_MinSize: {x: 575, y: 492}
-  m_MaxSize: {x: 18005, y: 14042}
+  m_MinSize: {x: 573, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 1
-  controlID: 155
+  controlID: 834
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,12 +158,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1408
+    width: 1688
     height: 573
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 135
+  controlID: 741
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,10 +181,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 349
+    width: 297
     height: 573
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -210,9 +210,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73
-    width: 348
+    x: -1920
+    y: 77
+    width: 296
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -220,7 +220,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff
+      m_ExpandedIDs: fadbffffd8ddffff14e0ffff1ce1ffff24e2ffff4ee3fffff2e9fffffef1ffff42fbffffbe6b0000c46b0000cc6b0000f26b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -259,9 +259,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 349
+    x: 297
     y: 0
-    width: 1059
+    width: 1391
     height: 573
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -292,9 +292,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 349
-    y: 73
-    width: 1057
+    x: -1623
+    y: 77
+    width: 1389
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.430124, y: 0.48903263, z: -28.731182}
+    m_Target: {x: 1094.5, y: 302.5389, z: 0}
     speed: 2
-    m_Value: {x: 1.430124, y: 0.48903263, z: -28.731182}
+    m_Value: {x: 1094.5, y: 302.5389, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -361,9 +361,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.3143444
+    m_Target: 205.3809
     speed: 2
-    m_Value: 5.3143444
+    m_Value: 205.3809
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -433,12 +433,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 573
-    width: 1408
+    width: 1688
     height: 374
-  m_MinSize: {x: 575, y: 271}
-  m_MaxSize: {x: 18005, y: 10021}
+  m_MinSize: {x: 573, y: 271}
+  m_MaxSize: {x: 18003, y: 10021}
   vertical: 0
-  controlID: 156
+  controlID: 835
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -456,7 +456,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 459
+    width: 622
     height: 374
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -485,9 +485,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 646
-    width: 458
+    x: -1920
+    y: 650
+    width: 621
     height: 353
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -503,22 +503,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a460000
-    m_LastClickedID: 18058
-    m_ExpandedIDs: 00000000724600007446000076460000784600007a4600007c46000000ca9a3b
+    m_SelectedIDs: c2430000
+    m_LastClickedID: 17346
+    m_ExpandedIDs: 00000000b6430000b8430000ba430000bc430000be430000c0430000c2430000c443000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,7 +546,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000724600007446000076460000784600007a4600007c460000
+    m_ExpandedIDs: 00000000b6430000b8430000ba430000bc430000be430000c0430000c2430000c443000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -601,7 +601,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 188
+  m_DirectoriesAreaWidth: 119
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -617,12 +617,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 459
+    x: 622
     y: 0
-    width: 633
+    width: 287
     height: 374
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -648,9 +648,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 459
-    y: 646
-    width: 631
+    x: -1298
+    y: 650
+    width: 285
     height: 353
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
@@ -668,9 +668,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1092
+    x: 909
     y: 0
-    width: 316
+    width: 779
     height: 374
   m_MinSize: {x: 242, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -699,9 +699,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1092
-    y: 646
-    width: 314
+    x: -1011
+    y: 650
+    width: 777
     height: 353
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
@@ -720,23 +720,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1408
+    x: 1688
     y: 0
-    width: 512
+    width: 232
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -757,9 +757,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1408
-    y: 73
-    width: 511
+    x: -1172
+    y: 77
+    width: 1171
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -794,13 +794,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1408
-    y: 73
-    width: 511
+    x: -232
+    y: 77
+    width: 231
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 3743
+    ID: 867
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -883,9 +883,9 @@ MonoBehaviour:
       uniqueId: '[CorruptedVirtues][suite]'
       name: CorruptedVirtues
       fullName: CorruptedVirtues
-      resultStatus: 2
-      duration: 0.0674589
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0683451
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -896,11 +896,11 @@ MonoBehaviour:
       parentId: 
       parentUniqueId: 
     - id: 1010
-      uniqueId: '[EditMode][G:/Unity/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+      uniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
       name: EditMode.dll
-      fullName: G:/Unity/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
-      resultStatus: 0
-      duration: 0
+      fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
+      resultStatus: 1
+      duration: 0.0379315
       messages: 
       output: 
       stacktrace: 
@@ -916,7 +916,7 @@ MonoBehaviour:
       name: BattlePlayerStateTests+AttackEnemy_Method
       fullName: BattlePlayerStateTests+AttackEnemy_Method
       resultStatus: 2
-      duration: 0.0309071
+      duration: 0.0318529
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -932,16 +932,14 @@ MonoBehaviour:
       name: Enemy_Takes_Damage
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
       resultStatus: 2
-      duration: 0.012763
+      duration: 0.0129259
       messages: 'SetUp : System.NullReferenceException : Object reference not set
         to an instance of an object'
-      output: 'Player (UnityEngine.GameObject) is first!
-
-'
-      stacktrace: "--SetUp\r\n  at BattleSystem.PopulatePlayerPrefabsInBattle ()
-        [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:55 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
-        () [0x0010d] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:35
+      output: 
+      stacktrace: "--SetUp\r\n  at BattleSystem.PopulateCharactersInBattle () [0x000bc]
+        in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
+        () [0x000df] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:33
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
@@ -954,13 +952,97 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+DestroyEnemy_Method][suite]
+      name: BattleSceneTests+DestroyEnemy_Method
+      fullName: BattleSceneTests+DestroyEnemy_Method
+      resultStatus: 2
+      duration: 0.012103
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1021
+      uniqueId: EditMode.dll/BattleSceneTests+DestroyEnemy_Method/[EditMode][BattleSceneTests+DestroyEnemy_Method.An_Empty_List_Repopulates]
+      name: An_Empty_List_Repopulates
+      fullName: BattleSceneTests+DestroyEnemy_Method.An_Empty_List_Repopulates
+      resultStatus: 2
+      duration: 0.0021496
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSystem.DidEveryoneTakeATurn ()
+        [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:120 \r\n  at BattleSceneTests+DestroyEnemy_Method.An_Empty_List_Repopulates
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:323
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DestroyEnemy_Method][suite]
+    - id: 1022
+      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+DestroyPlayer_Method][suite]
+      name: BattleSceneTests+DestroyPlayer_Method
+      fullName: BattleSceneTests+DestroyPlayer_Method
+      resultStatus: 2
+      duration: 0.0114064
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1023
+      uniqueId: EditMode.dll/BattleSceneTests+DestroyPlayer_Method/[EditMode][BattleSceneTests+DestroyPlayer_Method.An_Empty_List_Repopulates]
+      name: An_Empty_List_Repopulates
+      fullName: BattleSceneTests+DestroyPlayer_Method.An_Empty_List_Repopulates
+      resultStatus: 2
+      duration: 0.0009706
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSystem.DidEveryoneTakeATurn ()
+        [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:120 \r\n  at BattleSceneTests+DestroyPlayer_Method.An_Empty_List_Repopulates
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:350
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DestroyPlayer_Method][suite]
     - id: 1010
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
       name: BattleSceneTests+DidEveryoneTakeATurn_Method
       fullName: BattleSceneTests+DidEveryoneTakeATurn_Method
-      resultStatus: 1
-      duration: 0.024399
-      messages: 
+      resultStatus: 2
+      duration: 0.0164176
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -970,12 +1052,100 @@ MonoBehaviour:
       categories: []
       parentId: 1013
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1012
-      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.A_List_With_Characters_DoesNot_Repopulate]
-      name: A_List_With_Characters_DoesNot_Repopulate
-      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.A_List_With_Characters_DoesNot_Repopulate
+    - id: 1014
+      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO1_Is_First]
+      name: enemyGO1_Is_First
+      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO1_Is_First
+      resultStatus: 2
+      duration: 0.0008759
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO1_Is_First
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:236
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO1_Is_First_When_Faster_Than_Others]
+      name: enemyGO1_Is_First_When_Faster_Than_Others
+      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO1_Is_First_When_Faster_Than_Others
+      resultStatus: 2
+      duration: 0.000611
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO1_Is_First_When_Faster_Than_Others
+        () [0x0004c] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:249
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others]
+      name: enemyGO2_Is_Not_First_When_Slower_Than_Others
+      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others
+      resultStatus: 2
+      duration: 0.0005948
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSceneTests+DidEveryoneTakeATurn_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others
+        () [0x0004c] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:262
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
+    - id: 1003
+      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+      name: BattleSceneTests+InstantiateCharactersForBattle_Method
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
       resultStatus: 1
-      duration: 0.010546
+      duration: 0.0309475
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1010
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots]
+      name: Instantiate_3_PlayerSlots
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots
+      resultStatus: 1
+      duration: 0.0107324
       messages: 
       output: 
       stacktrace: 
@@ -985,18 +1155,16 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1011
-      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.An_Empty_List_Repopulates]
-      name: An_Empty_List_Repopulates
-      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.An_Empty_List_Repopulates
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss]
+      name: Instantiate_Boss
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss
       resultStatus: 1
-      duration: 0.0009499
+      duration: 0.0008664
       messages: 
-      output: 'test (UnityEngine.GameObject) is first!
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1004,14 +1172,99 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+    - id: 1005
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy]
+      name: Instantiate_EnemySlot1_When_1_Enemy
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy
+      resultStatus: 1
+      duration: 0.00072
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+    - id: 1006
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies]
+      name: Instantiate_EnemySlot2_When_2_Enemies
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies
+      resultStatus: 1
+      duration: 0.0007422
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies]
+      name: Instantiate_EnemySlot3_When_3_Enemies
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies
+      resultStatus: 1
+      duration: 0.000777
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies]
+      name: Instantiate_EnemySlot4_When_4_Enemies
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies
+      resultStatus: 1
+      duration: 0.0007574
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
+    - id: 1009
+      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies]
+      name: Instantiate_EnemySlot5_When_5_Enemies
+      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies
+      resultStatus: 1
+      duration: 0.0007862
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
     - id: 1006
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
       name: BattleSceneTests+PopulateCharactersInBattle_Method
       fullName: BattleSceneTests+PopulateCharactersInBattle_Method
       resultStatus: 1
-      duration: 0.0154488
+      duration: 0.0352154
       messages: 
       output: 
       stacktrace: 
@@ -1022,16 +1275,14 @@ MonoBehaviour:
       categories: []
       parentId: 1008
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1007
-      uniqueId: EditMode.dll/BattleSceneTests+PopulateCharactersInBattle_Method/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First]
-      name: enemyGO1_Is_First
-      fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First
+    - id: 1012
+      uniqueId: EditMode.dll/BattleSceneTests+PopulateCharactersInBattle_Method/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First]
+      name: Single_Enemy_Is_First
+      fullName: BattleSceneTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
       resultStatus: 1
-      duration: 0.0011761
+      duration: 0.0184004
       messages: 
-      output: 'test (UnityEngine.GameObject) is first!
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1039,68 +1290,82 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1011
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
-    - id: 1008
-      uniqueId: EditMode.dll/BattleSceneTests+PopulateCharactersInBattle_Method/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First_When_Faster_Than_Others]
-      name: enemyGO1_Is_First_When_Faster_Than_Others
-      fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO1_Is_First_When_Faster_Than_Others
-      resultStatus: 1
-      duration: 0.0009378
-      messages: 
-      output: 'test (UnityEngine.GameObject) is first!
-
-'
+    - id: 1017
+      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
+      name: BattleSceneTests+WhosNext_Method
+      fullName: BattleSceneTests+WhosNext_Method
+      resultStatus: 2
+      duration: 0.0222394
+      messages: One or more child tests had errors
+      output: 
       stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1019
+      uniqueId: EditMode.dll/BattleSceneTests+WhosNext_Method/[EditMode][BattleSceneTests+WhosNext_Method.A_List_With_Characters_DoesNot_Repopulate]
+      name: A_List_With_Characters_DoesNot_Repopulate
+      fullName: BattleSceneTests+WhosNext_Method.A_List_With_Characters_DoesNot_Repopulate
+      resultStatus: 2
+      duration: 0.0009448
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSystem.DidEveryoneTakeATurn ()
+        [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:120 \r\n  at BattleSceneTests+WhosNext_Method.A_List_With_Characters_DoesNot_Repopulate
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:296
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/BattleSceneTests+PopulateCharactersInBattle_Method/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others]
-      name: enemyGO2_Is_Not_First_When_Slower_Than_Others
-      fullName: BattleSceneTests+PopulateCharactersInBattle_Method.enemyGO2_Is_Not_First_When_Slower_Than_Others
-      resultStatus: 1
-      duration: 0.00089
-      messages: 
-      output: 'test2 (UnityEngine.GameObject) is first!
-
-'
-      stacktrace: 
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
+    - id: 1018
+      uniqueId: EditMode.dll/BattleSceneTests+WhosNext_Method/[EditMode][BattleSceneTests+WhosNext_Method.An_Empty_List_Repopulates]
+      name: An_Empty_List_Repopulates
+      fullName: BattleSceneTests+WhosNext_Method.An_Empty_List_Repopulates
+      resultStatus: 2
+      duration: 0.0005342
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:113 \r\n  at BattleSystem.DidEveryoneTakeATurn ()
+        [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:120 \r\n  at BattleSceneTests+WhosNext_Method.An_Empty_List_Repopulates
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:289
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
-    m_ResultText: "Enemy_Takes_Damage (0.013s)\n---\nSetUp : System.NullReferenceException
-      : Object reference not set to an instance of an object\n---\n--SetUp\r\n  at
-      BattleSystem.PopulatePlayerPrefabsInBattle () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:55 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
-      () [0x0010d] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:35
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0\n---\nPlayer (UnityEngine.GameObject)
-      is first!"
-    m_ResultStacktrace: "--SetUp\r\n  at BattleSystem.PopulatePlayerPrefabsInBattle
-      () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:55 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
-      () [0x0010d] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:35
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
+    m_ResultText: Single_Enemy_Is_First (0.018s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8d48e759
-      m_LastClickedID: 1508329613
+      m_SelectedIDs: 17d623ba
+      m_LastClickedID: -1172056553
       m_ExpandedIDs: 261825be0ed96ac23e973306048c4b2aa787ce41ab6eb0448aa5cf4b23b4a06e3f36ee7cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
