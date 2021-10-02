@@ -1,13 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 public class BattleSystem : MonoBehaviour
 {
     private BattleBaseState currentState;
 
-    public BattleBaseState CurrentState{get { return currentState; }}
+    public BattleBaseState CurrentState { get { return currentState; } }
 
     public int TotalEnemyXP;
 
@@ -15,6 +14,7 @@ public class BattleSystem : MonoBehaviour
     public GameObject PlayerSlotContainer;
 
     public readonly BattleStartState startState = new BattleStartState();
+    public readonly BattleWhosNextState whosNextState = new BattleWhosNextState();
     public readonly BattlePlayerState playerState = new BattlePlayerState();
     public readonly BattleEnemyState enemyState = new BattleEnemyState();
     public readonly BattleEndState endState = new BattleEndState();
@@ -90,60 +90,6 @@ public class BattleSystem : MonoBehaviour
     }
 
     private int CoinFlip => Random.Range(0, 2);
-
-    public void PopulateCharactersInBattle()
-    {
-        for (int i = 0; i < EnemyCloneGameObjectsInBattle.Length; i++)
-        {
-            if (EnemyCloneGameObjectsInBattle[i] != null)
-            {
-                charactersInBattle.Add(EnemyCloneGameObjectsInBattle[i]);
-            }
-        }
-
-        for (int i = 0; i < PlayerCloneGameObjectsInBattle.Length; i++)
-        {
-            if (PlayerCloneGameObjectsInBattle[i] != null)
-            {
-                charactersInBattle.Add(PlayerCloneGameObjectsInBattle[i]);
-            }
-        }
-
-        charactersInBattle = charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
-        statusText.text += $"\n{charactersInBattle.First().name} is first!";
-    }
-
-    public bool DidEveryoneTakeATurn()
-    {
-        if (charactersInBattle.Count == 0)
-        {
-            PopulateCharactersInBattle();
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    public void WhosNext()
-    {
-        if (charactersInBattle.Count != 0)
-        {
-            if (charactersInBattle.First().GetComponent<CharacterStats>().characterDefinition.Enemy)
-            {
-                TransitionToState(enemyState);
-            }
-            else
-            {
-                TransitionToState(playerState);
-            }
-        }
-        else
-        {
-            TransitionToState(endState);
-        }
-    }
 
     public void DestroyEnemy(int CharacterSlot)
     {

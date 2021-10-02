@@ -30,7 +30,7 @@ public class BattlePlayerStateTests
             testEnemyGo.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 1;
             //_battleSystem.enemyGO1 = testEnemyGo;
 
-            _battleSystem.PopulateCharactersInBattle();
+            //_battleSystem.PopulateCharactersInBattle();
 
             //_battleSystem.PopulatePrefabsInBattle();
         }

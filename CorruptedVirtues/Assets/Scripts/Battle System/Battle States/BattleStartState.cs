@@ -1,20 +1,21 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 public class BattleStartState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Debug.Log("StartState");
         PopulatePrefabsInBattle(battleSystem);
 
-        battleSystem.PopulateCharactersInBattle();
+        PopulateCharactersInBattle(battleSystem);
 
         ResetCharactersHealthToFull(battleSystem);
 
         GiveCharactersInBattleHealthbars(battleSystem);
 
-        battleSystem.WhosNext();
+        //battleSystem.WhosNext();
+        battleSystem.TransitionToState(battleSystem.whosNextState);
     }
 
     public void GiveCharactersInBattleHealthbars(BattleSystem battleSystem)
@@ -89,6 +90,27 @@ public class BattleStartState : BattleBaseState
         {
             battleSystem.PlayerPrefabsInBattle[i] = GameManger.gameManger.party.PlayerParty[i];
         }
+    }
+    public void PopulateCharactersInBattle(BattleSystem battleSystem)
+    {
+        for (int i = 0; i < battleSystem.EnemyCloneGameObjectsInBattle.Length; i++)
+        {
+            if (battleSystem.EnemyCloneGameObjectsInBattle[i] != null)
+            {
+                battleSystem.charactersInBattle.Add(battleSystem.EnemyCloneGameObjectsInBattle[i]);
+            }
+        }
+
+        for (int i = 0; i < battleSystem.PlayerCloneGameObjectsInBattle.Length; i++)
+        {
+            if (battleSystem.PlayerCloneGameObjectsInBattle[i] != null)
+            {
+                battleSystem.charactersInBattle.Add(battleSystem.PlayerCloneGameObjectsInBattle[i]);
+            }
+        }
+
+        battleSystem.charactersInBattle = battleSystem.charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
+        battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name} is first!";
     }
     public void ResetCharactersHealthToFull(BattleSystem battleSystem)
     {

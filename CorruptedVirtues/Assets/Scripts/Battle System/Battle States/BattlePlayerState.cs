@@ -53,8 +53,8 @@ public class BattlePlayerState : BattleBaseState
 
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
         EnemyOnScreen.healthbar.SetHeatlh(Enemy.characterDefinition);
-        //battleSystem.statusText.text += $"\n{Enemy.name} Health: {Enemy.characterDefinition.currentHealth}";
 
+        //Make this a funciton on character Death
         if (Enemy.characterDefinition.currentHealth <= 0)
         {
             battleSystem.DestroyEnemy(EnemySlot);
@@ -67,27 +67,7 @@ public class BattlePlayerState : BattleBaseState
     public void EndOfPlayersTurn(BattleSystem battleSystem)
     {
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
-        battleSystem.DidEveryoneTakeATurn();
 
-        if (AreAllEnemiesDead(battleSystem))
-        {
-            battleSystem.TransitionToState(battleSystem.endState);
-        }
-        else
-        {
-            battleSystem.WhosNext();
-        }
-    }
-
-    public bool AreAllEnemiesDead(BattleSystem battleSystem)
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            if (battleSystem.EnemyPrefabsInBattle[i] != null)
-            {
-                return false;
-            }
-        }
-        return true;
+        battleSystem.TransitionToState(battleSystem.whosNextState);
     }
 }
