@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 848, y: 492}
-  m_MaxSize: {x: 22003, y: 14042}
+  m_MinSize: {x: 851, y: 492}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 3398
+  controlID: 7347
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -47,7 +47,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 246
     y: 19
-    width: 1133
+    width: 1132
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1133, y: 531}
+  m_TargetSize: {x: 1132, y: 531}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -71,8 +71,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -566.5
-    m_HBaseRangeMax: 566.5
+    m_HBaseRangeMin: -566
+    m_HBaseRangeMax: 566
     m_VBaseRangeMin: -265.5
     m_VBaseRangeMax: 265.5
     m_HAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1133
+      width: 1132
       height: 531
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 566.5, y: 265.5}
+    m_Translation: {x: 566, y: 265.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -566.5
+      x: -566
       y: -265.5
-      width: 1133
+      width: 1132
       height: 531
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1133, y: 552}
+  m_LastWindowPixelSize: {x: 1132, y: 552}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -133,12 +133,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1380
+    width: 1379
     height: 947
-  m_MinSize: {x: 573, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 575, y: 492}
+  m_MaxSize: {x: 18005, y: 14042}
   vertical: 1
-  controlID: 3399
+  controlID: 7348
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,12 +158,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1380
+    width: 1379
     height: 573
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 3303
+  controlID: 7239
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 72d1ffff50d2ffff2cd3ffff50d3ffff7ed3ffff76eeffff42f0ffff20f1ffffd6f4ffffb2f6ffffa6f7ffff42fbffffe63f0000f43f00001a4000005c6400008a650000ea6a0000006b0000
+      m_ExpandedIDs: c2caffff9ecbffffe2ccffffeccdffff30cfffff50cfffff4ad1ffffa2d2fffff4d3ffff48d5ffffbad5ffff7ed6ffffdcd7ffffe8e3ffff78e4fffffeebffff7eecffff34f6ffff96f6ffff42fbffff205500002e55000054550000f06800004c71000084780000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -261,7 +261,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245
     y: 0
-    width: 1135
+    width: 1134
     height: 573
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -294,7 +294,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245
     y: 73
-    width: 1133
+    width: 1132
     height: 552
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 616.08026, y: 265.23364, z: -16.076784}
+    m_Target: {x: 0.057151686, y: 2.3577635, z: -0.54783314}
     speed: 2
-    m_Value: {x: 616.08026, y: 265.23364, z: -16.076784}
+    m_Value: {x: 0.057151686, y: 2.3577635, z: -0.54783314}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -361,9 +361,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 318.95026
+    m_Target: 1.2812372
     speed: 2
-    m_Value: 318.95026
+    m_Value: 1.2812372
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -433,12 +433,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 573
-    width: 1380
+    width: 1379
     height: 374
-  m_MinSize: {x: 573, y: 271}
-  m_MaxSize: {x: 18003, y: 10021}
+  m_MinSize: {x: 575, y: 271}
+  m_MaxSize: {x: 18005, y: 10021}
   vertical: 0
-  controlID: 3400
+  controlID: 7349
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -456,10 +456,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 516
+    width: 515
     height: 374
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -487,7 +487,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 646
-    width: 515
+    width: 514
     height: 353
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -503,22 +503,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Splash
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Splash
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 76540000
-    m_LastClickedID: 21622
-    m_ExpandedIDs: 00000000984400009a4400009c4400009e440000a0440000a2440000a4440000a64400007854000000ca9a3b
+    m_SelectedIDs: c8430000
+    m_LastClickedID: 17352
+    m_ExpandedIDs: 00000000bc430000be430000c0430000c2430000c4430000c6430000c8430000ca43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,7 +546,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000984400009a4400009c4400009e440000a0440000a2440000a4440000a644000000ca9a3b
+    m_ExpandedIDs: 00000000bc430000be430000c0430000c2430000c4430000c6430000c8430000ca43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,8 +571,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 8a7a0000
-    m_LastClickedInstanceID: 31370
+    m_SelectedInstanceIDs: 9a540000
+    m_LastClickedInstanceID: 21658
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007253000000000000
     m_RenameOverlay:
@@ -601,7 +601,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 110
+  m_DirectoriesAreaWidth: 210
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 516
+    x: 515
     y: 0
     width: 225
     height: 374
@@ -648,7 +648,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 516
+    x: 515
     y: 646
     width: 223
     height: 353
@@ -668,12 +668,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 741
+    x: 740
     y: 0
     width: 639
     height: 374
-  m_MinSize: {x: 240, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 242, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -699,7 +699,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 741
+    x: 740
     y: 646
     width: 637
     height: 353
@@ -725,12 +725,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1380
+    x: 1379
     y: 0
-    width: 540
+    width: 541
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -757,9 +757,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1380
+    x: 1379
     y: 73
-    width: 539
+    width: 540
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -768,7 +768,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 31370
+  m_LastInspectedObjectInstanceID: 21658
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
@@ -794,13 +794,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1380
+    x: 1379
     y: 73
-    width: 539
+    width: 540
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 504
+    ID: 228
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -884,7 +884,7 @@ MonoBehaviour:
       name: CorruptedVirtues
       fullName: CorruptedVirtues
       resultStatus: 2
-      duration: 1460.6666
+      duration: 0.1038904
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -900,7 +900,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 2
-      duration: 1460.6217
+      duration: 0.0630793
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -916,7 +916,7 @@ MonoBehaviour:
       name: BattlePlayerStateTests+AttackEnemy_Method
       fullName: BattlePlayerStateTests+AttackEnemy_Method
       resultStatus: 2
-      duration: 0.0264643
+      duration: 0.0542838
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -932,14 +932,14 @@ MonoBehaviour:
       name: Enemy_Takes_Damage
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
       resultStatus: 2
-      duration: 0.0211719
-      messages: 'SetUp : System.NullReferenceException : Object reference not set
-        to an instance of an object'
+      duration: 0.0351567
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: "--SetUp\r\n  at BattleSystem.PopulateCharactersInBattle () [0x000bc]
-        in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:113 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.BeforeEveryTest
-        () [0x000df] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:33
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
+        (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattlePlayerState.cs:39 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:41
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
@@ -952,80 +952,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
-      name: BattleSceneTests+DidEveryoneTakeATurn_Method
-      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method
-      resultStatus: 2
-      duration: 0.0526392
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1013
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1015
-      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet]
-      name: If_Someone_Has_Not_Gone_Yet
-      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet
-      resultStatus: 2
-      duration: 0.0208256
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:113 \r\n  at BattleSystem.DidEveryoneTakeATurn ()
-        [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:120 \r\n  at BattleSceneTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet
-        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:243
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1014
-      uniqueId: EditMode.dll/BattleSceneTests+DidEveryoneTakeATurn_Method/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters]
-      name: Once_Everyone_Has_Gone_Reset_Alive_Characters
-      fullName: BattleSceneTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters
-      resultStatus: 2
-      duration: 0.0200972
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at BattleSystem.PopulateCharactersInBattle () [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:113 \r\n  at BattleSystem.DidEveryoneTakeATurn ()
-        [0x00014] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:120 \r\n  at BattleSceneTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters
-        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:237
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+DidEveryoneTakeATurn_Method][suite]
     - id: 1003
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
       name: BattleSceneTests+InstantiateCharactersForBattle_Method
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
       resultStatus: 1
-      duration: 0.0186833
+      duration: 0.0425734
       messages: 
       output: 
       stacktrace: 
@@ -1041,7 +973,7 @@ MonoBehaviour:
       name: Instantiate_3_PlayerSlots
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots
       resultStatus: 1
-      duration: 0.0009973
+      duration: 0.0211048
       messages: 
       output: 
       stacktrace: 
@@ -1058,7 +990,7 @@ MonoBehaviour:
       name: Instantiate_Boss
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss
       resultStatus: 1
-      duration: 0.0006115
+      duration: 0.0009221
       messages: 
       output: 
       stacktrace: 
@@ -1075,7 +1007,7 @@ MonoBehaviour:
       name: Instantiate_EnemySlot1_When_1_Enemy
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy
       resultStatus: 1
-      duration: 0.000703
+      duration: 0.0007763
       messages: 
       output: 
       stacktrace: 
@@ -1092,7 +1024,7 @@ MonoBehaviour:
       name: Instantiate_EnemySlot2_When_2_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies
       resultStatus: 1
-      duration: 0.0006126
+      duration: 0.0007284
       messages: 
       output: 
       stacktrace: 
@@ -1109,7 +1041,7 @@ MonoBehaviour:
       name: Instantiate_EnemySlot3_When_3_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies
       resultStatus: 1
-      duration: 0.0006453
+      duration: 0.0007314
       messages: 
       output: 
       stacktrace: 
@@ -1126,7 +1058,7 @@ MonoBehaviour:
       name: Instantiate_EnemySlot4_When_4_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies
       resultStatus: 1
-      duration: 0.0006269
+      duration: 0.0007696
       messages: 
       output: 
       stacktrace: 
@@ -1143,7 +1075,7 @@ MonoBehaviour:
       name: Instantiate_EnemySlot5_When_5_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies
       resultStatus: 1
-      duration: 0.0006525
+      duration: 0.0007866
       messages: 
       output: 
       stacktrace: 
@@ -1155,13 +1087,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1006
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
-      name: BattleSceneTests+PopulateCharactersInBattle_Method
-      fullName: BattleSceneTests+PopulateCharactersInBattle_Method
-      resultStatus: 1
-      duration: 0.0080019
-      messages: 
+    - id: 1011
+      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
+      name: BattleSceneTests+TransistionToState_Method
+      fullName: BattleSceneTests+TransistionToState_Method
+      resultStatus: 2
+      duration: 0.0571457
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1169,17 +1101,29 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1008
+      parentId: 1022
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
     - id: 1012
-      uniqueId: EditMode.dll/BattleSceneTests+PopulateCharactersInBattle_Method/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First]
-      name: Single_Enemy_Is_First
-      fullName: BattleSceneTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
-      resultStatus: 1
-      duration: 0.0007784
-      messages: 
+      uniqueId: EditMode.dll/BattleSceneTests+TransistionToState_Method/[EditMode][BattleSceneTests+TransistionToState_Method.Transition_To_startState]
+      name: Transition_To_startState
+      fullName: BattleSceneTests+TransistionToState_Method.Transition_To_startState
+      resultStatus: 2
+      duration: 0.0361954
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartState.PopulateCharactersInBattle
+        (BattleSystem battleSystem) [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattleStartState.cs:113 \r\n  at BattleStartState.EnterState
+        (BattleSystem battleSystem) [0x00009] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattleStartState.cs:11 \r\n  at BattleSystem.TransitionToState
+        (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:89 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:186
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1187,14 +1131,14 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1011
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+PopulateCharactersInBattle_Method][suite]
-    - id: 1017
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
-      name: BattleSceneTests+WhosNext_Method
-      fullName: BattleSceneTests+WhosNext_Method
-      resultStatus: 2
-      duration: 1460.4912
-      messages: One or more child tests had errors
+      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
+      name: BattleStartStateTests+PopulatePrefabsInBattle_Method
+      fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1204,30 +1148,100 @@ MonoBehaviour:
       categories: []
       parentId: 1024
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1017
-      uniqueId: EditMode.dll/BattleSceneTests+WhosNext_Method/[EditMode][BattleSceneTests+WhosNext_Method.Enemy_Is_Next]
-      name: Enemy_Is_Next
-      fullName: BattleSceneTests+WhosNext_Method.Enemy_Is_Next
-      resultStatus: 2
-      duration: 1460.4746
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+    - id: 1014
+      uniqueId: EditMode.dll/BattleStartStateTests+PopulatePrefabsInBattle_Method/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First]
+      name: Single_Enemy_Is_First
+      fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
-      stacktrace: "  at BattleEndState.EveryPlayerIsDead () [0x00022] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleEndState.cs:36 \r\n  at BattleEndState.EnterState
-        (BattleSystem battleSystem) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleEndState.cs:9 \r\n  at BattleSystem.TransitionToState
-        (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00056] in
-        U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:144 \r\n  at BattleEnemyState.EnterState (BattleSystem
-        battleSystem) [0x00027] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleEnemyState.cs:17 \r\n  at BattleSystem.TransitionToState
-        (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00033] in
-        U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:135 \r\n  at BattleSceneTests+WhosNext_Method.Enemy_Is_Next
-        () [0x00065] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:272
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
+      name: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
+      fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
+      resultStatus: 1
+      duration: 0.0148823
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1017
+      uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet]
+      name: If_Someone_Has_Not_Gone_Yet
+      fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet
+      resultStatus: 1
+      duration: 0.0006493
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters]
+      name: Once_Everyone_Has_Gone_Reset_Alive_Characters
+      fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters
+      resultStatus: 1
+      duration: 0.0002854
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
+      name: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
+      fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
+      resultStatus: 2
+      duration: 0.0153032
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1014
+      uniqueId: EditMode.dll/BattleWhosNextStateTests+PopulateCharactersInBattle_Method/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First]
+      name: Single_Enemy_Is_First
+      fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
+      resultStatus: 2
+      duration: 0.0039449
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
+      output: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
+        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleWhosNextStateTests.cs:55
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
@@ -1238,18 +1252,34 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1016
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
     - id: 1018
-      uniqueId: EditMode.dll/BattleSceneTests+WhosNext_Method/[EditMode][BattleSceneTests+WhosNext_Method.Player_Is_Next]
-      name: Player_Is_Next
-      fullName: BattleSceneTests+WhosNext_Method.Player_Is_Next
+      uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
+      name: BattleWhosNextStateTests+WhosNext_Method
+      fullName: BattleWhosNextStateTests+WhosNext_Method
       resultStatus: 2
-      duration: 0.0013707
-      messages: "  Expected: <BattlePlayerState>\r\n  But was:  <BattlePlayerState>\r\n"
+      duration: 0.0218929
+      messages: One or more child tests had errors
       output: 
-      stacktrace: 'at BattleSceneTests+WhosNext_Method.Player_Is_Next () [0x00071]
-        in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleSceneTests.cs:285
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1019
+      uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next]
+      name: Enemy_Is_Next
+      fullName: BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next
+      resultStatus: 2
+      duration: 0.0048626
+      messages: "  Expected: null\r\n  But was:  <BattleEnemyState>\r\n"
+      output: 
+      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next () [0x00065]
+        in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:119
 
 '
       notRunnable: 0
@@ -1258,79 +1288,81 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1016
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
-    - id: 1019
-      uniqueId: EditMode.dll/BattleSceneTests+WhosNext_Method/[EditMode][BattleSceneTests+WhosNext_Method.The_End_Is_Next]
-      name: The_End_Is_Next
-      fullName: BattleSceneTests+WhosNext_Method.The_End_Is_Next
+      parentId: 1018
+      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next]
+      name: Player_Is_Next
+      fullName: BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next
       resultStatus: 2
-      duration: 0.0006607
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      duration: 0.0010995
+      messages: "  Expected: null\r\n  But was:  <BattlePlayerState>\r\n"
       output: 
-      stacktrace: "  at BattleEndState.EveryPlayerIsDead () [0x00022] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleEndState.cs:36 \r\n  at BattleEndState.EnterState
-        (BattleSystem battleSystem) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleEndState.cs:9 \r\n  at BattleSystem.TransitionToState
-        (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00056] in
-        U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:144 \r\n  at BattleSceneTests+WhosNext_Method.The_End_Is_Next
-        () [0x00007] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:291
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
+      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next ()
+        [0x00065] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:131
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1016
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+WhosNext_Method][suite]
-    m_ResultText: "Enemy_Is_Next (1460.475s)\n---\nSystem.NullReferenceException
-      : Object reference not set to an instance of an object\n---\nat BattleEndState.EveryPlayerIsDead
-      () [0x00022] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\Battle States\\BattleEndState.cs:36 \r\n  at BattleEndState.EnterState
-      (BattleSystem battleSystem) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\Battle States\\BattleEndState.cs:9 \r\n  at BattleSystem.TransitionToState
+      parentId: 1018
+      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
+    - id: 1021
+      uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next]
+      name: The_End_Is_Next
+      fullName: BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next
+      resultStatus: 2
+      duration: 0.0009175
+      messages: "  Expected: null\r\n  But was:  <BattleEndState>\r\n"
+      output: 
+      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next ()
+        [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:138
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
+    m_ResultText: "Transition_To_startState (0.036s)\n---\nSystem.InvalidOperationException
+      : Sequence contains no elements\n---\nat System.Linq.Enumerable.First[TSource]
+      (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+      \r\n  at BattleStartState.PopulateCharactersInBattle (BattleSystem battleSystem)
+      [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+      System\\Battle States\\BattleStartState.cs:113 \r\n  at BattleStartState.EnterState
+      (BattleSystem battleSystem) [0x00009] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+      System\\Battle States\\BattleStartState.cs:11 \r\n  at BattleSystem.TransitionToState
       (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00056] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:144 \r\n  at BattleEnemyState.EnterState (BattleSystem
-      battleSystem) [0x00027] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\Battle States\\BattleEnemyState.cs:17 \r\n  at BattleSystem.TransitionToState
-      (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00033] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:135 \r\n  at BattleSceneTests+WhosNext_Method.Enemy_Is_Next
-      () [0x00065] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:272
+      System\\BattleSystem.cs:89 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
+      () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:186
       \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0"
-    m_ResultStacktrace: "  at BattleEndState.EveryPlayerIsDead () [0x00022] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\Battle States\\BattleEndState.cs:36 \r\n  at BattleEndState.EnterState
-      (BattleSystem battleSystem) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\Battle States\\BattleEndState.cs:9 \r\n  at BattleSystem.TransitionToState
+    m_ResultStacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+      source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartState.PopulateCharactersInBattle
+      (BattleSystem battleSystem) [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+      System\\Battle States\\BattleStartState.cs:113 \r\n  at BattleStartState.EnterState
+      (BattleSystem battleSystem) [0x00009] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+      System\\Battle States\\BattleStartState.cs:11 \r\n  at BattleSystem.TransitionToState
       (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00056] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:144 \r\n  at BattleEnemyState.EnterState (BattleSystem
-      battleSystem) [0x00027] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\Battle States\\BattleEnemyState.cs:17 \r\n  at BattleSystem.TransitionToState
-      (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:89 \r\n  at BattleSystem.WhosNext () [0x00033] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-      System\\BattleSystem.cs:135 \r\n  at BattleSceneTests+WhosNext_Method.Enemy_Is_Next
-      () [0x00065] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:272
+      System\\BattleSystem.cs:89 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
+      () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:186
       \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bb604b5b
-      m_LastClickedID: 1531666619
-      m_ExpandedIDs: 261825be0ed96ac23e973306048c4b2aa787ce41ab6eb0448aa5cf4b23b4a06e3f36ee7cffffff7f
+      m_SelectedIDs: ff6a01be
+      m_LastClickedID: -1107203329
+      m_ExpandedIDs: 261825bea76b74ce3e973306048c4b2aa787ce41ab6eb0448aa5cf4b23b4a06e3f36ee7cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

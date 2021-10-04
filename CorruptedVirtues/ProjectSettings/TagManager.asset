@@ -8,6 +8,7 @@ TagManager:
   - LeaveTown
   - EnterTown
   - Boss
+  - QuestGiver
   layers:
   - Default
   - TransparentFX
