@@ -6,36 +6,37 @@ public class BattlePlayerState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
+        Image PlayerProfile = battleSystem.PlayerChoiceButtons.transform.GetChild(2).GetComponent<Image>();
+        SpriteRenderer PlayersProfile = battleSystem.charactersInBattle.First().transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>();
+        PlayerProfile.sprite = PlayersProfile.sprite;
+        Text PlayerName = battleSystem.PlayerChoiceButtons.transform.GetChild(2).GetChild(0).GetComponent<Text>();
+        PlayerName.text = battleSystem.charactersInBattle.First().name;
         battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name}'s Turn";
+        battleSystem.PlayerChoiceButtons.SetActive(true);
+        battleSystem.EnemyAttackButtons.SetActive(false);
     }
 
     public override void Update(BattleSystem battleSystem)
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (battleSystem.attack)
         {
-            AttackEnemy(battleSystem, 1);
+            battleSystem.PlayerChoiceButtons.SetActive(false);
+            battleSystem.EnemyAttackButtons.SetActive(true);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+
+        if(battleSystem.attackSlot != 0)
         {
-            AttackEnemy(battleSystem, 2);
+            AttackEnemy(battleSystem, battleSystem.attackSlot);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+
+        if (battleSystem.flee)
         {
-            AttackEnemy(battleSystem, 3);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            AttackEnemy(battleSystem, 4);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            AttackEnemy(battleSystem, 5);
+            battleSystem.TransitionToState(battleSystem.endState);
         }
     }
 
     public void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
     {
-        //battleSystem.statusText.text += $"\nSlot {EnemySlot} Attacked!";
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
         CharacterStats EnemyOnScreen;
@@ -48,6 +49,7 @@ public class BattlePlayerState : BattleBaseState
         else
         {
             battleSystem.statusText.text += $"\nThis Enemy in slot {EnemySlot} is already dead!";
+            battleSystem.attackSlot = 0;
             return;
         }
 
@@ -66,8 +68,9 @@ public class BattlePlayerState : BattleBaseState
 
     public void EndOfPlayersTurn(BattleSystem battleSystem)
     {
+        battleSystem.attack = false;
+        battleSystem.attackSlot = 0;
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
-
         battleSystem.TransitionToState(battleSystem.whosNextState);
     }
 }

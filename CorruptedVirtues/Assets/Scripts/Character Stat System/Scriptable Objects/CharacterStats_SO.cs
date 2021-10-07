@@ -208,7 +208,7 @@ public class CharacterStats_SO : ScriptableObject
     private void LevelUp()
     {
         charLevel++;
-
+        //Return this as a string and display on screen
         maxHealth += charLevelUps[charLevel - 1].maxHealth;
         Debug.Log("Health increased by " + charLevelUps[charLevel - 1].maxHealth + " Max Health is now " + maxHealth);
         maxMagic += charLevelUps[charLevel - 1].maxMagic;

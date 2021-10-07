@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
-    public GameObject questWindow;
+    public GameObject questWindow, questPanel;
     public Text titleText;
     public Text descriptionText;
     private bool withinQuestRange;
@@ -29,6 +29,18 @@ public class QuestGiver : MonoBehaviour
         if (withinQuestRange && Input.GetKeyDown(KeyCode.Space))
         {
             OpenQuestWIndow();
+        }
+        if (quest.isActive)
+        {
+            questPanel.SetActive(true);
+            questPanel.transform.GetChild(0).GetComponent<Text>().text = quest.title;
+            questPanel.transform.GetChild(1).GetComponent<Text>().text = $"{quest.goal.currentAmount}/{quest.goal.requiredAmount}";
+            questPanel.transform.GetChild(2).GetComponent<Slider>().maxValue = quest.goal.requiredAmount;
+            questPanel.transform.GetChild(2).GetComponent<Slider>().value = quest.goal.currentAmount;
+        }
+        else
+        {
+            questPanel.SetActive(false);
         }
     }
 

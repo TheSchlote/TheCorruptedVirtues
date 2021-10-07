@@ -6,9 +6,12 @@ public class BattleEndState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
+        battleSystem.EndBattleScreen.SetActive(true);
+        battleSystem.PlayerChoiceButtons.SetActive(false);
+        RemoveCharactersInBattleHealthbars(battleSystem);
         if (EveryPlayerIsDead())
         {
-            battleSystem.statusText.text += "\nEnemy Wins :( GAME OVER";
+            battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Enemy Wins :( GAME OVER";
         }
         else
         {
@@ -20,12 +23,12 @@ public class BattleEndState : BattleBaseState
     {
         if (GameManger.gameManger.bossBattle)
         {
-            battleSystem.statusText.text += "\nPlayer Wins! :o GAME COMPLETE";
+            battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Player Wins! :o GAME COMPLETE";
         }
         else
         {
             GiveXPToAlivePlayers(battleSystem);
-            battleSystem.statusText.text += "\nPress Enter to Return to OverWorld";
+            battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Player Wins! :D";
         }
     }
 
@@ -57,12 +60,50 @@ public class BattleEndState : BattleBaseState
             {
                 int LevelBeforeXP = Player.GetComponent<CharacterStats>().characterDefinition.charLevel;
                 Player.GetComponent<CharacterStats>().characterDefinition.ApplyExperience(battleSystem.TotalEnemyXP);
+                Text EndScreenText = battleSystem.EndBattleScreen.transform.GetChild(1).GetComponent<Text>();
+                EndScreenText.text += $"\n{Player.name} gained {battleSystem.TotalEnemyXP} XP!";
                 int LevelAfterXp = Player.GetComponent<CharacterStats>().characterDefinition.charLevel;
-                battleSystem.statusText.text += $"\n{Player.name} gained {battleSystem.TotalEnemyXP} XP!";
                 if (LevelBeforeXP < LevelAfterXp)
                 {
-                    battleSystem.statusText.text += $"\n{Player.name} leveled up to level {LevelAfterXp + 1}!";
+                    EndScreenText.text += $"\n{Player.name} leveled up to level {LevelAfterXp + 1}!";
                 }
+            }
+        }
+    }
+    public void RemoveCharactersInBattleHealthbars(BattleSystem battleSystem)
+    {
+        //prolly switch to using characters in battle
+        if (GameManger.gameManger.bossBattle)
+        {
+            GameObject boss = GameManger.gameManger.areaData.possibleEnemys[5];
+            Healthbar enemyHealthbar = battleSystem.EnemyCloneGameObjectsInBattle[2].GetComponent<CharacterStats>().healthbar;
+            enemyHealthbar.gameObject.SetActive(false);
+        }
+        else
+        {
+            for (int i = 0; i < GameManger.gameManger.EncounteredEnemyNames.Count; i++)
+            {
+                if (GameManger.gameManger.EncounteredEnemyNames[i] != null)
+                {
+                    foreach (GameObject enemy in GameManger.gameManger.areaData.possibleEnemys)
+                    {
+                        if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
+                        {
+                            Healthbar enemyHealthbar = battleSystem.EnemyCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar;
+                            enemyHealthbar.gameObject.SetActive(false);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
+        {
+            if (GameManger.gameManger.party.PlayerParty[i] != null)
+            {
+                Healthbar playerHealthbar = battleSystem.PlayerCloneGameObjectsInBattle[i].GetComponent<CharacterStats>().healthbar;
+                playerHealthbar.gameObject.SetActive(false);
             }
         }
     }

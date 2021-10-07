@@ -26,7 +26,10 @@ public class BattleSystem : MonoBehaviour
     public GameObject[] PlayerPrefabsInBattle = new GameObject[3];
 
     public Text statusText;
-
+    public GameObject PlayerChoiceButtons;
+    public bool attack, flee, returnToOverWorld;
+    public int attackSlot;
+    public GameObject EnemyAttackButtons, PlayerStatPanel, EndBattleScreen;
     private void Awake()
     {
         InstantiateCharactersForBattle();
@@ -80,7 +83,43 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
+        for (int PartySlot = 0; PartySlot < GameManger.gameManger.party.PlayerParty.Count; PartySlot++)
+        {
+            SetPlayerStatPanel(PartySlot);
+        }
         currentState.Update(this);
+    }
+
+    public void SetPlayerStatPanel(int playernumber)
+    {
+        Image PlayerImage = PlayerStatPanel.transform.GetChild(playernumber).GetChild(0).GetComponent<Image>();
+        GameObject PlayerGameObject = GameManger.gameManger.party.PlayerParty[playernumber];
+        SpriteRenderer PlayerPartyImage = PlayerGameObject.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>();
+        PlayerImage.sprite = PlayerPartyImage.sprite;
+        Text PlayerName = PlayerStatPanel.transform.GetChild(playernumber).GetChild(1).GetComponent<Text>();
+        PlayerName.text = GameManger.gameManger.party.PlayerParty[playernumber].name;
+        Slider PlayerStatHealthBar = PlayerStatPanel.transform.GetChild(playernumber).GetChild(2).GetComponent<Slider>();
+        int maxHealth = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.maxHealth;
+        PlayerStatHealthBar.maxValue = maxHealth;
+        int currentHealth = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.currentHealth;
+        PlayerStatHealthBar.value = currentHealth;
+        PlayerStatHealthBar.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green, PlayerStatHealthBar.normalizedValue);
+    }
+
+    public void AttackButton() => attack = true;
+    public void FleeButton() => flee = true;
+    public void AttackSlot1() => attackSlot = 1;
+    public void AttackSlot2() => attackSlot = 2;
+    public void AttackSlot3() => attackSlot = 3;
+    public void AttackSlot4() => attackSlot = 4;
+    public void AttackSlot5() => attackSlot = 5;
+    public void ReturnButton()
+    {
+        if (!GameManger.gameManger.bossBattle)
+        {
+            GameManger.gameManger.battleHasStarted = false;
+        }
+        returnToOverWorld = true;
     }
 
     public void TransitionToState(BattleBaseState state)
