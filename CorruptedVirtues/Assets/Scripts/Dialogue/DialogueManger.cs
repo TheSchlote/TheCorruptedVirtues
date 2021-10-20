@@ -11,6 +11,7 @@ public class DialogueManger : MonoBehaviour
     public Text dialogueText;
     public Image picture;
     public Queue<string> sentences;
+    public Animator animator;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class DialogueManger : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
         picture.sprite = dialogue.charImage;
         sentences.Clear();
@@ -38,11 +40,23 @@ public class DialogueManger : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     private void EndDialogue()
     {
-        DialogueBox.SetActive(false);
+        animator.SetBool("IsOpen", false);
+        //DialogueBox.SetActive(false);
     }
 }

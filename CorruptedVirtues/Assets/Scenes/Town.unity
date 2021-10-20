@@ -3788,6 +3788,7 @@ MonoBehaviour:
   nameText: {fileID: 1927948384}
   dialogueText: {fileID: 1500597901}
   picture: {fileID: 652409053}
+  animator: {fileID: 1927754578}
 --- !u!4 &1540801147
 Transform:
   m_ObjectHideFlags: 0
@@ -4103,6 +4104,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
   m_PrefabInstance: {fileID: 4317349739720760322}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1927754578
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927754576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a77f5ceb34e15fe419d782af20b3585a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1927948384 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4317349739428607074, guid: 382505780496ab844869c78bff2263b2, type: 3}
@@ -4517,7 +4537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933458, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_Pivot.x
@@ -4529,7 +4549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4589,7 +4609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: -236.6
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4645,9 +4665,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1927754576}
     - target: {fileID: 8973679039293152517, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
-      propertyPath: dialogue.sentences.Array.data[7]
+      propertyPath: dialogue.sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973679039293152517, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
       value: Also, try talking to my friend out there. He might have a quest for
         you to do.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973679039293152517, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8973679039293152521, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
       propertyPath: titleText
