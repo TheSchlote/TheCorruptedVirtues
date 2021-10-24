@@ -14,6 +14,8 @@ public class BattleStartState : BattleBaseState
 
         GiveCharactersInBattleHealthbars(battleSystem);
 
+        DisableInactiveSlots(battleSystem);
+
         //battleSystem.WhosNext();
         battleSystem.TransitionToState(battleSystem.whosNextState);
     }
@@ -62,6 +64,18 @@ public class BattleStartState : BattleBaseState
     public override void Update(BattleSystem battleSystem)
     {
 
+    }
+
+    public void DisableInactiveSlots(BattleSystem battleSystem)
+    {
+        for (int slotCircle = 0; slotCircle < battleSystem.EnemySlotContainer.transform.childCount; slotCircle++)
+        {
+            if (battleSystem.EnemySlotContainer.transform.GetChild(slotCircle).transform.GetChild(0).childCount == 0 && battleSystem.EnemySlotContainer.transform.GetChild(slotCircle).transform.GetChild(1).childCount == 0)
+            {
+                battleSystem.EnemyAttackButtons.transform.GetChild(slotCircle).gameObject.SetActive(false);
+
+            }
+        }
     }
 
     public void PopulatePrefabsInBattle(BattleSystem battleSystem)

@@ -14,6 +14,7 @@ public class BattlePlayerState : BattleBaseState
         battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name}'s Turn";
         battleSystem.PlayerChoiceButtons.SetActive(true);
         battleSystem.EnemyAttackButtons.SetActive(false);
+        
     }
 
     public override void Update(BattleSystem battleSystem)
@@ -35,20 +36,20 @@ public class BattlePlayerState : BattleBaseState
         }
     }
 
-    public void AttackEnemy(BattleSystem battleSystem, int EnemySlot)
+    public void AttackEnemy(BattleSystem battleSystem, int enemySlot)
     {
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
         CharacterStats EnemyOnScreen;
 
-        if (battleSystem.EnemyPrefabsInBattle[EnemySlot - 1] != null)
+        if (battleSystem.EnemyPrefabsInBattle[enemySlot - 1] != null)
         {
-            Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
-            EnemyOnScreen = battleSystem.EnemyCloneGameObjectsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
+            Enemy = battleSystem.EnemyPrefabsInBattle[enemySlot - 1].GetComponent<CharacterStats>();
+            EnemyOnScreen = battleSystem.EnemyCloneGameObjectsInBattle[enemySlot - 1].GetComponent<CharacterStats>();
         }
         else
         {
-            battleSystem.statusText.text += $"\nThis Enemy in slot {EnemySlot} is already dead!";
+            battleSystem.statusText.text += $"\nThis Enemy in slot {enemySlot} is already dead!";
             battleSystem.attackSlot = 0;
             return;
         }
@@ -59,8 +60,9 @@ public class BattlePlayerState : BattleBaseState
         //Make this a funciton on character Death
         if (Enemy.characterDefinition.currentHealth <= 0)
         {
-            battleSystem.DestroyEnemy(EnemySlot);
+            battleSystem.DestroyEnemy(enemySlot);
             battleSystem.TotalEnemyXP += Enemy.characterDefinition.charExperience;
+            battleSystem.EnemyAttackButtons.transform.GetChild(enemySlot - 1).gameObject.SetActive(false);
         }
 
         EndOfPlayersTurn(battleSystem);
