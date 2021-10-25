@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManger : MonoBehaviour
 {
+    public List<Quest_SO> ActiveQuests = new List<Quest_SO>();
+
     public static GameManger gameManger;
     
     public PartyData party;

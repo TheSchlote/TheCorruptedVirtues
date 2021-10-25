@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System.Collections.Generic;
 
 public class BattlePlayerState : BattleBaseState
 {
@@ -59,6 +60,10 @@ public class BattlePlayerState : BattleBaseState
         //Make this a funciton on character Death
         if (Enemy.characterDefinition.currentHealth <= 0)
         {
+            foreach (Quest_SO quest in GameManger.gameManger.ActiveQuests)
+            {
+                quest.IsQuestEnemy(battleSystem.EnemyPrefabsInBattle[EnemySlot - 1]);
+            }
             battleSystem.DestroyEnemy(EnemySlot);
             battleSystem.TotalEnemyXP += Enemy.characterDefinition.charExperience;
         }

@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BattlePlayerStateTests
@@ -40,6 +41,26 @@ public class BattlePlayerStateTests
         {
             _battlePlayerState.AttackEnemy(_battleSystem, 1);
             Assert.AreEqual(_battleSystem.EnemyPrefabsInBattle[1 - 1].GetComponent<CharacterStats>().characterDefinition.currentHealth, 5);
+        }
+
+        [Test]
+        public void Killing_QuestEnemy_Updates_ActiveQuest()
+        {
+
+        }
+
+        [Test]
+        public void Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest()
+        {
+            _battlePlayerState.AttackEnemy(_battleSystem, 1);
+            //Quest_SO quest = GameManger.gameManger.ActiveQuests.Values;
+
+            foreach (Quest_SO quest in GameManger.gameManger.ActiveQuests)
+            {
+              //  quest.Value.IsQuestEnemy();
+            }
+
+            //Assert.AreEqual(GameManger.gameManger.ActiveQuests., 1);
         }
         [TearDown]
         public void AfterEveryTest()

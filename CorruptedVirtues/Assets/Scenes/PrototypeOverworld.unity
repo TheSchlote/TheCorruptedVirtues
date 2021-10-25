@@ -9364,6 +9364,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8973679039293152521, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 42da5d66ea34a6544848ed56269d3db3, type: 2}
+    - target: {fileID: 8973679039293152521, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
       propertyPath: titleText
       value: 
       objectReference: {fileID: 2013298173}

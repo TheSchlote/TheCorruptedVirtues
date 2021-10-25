@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class QuestGiver : MonoBehaviour
 {
-    public Quest quest;
+    public Quest_SO quest;
     public GameObject questWindow, questPanel;
     public Text titleText;
     public Text descriptionText;
@@ -34,8 +34,8 @@ public class QuestGiver : MonoBehaviour
         {
             questPanel.SetActive(true);
             questPanel.transform.GetChild(0).GetComponent<Text>().text = quest.title;
-            questPanel.transform.GetChild(1).GetComponent<Text>().text = $"{quest.goal.currentAmount}/{quest.goal.requiredAmount}";
-            questPanel.transform.GetChild(2).GetComponent<Slider>().maxValue = quest.goal.requiredAmount;
+            questPanel.transform.GetChild(1).GetComponent<Text>().text = $"{quest.goal.currentAmount}/{quest.goal.goalAmount}";
+            questPanel.transform.GetChild(2).GetComponent<Slider>().maxValue = quest.goal.goalAmount;
             questPanel.transform.GetChild(2).GetComponent<Slider>().value = quest.goal.currentAmount;
         }
         else
@@ -47,13 +47,14 @@ public class QuestGiver : MonoBehaviour
     private void OpenQuestWIndow()
     {
         titleText.text = quest.title;
-        descriptionText.text = quest.isActive ? $"Killed {quest.goal.currentAmount} out of {quest.goal.requiredAmount}." : quest.description;
+        descriptionText.text = quest.isActive ? $"Killed {quest.goal.currentAmount} out of {quest.goal.goalAmount}." : quest.description;
         questWindow.SetActive(true);
     }
     public void QuestAccept()
     {
         questWindow.SetActive(false);
         quest.isActive = true;
+        GameManger.gameManger.ActiveQuests.Add(quest);
     }
     public void QuestDecline()
     {
