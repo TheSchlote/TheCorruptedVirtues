@@ -6,10 +6,10 @@ public class BattleWhosNextState : BattleBaseState
     {
         DidEveryoneTakeATurn(battleSystem);
 
-        TransistionToCorrectState(battleSystem);
+        TransitionToCorrectState(battleSystem);
     }
 
-    public void TransistionToCorrectState(BattleSystem battleSystem)
+    public void TransitionToCorrectState(BattleSystem battleSystem)
     {
         if (AreAllEnemiesDead(battleSystem) || AreAllPlayerDead(battleSystem))
         {

@@ -9,13 +9,20 @@ public class BattleEndState : BattleBaseState
         battleSystem.EndBattleScreen.SetActive(true);
         battleSystem.PlayerChoiceButtons.SetActive(false);
         RemoveCharactersInBattleHealthbars(battleSystem);
-        if (EveryPlayerIsDead())
+        if (battleSystem.flee)
         {
-            battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Enemy Wins :( GAME OVER";
+            battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Flee";
         }
         else
         {
-            PlayerWins(battleSystem);
+            if (EveryPlayerIsDead())
+            {
+                battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Enemy Wins :( GAME OVER";
+            }
+            else
+            {
+                PlayerWins(battleSystem);
+            }
         }
     }
 

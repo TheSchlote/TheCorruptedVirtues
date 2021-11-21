@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Splash/CorruptedVirtues.unity
     guid: 06915fe1309e9534a8126cde55f1e207
   - enabled: 1

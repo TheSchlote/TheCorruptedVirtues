@@ -1967,8 +1967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 296.71188, y: 4.7}
-  m_SizeDelta: {x: 206.5762, y: 325.9222}
+  m_AnchoredPosition: {x: 564, y: 25}
+  m_SizeDelta: {x: 265.2882, y: 409.6323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1302375082
 MonoBehaviour:
@@ -2007,7 +2007,7 @@ MonoBehaviour:
 
 
     Press
-    Space to Interact!'
+    Space to Interact and Click through conversations.'
 --- !u!222 &1302375083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4302,7 +4302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -4531,6 +4531,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2067409220}
     m_Modifications:
+    - target: {fileID: 4317349739036086926, guid: 382505780496ab844869c78bff2263b2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317349739036086926, guid: 382505780496ab844869c78bff2263b2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 38.774
+      objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933458, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_Name
       value: DiaglogueBox
@@ -4605,11 +4613,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -729
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -236.6
+      value: -500
       objectReference: {fileID: 0}
     - target: {fileID: 4317349739428933459, guid: 382505780496ab844869c78bff2263b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4736,6 +4744,10 @@ PrefabInstance:
     - target: {fileID: 8973679039293152526, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
       propertyPath: m_Name
       value: QuestGiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 8973679039918041195, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}
+      propertyPath: m_Name
+      value: NPC Sprite
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8973679039293152521, guid: 0244f477deb6efa42b44b356ec2f3dad, type: 3}

@@ -14,7 +14,6 @@ public class BattleStartState : BattleBaseState
 
         GiveCharactersInBattleHealthbars(battleSystem);
 
-        //battleSystem.WhosNext();
         battleSystem.TransitionToState(battleSystem.whosNextState);
     }
 

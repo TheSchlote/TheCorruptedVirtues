@@ -281,7 +281,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.6017604
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11198,10 +11198,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -15553,6 +15553,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564579161}
     m_Modifications:
+    - target: {fileID: 3994591803027897934, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994591803027897934, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -95
+      objectReference: {fileID: 0}
     - target: {fileID: 3994591803027897935, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -15560,6 +15568,14 @@ PrefabInstance:
     - target: {fileID: 3994591803027897935, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuestDecline
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994591803289802673, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -57
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994591803289802673, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 3994591803289802674, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15607,11 +15623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -588.7126
+      value: -1581.8445
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -194.9049
+      value: -778.1818
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15643,11 +15659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -46.483765
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 43.28766
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15951,15 +15967,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3132894395797704876, guid: 252ee41854c76f542a308ed40dc9bac8, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.395
       objectReference: {fileID: 0}
     - target: {fileID: 3132894395797704876, guid: 252ee41854c76f542a308ed40dc9bac8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3132894396724754758, guid: 252ee41854c76f542a308ed40dc9bac8, type: 3}
       propertyPath: m_Name
       value: QuestPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132894396724754758, guid: 252ee41854c76f542a308ed40dc9bac8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3132894396724754759, guid: 252ee41854c76f542a308ed40dc9bac8, type: 3}
       propertyPath: m_Pivot.x

@@ -83,6 +83,7 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
+        //probably do this in WhosNext 
         for (int PartySlot = 0; PartySlot < GameManger.gameManger.party.PlayerParty.Count; PartySlot++)
         {
             SetPlayerStatPanel(PartySlot);

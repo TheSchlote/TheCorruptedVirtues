@@ -17,6 +17,13 @@ public class DialogueManger : MonoBehaviour
     {
         sentences = new Queue<string>();
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && DialogueBox.activeSelf)
+        {
+            DisplayNextSentence();
+        }    
+    }
 
     public void StartDialogue(Dialogue dialogue)
     {
