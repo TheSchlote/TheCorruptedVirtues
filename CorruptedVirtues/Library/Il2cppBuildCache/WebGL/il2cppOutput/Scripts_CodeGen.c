@@ -128,247 +128,255 @@ extern void BattleSystem_DestroyEnemy_m6FA2D725AA3FCD700E943C4741913284F7D1D159 
 extern void BattleSystem_DestroyPlayer_mF805C097EC524302E52B453B6743047F52570464 (void);
 // 0x0000003B System.Void BattleSystem::.ctor()
 extern void BattleSystem__ctor_m5D32B8F20FCD4340E83202DE58699AC6C81FC098 (void);
-// 0x0000003C ItemPickUp CharacterStats_SO::get_weapon()
+// 0x0000003C System.Void CameraFollows::LateUpdate()
+extern void CameraFollows_LateUpdate_m52BBAFD7CADC91877D720E7DDDCAB6E813B9ACE8 (void);
+// 0x0000003D System.Void CameraFollows::FixedUpdate()
+extern void CameraFollows_FixedUpdate_m1794D502DEF00EBC383338CFDCA2BA234643A679 (void);
+// 0x0000003E System.Void CameraFollows::.ctor()
+extern void CameraFollows__ctor_m4DF42B95EBEEDF5685761B82154BE4ED6EAB6540 (void);
+// 0x0000003F ItemPickUp CharacterStats_SO::get_weapon()
 extern void CharacterStats_SO_get_weapon_m44C49F9EA87BC20D9C39102804C5713E52D3226D (void);
-// 0x0000003D System.Void CharacterStats_SO::set_weapon(ItemPickUp)
+// 0x00000040 System.Void CharacterStats_SO::set_weapon(ItemPickUp)
 extern void CharacterStats_SO_set_weapon_m0D1C2DE0C413D7699558FFE10586B2D33148C149 (void);
-// 0x0000003E ItemPickUp CharacterStats_SO::get_shield()
+// 0x00000041 ItemPickUp CharacterStats_SO::get_shield()
 extern void CharacterStats_SO_get_shield_mD81FC7CC77F5686CE11876A5D4C08E5D98C32F45 (void);
-// 0x0000003F System.Void CharacterStats_SO::set_shield(ItemPickUp)
+// 0x00000042 System.Void CharacterStats_SO::set_shield(ItemPickUp)
 extern void CharacterStats_SO_set_shield_m9929DF23114361952FADA767CA387477C5C703C7 (void);
-// 0x00000040 ItemPickUp CharacterStats_SO::get_accessory()
+// 0x00000043 ItemPickUp CharacterStats_SO::get_accessory()
 extern void CharacterStats_SO_get_accessory_m7DB6D247B2B2381B637C210EA5B4EAC69C848F55 (void);
-// 0x00000041 System.Void CharacterStats_SO::set_accessory(ItemPickUp)
+// 0x00000044 System.Void CharacterStats_SO::set_accessory(ItemPickUp)
 extern void CharacterStats_SO_set_accessory_m76858843C2304B65B6B8BD734075C34928DAB107 (void);
-// 0x00000042 System.Void CharacterStats_SO::ApplyHealth(System.Int32)
+// 0x00000045 System.Void CharacterStats_SO::ApplyHealth(System.Int32)
 extern void CharacterStats_SO_ApplyHealth_m0193AF39CECA1F6BBF25B4EFC669D1131E0740E7 (void);
-// 0x00000043 System.Void CharacterStats_SO::ApplyMagic(System.Int32)
+// 0x00000046 System.Void CharacterStats_SO::ApplyMagic(System.Int32)
 extern void CharacterStats_SO_ApplyMagic_m1B0240F7831E3B8200C610E9A710835395D11DA3 (void);
-// 0x00000044 System.Void CharacterStats_SO::GiveWeath(System.Int32)
+// 0x00000047 System.Void CharacterStats_SO::GiveWeath(System.Int32)
 extern void CharacterStats_SO_GiveWeath_mD51C00DE253FB8F3D1C51E6B72C46C4417D1108B (void);
-// 0x00000045 System.Void CharacterStats_SO::ApplyExperience(System.Int32)
+// 0x00000048 System.Void CharacterStats_SO::ApplyExperience(System.Int32)
 extern void CharacterStats_SO_ApplyExperience_mE9158EFFB30F96A280DC6E4BD6A44B42D638238A (void);
-// 0x00000046 System.Boolean CharacterStats_SO::IsMaxLevel()
+// 0x00000049 System.Boolean CharacterStats_SO::IsMaxLevel()
 extern void CharacterStats_SO_IsMaxLevel_mD300249E5B3926C2E4FF68045CEE2CFB23505577 (void);
-// 0x00000047 System.Void CharacterStats_SO::Equip(ItemPickUp,CharacterInventory,UnityEngine.GameObject)
+// 0x0000004A System.Void CharacterStats_SO::Equip(ItemPickUp,CharacterInventory,UnityEngine.GameObject)
 extern void CharacterStats_SO_Equip_m81D50FEDE63F90375DD7F6921D9F2F7483FF9CF6 (void);
-// 0x00000048 System.Void CharacterStats_SO::TakeDamage(System.Int32)
+// 0x0000004B System.Void CharacterStats_SO::TakeDamage(System.Int32)
 extern void CharacterStats_SO_TakeDamage_mD4D4F5727E133E0A139D62F5ED1F03A491A7BCC8 (void);
-// 0x00000049 System.Void CharacterStats_SO::SpendMagic(System.Int32)
+// 0x0000004C System.Void CharacterStats_SO::SpendMagic(System.Int32)
 extern void CharacterStats_SO_SpendMagic_m81FFF00D2E148FABC09D44FC35FED082B17CB42A (void);
-// 0x0000004A System.Boolean CharacterStats_SO::UnEquipItem(ItemPickUp,CharacterInventory,UnityEngine.GameObject)
+// 0x0000004D System.Boolean CharacterStats_SO::UnEquipItem(ItemPickUp,CharacterInventory,UnityEngine.GameObject)
 extern void CharacterStats_SO_UnEquipItem_mD6DC460B68D00D3FD7387AA17FFEA6AAC97A3B04 (void);
-// 0x0000004B System.Void CharacterStats_SO::Death()
+// 0x0000004E System.Void CharacterStats_SO::Death()
 extern void CharacterStats_SO_Death_mFB583FB79C7E8C7BE072CBFDFA93D2497673AD1F (void);
-// 0x0000004C System.Void CharacterStats_SO::LevelUp()
+// 0x0000004F System.Void CharacterStats_SO::LevelUp()
 extern void CharacterStats_SO_LevelUp_mF6078C34F8AD7200E2B8B9A6B828A4AE2B21415A (void);
-// 0x0000004D System.Void CharacterStats_SO::FullyHealCharacter()
+// 0x00000050 System.Void CharacterStats_SO::FullyHealCharacter()
 extern void CharacterStats_SO_FullyHealCharacter_mAE0AF244FDF5A8F9DD11335653B863FA55DAEB0F (void);
-// 0x0000004E System.Void CharacterStats_SO::.ctor()
+// 0x00000051 System.Void CharacterStats_SO::.ctor()
 extern void CharacterStats_SO__ctor_mBFD2D0257F17A49913394DEC67568E3667B80A23 (void);
-// 0x0000004F System.Void CharacterStats_SO/CharLevelUps::.ctor()
+// 0x00000052 System.Void CharacterStats_SO/CharLevelUps::.ctor()
 extern void CharLevelUps__ctor_mB5769F5411F7D3AA5ECE586C099086585221165F (void);
-// 0x00000050 System.Void ItemPickUp_SO::.ctor()
+// 0x00000053 System.Void ItemPickUp_SO::.ctor()
 extern void ItemPickUp_SO__ctor_mE76131158A53D56C937456821B4B321944003AED (void);
-// 0x00000051 System.Void CharacterInventory::Start()
+// 0x00000054 System.Void CharacterInventory::Start()
 extern void CharacterInventory_Start_m88D7B526BB7D8C75D423BA15AC521B8F82FE177C (void);
-// 0x00000052 System.Void CharacterInventory::.ctor()
+// 0x00000055 System.Void CharacterInventory::.ctor()
 extern void CharacterInventory__ctor_mD54DC4C07FF29F264F9C5695BD70D77A2BE59507 (void);
-// 0x00000053 System.Void CharacterStats::.ctor()
+// 0x00000056 System.Void CharacterStats::.ctor()
 extern void CharacterStats__ctor_m0A13E837B26F838C5368D2E2EB4484B329FA4516 (void);
-// 0x00000054 System.Void CharacterStats::Start()
+// 0x00000057 System.Void CharacterStats::Start()
 extern void CharacterStats_Start_mF90DD6887FCF6A32143ECF008BE1010055319B25 (void);
-// 0x00000055 System.Void CharacterStats::Update()
+// 0x00000058 System.Void CharacterStats::Update()
 extern void CharacterStats_Update_m88D304639F6453C0C06002BA32EC1CA6A0269C74 (void);
-// 0x00000056 System.Void CharacterStats::ApplyHealth(System.Int32)
+// 0x00000059 System.Void CharacterStats::ApplyHealth(System.Int32)
 extern void CharacterStats_ApplyHealth_m70D221F40D91E8B45F0537FE2430BCCD813DB628 (void);
-// 0x00000057 System.Void CharacterStats::ApplyMagic(System.Int32)
+// 0x0000005A System.Void CharacterStats::ApplyMagic(System.Int32)
 extern void CharacterStats_ApplyMagic_mD141B8C82A29F38BD8B26F66B7F55332FCD4B14D (void);
-// 0x00000058 System.Void CharacterStats::GiveWealth(System.Int32)
+// 0x0000005B System.Void CharacterStats::GiveWealth(System.Int32)
 extern void CharacterStats_GiveWealth_m653D569F476A9182F0D28236C5E3B3900155E4F1 (void);
-// 0x00000059 System.Void CharacterStats::GainExperience(System.Int32)
+// 0x0000005C System.Void CharacterStats::GainExperience(System.Int32)
 extern void CharacterStats_GainExperience_mB64297D670A820AB447466B2C9F0850EC8F10C30 (void);
-// 0x0000005A System.Void CharacterStats::TakeDamage(System.Int32)
+// 0x0000005D System.Void CharacterStats::TakeDamage(System.Int32)
 extern void CharacterStats_TakeDamage_mF154444F5FC48749AB3305A5CC3F11BE3CB19070 (void);
-// 0x0000005B System.Void CharacterStats::TakeMagic(System.Int32)
+// 0x0000005E System.Void CharacterStats::TakeMagic(System.Int32)
 extern void CharacterStats_TakeMagic_m9501E9B59A0830EA4389D7E1BFAA7480A9AB8730 (void);
-// 0x0000005C System.Void CharacterStats::ChangeEquipableItem(ItemPickUp)
+// 0x0000005F System.Void CharacterStats::ChangeEquipableItem(ItemPickUp)
 extern void CharacterStats_ChangeEquipableItem_mDD8751FF278E916D8809F3B7ABF3F57714366EF1 (void);
-// 0x0000005D System.Int32 CharacterStats::GetHealth()
+// 0x00000060 System.Int32 CharacterStats::GetHealth()
 extern void CharacterStats_GetHealth_mEF572DB257F35CFADEAB1CC11B79D26E66D4DF03 (void);
-// 0x0000005E ItemPickUp CharacterStats::GetCurrentWeapon()
+// 0x00000061 ItemPickUp CharacterStats::GetCurrentWeapon()
 extern void CharacterStats_GetCurrentWeapon_mD9C0B9E7DC54D7F08DFA123245F6B228245D59B3 (void);
-// 0x0000005F System.Void ItemPickUp::.ctor()
+// 0x00000062 System.Void ItemPickUp::.ctor()
 extern void ItemPickUp__ctor_m15283F9A754613DB99938449678683E14FF129C2 (void);
-// 0x00000060 System.Void Dialogue::.ctor()
+// 0x00000063 System.Void Dialogue::.ctor()
 extern void Dialogue__ctor_m2B47938EB83DBF5CFCCA25B2DD506561D8B082E5 (void);
-// 0x00000061 System.Void DialogueManger::Start()
+// 0x00000064 System.Void DialogueManger::Start()
 extern void DialogueManger_Start_m4352542B75C63F435D82CC4C6E4C6603A31A727A (void);
-// 0x00000062 System.Void DialogueManger::Update()
+// 0x00000065 System.Void DialogueManger::Update()
 extern void DialogueManger_Update_mEEC59D7F8D599E99C7D98AA089BDF9E258A52610 (void);
-// 0x00000063 System.Void DialogueManger::StartDialogue(Dialogue)
+// 0x00000066 System.Void DialogueManger::StartDialogue(Dialogue)
 extern void DialogueManger_StartDialogue_m655C6686A41B6F73033B629243CBA973E581F776 (void);
-// 0x00000064 System.Void DialogueManger::DisplayNextSentence()
+// 0x00000067 System.Void DialogueManger::DisplayNextSentence()
 extern void DialogueManger_DisplayNextSentence_m0272C70E00DEE92A27015BDA6F13F82F0A6D1067 (void);
-// 0x00000065 System.Collections.IEnumerator DialogueManger::TypeSentence(System.String)
+// 0x00000068 System.Collections.IEnumerator DialogueManger::TypeSentence(System.String)
 extern void DialogueManger_TypeSentence_m434F504BB25D14805BBBA07B41FDEB3C25416F31 (void);
-// 0x00000066 System.Void DialogueManger::EndDialogue()
+// 0x00000069 System.Void DialogueManger::EndDialogue()
 extern void DialogueManger_EndDialogue_m608143D087B36B20395BD29BAF4E0716A063BB43 (void);
-// 0x00000067 System.Void DialogueManger::.ctor()
+// 0x0000006A System.Void DialogueManger::.ctor()
 extern void DialogueManger__ctor_m32926C62D04252B4BD865F7231E67CB383E5B366 (void);
-// 0x00000068 System.Void DialogueManger/<TypeSentence>d__10::.ctor(System.Int32)
+// 0x0000006B System.Void DialogueManger/<TypeSentence>d__10::.ctor(System.Int32)
 extern void U3CTypeSentenceU3Ed__10__ctor_m6C9918F6751FC851B1175B665A3D35E0DC53C0B3 (void);
-// 0x00000069 System.Void DialogueManger/<TypeSentence>d__10::System.IDisposable.Dispose()
+// 0x0000006C System.Void DialogueManger/<TypeSentence>d__10::System.IDisposable.Dispose()
 extern void U3CTypeSentenceU3Ed__10_System_IDisposable_Dispose_mA341DBD5BBA9ECFA0923895A925F96660DB3CE86 (void);
-// 0x0000006A System.Boolean DialogueManger/<TypeSentence>d__10::MoveNext()
+// 0x0000006D System.Boolean DialogueManger/<TypeSentence>d__10::MoveNext()
 extern void U3CTypeSentenceU3Ed__10_MoveNext_mFF6DB2DC03F6835A2F423417D85B553AB59233EA (void);
-// 0x0000006B System.Object DialogueManger/<TypeSentence>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000006E System.Object DialogueManger/<TypeSentence>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CTypeSentenceU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4C893D03B9B0AB3D6B5D980A944DE03CBC81E064 (void);
-// 0x0000006C System.Void DialogueManger/<TypeSentence>d__10::System.Collections.IEnumerator.Reset()
+// 0x0000006F System.Void DialogueManger/<TypeSentence>d__10::System.Collections.IEnumerator.Reset()
 extern void U3CTypeSentenceU3Ed__10_System_Collections_IEnumerator_Reset_mDA8A52682C40C0395A1B9C7DE13857D23A733A59 (void);
-// 0x0000006D System.Object DialogueManger/<TypeSentence>d__10::System.Collections.IEnumerator.get_Current()
+// 0x00000070 System.Object DialogueManger/<TypeSentence>d__10::System.Collections.IEnumerator.get_Current()
 extern void U3CTypeSentenceU3Ed__10_System_Collections_IEnumerator_get_Current_m7D47EFF69A17D0432292B9ADC99BD8D86EE447CA (void);
-// 0x0000006E System.Void DialogueTrigger::TriggerDialoge()
+// 0x00000071 System.Void DialogueTrigger::TriggerDialoge()
 extern void DialogueTrigger_TriggerDialoge_m7C5396A125135ED3035C3DF069FAC2AE601E9BFE (void);
-// 0x0000006F System.Void DialogueTrigger::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x00000072 System.Void DialogueTrigger::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void DialogueTrigger_OnTriggerEnter2D_m0E64D9A470E0B0DC5BE65FE93878B16A0A298BF7 (void);
-// 0x00000070 System.Void DialogueTrigger::OnTriggerExit2D(UnityEngine.Collider2D)
+// 0x00000073 System.Void DialogueTrigger::OnTriggerExit2D(UnityEngine.Collider2D)
 extern void DialogueTrigger_OnTriggerExit2D_m69E1FC32A048FB1A1A127DD1B95810940A451B1E (void);
-// 0x00000071 System.Void DialogueTrigger::Update()
+// 0x00000074 System.Void DialogueTrigger::Update()
 extern void DialogueTrigger_Update_m27E061BE544CD31614722C6F9B60DCF7DBF260EA (void);
-// 0x00000072 System.Void DialogueTrigger::.ctor()
+// 0x00000075 System.Void DialogueTrigger::.ctor()
 extern void DialogueTrigger__ctor_m7487D7F4B5B3A0C981C50EFC43E5DA717238509D (void);
-// 0x00000073 System.Void GameBaseState::EnterState(GameManger)
-// 0x00000074 System.Void GameBaseState::Update(GameManger)
-// 0x00000075 System.Void GameBaseState::.ctor()
+// 0x00000076 System.Void GameBaseState::EnterState(GameManger)
+// 0x00000077 System.Void GameBaseState::Update(GameManger)
+// 0x00000078 System.Void GameBaseState::.ctor()
 extern void GameBaseState__ctor_mE9E423D90DE8C71638B9D45129F30DAB24A80FFD (void);
-// 0x00000076 System.Void GameBattleState::EnterState(GameManger)
+// 0x00000079 System.Void GameBattleState::EnterState(GameManger)
 extern void GameBattleState_EnterState_m0D6CCA79A03BBE7440B5EB51D6AD17FD8C3EBFFC (void);
-// 0x00000077 System.Void GameBattleState::Update(GameManger)
+// 0x0000007A System.Void GameBattleState::Update(GameManger)
 extern void GameBattleState_Update_m5A30796ED92E35CCD75899F084021FB14DB647B7 (void);
-// 0x00000078 System.Void GameBattleState::.ctor()
+// 0x0000007B System.Void GameBattleState::.ctor()
 extern void GameBattleState__ctor_m1A87B56963133A0F4F7D039CFA200490D8309A8B (void);
-// 0x00000079 System.Void GameMenuState::EnterState(GameManger)
+// 0x0000007C System.Void GameMenuState::EnterState(GameManger)
 extern void GameMenuState_EnterState_m77900F20D92B1D4A8FA4D739456EF21302B85DEE (void);
-// 0x0000007A System.Void GameMenuState::Update(GameManger)
+// 0x0000007D System.Void GameMenuState::Update(GameManger)
 extern void GameMenuState_Update_mB806D2EF43304C47521541C732AF08839BAA973A (void);
-// 0x0000007B System.Void GameMenuState::.ctor()
+// 0x0000007E System.Void GameMenuState::.ctor()
 extern void GameMenuState__ctor_m0F03FFD166808635AA8D38006A08C56FBA1AEB3D (void);
-// 0x0000007C System.Void GameOverWorldState::EnterState(GameManger)
+// 0x0000007F System.Void GameOverWorldState::EnterState(GameManger)
 extern void GameOverWorldState_EnterState_m7963FD9BB0BD3CA25E31E03B4271BA88962051CF (void);
-// 0x0000007D System.Void GameOverWorldState::Update(GameManger)
+// 0x00000080 System.Void GameOverWorldState::Update(GameManger)
 extern void GameOverWorldState_Update_m1B6231BBA47DE888F004287B86C61607F0B9B550 (void);
-// 0x0000007E System.Void GameOverWorldState::StartBattle(GameManger)
+// 0x00000081 System.Void GameOverWorldState::StartBattle(GameManger)
 extern void GameOverWorldState_StartBattle_mA111D59BB3368DCE19CCB146118FC33321A72FB5 (void);
-// 0x0000007F System.Void GameOverWorldState::.ctor()
+// 0x00000082 System.Void GameOverWorldState::.ctor()
 extern void GameOverWorldState__ctor_m46337E45BA69ABE6F767F9C49770FC451F211F04 (void);
-// 0x00000080 System.Void GameManger::Awake()
+// 0x00000083 System.Void GameManger::Awake()
 extern void GameManger_Awake_m53FDE6F5B053CA269F96D0D95A07941879C7DD9F (void);
-// 0x00000081 System.Void GameManger::Start()
+// 0x00000084 System.Void GameManger::Start()
 extern void GameManger_Start_m9DD51E55DF226FA37AB96F4513363E66797BCB9F (void);
-// 0x00000082 System.Void GameManger::Update()
+// 0x00000085 System.Void GameManger::Update()
 extern void GameManger_Update_m1071248D3DA3A740480904E8B44EF5C7FD29EF82 (void);
-// 0x00000083 System.Void GameManger::TransistinoToState(GameBaseState)
+// 0x00000086 System.Void GameManger::TransistinoToState(GameBaseState)
 extern void GameManger_TransistinoToState_m259442641C2F649E79C13C11D738D614B4911063 (void);
-// 0x00000084 System.Void GameManger::ThereShouldOnlyBeOneOverWorldCharacter()
+// 0x00000087 System.Void GameManger::ThereShouldOnlyBeOneOverWorldCharacter()
 extern void GameManger_ThereShouldOnlyBeOneOverWorldCharacter_m6BC10015FE360CC57883D364ED88124A87C53864 (void);
-// 0x00000085 System.Void GameManger::ThereShouldOnlyBeOneGameManager()
+// 0x00000088 System.Void GameManger::ThereShouldOnlyBeOneGameManager()
 extern void GameManger_ThereShouldOnlyBeOneGameManager_mD02488C2DFA643BB22DD81CF056E509D3426EBF3 (void);
-// 0x00000086 System.Void GameManger::LoadNextScene()
+// 0x00000089 System.Void GameManger::LoadNextScene()
 extern void GameManger_LoadNextScene_m2E92FD16FFA6EECC205FC3DA1C2D616945B15DD3 (void);
-// 0x00000087 System.Void GameManger::.ctor()
+// 0x0000008A System.Void GameManger::.ctor()
 extern void GameManger__ctor_mC907270837A4DB63BEF90080D98D63489932EAF2 (void);
-// 0x00000088 System.Void GameManger/PartyData::.ctor()
+// 0x0000008B System.Void GameManger/PartyData::.ctor()
 extern void PartyData__ctor_m42E44E24F0A6CB2051D4EB9E78EB1695AA1DA842 (void);
-// 0x00000089 System.Void GameManger/AreaData::.ctor()
+// 0x0000008C System.Void GameManger/AreaData::.ctor()
 extern void AreaData__ctor_m112867D876B2618A8950FA64F3A31087CB6FAF4B (void);
-// 0x0000008A System.Void Healthbar::SetHeatlh(CharacterStats_SO)
+// 0x0000008D System.Void Healthbar::SetHeatlh(CharacterStats_SO)
 extern void Healthbar_SetHeatlh_mB00BF771148A86AC3B91C10CED50AD313F86403B (void);
-// 0x0000008B System.Void Healthbar::Update()
+// 0x0000008E System.Void Healthbar::Update()
 extern void Healthbar_Update_m29B87E7234F35679772B4C8D1B9FD52E9AD825A6 (void);
-// 0x0000008C System.Void Healthbar::.ctor()
+// 0x0000008F System.Void Healthbar::.ctor()
 extern void Healthbar__ctor_mBBC53975F4CC2DA1F659C46C775CAE7AD91C6F73 (void);
-// 0x0000008D System.Void MainMenu::Start()
+// 0x00000090 System.Void MainMenu::Start()
 extern void MainMenu_Start_m8E537B43B1EC522F93EDCFD51C8911808C82FC41 (void);
-// 0x0000008E System.Void MainMenu::Update()
+// 0x00000091 System.Void MainMenu::Update()
 extern void MainMenu_Update_mB4C119527B1A9FBD0AF4CC0405F9330CAB035025 (void);
-// 0x0000008F System.Void MainMenu::NewGame()
+// 0x00000092 System.Void MainMenu::NewGame()
 extern void MainMenu_NewGame_m1F47A6F276B3B935290E642D7EC92226473C89BC (void);
-// 0x00000090 System.Void MainMenu::SelectKnight()
+// 0x00000093 System.Void MainMenu::SelectKnight()
 extern void MainMenu_SelectKnight_m93DEC36C55717FC7D705D9878E17669BD385FDEA (void);
-// 0x00000091 System.Void MainMenu::SelectWizard()
+// 0x00000094 System.Void MainMenu::SelectWizard()
 extern void MainMenu_SelectWizard_mA72B6D2318AE861E15A0C15AB50F4536E23AD08B (void);
-// 0x00000092 System.Void MainMenu::.ctor()
+// 0x00000095 System.Void MainMenu::.ctor()
 extern void MainMenu__ctor_m368BD536D50D8EAAF4A07EBDA43F425576546928 (void);
-// 0x00000093 System.Void CollisionHandler::.ctor()
+// 0x00000096 System.Void CollisionHandler::.ctor()
 extern void CollisionHandler__ctor_m436377FD2F3C3C10FE27EA552B5D93535161FE60 (void);
-// 0x00000094 System.Void OverworldEnemy::OnCollisionEnter2D(UnityEngine.Collision2D)
+// 0x00000097 System.Void OverworldEnemy::Awake()
+extern void OverworldEnemy_Awake_mE497E076FB73B7E057B9BBE3D4051FEF33B10DE6 (void);
+// 0x00000098 System.Void OverworldEnemy::OnCollisionEnter2D(UnityEngine.Collision2D)
 extern void OverworldEnemy_OnCollisionEnter2D_m83D3546A111D9B71787E99018E2F0157D56B75C4 (void);
-// 0x00000095 System.Void OverworldEnemy::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x00000099 System.Void OverworldEnemy::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void OverworldEnemy_OnTriggerEnter2D_m7CC115824CAFC939F9E919047136FDC9BC063E1A (void);
-// 0x00000096 System.Boolean OverworldEnemy::RegularEnemyTouchesPlayer(UnityEngine.Collider2D)
+// 0x0000009A System.Boolean OverworldEnemy::RegularEnemyTouchesPlayer(UnityEngine.Collider2D)
 extern void OverworldEnemy_RegularEnemyTouchesPlayer_mFD3DB46869EBC42A2E29B559ED981C9E5187334F (void);
-// 0x00000097 System.Void OverworldEnemy::OnTriggerExit2D(UnityEngine.Collider2D)
+// 0x0000009B System.Void OverworldEnemy::OnTriggerExit2D(UnityEngine.Collider2D)
 extern void OverworldEnemy_OnTriggerExit2D_m1F72C97B3FDAD84A2C313F3540CC5D8D11FEBA7F (void);
-// 0x00000098 System.Void OverworldEnemy::.ctor()
+// 0x0000009C System.Void OverworldEnemy::.ctor()
 extern void OverworldEnemy__ctor_m4FE757646A021B055CB80BC675F3D193A28B6BF4 (void);
-// 0x00000099 System.Void OverworldMovement::Start()
+// 0x0000009D System.Void OverworldMovement::Start()
 extern void OverworldMovement_Start_mD7E21EC98FBDD2ED857E4FF93ED499C5C397BDC2 (void);
-// 0x0000009A System.Void OverworldMovement::Update()
+// 0x0000009E System.Void OverworldMovement::Update()
 extern void OverworldMovement_Update_m66CC353ECB786A451B7C1D8C32EB453663D86401 (void);
-// 0x0000009B System.Void OverworldMovement::KeepSpriteFromSpinning()
+// 0x0000009F System.Void OverworldMovement::KeepSpriteFromSpinning()
 extern void OverworldMovement_KeepSpriteFromSpinning_m45775DD5779A1958AF4C5E315B7165385287932C (void);
-// 0x0000009C System.Void OverworldMovement::FlipSprite()
+// 0x000000A0 System.Void OverworldMovement::FlipSprite()
 extern void OverworldMovement_FlipSprite_m426BF0DA900CBFCB3987F99083CAA2A5C6FEEB1C (void);
-// 0x0000009D System.Void OverworldMovement::FixedUpdate()
+// 0x000000A1 System.Void OverworldMovement::FixedUpdate()
 extern void OverworldMovement_FixedUpdate_mFE4FBB92F0FF410A792CC6369DAC1B7A1FE7756E (void);
-// 0x0000009E System.Void OverworldMovement::LimitMovementSpeedDiagonally()
+// 0x000000A2 System.Void OverworldMovement::LimitMovementSpeedDiagonally()
 extern void OverworldMovement_LimitMovementSpeedDiagonally_mC8DE90D1E544926087E85BF69816B896F72EE087 (void);
-// 0x0000009F System.Void OverworldMovement::OnCollisionEnter2D(UnityEngine.Collision2D)
+// 0x000000A3 System.Void OverworldMovement::OnCollisionEnter2D(UnityEngine.Collision2D)
 extern void OverworldMovement_OnCollisionEnter2D_mE42F168911B7FD9619180D2B94484B15D7C89E16 (void);
-// 0x000000A0 System.Void OverworldMovement::LoadNextScene(UnityEngine.Collision2D)
+// 0x000000A4 System.Void OverworldMovement::LoadNextScene(UnityEngine.Collision2D)
 extern void OverworldMovement_LoadNextScene_m5978C754CC5A6EA4B5AAE0C1E83C3DA8010E8ABA (void);
-// 0x000000A1 System.Void OverworldMovement::.ctor()
+// 0x000000A5 System.Void OverworldMovement::.ctor()
 extern void OverworldMovement__ctor_mE5F50AD292749B56BCD71CCAC06001BF887C51CE (void);
-// 0x000000A2 System.Void QuestGiver::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x000000A6 System.Void QuestGiver::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void QuestGiver_OnTriggerEnter2D_m7068BCF13E9EF9C5BC3A69F206AFC5D789493AD1 (void);
-// 0x000000A3 System.Void QuestGiver::OnTriggerExit2D(UnityEngine.Collider2D)
+// 0x000000A7 System.Void QuestGiver::OnTriggerExit2D(UnityEngine.Collider2D)
 extern void QuestGiver_OnTriggerExit2D_mCDFCCCF3DCEE8D02500C807ECAFD96AA92C7D273 (void);
-// 0x000000A4 System.Void QuestGiver::Update()
+// 0x000000A8 System.Void QuestGiver::Update()
 extern void QuestGiver_Update_m1F2548119665DDC8A04C7265E40D8F7B7CA4D928 (void);
-// 0x000000A5 System.Void QuestGiver::OpenQuestWIndow()
+// 0x000000A9 System.Void QuestGiver::OpenQuestWIndow()
 extern void QuestGiver_OpenQuestWIndow_m80CE2ADCB1E51D54076C8FE59D9A2BC54EE0EB67 (void);
-// 0x000000A6 System.Void QuestGiver::QuestAccept()
+// 0x000000AA System.Void QuestGiver::QuestAccept()
 extern void QuestGiver_QuestAccept_m07339F9135025684A11BE09FC42BAD88651336F5 (void);
-// 0x000000A7 System.Void QuestGiver::QuestDecline()
+// 0x000000AB System.Void QuestGiver::QuestDecline()
 extern void QuestGiver_QuestDecline_mD691B209246827DD37066B5415AD87EA90ED561A (void);
-// 0x000000A8 System.Void QuestGiver::.ctor()
+// 0x000000AC System.Void QuestGiver::.ctor()
 extern void QuestGiver__ctor_m49D6BD37A0A234CE1D93B53DC761C0BBCF9CFF48 (void);
-// 0x000000A9 System.Boolean Quest_SO::IsQuestEnemy(UnityEngine.GameObject)
+// 0x000000AD System.Boolean Quest_SO::IsQuestEnemy(UnityEngine.GameObject)
 extern void Quest_SO_IsQuestEnemy_m1D8813E6EFD96725CCBD1AB06047104171B53F2D (void);
-// 0x000000AA System.Void Quest_SO::.ctor()
+// 0x000000AE System.Void Quest_SO::.ctor()
 extern void Quest_SO__ctor_mF6070BCD560380A2B4C79DC6E71BE63E7E611724 (void);
-// 0x000000AB System.Void Quest_SO/QuestGoal::.ctor()
+// 0x000000AF System.Void Quest_SO/QuestGoal::.ctor()
 extern void QuestGoal__ctor_mB3866980E919B7A0E66CC52C0A18161973C70D97 (void);
-// 0x000000AC System.Void SplashSequence::Start()
+// 0x000000B0 System.Void SplashSequence::Start()
 extern void SplashSequence_Start_m72084C15E252B6649C066329B6B69F1B0EDA2F81 (void);
-// 0x000000AD System.Collections.IEnumerator SplashSequence::ToMainMenu()
+// 0x000000B1 System.Collections.IEnumerator SplashSequence::ToMainMenu()
 extern void SplashSequence_ToMainMenu_m60AC1BB04E4408F3F625630A2E83ED75DC542744 (void);
-// 0x000000AE System.Void SplashSequence::.ctor()
+// 0x000000B2 System.Void SplashSequence::.ctor()
 extern void SplashSequence__ctor_mBADFC654D42F7DA2848D0E8B527CDA9AED115370 (void);
-// 0x000000AF System.Void SplashSequence/<ToMainMenu>d__1::.ctor(System.Int32)
+// 0x000000B3 System.Void SplashSequence/<ToMainMenu>d__1::.ctor(System.Int32)
 extern void U3CToMainMenuU3Ed__1__ctor_m5E61AC8DB8AD89E408BF7B0B98D50A7126DD101C (void);
-// 0x000000B0 System.Void SplashSequence/<ToMainMenu>d__1::System.IDisposable.Dispose()
+// 0x000000B4 System.Void SplashSequence/<ToMainMenu>d__1::System.IDisposable.Dispose()
 extern void U3CToMainMenuU3Ed__1_System_IDisposable_Dispose_m2DC912AB9AE465A5599D8CE2B27AFC79C23A5990 (void);
-// 0x000000B1 System.Boolean SplashSequence/<ToMainMenu>d__1::MoveNext()
+// 0x000000B5 System.Boolean SplashSequence/<ToMainMenu>d__1::MoveNext()
 extern void U3CToMainMenuU3Ed__1_MoveNext_m94D239B32527EF47FD0CF696210215BAA884B58D (void);
-// 0x000000B2 System.Object SplashSequence/<ToMainMenu>d__1::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000B6 System.Object SplashSequence/<ToMainMenu>d__1::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CToMainMenuU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFC47D1EB6EE427C8366F2E7C76FC0E8F42549C93 (void);
-// 0x000000B3 System.Void SplashSequence/<ToMainMenu>d__1::System.Collections.IEnumerator.Reset()
+// 0x000000B7 System.Void SplashSequence/<ToMainMenu>d__1::System.Collections.IEnumerator.Reset()
 extern void U3CToMainMenuU3Ed__1_System_Collections_IEnumerator_Reset_m26729FC4C5CEBAF46E413C73EF7144CE22C79FA8 (void);
-// 0x000000B4 System.Object SplashSequence/<ToMainMenu>d__1::System.Collections.IEnumerator.get_Current()
+// 0x000000B8 System.Object SplashSequence/<ToMainMenu>d__1::System.Collections.IEnumerator.get_Current()
 extern void U3CToMainMenuU3Ed__1_System_Collections_IEnumerator_get_Current_m1B18AF9F97760958A4599C2B7E84F0ED7AA84961 (void);
-static Il2CppMethodPointer s_methodPointers[180] = 
+static Il2CppMethodPointer s_methodPointers[184] = 
 {
 	NULL,
 	NULL,
@@ -429,6 +437,9 @@ static Il2CppMethodPointer s_methodPointers[180] =
 	BattleSystem_DestroyEnemy_m6FA2D725AA3FCD700E943C4741913284F7D1D159,
 	BattleSystem_DestroyPlayer_mF805C097EC524302E52B453B6743047F52570464,
 	BattleSystem__ctor_m5D32B8F20FCD4340E83202DE58699AC6C81FC098,
+	CameraFollows_LateUpdate_m52BBAFD7CADC91877D720E7DDDCAB6E813B9ACE8,
+	CameraFollows_FixedUpdate_m1794D502DEF00EBC383338CFDCA2BA234643A679,
+	CameraFollows__ctor_m4DF42B95EBEEDF5685761B82154BE4ED6EAB6540,
 	CharacterStats_SO_get_weapon_m44C49F9EA87BC20D9C39102804C5713E52D3226D,
 	CharacterStats_SO_set_weapon_m0D1C2DE0C413D7699558FFE10586B2D33148C149,
 	CharacterStats_SO_get_shield_mD81FC7CC77F5686CE11876A5D4C08E5D98C32F45,
@@ -517,6 +528,7 @@ static Il2CppMethodPointer s_methodPointers[180] =
 	MainMenu_SelectWizard_mA72B6D2318AE861E15A0C15AB50F4536E23AD08B,
 	MainMenu__ctor_m368BD536D50D8EAAF4A07EBDA43F425576546928,
 	CollisionHandler__ctor_m436377FD2F3C3C10FE27EA552B5D93535161FE60,
+	OverworldEnemy_Awake_mE497E076FB73B7E057B9BBE3D4051FEF33B10DE6,
 	OverworldEnemy_OnCollisionEnter2D_m83D3546A111D9B71787E99018E2F0157D56B75C4,
 	OverworldEnemy_OnTriggerEnter2D_m7CC115824CAFC939F9E919047136FDC9BC063E1A,
 	OverworldEnemy_RegularEnemyTouchesPlayer_mFD3DB46869EBC42A2E29B559ED981C9E5187334F,
@@ -551,7 +563,7 @@ static Il2CppMethodPointer s_methodPointers[180] =
 	U3CToMainMenuU3Ed__1_System_Collections_IEnumerator_Reset_m26729FC4C5CEBAF46E413C73EF7144CE22C79FA8,
 	U3CToMainMenuU3Ed__1_System_Collections_IEnumerator_get_Current_m1B18AF9F97760958A4599C2B7E84F0ED7AA84961,
 };
-static const int32_t s_InvokerIndices[180] = 
+static const int32_t s_InvokerIndices[184] = 
 {
 	966,
 	966,
@@ -579,7 +591,7 @@ static const int32_t s_InvokerIndices[180] =
 	966,
 	966,
 	1125,
-	1897,
+	1899,
 	1125,
 	895,
 	966,
@@ -590,7 +602,7 @@ static const int32_t s_InvokerIndices[180] =
 	853,
 	853,
 	1125,
-	1897,
+	1899,
 	1125,
 	895,
 	1094,
@@ -611,6 +623,9 @@ static const int32_t s_InvokerIndices[180] =
 	1083,
 	956,
 	956,
+	1125,
+	1125,
+	1125,
 	1125,
 	1094,
 	966,
@@ -678,7 +693,7 @@ static const int32_t s_InvokerIndices[180] =
 	1125,
 	966,
 	966,
-	1861,
+	1863,
 	1125,
 	1125,
 	1125,
@@ -691,6 +706,7 @@ static const int32_t s_InvokerIndices[180] =
 	1125,
 	1125,
 	966,
+	1125,
 	1125,
 	1125,
 	1125,
@@ -712,7 +728,7 @@ static const int32_t s_InvokerIndices[180] =
 	1125,
 	1125,
 	966,
-	1861,
+	1863,
 	1125,
 	966,
 	966,
@@ -739,7 +755,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Scripts_CodeGenModule;
 const Il2CppCodeGenModule g_Scripts_CodeGenModule = 
 {
 	"Scripts.dll",
-	180,
+	184,
 	s_methodPointers,
 	0,
 	NULL,

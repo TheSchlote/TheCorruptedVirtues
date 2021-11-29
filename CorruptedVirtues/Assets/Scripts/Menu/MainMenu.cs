@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
@@ -17,7 +14,7 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         if (KnightButton.activeSelf == false && WizardButton.activeSelf == false)
         {

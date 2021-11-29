@@ -33,6 +33,8 @@ public class GameManger : MonoBehaviour
 
     public string sceneToLoad;
     public string lastScene;
+    public string sceneSpawnPoint;
+    public Vector3 playerOverworldPositionOnBattle;
 
     private GameBaseState currentState;
 
@@ -44,6 +46,7 @@ public class GameManger : MonoBehaviour
     public bool bossBattle = false;
     public bool inMenuScreen;
     public List<string> EncounteredEnemyNames = new List<string>();
+    public List<string> OverworldEnemyFought = new List<string>();
 
     private void Awake()
     {
@@ -74,7 +77,16 @@ public class GameManger : MonoBehaviour
         {
             return;
         }
-        GameObject Hero = Instantiate(OverWorldCharacter, Vector3.zero, Quaternion.identity);
+        GameObject Hero;
+        if (sceneSpawnPoint != "")
+        {
+            Hero = Instantiate(OverWorldCharacter, GameObject.Find(sceneSpawnPoint).transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Hero = Instantiate(OverWorldCharacter, playerOverworldPositionOnBattle, Quaternion.identity);
+        }
+
         Hero.name = overWorldCharacter;
     }
 

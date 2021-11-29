@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +11,11 @@ public class BattleEndState : BattleBaseState
         if (battleSystem.flee)
         {
             battleSystem.EndBattleScreen.transform.GetChild(0).GetComponent<Text>().text = "Flee";
+            Text EndScreenText = battleSystem.EndBattleScreen.transform.GetChild(1).GetComponent<Text>();
+            EndScreenText.text = "";
+            
+            GameManger.gameManger.OverworldEnemyFought.Clear();
+            GameManger.gameManger.playerOverworldPositionOnBattle = Vector3.zero; //starting area
         }
         else
         {
@@ -61,13 +65,15 @@ public class BattleEndState : BattleBaseState
 
     public void GiveXPToAlivePlayers(BattleSystem battleSystem)
     {
+        Text EndScreenText = battleSystem.EndBattleScreen.transform.GetChild(1).GetComponent<Text>();
+        EndScreenText.text = "";
         foreach (GameObject Player in GameManger.gameManger.party.PlayerParty)
         {
             if (Player.GetComponent<CharacterStats>().characterDefinition.currentHealth > 0)
             {
                 int LevelBeforeXP = Player.GetComponent<CharacterStats>().characterDefinition.charLevel;
                 Player.GetComponent<CharacterStats>().characterDefinition.ApplyExperience(battleSystem.TotalEnemyXP);
-                Text EndScreenText = battleSystem.EndBattleScreen.transform.GetChild(1).GetComponent<Text>();
+                
                 EndScreenText.text += $"\n{Player.name} gained {battleSystem.TotalEnemyXP} XP!";
                 int LevelAfterXp = Player.GetComponent<CharacterStats>().characterDefinition.charLevel;
                 if (LevelBeforeXP < LevelAfterXp)

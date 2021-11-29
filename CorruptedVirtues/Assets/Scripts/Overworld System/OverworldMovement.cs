@@ -9,7 +9,6 @@ public class OverworldMovement : MonoBehaviour
 
     public float runSpeed = 5.0f;
     public SpriteRenderer sprite;
-
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -71,6 +70,7 @@ public class OverworldMovement : MonoBehaviour
         CollisionHandler collisionHandler = collision.gameObject.GetComponent<CollisionHandler>();
         GameManger.gameManger.nextCharacterPosition = collisionHandler.spawnPoint.transform;
         GameManger.gameManger.sceneToLoad = collisionHandler.SceneToLoad;
+        GameManger.gameManger.sceneSpawnPoint = collisionHandler.NextSceneSpawnPoint;
         GameManger.gameManger.LoadNextScene();
     }
 }

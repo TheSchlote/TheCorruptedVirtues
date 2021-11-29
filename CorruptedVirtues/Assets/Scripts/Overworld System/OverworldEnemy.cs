@@ -3,23 +3,46 @@ using UnityEngine;
 public class OverworldEnemy : MonoBehaviour
 {
     public string EnemyName;
+
+    private void Awake()
+    {
+        if (GameManger.gameManger.OverworldEnemyFought.Count > 0)
+        {
+            foreach (string overworldenemyname in GameManger.gameManger.OverworldEnemyFought)
+            {
+                if (GameObject.Find(overworldenemyname))
+                {
+                    GameObject.Find(overworldenemyname).SetActive(false);
+                }
+            }
+            GameManger.gameManger.OverworldEnemyFought.Clear();
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision);
         if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Enemy"))
         {
             Debug.Log("You touched an Enemy!");
-
+            GameManger.gameManger.OverworldEnemyFought.Add(gameObject.name);
             GameManger.gameManger.battleHasStarted = true;
+            
             //Destory Object that was touched
         }
-        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Boss"))
+        else if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Boss"))
         {
             Debug.Log("BOSS BATTLE!");
 
             GameManger.gameManger.battleHasStarted = true;
             GameManger.gameManger.bossBattle = true;
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameManger.gameManger.playerOverworldPositionOnBattle = collision.transform.position;
+            GameManger.gameManger.sceneSpawnPoint = "";
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
