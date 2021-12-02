@@ -106,7 +106,11 @@ public class BattleSystem : MonoBehaviour
         PlayerStatHealthBar.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green, PlayerStatHealthBar.normalizedValue);
     }
 
-    public void AttackButton() => attack = true;
+    public void AttackButton()
+    {
+        DisableInactiveSlots();
+        attack = true;
+    }
     public void FleeButton() => flee = true;
     public void AttackSlot1() => attackSlot = 1;
     public void AttackSlot2() => attackSlot = 2;
@@ -144,5 +148,32 @@ public class BattleSystem : MonoBehaviour
         PlayerPrefabsInBattle[CharacterSlot] = null;
         Destroy(PlayerCloneGameObjectsInBattle[CharacterSlot]);
         charactersInBattle.Remove(PlayerCloneGameObjectsInBattle[CharacterSlot]);
+    }
+
+    public void DisableInactiveSlots()
+    {
+        int numButtons = 0;
+        int lastEnemyPosition = 0;
+        for (int slotCircle = 0; slotCircle < EnemySlotContainer.transform.childCount; slotCircle++)
+        {
+            if (EnemySlotContainer.transform.GetChild(slotCircle).transform.GetChild(0).childCount == 0 &&
+                EnemySlotContainer.transform.GetChild(slotCircle).transform.GetChild(1).childCount == 0)
+            {
+                EnemyAttackButtons.transform.GetChild(slotCircle).gameObject.SetActive(false);
+
+            }
+            else
+            {
+                if (numButtons == 0)
+                {
+                    lastEnemyPosition = slotCircle + 1;
+                }
+                numButtons++;                               
+            }
+        }
+        if (numButtons == 1)
+        {
+            attackSlot = lastEnemyPosition;
+        }
     }
 }

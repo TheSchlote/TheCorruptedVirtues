@@ -14,7 +14,7 @@ public class BattlePlayerState : BattleBaseState
         battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name}'s Turn";
         battleSystem.PlayerChoiceButtons.SetActive(true);
         battleSystem.EnemyAttackButtons.SetActive(false);
-        
+
     }
 
     public override void Update(BattleSystem battleSystem)
