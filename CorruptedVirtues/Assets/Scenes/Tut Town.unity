@@ -20310,7 +20310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -20498,6 +20498,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuestDecline
       objectReference: {fileID: 0}
+    - target: {fileID: 3994591803289802673, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -40.355957
+      objectReference: {fileID: 0}
     - target: {fileID: 3994591803289802674, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -20580,11 +20584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -46.483704
+      value: -46.483643
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 43.28769
+      value: 43.28772
       objectReference: {fileID: 0}
     - target: {fileID: 3994591804213953332, guid: 00374f0a4e4d60644bed23100e252402, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
