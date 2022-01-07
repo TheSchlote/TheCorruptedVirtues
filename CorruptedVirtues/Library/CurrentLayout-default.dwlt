@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 20
+  controlID: 158
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 21
+  controlID: 57
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 22
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 92
+  controlID: 122
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,8 +324,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -449,23 +449,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 30210000
       m_LastClickedID: 0
-      m_ExpandedIDs: c23affffda3affff663dffff563effff603effff6a3effff5840ffff6040ffff9840ffff5643ffff0c45ffff1e45fffff046ffff3447ffff4c47ffffd849ffffc84affffd24affffdc4affffca4cffffd24cffff4853ffff8854ffff9a54ffff6c56ffff7e56ffff1057ffff2857ffffea58ffffd059ffffd459ffffd859ffffdc59ffffe459ffff205affff385affffc05cffffac5dffffb25dffffb85dffffbc5dffffc85dffffc060ffff8698ffff8aa7ffffc4f8ffff42fbfffff4ffffff
+      m_ExpandedIDs: 78ceffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Enemy
-        m_OriginalName: Enemy
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 37750
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.4922113, y: -3.6103425, z: 120.27692}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 6.4922113, y: -3.6103425, z: 120.27692}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -564,9 +564,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.972358
+    m_Target: 10
     speed: 2
-    m_Value: 14.972358
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -690,22 +690,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Character Stat System/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Character Stat System/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 185}
-    m_SelectedIDs: 98410000
-    m_LastClickedID: 16792
-    m_ExpandedIDs: 000000008c4100008e41000090410000924100009441000096410000984100009a4100009c4100009e410000a0410000a2410000a441000000ca9a3b
+    scrollPos: {x: 0, y: 305}
+    m_SelectedIDs: 208d0000
+    m_LastClickedID: 36128
+    m_ExpandedIDs: 00000000e68c0000e88c0000ea8c0000ec8c0000ee8c0000f08c0000f28c0000f48c0000f68c0000f88c0000fa8c0000fc8c0000fe8c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +733,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008c4100008e41000090410000924100009441000096410000984100009a4100009c4100009e410000a0410000a2410000a4410000
+    m_ExpandedIDs: 00000000e68c0000e88c0000ea8c0000ec8c0000ee8c0000f08c0000f28c0000f48c0000f68c0000f88c0000fa8c0000fc8c0000fe8c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -965,632 +965,15 @@ MonoBehaviour:
       availableCategories: []
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 22}
-    newResultList:
-    - id: 1000
-      uniqueId: '[Corrupted Virtues][suite]'
-      name: Corrupted Virtues
-      fullName: Corrupted Virtues
-      resultStatus: 2
-      duration: 0.4124
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1033
-      uniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-      name: EditMode.dll
-      fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
-      resultStatus: 2
-      duration: 0.3529599
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[Corrupted Virtues][suite]'
-    - id: 1001
-      uniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-      name: BattlePlayerStateTests+AttackEnemy_Method
-      fullName: BattlePlayerStateTests+AttackEnemy_Method
-      resultStatus: 2
-      duration: 0.0454546
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1002
-      uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage]
-      name: Enemy_Takes_Damage
-      fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
-      resultStatus: 2
-      duration: 0.0108466
-      messages: 'System.InvalidOperationException : Sequence contains no elements'
-      output: 
-      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
-        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
-        (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattlePlayerState.cs:41 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
-        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:42
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest]
-      name: Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
-      fullName: BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
-      resultStatus: 2
-      duration: 0.0008987
-      messages: 'System.InvalidOperationException : Sequence contains no elements'
-      output: 
-      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
-        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
-        (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattlePlayerState.cs:41 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
-        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:55
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1003
-      uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Killing_QuestEnemy_Updates_ActiveQuest]
-      name: Killing_QuestEnemy_Updates_ActiveQuest
-      fullName: BattlePlayerStateTests+AttackEnemy_Method.Killing_QuestEnemy_Updates_ActiveQuest
-      resultStatus: 1
-      duration: 0.0022522
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1005
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-      name: BattleSceneTests+InstantiateCharactersForBattle_Method
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
-      resultStatus: 1
-      duration: 0.0377261
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1012
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots]
-      name: Instantiate_3_PlayerSlots
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots
-      resultStatus: 1
-      duration: 0.0180595
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1006
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss]
-      name: Instantiate_Boss
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss
-      resultStatus: 1
-      duration: 0.0008757
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1007
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy]
-      name: Instantiate_EnemySlot1_When_1_Enemy
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy
-      resultStatus: 1
-      duration: 0.0007642
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1008
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies]
-      name: Instantiate_EnemySlot2_When_2_Enemies
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies
-      resultStatus: 1
-      duration: 0.0007224
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies]
-      name: Instantiate_EnemySlot3_When_3_Enemies
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies
-      resultStatus: 1
-      duration: 0.000753
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies]
-      name: Instantiate_EnemySlot4_When_4_Enemies
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies
-      resultStatus: 1
-      duration: 0.0007473
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1011
-      uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies]
-      name: Instantiate_EnemySlot5_When_5_Enemies
-      fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies
-      resultStatus: 1
-      duration: 0.0007857
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1013
-      uniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
-      name: BattleSceneTests+TransistionToState_Method
-      fullName: BattleSceneTests+TransistionToState_Method
-      resultStatus: 2
-      duration: 0.0242693
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1014
-      uniqueId: EditMode.dll/BattleSceneTests+TransistionToState_Method/[EditMode][BattleSceneTests+TransistionToState_Method.Transition_To_startState]
-      name: Transition_To_startState
-      fullName: BattleSceneTests+TransistionToState_Method.Transition_To_startState
-      resultStatus: 2
-      duration: 0.0124498
-      messages: 'System.InvalidOperationException : Sequence contains no elements'
-      output: 
-      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
-        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartState.PopulateCharactersInBattle
-        (BattleSystem battleSystem) [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleStartState.cs:112 \r\n  at BattleStartState.EnterState
-        (BattleSystem battleSystem) [0x00009] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleStartState.cs:11 \r\n  at BattleSystem.TransitionToState
-        (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:129 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
-        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:186
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
-    - id: 1015
-      uniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
-      name: BattleStartStateTests+PopulatePrefabsInBattle_Method
-      fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method
-      resultStatus: 2
-      duration: 0.1554035
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1016
-      uniqueId: EditMode.dll/BattleStartStateTests+PopulatePrefabsInBattle_Method/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First]
-      name: Single_Enemy_Is_First
-      fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
-      resultStatus: 2
-      duration: 0.0015116
-      messages: 'System.InvalidOperationException : Sequence contains no elements'
-      output: 
-      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
-        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
-        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleStartStateTests.cs:55
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
-    - id: 1019
-      uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
-      name: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
-      fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
-      resultStatus: 1
-      duration: 0.0115847
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1021
-      uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet]
-      name: If_Someone_Has_Not_Gone_Yet
-      fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet
-      resultStatus: 1
-      duration: 0.0008601
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1020
-      uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters]
-      name: Once_Everyone_Has_Gone_Reset_Alive_Characters
-      fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters
-      resultStatus: 1
-      duration: 0.000289
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1017
-      uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
-      name: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
-      fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
-      resultStatus: 2
-      duration: 0.0119847
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1018
-      uniqueId: EditMode.dll/BattleWhosNextStateTests+PopulateCharactersInBattle_Method/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First]
-      name: Single_Enemy_Is_First
-      fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
-      resultStatus: 2
-      duration: 0.0013629
-      messages: 'System.InvalidOperationException : Sequence contains no elements'
-      output: 
-      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
-        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
-        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleWhosNextStateTests.cs:55
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
-    - id: 1022
-      uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-      name: BattleWhosNextStateTests+WhosNext_Method
-      fullName: BattleWhosNextStateTests+WhosNext_Method
-      resultStatus: 2
-      duration: 0.0184275
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1023
-      uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next]
-      name: Enemy_Is_Next
-      fullName: BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next
-      resultStatus: 2
-      duration: 0.0049915
-      messages: "  Expected: null\r\n  But was:  <BattleEnemyState>\r\n"
-      output: 
-      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next () [0x00065]
-        in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:119
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-    - id: 1024
-      uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next]
-      name: Player_Is_Next
-      fullName: BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next
-      resultStatus: 2
-      duration: 0.0008293
-      messages: "  Expected: null\r\n  But was:  <BattlePlayerState>\r\n"
-      output: 
-      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next ()
-        [0x00065] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:131
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-    - id: 1025
-      uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next]
-      name: The_End_Is_Next
-      fullName: BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next
-      resultStatus: 2
-      duration: 0.0007542
-      messages: "  Expected: null\r\n  But was:  <BattleEndState>\r\n"
-      output: 
-      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next ()
-        [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:138
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-    - id: 1026
-      uniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-      name: QuestTests+IsQuestEnemyMethod
-      fullName: QuestTests+IsQuestEnemyMethod
-      resultStatus: 1
-      duration: 0.0160978
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1033
-      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1027
-      uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager]
-      name: Quest_Can_Be_Added_To_GameManager
-      fullName: QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager
-      resultStatus: 1
-      duration: 0.0016797
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1031
-      uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False]
-      name: When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
-      fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
-      resultStatus: 1
-      duration: 0.0014602
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1032
-      uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True]
-      name: When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
-      fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
-      resultStatus: 1
-      duration: 0.0003361
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1028
-      uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False]
-      name: When_KilledEnemy_Is_Not_QuestEnemy_Return_False
-      fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False
-      resultStatus: 1
-      duration: 0.000452
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1029
-      uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True]
-      name: When_KilledEnemy_Is_QuestEnemy_Return_True
-      fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True
-      resultStatus: 1
-      duration: 0.0002836
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1030
-      uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount]
-      name: When_QuestEnemy_Killed_Increase_CurrentAmount
-      fullName: QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount
-      resultStatus: 1
-      duration: 0.0002756
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
+    m_Window: {fileID: 0}
+    newResultList: []
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0ed96ac2a76b74ce906479d4349e00e159ce200cf21f3c1ede1ac921a787ce4143ff804923b4a06effffff7f
+      m_ExpandedIDs: 
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1614,8 +997,7 @@ MonoBehaviour:
       NotRunHidden: 0
       m_SearchString: 
       selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
+      availableCategories: []
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 0
