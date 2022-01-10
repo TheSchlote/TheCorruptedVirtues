@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 //using UnityEditor;
 
@@ -46,6 +47,8 @@ public class CharacterStats_SO : ScriptableObject
     public int charLevel = 0;
 
     public CharLevelUps[] charLevelUps;
+    public List<Skill_SO> SkillList = new List<Skill_SO>();
+
     #endregion
 
     #region Stat Increasers
