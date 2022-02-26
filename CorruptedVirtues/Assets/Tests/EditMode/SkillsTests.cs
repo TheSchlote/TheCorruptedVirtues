@@ -32,4 +32,12 @@ public class SkillsTests : MonoBehaviour
         testSkill.skillAmout = 10;
         Assert.AreEqual(testSkill.skillAmout, 10);
     }
+
+    [Test]
+    public void Skill_Single_Range()
+    {
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        
+        Assert.AreEqual(testSkill.skillAmout, 10);
+    }
 }

@@ -22,8 +22,12 @@ MonoBehaviour:
   Wealth: 0
   baseAttack: 1
   currentAttack: 1
+  baseSpecialAttack: 0
+  currentSpecialAttack: 0
   baseDefense: 1
   currentDefense: 1
+  baseSpecialDefense: 0
+  currentSpecialDefense: 0
   baseSpeed: 1
   currentSpeed: 1
   charExperience: 8
@@ -39,3 +43,5 @@ MonoBehaviour:
     baseAttack: 2
     baseDefense: 2
     baseSpeed: 2
+  SkillList:
+  - {fileID: 11400000, guid: 97549df6bac123241b8908f77c5303ab, type: 2}
