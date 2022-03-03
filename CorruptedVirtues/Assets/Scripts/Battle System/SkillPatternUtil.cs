@@ -1,6 +1,6 @@
 using System.Linq;
 
-public class SkillPatternUtil : BattlePlayerState
+public class SkillPatternUtil
 {
     public void WhichSkillToUse(BattleSystem battleSystem, int EnemySlot, Skill_SO skill)
     {

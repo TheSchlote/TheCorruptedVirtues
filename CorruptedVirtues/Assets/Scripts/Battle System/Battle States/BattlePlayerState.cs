@@ -4,7 +4,6 @@ using System.Linq;
 
 public class BattlePlayerState : BattleBaseState
 {
-    public readonly SkillPatternUtil skillPattern = new SkillPatternUtil();
     public override void EnterState(BattleSystem battleSystem)
     {
         Image PlayerProfile = battleSystem.PlayerChoiceButtons.transform.GetChild(2).GetComponent<Image>();
@@ -73,8 +72,9 @@ public class BattlePlayerState : BattleBaseState
 
     public void UseSkill(BattleSystem battleSystem, int EnemySlot, Skill_SO skill)
     {
+        SkillPatternUtil skillPattern = new SkillPatternUtil();
         skillPattern.WhichSkillToUse(battleSystem, EnemySlot, skill);
-        EndOfPlayersTurn(battleSystem);
+        //EndOfPlayersTurn(battleSystem);
     }
 
     public void EndOfPlayersTurn(BattleSystem battleSystem)

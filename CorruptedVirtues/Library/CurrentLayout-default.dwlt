@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1921
-    y: 42
-    width: 1920
-    height: 989
+    x: -1746
+    y: 170
+    width: 1745
+    height: 1037
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Test Runner
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 989
+    width: 1745
+    height: 1037
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1745
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 969
-    width: 1920
+    y: 1017
+    width: 1745
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -117,12 +117,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 939
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+    width: 1745
+    height: 987
+  m_MinSize: {x: 502, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 64
+  controlID: 167
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1466
-    height: 939
-  m_MinSize: {x: 403, y: 492}
+    width: 1333
+    height: 987
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 65
+  controlID: 146
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,12 +167,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1466
-    height: 556
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1333
+    height: 585
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 45
+  controlID: 147
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 363
-    height: 556
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 329
+    height: 585
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -209,24 +209,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 363
+    x: 329
     y: 0
-    width: 1103
-    height: 556
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+    width: 1004
+    height: 585
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 14}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,13 +245,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 556
-    width: 1466
-    height: 383
+    y: 585
+    width: 1333
+    height: 402
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 66
+  controlID: 59
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 977
-    height: 383
+    width: 987
+    height: 402
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -293,10 +293,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 977
+    x: 987
     y: 0
-    width: 489
-    height: 383
+    width: 346
+    height: 402
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -315,23 +315,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1466
+    x: 1333
     y: 0
-    width: 454
-    height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+    width: 412
+    height: 987
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -352,9 +352,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1558
-    y: 72
-    width: 1101
+    x: 362
+    y: 73
+    width: 1103
     height: 535
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1101, y: 514}
+  m_TargetSize: {x: 1103, y: 514}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -378,8 +378,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -550.5
-    m_HBaseRangeMax: 550.5
+    m_HBaseRangeMin: -551.5
+    m_HBaseRangeMax: 551.5
     m_VBaseRangeMin: -257
     m_VBaseRangeMax: 257
     m_HAllowExceedBaseRangeMin: 1
@@ -399,23 +399,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1101
+      width: 1103
       height: 514
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 550.5, y: 257}
+    m_Translation: {x: 551.5, y: 257}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -550.5
+      x: -551.5
       y: -257
-      width: 1101
+      width: 1103
       height: 514
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1101, y: 535}
+  m_LastWindowPixelSize: {x: 1103, y: 535}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -441,17 +441,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1921
-    y: 72
-    width: 362
-    height: 535
+    x: -1746
+    y: 200
+    width: 328
+    height: 564
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e20e0000
+      m_SelectedIDs: e46a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff
+      m_ExpandedIDs: 74baffffaabcffff3abfffffbec2ffffe2c2ffff04caffff00d6fffff4d6ffffe8d7ffffdcd8ffff1edaffff12dbffff06dcffff4addffff3edeffff36dfffff6ee0ffff58e1fffffae2ffff84e3ffff72e4ffff60e5ffff8ce6ffff76e7ffff54e8ffff32e9ffff10eaffff4eebffff3eecffff6cedffff4ceeffff2cefffff22f7ffff9af7ffffcaf7fffffaf7ffff10f9ffff8cf9ffffbaf9ffff3afaffff42fbffff987f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -495,10 +495,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 363
-    y: 73
-    width: 1101
-    height: 642
+    x: -1417
+    y: 200
+    width: 1002
+    height: 564
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 5.755546, y: -4.0642176, z: -3.0204186}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 5.755546, y: -4.0642176, z: -3.0204186}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -564,9 +564,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 12.289828
     speed: 2
-    m_Value: 10
+    m_Value: 12.289828
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -672,10 +672,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1921
-    y: 628
-    width: 976
-    height: 362
+    x: -1746
+    y: 785
+    width: 986
+    height: 381
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -690,21 +690,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Battle System
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Battle System
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 310}
-    m_SelectedIDs: 2c430000
-    m_LastClickedID: 17196
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 36430000
+    m_LastClickedID: 17206
     m_ExpandedIDs: 000000002a4300002c4300002e43000030430000324300003443000036430000384300003a4300003c4300003e430000404300004243000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 207
+  m_DirectoriesAreaWidth: 198
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -809,10 +809,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -944
-    y: 628
-    width: 487
-    height: 362
+    x: -759
+    y: 785
+    width: 344
+    height: 381
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
@@ -873,7 +873,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 27364
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
@@ -899,18 +899,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -455
-    y: 72
-    width: 453
-    height: 918
+    x: -413
+    y: 200
+    width: 411
+    height: 966
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 190
+    ID: 208
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 636
-    - 212
+    - 672
+    - 224
     relativeSizes:
     - 0.75
     - 0.25
@@ -920,7 +920,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 848
+    lastTotalSize: 896
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -972,7 +972,7 @@ MonoBehaviour:
       name: Corrupted Virtues
       fullName: Corrupted Virtues
       resultStatus: 1
-      duration: 0.0556823
+      duration: 91.26205
       messages: 
       output: 
       stacktrace: 
@@ -988,7 +988,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.0281091
+      duration: 91.21637
       messages: 
       output: 
       stacktrace: 
@@ -1003,9 +1003,9 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
       name: BattlePlayerStateTests+AttackEnemy_Method
       fullName: BattlePlayerStateTests+AttackEnemy_Method
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0086779
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1019,11 +1019,19 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage]
       name: Enemy_Takes_Damage
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0011518
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
+        (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattlePlayerState.cs:41 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:42
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1036,11 +1044,19 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest]
       name: Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.000498
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
+        (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattlePlayerState.cs:41 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:55
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1053,8 +1069,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Killing_QuestEnemy_Updates_ActiveQuest]
       name: Killing_QuestEnemy_Updates_ActiveQuest
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Killing_QuestEnemy_Updates_ActiveQuest
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004544
       messages: 
       output: 
       stacktrace: 
@@ -1070,8 +1086,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
       name: BattleSceneTests+InstantiateCharactersForBattle_Method
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0281906
       messages: 
       output: 
       stacktrace: 
@@ -1086,8 +1102,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots]
       name: Instantiate_3_PlayerSlots
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0089556
       messages: 
       output: 
       stacktrace: 
@@ -1103,8 +1119,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss]
       name: Instantiate_Boss
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0006899
       messages: 
       output: 
       stacktrace: 
@@ -1120,8 +1136,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy]
       name: Instantiate_EnemySlot1_When_1_Enemy
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0006615
       messages: 
       output: 
       stacktrace: 
@@ -1137,8 +1153,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies]
       name: Instantiate_EnemySlot2_When_2_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.000855
       messages: 
       output: 
       stacktrace: 
@@ -1154,8 +1170,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies]
       name: Instantiate_EnemySlot3_When_3_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0006784
       messages: 
       output: 
       stacktrace: 
@@ -1171,8 +1187,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies]
       name: Instantiate_EnemySlot4_When_4_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0006692
       messages: 
       output: 
       stacktrace: 
@@ -1188,8 +1204,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies]
       name: Instantiate_EnemySlot5_When_5_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0006518
       messages: 
       output: 
       stacktrace: 
@@ -1205,9 +1221,9 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
       name: BattleSceneTests+TransistionToState_Method
       fullName: BattleSceneTests+TransistionToState_Method
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0231485
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1221,11 +1237,23 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleSceneTests+TransistionToState_Method/[EditMode][BattleSceneTests+TransistionToState_Method.Transition_To_startState]
       name: Transition_To_startState
       fullName: BattleSceneTests+TransistionToState_Method.Transition_To_startState
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.003292
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartState.PopulateCharactersInBattle
+        (BattleSystem battleSystem) [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattleStartState.cs:112 \r\n  at BattleStartState.EnterState
+        (BattleSystem battleSystem) [0x00009] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattleStartState.cs:11 \r\n  at BattleSystem.TransitionToState
+        (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\BattleSystem.cs:129 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
+        () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:186
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1238,9 +1266,9 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
       name: BattleStartStateTests+PopulatePrefabsInBattle_Method
       fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0089241
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1254,11 +1282,17 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleStartStateTests+PopulatePrefabsInBattle_Method/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First]
       name: Single_Enemy_Is_First
       fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.001192
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
+        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleStartStateTests.cs:55
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1271,8 +1305,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
       name: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
       fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0066413
       messages: 
       output: 
       stacktrace: 
@@ -1287,8 +1321,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet]
       name: If_Someone_Has_Not_Gone_Yet
       fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.002853
       messages: 
       output: 
       stacktrace: 
@@ -1304,8 +1338,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters]
       name: Once_Everyone_Has_Gone_Reset_Alive_Characters
       fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002618
       messages: 
       output: 
       stacktrace: 
@@ -1321,9 +1355,9 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
       name: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
       fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0066155
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1337,11 +1371,17 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleWhosNextStateTests+PopulateCharactersInBattle_Method/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First]
       name: Single_Enemy_Is_First
       fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0010661
+      messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
-      stacktrace: 
+      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
+        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
+        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleWhosNextStateTests.cs:55
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1354,9 +1394,9 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
       name: BattleWhosNextStateTests+WhosNext_Method
       fullName: BattleWhosNextStateTests+WhosNext_Method
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0128148
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1370,11 +1410,14 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next]
       name: Enemy_Is_Next
       fullName: BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0040911
+      messages: "  Expected: null\r\n  But was:  <BattleEnemyState>\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next () [0x00065]
+        in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:119
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1387,11 +1430,14 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next]
       name: Player_Is_Next
       fullName: BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0007768
+      messages: "  Expected: null\r\n  But was:  <BattlePlayerState>\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next ()
+        [0x00065] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:131
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1404,11 +1450,14 @@ MonoBehaviour:
       uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next]
       name: The_End_Is_Next
       fullName: BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0009023
+      messages: "  Expected: null\r\n  But was:  <BattleEndState>\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next ()
+        [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:138
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1422,7 +1471,7 @@ MonoBehaviour:
       name: CharacterTests
       fullName: CharacterTests
       resultStatus: 1
-      duration: 0.026023
+      duration: 0.0077611
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -1443,7 +1492,7 @@ MonoBehaviour:
       name: Add_Skill_To_Character
       fullName: CharacterTests.Add_Skill_To_Character
       resultStatus: 1
-      duration: 0.0105664
+      duration: 0.001226
       messages: 
       output: 
       stacktrace: 
@@ -1460,7 +1509,7 @@ MonoBehaviour:
       name: ItemTests
       fullName: ItemTests
       resultStatus: 1
-      duration: 0.0281028
+      duration: 0.0096782
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -1481,7 +1530,7 @@ MonoBehaviour:
       name: Add_Item_To_Inventory
       fullName: ItemTests.Add_Item_To_Inventory
       resultStatus: 1
-      duration: 0.0106414
+      duration: 0.0007698
       messages: 
       output: 
       stacktrace: 
@@ -1498,7 +1547,7 @@ MonoBehaviour:
       name: ItemType_Can_Be_Craftable
       fullName: ItemTests.ItemType_Can_Be_Craftable
       resultStatus: 1
-      duration: 0.0008455
+      duration: 0.0009206
       messages: 
       output: 
       stacktrace: 
@@ -1514,8 +1563,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
       name: QuestTests+IsQuestEnemyMethod
       fullName: QuestTests+IsQuestEnemyMethod
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.011354
       messages: 
       output: 
       stacktrace: 
@@ -1530,8 +1579,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager]
       name: Quest_Can_Be_Added_To_GameManager
       fullName: QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0007029
       messages: 
       output: 
       stacktrace: 
@@ -1547,8 +1596,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False]
       name: When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
       fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0007459
       messages: 
       output: 
       stacktrace: 
@@ -1564,8 +1613,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True]
       name: When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
       fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002734
       messages: 
       output: 
       stacktrace: 
@@ -1581,8 +1630,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False]
       name: When_KilledEnemy_Is_Not_QuestEnemy_Return_False
       fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0003762
       messages: 
       output: 
       stacktrace: 
@@ -1598,8 +1647,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True]
       name: When_KilledEnemy_Is_QuestEnemy_Return_True
       fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002638
       messages: 
       output: 
       stacktrace: 
@@ -1615,8 +1664,8 @@ MonoBehaviour:
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount]
       name: When_QuestEnemy_Killed_Increase_CurrentAmount
       fullName: QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002471
       messages: 
       output: 
       stacktrace: 
@@ -1633,7 +1682,7 @@ MonoBehaviour:
       name: SkillsTests
       fullName: SkillsTests
       resultStatus: 1
-      duration: 0.0306936
+      duration: 91.21263
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -1654,7 +1703,7 @@ MonoBehaviour:
       name: Add_Skill_To_Character
       fullName: SkillsTests.Add_Skill_To_Character
       resultStatus: 1
-      duration: 0.011546
+      duration: 0.0006014
       messages: 
       output: 
       stacktrace: 
@@ -1671,7 +1720,7 @@ MonoBehaviour:
       name: Skill_Has_Amout
       fullName: SkillsTests.Skill_Has_Amout
       resultStatus: 1
-      duration: 0.0002911
+      duration: 0.0002182
       messages: 
       output: 
       stacktrace: 
@@ -1688,7 +1737,7 @@ MonoBehaviour:
       name: Skill_Has_Name
       fullName: SkillsTests.Skill_Has_Name
       resultStatus: 1
-      duration: 0.000198
+      duration: 0.0002046
       messages: 
       output: 
       stacktrace: 
@@ -1704,8 +1753,27 @@ MonoBehaviour:
       uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.Skill_Single_Range]
       name: Skill_Single_Range
       fullName: SkillsTests.Skill_Single_Range
-      resultStatus: 0
-      duration: 0
+      resultStatus: 2
+      duration: 0.0006305
+      messages: "  Expected: 0\r\n  But was:  10\r\n"
+      output: 
+      stacktrace: 'at SkillsTests.Skill_Single_Range () [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\SkillsTests.cs:51
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.UseSkillTest]
+      name: UseSkillTest
+      fullName: SkillsTests.UseSkillTest
+      resultStatus: 1
+      duration: 91.17292
       messages: 
       output: 
       stacktrace: 
@@ -1717,12 +1785,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
-    m_ResultText: Add_Skill_To_Character (0.011s)
+    m_ResultText: UseSkillTest (91.173s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f103133d
-      m_LastClickedID: 1024656369
+      scrollPos: {x: 0, y: 52}
+      m_SelectedIDs: c04f8a87
+      m_LastClickedID: -2020978752
       m_ExpandedIDs: 4d4334830ed96ac2a76b74ce906479d4349e00e159ce200cf21f3c1ede1ac921a787ce4143ff80496200434bed6c816523b4a06effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
