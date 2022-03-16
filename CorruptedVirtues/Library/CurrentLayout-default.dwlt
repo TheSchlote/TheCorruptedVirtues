@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1746
-    y: 170
-    width: 1745
-    height: 1037
+    x: -1921
+    y: 42
+    width: 1920
+    height: 989
   m_ShowMode: 4
   m_Title: Test Runner
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1745
-    height: 1037
+    width: 1920
+    height: 989
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1745
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1017
-    width: 1745
+    y: 969
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -117,12 +117,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1745
-    height: 987
-  m_MinSize: {x: 502, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+    width: 1920
+    height: 939
+  m_MinSize: {x: 504, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 167
+  controlID: 130
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1333
-    height: 987
-  m_MinSize: {x: 402, y: 492}
+    width: 1466
+    height: 939
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 146
+  controlID: 100
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,12 +167,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1333
-    height: 585
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    width: 1466
+    height: 556
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 147
+  controlID: 101
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 329
-    height: 585
+    width: 362
+    height: 556
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 329
+    x: 362
     y: 0
-    width: 1004
-    height: 585
+    width: 1104
+    height: 556
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
@@ -245,13 +245,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 585
-    width: 1333
-    height: 402
+    y: 556
+    width: 1466
+    height: 383
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 59
+  controlID: 18
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 987
-    height: 402
+    width: 1085
+    height: 383
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -293,10 +293,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 987
+    x: 1085
     y: 0
-    width: 346
-    height: 402
+    width: 381
+    height: 383
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -320,10 +320,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1333
+    x: 1466
     y: 0
-    width: 412
-    height: 987
+    width: 454
+    height: 939
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
@@ -354,7 +354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 362
     y: 73
-    width: 1103
+    width: 1102
     height: 535
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1103, y: 514}
+  m_TargetSize: {x: 1102, y: 514}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -378,8 +378,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -551.5
-    m_HBaseRangeMax: 551.5
+    m_HBaseRangeMin: -551
+    m_HBaseRangeMax: 551
     m_VBaseRangeMin: -257
     m_VBaseRangeMax: 257
     m_HAllowExceedBaseRangeMin: 1
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -399,23 +399,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1103
+      width: 1102
       height: 514
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 551.5, y: 257}
+    m_Translation: {x: 551, y: 257}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -551.5
+      x: -551
       y: -257
-      width: 1103
+      width: 1102
       height: 514
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1103, y: 535}
+  m_LastWindowPixelSize: {x: 1102, y: 535}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -441,17 +441,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1746
-    y: 200
-    width: 328
-    height: 564
+    x: -1921
+    y: 72
+    width: 361
+    height: 535
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e46a0000
+      m_SelectedIDs: b20a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 74baffffaabcffff3abfffffbec2ffffe2c2ffff04caffff00d6fffff4d6ffffe8d7ffffdcd8ffff1edaffff12dbffff06dcffff4addffff3edeffff36dfffff6ee0ffff58e1fffffae2ffff84e3ffff72e4ffff60e5ffff8ce6ffff76e7ffff54e8ffff32e9ffff10eaffff4eebffff3eecffff6cedffff4ceeffff2cefffff22f7ffff9af7ffffcaf7fffffaf7ffff10f9ffff8cf9ffffbaf9ffff3afaffff42fbffff987f0000
+      m_ExpandedIDs: d69fffff4ea1ffff76a2ffff9ca3ffff12a5ffff36a6ffff5ca7ffff84a8fffffaa9ffff20abffff46acffffbeadffff38afffff16baffff48c5ffff88cfffffc6d9ffffeadaffff0edcffff86ddffffacdeffffd0dfffff0ceaffff86ebffff04edffff2aeeffff14f8ffffd4f9ffff6efaffff42fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -495,10 +495,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1417
-    y: 200
-    width: 1002
-    height: 564
+    x: -1559
+    y: 72
+    width: 1102
+    height: 535
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.755546, y: -4.0642176, z: -3.0204186}
+    m_Target: {x: 1.2919991, y: -1.7592826, z: -3.6360028}
     speed: 2
-    m_Value: {x: 5.755546, y: -4.0642176, z: -3.0204186}
+    m_Value: {x: 1.2919991, y: -1.7592826, z: -3.6360028}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -564,9 +564,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.289828
+    m_Target: 6.6998997
     speed: 2
-    m_Value: 12.289828
+    m_Value: 6.6998997
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -672,10 +672,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1746
-    y: 785
-    width: 986
-    height: 381
+    x: -1921
+    y: 628
+    width: 1084
+    height: 362
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -690,21 +690,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Tests/EditMode
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Tests/EditMode
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\Repos\TheCorruptedVirtues\CorruptedVirtues
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 36430000
-    m_LastClickedID: 17206
+    scrollPos: {x: 0, y: 446}
+    m_SelectedIDs: 98430000
+    m_LastClickedID: 17304
     m_ExpandedIDs: 000000002a4300002c4300002e43000030430000324300003443000036430000384300003a4300003c4300003e430000404300004243000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -809,10 +809,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -759
-    y: 785
-    width: 344
-    height: 381
+    x: -836
+    y: 628
+    width: 379
+    height: 362
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
@@ -873,7 +873,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 27364
+  m_LastInspectedObjectInstanceID: 2738
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
@@ -899,18 +899,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -413
-    y: 200
-    width: 411
-    height: 966
+    x: -455
+    y: 72
+    width: 453
+    height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 208
+    ID: 219
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 672
-    - 224
+    - 636
+    - 212
     relativeSizes:
     - 0.75
     - 0.25
@@ -920,7 +920,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 896
+    lastTotalSize: 848
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -972,7 +972,7 @@ MonoBehaviour:
       name: Corrupted Virtues
       fullName: Corrupted Virtues
       resultStatus: 1
-      duration: 91.26205
+      duration: 0.1723428
       messages: 
       output: 
       stacktrace: 
@@ -988,7 +988,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 91.21637
+      duration: 0.1140808
       messages: 
       output: 
       stacktrace: 
@@ -1564,7 +1564,7 @@ MonoBehaviour:
       name: QuestTests+IsQuestEnemyMethod
       fullName: QuestTests+IsQuestEnemyMethod
       resultStatus: 1
-      duration: 0.011354
+      duration: 0.0747266
       messages: 
       output: 
       stacktrace: 
@@ -1580,7 +1580,7 @@ MonoBehaviour:
       name: Quest_Can_Be_Added_To_GameManager
       fullName: QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager
       resultStatus: 1
-      duration: 0.0007029
+      duration: 0.0244645
       messages: 
       output: 
       stacktrace: 
@@ -1597,7 +1597,7 @@ MonoBehaviour:
       name: When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
       fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
       resultStatus: 1
-      duration: 0.0007459
+      duration: 0.0030652
       messages: 
       output: 
       stacktrace: 
@@ -1614,7 +1614,7 @@ MonoBehaviour:
       name: When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
       fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
       resultStatus: 1
-      duration: 0.0002734
+      duration: 0.0005544
       messages: 
       output: 
       stacktrace: 
@@ -1631,7 +1631,7 @@ MonoBehaviour:
       name: When_KilledEnemy_Is_Not_QuestEnemy_Return_False
       fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False
       resultStatus: 1
-      duration: 0.0003762
+      duration: 0.0007485
       messages: 
       output: 
       stacktrace: 
@@ -1648,7 +1648,7 @@ MonoBehaviour:
       name: When_KilledEnemy_Is_QuestEnemy_Return_True
       fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True
       resultStatus: 1
-      duration: 0.0002638
+      duration: 0.0005116
       messages: 
       output: 
       stacktrace: 
@@ -1665,7 +1665,7 @@ MonoBehaviour:
       name: When_QuestEnemy_Killed_Increase_CurrentAmount
       fullName: QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount
       resultStatus: 1
-      duration: 0.0002471
+      duration: 0.0004837
       messages: 
       output: 
       stacktrace: 
@@ -1682,7 +1682,7 @@ MonoBehaviour:
       name: SkillsTests
       fullName: SkillsTests
       resultStatus: 1
-      duration: 91.21263
+      duration: 0.1049435
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -1703,7 +1703,7 @@ MonoBehaviour:
       name: Add_Skill_To_Character
       fullName: SkillsTests.Add_Skill_To_Character
       resultStatus: 1
-      duration: 0.0006014
+      duration: 0.024478
       messages: 
       output: 
       stacktrace: 
@@ -1720,7 +1720,7 @@ MonoBehaviour:
       name: Skill_Has_Amout
       fullName: SkillsTests.Skill_Has_Amout
       resultStatus: 1
-      duration: 0.0002182
+      duration: 0.002069
       messages: 
       output: 
       stacktrace: 
@@ -1737,7 +1737,7 @@ MonoBehaviour:
       name: Skill_Has_Name
       fullName: SkillsTests.Skill_Has_Name
       resultStatus: 1
-      duration: 0.0002046
+      duration: 0.0015058
       messages: 
       output: 
       stacktrace: 
@@ -1749,17 +1749,134 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1004
       parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.Skill_Single_Range]
-      name: Skill_Single_Range
-      fullName: SkillsTests.Skill_Single_Range
-      resultStatus: 2
-      duration: 0.0006305
-      messages: "  Expected: 0\r\n  But was:  10\r\n"
+    - id: 1009
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternDouble]
+      name: SkillPatternDouble
+      fullName: SkillsTests.SkillPatternDouble
+      resultStatus: 1
+      duration: 0.0068263
+      messages: 
       output: 
-      stacktrace: 'at SkillsTests.Skill_Single_Range () [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\SkillsTests.cs:51
-
-'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1010
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternDoubleEveryOtherSlot]
+      name: SkillPatternDoubleEveryOtherSlot
+      fullName: SkillsTests.SkillPatternDoubleEveryOtherSlot
+      resultStatus: 1
+      duration: 0.0019835
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternPentaSlot]
+      name: SkillPatternPentaSlot
+      fullName: SkillsTests.SkillPatternPentaSlot
+      resultStatus: 1
+      duration: 0.002154
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternQuad2X2SlotSlot]
+      name: SkillPatternQuad2X2SlotSlot
+      fullName: SkillsTests.SkillPatternQuad2X2SlotSlot
+      resultStatus: 1
+      duration: 0.0021158
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternQuadSlot]
+      name: SkillPatternQuadSlot
+      fullName: SkillsTests.SkillPatternQuadSlot
+      resultStatus: 1
+      duration: 0.00214
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternSingle]
+      name: SkillPatternSingle
+      fullName: SkillsTests.SkillPatternSingle
+      resultStatus: 1
+      duration: 0.0018042
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1012
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternTripleEveryOtherSlot]
+      name: SkillPatternTripleEveryOtherSlot
+      fullName: SkillsTests.SkillPatternTripleEveryOtherSlot
+      resultStatus: 1
+      duration: 0.0021566
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1011
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternTripleSlot]
+      name: SkillPatternTripleSlot
+      fullName: SkillsTests.SkillPatternTripleSlot
+      resultStatus: 1
+      duration: 0.0019848
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1773,7 +1890,7 @@ MonoBehaviour:
       name: UseSkillTest
       fullName: SkillsTests.UseSkillTest
       resultStatus: 1
-      duration: 91.17292
+      duration: 0.0022794
       messages: 
       output: 
       stacktrace: 
@@ -1785,12 +1902,19 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
-    m_ResultText: UseSkillTest (91.173s)
+    m_ResultText: 'SkillsTests (0.105s)
+
+      ---
+
+      You are trying to create
+      a MonoBehaviour using the ''new'' keyword.  This is not allowed.  MonoBehaviours
+      can only be added using AddComponent(). Alternatively, your script can inherit
+      from ScriptableObject or no base class at all'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 52}
-      m_SelectedIDs: c04f8a87
-      m_LastClickedID: -2020978752
+      scrollPos: {x: 0, y: 200}
+      m_SelectedIDs: 6200434b
+      m_LastClickedID: 1262682210
       m_ExpandedIDs: 4d4334830ed96ac2a76b74ce906479d4349e00e159ce200cf21f3c1ede1ac921a787ce4143ff80496200434bed6c816523b4a06effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0

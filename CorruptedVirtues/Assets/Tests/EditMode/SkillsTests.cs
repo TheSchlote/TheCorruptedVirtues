@@ -61,14 +61,36 @@ public class SkillsTests : MonoBehaviour
         testBattleEnemy1.AddComponent<CharacterStats>();
         testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
         testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 0;
+        testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth = 10;
+        testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.maxHealth = 10;
         GameManger.gameManger.areaData.possibleEnemys.Add(testBattleEnemy1);
         testBattleEnemy2 = new GameObject("testBattleEnemy2");
+        testBattleEnemy2.AddComponent<CharacterStats>();
+        testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
+        testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 0;
+        testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth = 10;
+        testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.maxHealth = 10;
         GameManger.gameManger.areaData.possibleEnemys.Add(testBattleEnemy2);
         testBattleEnemy3 = new GameObject("testBattleEnemy3");
+        testBattleEnemy3.AddComponent<CharacterStats>();
+        testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
+        testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 0;
+        testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth = 10;
+        testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.maxHealth = 10;
         GameManger.gameManger.areaData.possibleEnemys.Add(testBattleEnemy3);
         testBattleEnemy4 = new GameObject("testBattleEnemy4");
+        testBattleEnemy4.AddComponent<CharacterStats>();
+        testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
+        testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 0;
+        testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.currentHealth = 10;
+        testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.maxHealth = 10;
         GameManger.gameManger.areaData.possibleEnemys.Add(testBattleEnemy4);
         testBattleEnemy5 = new GameObject("testBattleEnemy5");
+        testBattleEnemy5.AddComponent<CharacterStats>();
+        testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
+        testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.currentSpeed = 0;
+        testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.currentHealth = 10;
+        testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.maxHealth = 10;
         GameManger.gameManger.areaData.possibleEnemys.Add(testBattleEnemy5);
         testBossBattleEnemy = new GameObject("testBossBattleEnemy")
         {
@@ -102,16 +124,190 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
         _battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
-
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
-        _battleSystem.startState.ResetCharactersHealthToFull(_battleSystem);
         Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillAmout = 10;
 
         _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
 
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+
     }
-        [Test]
+    [Test]
+    public void SkillPatternSingle()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.Single;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+
+    }
+    [Test]
+    public void SkillPatternDouble()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.Double;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+    }
+
+    [Test]
+    public void SkillPatternDoubleEveryOtherSlot()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.DoubleEveryOther;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 10);
+        Assert.AreEqual(testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+    }
+
+    [Test]
+    public void SkillPatternTripleSlot()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.Triple;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+    }
+    [Test]
+    public void SkillPatternTripleEveryOtherSlot()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.TripleEveryOther;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 10);
+        Assert.AreEqual(testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.currentHealth, 10);
+        Assert.AreEqual(testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+    }
+    [Test]
+    public void SkillPatternQuadSlot()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.Quad;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.currentHealth, 10);
+    }
+    [Test]
+    public void SkillPatternQuad2X2SlotSlot()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.Quad2X2Slot;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth, 10);
+        Assert.AreEqual(testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+    }
+    [Test]
+    public void SkillPatternPentaSlot()
+    {
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
+        GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
+        _battleSystem.InstantiateCharactersForBattle();
+        _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
+        _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
+
+        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
+        testSkill.skillPattern = Skill_SO.SkillPattern.Penta;
+        testSkill.skillAmout = 10;
+
+        _battleSystem.playerState.UseSkill(_battleSystem, 1, testSkill);
+
+        Assert.AreEqual(testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy2.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy3.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy4.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+        Assert.AreEqual(testBattleEnemy5.GetComponent<CharacterStats>().characterDefinition.currentHealth, 0);
+    }
+    [Test]
     public void Add_Skill_To_Character()
     {
         CharacterStats_SO testCharacter = ScriptableObject.CreateInstance<CharacterStats_SO>();
@@ -131,14 +327,6 @@ public class SkillsTests : MonoBehaviour
     {
         Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
         testSkill.skillAmout = 10;
-        Assert.AreEqual(testSkill.skillAmout, 10);
-    }
-
-    [Test]
-    public void Skill_Single_Range()
-    {
-        Skill_SO testSkill = ScriptableObject.CreateInstance<Skill_SO>();
-        
         Assert.AreEqual(testSkill.skillAmout, 10);
     }
 }

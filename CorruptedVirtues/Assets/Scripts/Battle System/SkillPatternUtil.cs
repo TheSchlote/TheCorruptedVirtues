@@ -78,7 +78,7 @@ public class SkillPatternUtil
     */
     public void DoubleSlot(BattleSystem battleSystem, int slotSelected, Skill_SO skill)
     {
-        for (int i = slotSelected; i < slotSelected + 1; i++)
+        for (int i = slotSelected; i <= slotSelected + 1; i++)
         {
             AttackEnemyWithSkill(battleSystem, i, skill);
         }
@@ -98,7 +98,7 @@ public class SkillPatternUtil
     */
     public void TripleSlot(BattleSystem battleSystem, int slotSelected, Skill_SO skill)
     {
-        for (int i = slotSelected; i < slotSelected + 2; i++)
+        for (int i = slotSelected; i < slotSelected + 3; i++)
         {
             AttackEnemyWithSkill(battleSystem, i, skill);
         }
@@ -109,9 +109,13 @@ public class SkillPatternUtil
     */
     public void TripleEveryOtherSlot(BattleSystem battleSystem, int slotSelected, Skill_SO skill)
     {
-        AttackEnemyWithSkill(battleSystem, slotSelected, skill);
-        AttackEnemyWithSkill(battleSystem, slotSelected + 2, skill);
-        AttackEnemyWithSkill(battleSystem, slotSelected + 5, skill);
+        for (int i = slotSelected; i < slotSelected + 5; i++)
+        {
+            if (i == slotSelected || i == slotSelected + 2 || i == slotSelected + 4)
+            {
+                AttackEnemyWithSkill(battleSystem, i, skill);
+            }
+        }
     }
     /*
     [ ][ ][ ][ ][ ]
@@ -119,7 +123,7 @@ public class SkillPatternUtil
     */
     public void QuadSlot(BattleSystem battleSystem, int slotSelected, Skill_SO skill)
     {
-        for (int i = slotSelected; i < slotSelected + 3; i++)
+        for (int i = slotSelected; i < slotSelected + 4; i++)
         {
             AttackEnemyWithSkill(battleSystem, i, skill);
         }
@@ -130,7 +134,7 @@ public class SkillPatternUtil
     */
     public void Quad2X2Slot(BattleSystem battleSystem, int slotSelected, Skill_SO skill)
     {
-        for (int i = slotSelected; i < slotSelected + 4; i++)
+        for (int i = slotSelected; i < slotSelected + 5; i++)
         {
             if (i != slotSelected + 2)
             {
@@ -144,7 +148,7 @@ public class SkillPatternUtil
     */
     public void PentaSlot(BattleSystem battleSystem, int slotSelected, Skill_SO skill)
     {
-        for (int i = slotSelected; i < slotSelected + 4; i++)
+        for (int i = slotSelected; i < slotSelected + 5; i++)
         {
             AttackEnemyWithSkill(battleSystem, i, skill);
         }
