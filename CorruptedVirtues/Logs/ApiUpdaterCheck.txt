@@ -158,6 +158,7 @@ C# parse time         : 157ms
 candidates check time : 76ms
 console write time    : 0ms
 
+<<<<<<< HEAD
 [api-updater (non-obsolete-error-filter)] 12/6/2021 9:14:08 PM : Starting G:/Unity/2020.2.5f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] 
 ----------------------------------
@@ -167,4 +168,25 @@ candidates parse time : 8ms
 C# parse time         : 861ms
 candidates check time : 80ms
 console write time    : 6ms
+=======
+[api-updater (non-obsolete-error-filter)] 1/9/2022 7:26:59 PM : Starting U:/2020.2.5f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 966.881ms
+moved types parse time: 37ms
+candidates parse time : 0ms
+C# parse time         : 546ms
+candidates check time : 32ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 3/2/2022 9:45:34 PM : Starting U:/2020.2.5f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1117.0144ms
+moved types parse time: 37ms
+candidates parse time : 0ms
+C# parse time         : 653ms
+candidates check time : 50ms
+console write time    : 0ms
+>>>>>>> Test-Driven-Development
 

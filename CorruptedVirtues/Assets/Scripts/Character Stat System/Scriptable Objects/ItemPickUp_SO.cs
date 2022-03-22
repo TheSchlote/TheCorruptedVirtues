@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum ItemTypeDefinitions { HEALTH, WEALTH, MAGIC, WEAPON, SHEILD, ACCESSORY, BUFF }
+public enum ItemTypeDefinitions { HEALTH, WEALTH, MAGIC, WEAPON, SHEILD, ACCESSORY, BUFF, CRAFT, EQUIP }
 //public enum ItemArmorSubType { None, Head, Chest, Hands, Legs, Boots};
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Item/NewItem")]

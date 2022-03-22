@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManger : MonoBehaviour
 {
     public List<Quest_SO> ActiveQuests = new List<Quest_SO>();
+    public List<ItemPickUp_SO> PlayerInventory = new List<ItemPickUp_SO>();
 
     public static GameManger gameManger;
     

@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
-using System.Collections.Generic;
 
 public class BattlePlayerState : BattleBaseState
 {
@@ -25,7 +24,7 @@ public class BattlePlayerState : BattleBaseState
             battleSystem.EnemyAttackButtons.SetActive(true);
         }
 
-        if(battleSystem.attackSlot != 0)
+        if (battleSystem.attackSlot != 0)
         {
             AttackEnemy(battleSystem, battleSystem.attackSlot);
         }
@@ -41,7 +40,7 @@ public class BattlePlayerState : BattleBaseState
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
         CharacterStats EnemyOnScreen;
-
+        
         if (battleSystem.EnemyPrefabsInBattle[EnemySlot - 1] != null)
         {
             Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
@@ -69,6 +68,13 @@ public class BattlePlayerState : BattleBaseState
         }
 
         EndOfPlayersTurn(battleSystem);
+    }
+
+    public void UseSkill(BattleSystem battleSystem, int EnemySlot, Skill_SO skill)
+    {
+        SkillPatternUtil skillPattern = new SkillPatternUtil();
+        skillPattern.WhichSkillToUse(battleSystem, EnemySlot, skill);
+        //EndOfPlayersTurn(battleSystem);
     }
 
     public void EndOfPlayersTurn(BattleSystem battleSystem)

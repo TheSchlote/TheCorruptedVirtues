@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 //using UnityEditor;
 
@@ -36,8 +37,14 @@ public class CharacterStats_SO : ScriptableObject
     public int baseAttack = 0;
     public int currentAttack = 0;
 
-    public float baseDefense = 0f;
-    public float currentDefense = 0f;
+    public int baseSpecialAttack = 0;
+    public int currentSpecialAttack = 0;
+
+    public int baseDefense = 0;
+    public int currentDefense = 0;
+
+    public int baseSpecialDefense = 0;
+    public int currentSpecialDefense = 0;
 
     public float baseSpeed = 0f;
     public float currentSpeed = 0f;
@@ -46,6 +53,8 @@ public class CharacterStats_SO : ScriptableObject
     public int charLevel = 0;
 
     public CharLevelUps[] charLevelUps;
+    public List<Skill_SO> SkillList = new List<Skill_SO>();
+
     #endregion
 
     #region Stat Increasers
