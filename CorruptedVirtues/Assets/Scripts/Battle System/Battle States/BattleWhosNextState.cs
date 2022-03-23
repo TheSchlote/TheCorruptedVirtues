@@ -45,30 +45,29 @@ public class BattleWhosNextState : BattleBaseState
     }
     public void RePopulateCharactersInBattle(BattleSystem battleSystem)
     {
-        for (int i = 0; i < battleSystem.EnemyCloneGameObjectsInBattle.Length; i++)
+        for (int i = 0; i < battleSystem.EnemiesInBattle.Length; i++)
         {
-            if (battleSystem.EnemyCloneGameObjectsInBattle[i] != null)
+            if (battleSystem.EnemiesInBattle[i] != null)
             {
-                battleSystem.charactersInBattle.Add(battleSystem.EnemyCloneGameObjectsInBattle[i]);
+                battleSystem.charactersInBattle.Add(battleSystem.EnemiesInBattle[i]);
             }
         }
 
-        for (int i = 0; i < battleSystem.PlayerCloneGameObjectsInBattle.Length; i++)
+        for (int i = 0; i < battleSystem.PlayersInBattle.Length; i++)
         {
-            if (battleSystem.PlayerCloneGameObjectsInBattle[i] != null)
+            if (battleSystem.PlayersInBattle[i] != null)
             {
-                battleSystem.charactersInBattle.Add(battleSystem.PlayerCloneGameObjectsInBattle[i]);
+                battleSystem.charactersInBattle.Add(battleSystem.PlayersInBattle[i]);
             }
         }
 
         battleSystem.charactersInBattle = battleSystem.charactersInBattle.OrderByDescending(character => character.GetComponent<CharacterStats>().characterDefinition.currentSpeed).ToList();
-        battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name} is first!";
     }
     public bool AreAllEnemiesDead(BattleSystem battleSystem)
     {
         for (int i = 0; i < 5; i++)
         {
-            if (battleSystem.EnemyPrefabsInBattle[i] != null)
+            if (battleSystem.EnemiesInBattle[i] != null)
             {
                 return false;
             }
@@ -79,7 +78,7 @@ public class BattleWhosNextState : BattleBaseState
     {
         for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
         {
-            if (battleSystem.PlayerPrefabsInBattle[i] != null)
+            if (battleSystem.PlayersInBattle[i] != null)
             {
                 return false;
             }

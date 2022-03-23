@@ -1,29 +1,14 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System.Linq;
 
 public class BattlePlayerState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        Image PlayerProfile = battleSystem.PlayerChoiceButtons.transform.GetChild(2).GetComponent<Image>();
-        SpriteRenderer PlayersProfile = battleSystem.charactersInBattle.First().transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>();
-        PlayerProfile.sprite = PlayersProfile.sprite;
-        Text PlayerName = battleSystem.PlayerChoiceButtons.transform.GetChild(2).GetChild(0).GetComponent<Text>();
-        PlayerName.text = battleSystem.charactersInBattle.First().name;
-        battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name}'s Turn";
-        battleSystem.PlayerChoiceButtons.SetActive(true);
-        battleSystem.EnemyAttackButtons.SetActive(false);
+        //wait for input
     }
 
     public override void Update(BattleSystem battleSystem)
     {
-        if (battleSystem.attack)
-        {
-            battleSystem.PlayerChoiceButtons.SetActive(false);
-            battleSystem.EnemyAttackButtons.SetActive(true);
-        }
-
         if (battleSystem.attackSlot != 0)
         {
             AttackEnemy(battleSystem, battleSystem.attackSlot);
@@ -39,31 +24,27 @@ public class BattlePlayerState : BattleBaseState
     {
         CharacterStats Player = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
         CharacterStats Enemy;
-        CharacterStats EnemyOnScreen;
         
-        if (battleSystem.EnemyPrefabsInBattle[EnemySlot - 1] != null)
+        if (battleSystem.EnemiesInBattle[EnemySlot - 1] != null)
         {
-            Enemy = battleSystem.EnemyPrefabsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
-            EnemyOnScreen = battleSystem.EnemyCloneGameObjectsInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
+            Enemy = battleSystem.EnemiesInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
         }
         else
         {
-            battleSystem.statusText.text += $"\nThis Enemy in slot {EnemySlot} is already dead!";
             battleSystem.attackSlot = 0;
             return;
         }
 
         Enemy.TakeDamage(Player.characterDefinition.currentAttack);
-        EnemyOnScreen.healthbar.SetHeatlh(Enemy.characterDefinition);
 
         //Make this a funciton on character Death
         if (Enemy.characterDefinition.currentHealth <= 0)
         {
             foreach (Quest_SO quest in GameManger.gameManger.ActiveQuests)
             {
-                quest.IsQuestEnemy(battleSystem.EnemyPrefabsInBattle[EnemySlot - 1]);
+                quest.IsQuestEnemy(battleSystem.EnemiesInBattle[EnemySlot - 1]);
             }
-            battleSystem.DestroyEnemy(EnemySlot);
+            //battleSystem.DestroyEnemy(EnemySlot);
             battleSystem.TotalEnemyXP += Enemy.characterDefinition.charExperience;
         }
 

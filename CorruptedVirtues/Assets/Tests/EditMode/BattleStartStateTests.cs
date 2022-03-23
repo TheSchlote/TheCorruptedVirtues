@@ -17,8 +17,7 @@ public class BattleStartStateTests : MonoBehaviour
             GameManger.gameManger.areaData = new GameManger.AreaData();
             GameManger.gameManger.party = new GameManger.PartyData();
             _battleSystem = new GameObject().AddComponent<BattleSystem>();
-            _battleSystem.statusText = new GameObject().AddComponent<Text>();
-            _battleSystem.EnemyCloneGameObjectsInBattle = new GameObject[5];
+            //_battleSystem.EnemyCloneGameObjectsInBattle = new GameObject[5];
             testBattleEnemy1 = new GameObject("testBattleEnemy1");
             testBattleEnemy1.AddComponent<CharacterStats>();
             testBattleEnemy1.GetComponent<CharacterStats>().characterDefinition = ScriptableObject.CreateInstance<CharacterStats_SO>();
@@ -50,7 +49,7 @@ public class BattleStartStateTests : MonoBehaviour
         public void Single_Enemy_Is_First()
         {
             GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
-            _battleSystem.EnemyCloneGameObjectsInBattle[0] = testBattleEnemy1;
+            //_battleSystem.EnemyCloneGameObjectsInBattle[0] = testBattleEnemy1;
             //_battleSystem.PopulateCharactersInBattle();
             Assert.AreEqual(_battleSystem.charactersInBattle.First().name, testBattleEnemy1.name);
         }

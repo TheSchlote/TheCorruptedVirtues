@@ -20,24 +20,22 @@ public class BattleEnemyState : BattleBaseState
 
         //Needs work
         int PlayerSlot = Random.Range(0, 3);
-        if (battleSystem.PlayerPrefabsInBattle[PlayerSlot] == null)
+        if (battleSystem.PlayersInBattle[PlayerSlot] == null)
         {
-            battleSystem.statusText.text += $"\n{Enemy.name} is not paying attention!";
             battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
             return;
         }
-        CharacterStats Player = battleSystem.PlayerPrefabsInBattle[PlayerSlot].GetComponent<CharacterStats>();
-        CharacterStats PlayerOnScreen = battleSystem.PlayerCloneGameObjectsInBattle[PlayerSlot].GetComponent<CharacterStats>();
+        CharacterStats Player = battleSystem.PlayersInBattle[PlayerSlot].GetComponent<CharacterStats>();
 
-        battleSystem.statusText.text += $"\n{battleSystem.charactersInBattle.First().name} Attacks {Player.name}!";
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
-        PlayerOnScreen.healthbar.SetHeatlh(Player.characterDefinition);
+        
 
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
 
         if (Player.characterDefinition.currentHealth <= 0)
         {
-            battleSystem.DestroyPlayer(PlayerSlot);
+            //Destroy Player on Screen
+            //battleSystem.DestroyPlayer(PlayerSlot);
         }
     }
 }
