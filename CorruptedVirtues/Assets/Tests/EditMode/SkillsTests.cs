@@ -2,7 +2,6 @@ using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SkillsTests : MonoBehaviour
 {
@@ -120,7 +119,6 @@ public class SkillsTests : MonoBehaviour
     public void UseSkillTest()
     {
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -136,7 +134,6 @@ public class SkillsTests : MonoBehaviour
     public void SkillPatternSingle()
     {
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -154,7 +151,6 @@ public class SkillsTests : MonoBehaviour
     {
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -174,7 +170,6 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -195,7 +190,6 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy1.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy2.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -217,7 +211,6 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -241,7 +234,6 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -265,7 +257,6 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 
@@ -289,7 +280,6 @@ public class SkillsTests : MonoBehaviour
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy3.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy4.name);
         GameManger.gameManger.EncounteredEnemyNames.Add(testBattleEnemy5.name);
-        //_battleSystem.InstantiateCharactersForBattle();
         _battleSystem.startState.PopulatePrefabsInBattle(_battleSystem);
         _battleSystem.startState.PopulateCharactersInBattle(_battleSystem);
 

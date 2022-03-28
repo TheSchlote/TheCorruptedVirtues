@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 16}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
     width: 1920
     height: 939
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 148
+  controlID: 116
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -47,8 +47,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363
     y: 73
-    width: 1101
-    height: 642
+    width: 1102
+    height: 536
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1101, y: 621}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -65,16 +65,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -550.5
-    m_HBaseRangeMax: 550.5
-    m_VBaseRangeMin: -310.5
-    m_VBaseRangeMax: 310.5
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1101
-      height: 621
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 550.5, y: 310.5}
+      width: 1102
+      height: 515
+    m_Scale: {x: 0.47685185, y: 0.47685185}
+    m_Translation: {x: 551, y: 257.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -550.5
-      y: -310.5
-      width: 1101
-      height: 621
+      x: -1155.4951
+      y: -540
+      width: 2310.9902
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1101, y: 642}
+  m_defaultScale: 0.47685185
+  m_LastWindowPixelSize: {x: 1102, y: 536}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -128,17 +128,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 10}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1466
+    width: 1467
     height: 939
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MinSize: {x: 401, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 149
+  controlID: 117
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,12 +158,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1466
-    height: 663
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1467
+    height: 557
+  m_MinSize: {x: 401, y: 221}
+  m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 150
+  controlID: 118
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,7 +182,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 363
-    height: 663
+    height: 557
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -213,14 +213,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 362
-    height: 642
+    height: 536
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 16faffff42fbffff
+      m_ExpandedIDs: 5ed5ffff6ed5ffff44f2ffff5ef4ffff2cf6ffff0af9ffffbaf9ffff42fbffffae440000b24500003c48000072480000b8480000d2480000bc490000dc490000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -261,15 +261,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363
     y: 0
-    width: 1103
-    height: 663
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 1104
+    height: 557
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
   - {fileID: 2}
-  - {fileID: 9}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &8
@@ -294,8 +293,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363
     y: 73
-    width: 1101
-    height: 642
+    width: 1102
+    height: 536
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -308,9 +307,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -33.11997, y: -126.73235, z: -6.703805}
+    m_Target: {x: 0.087145895, y: 0.6489858, z: 93.337135}
     speed: 2
-    m_Value: {x: -33.11997, y: -126.73235, z: -6.703805}
+    m_Value: {x: 0.087145895, y: 0.6489858, z: 93.337135}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -347,13 +346,13 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 0
+    m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -361,9 +360,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 220.34056
+    m_Target: 5.4437685
     speed: 2
-    m_Value: 220.34056
+    m_Value: 5.4437685
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -381,7 +380,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.47643617, y: 0.13145953, z: -0.07229824, w: -0.8663178}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -389,92 +388,6 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 --- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 363
-    y: 73
-    width: 1101
-    height: 642
-  m_ViewDataDictionary: {fileID: 0}
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: 7485292075512703189, guid: a77f5ceb34e15fe419d782af20b3585a, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 0.79418606
-      e01: 0
-      e02: 0
-      e03: -96.186066
-      e10: 0
-      e11: 0.79418606
-      e12: 0
-      e13: 202.22675
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: a77f5ceb34e15fe419d782af20b3585a, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 7485292075512703189, guid: a77f5ceb34e15fe419d782af20b3585a, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 0
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
-  - {fileID: 13}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 663
-    width: 1466
-    height: 276
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
-  vertical: 0
-  controlID: 85
---- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,17 +403,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 977
-    height: 276
+    y: 557
+    width: 1467
+    height: 382
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 10}
   m_Panes:
-  - {fileID: 12}
+  - {fileID: 10}
+  - {fileID: 11}
   m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &12
+  m_LastSelected: 1
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -521,9 +435,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 736
-    width: 976
-    height: 255
+    y: 630
+    width: 1466
+    height: 361
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -550,10 +464,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 183}
-    m_SelectedIDs: 06430000
-    m_LastClickedID: 17158
-    m_ExpandedIDs: 00000000fa420000fc420000fe42000000430000024300000443000006430000084300000a4300000c4300000e430000104300001243000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f2430000
+    m_LastClickedID: 17394
+    m_ExpandedIDs: 00000000e843000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -581,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa420000fc420000fe42000000430000024300000443000006430000084300000a4300000c4300000e4300001043000012430000
+    m_ExpandedIDs: 00000000e8430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -606,10 +520,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 80430000
-    m_LastClickedInstanceID: 17280
+    m_SelectedInstanceIDs: b8b2ffff
+    m_LastClickedInstanceID: -19784
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000076400000
+    m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -625,7 +539,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -637,34 +551,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 977
-    y: 0
-    width: 489
-    height: 276
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &14
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -684,40 +571,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 977
-    y: 736
-    width: 487
-    height: 255
+    x: -1921
+    y: 629
+    width: 1466
+    height: 361
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animation
-    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 977
-    y: 736
-    width: 487
-    height: 255
-  m_ViewDataDictionary: {fileID: 0}
-  m_LockTracker:
-    m_IsLocked: 0
-  m_LastSelectedObjectID: 40274
---- !u!114 &16
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -732,56 +591,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1466
+    x: 1467
     y: 0
-    width: 454
+    width: 453
     height: 939
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1466
-    y: 73
-    width: 453
-    height: 918
-  m_ViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: 160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 17280
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: 
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
---- !u!114 &18
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -801,18 +623,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1462
-    y: 81
-    width: 449
-    height: 902
+    x: 1467
+    y: 73
+    width: 452
+    height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 261
+    ID: 224
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 624
-    - 208
+    - 636
+    - 212
     relativeSizes:
     - 0.75
     - 0.25
@@ -822,7 +644,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 832
+    lastTotalSize: 848
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -867,14 +689,14 @@ MonoBehaviour:
       availableCategories: []
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 18}
+    m_Window: {fileID: 13}
     newResultList:
     - id: 1000
       uniqueId: '[Corrupted Virtues][suite]'
       name: Corrupted Virtues
       fullName: Corrupted Virtues
       resultStatus: 2
-      duration: 0.4124
+      duration: 0.2841052
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -885,12 +707,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1033
+    - id: 1053
       uniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
       name: EditMode.dll
       fullName: U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 2
-      duration: 0.3529599
+      duration: 0.2329655
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -901,12 +723,12 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[Corrupted Virtues][suite]'
-    - id: 1001
+    - id: 1021
       uniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
       name: BattlePlayerStateTests+AttackEnemy_Method
       fullName: BattlePlayerStateTests+AttackEnemy_Method
       resultStatus: 2
-      duration: 0.0454546
+      duration: 0.03565
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -915,20 +737,20 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1002
+    - id: 1022
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage]
       name: Enemy_Takes_Damage
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
       resultStatus: 2
-      duration: 0.0108466
+      duration: 0.0099297
       messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
       stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
         source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
         (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattlePlayerState.cs:41 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
+        System\\Battle States\\BattlePlayerState.cs:25 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Enemy_Takes_Damage
         () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:42
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
@@ -940,20 +762,20 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1021
       parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1004
+    - id: 1024
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest]
       name: Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
       resultStatus: 2
-      duration: 0.0008987
+      duration: 0.0006397
       messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
       stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
         source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattlePlayerState.AttackEnemy
         (BattleSystem battleSystem, System.Int32 EnemySlot) [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattlePlayerState.cs:41 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
+        System\\Battle States\\BattlePlayerState.cs:25 \r\n  at BattlePlayerStateTests+AttackEnemy_Method.Killing_NonQuestEnemy_DoesNot_Update_ActiveQuest
         () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattlePlayerStateTests.cs:55
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
@@ -965,14 +787,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1021
       parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1003
+    - id: 1023
       uniqueId: EditMode.dll/BattlePlayerStateTests+AttackEnemy_Method/[EditMode][BattlePlayerStateTests+AttackEnemy_Method.Killing_QuestEnemy_Updates_ActiveQuest]
       name: Killing_QuestEnemy_Updates_ActiveQuest
       fullName: BattlePlayerStateTests+AttackEnemy_Method.Killing_QuestEnemy_Updates_ActiveQuest
       resultStatus: 1
-      duration: 0.0022522
+      duration: 0.0018581
       messages: 
       output: 
       stacktrace: 
@@ -982,14 +804,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1021
       parentUniqueId: EditMode.dll/[EditMode][BattlePlayerStateTests+AttackEnemy_Method][suite]
-    - id: 1005
+    - id: 1025
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
       name: BattleSceneTests+InstantiateCharactersForBattle_Method
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method
       resultStatus: 1
-      duration: 0.0377261
+      duration: 0.0219098
       messages: 
       output: 
       stacktrace: 
@@ -998,14 +820,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1012
+    - id: 1032
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots]
       name: Instantiate_3_PlayerSlots
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_3_PlayerSlots
       resultStatus: 1
-      duration: 0.0180595
+      duration: 0.0016369
       messages: 
       output: 
       stacktrace: 
@@ -1015,14 +837,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1006
+    - id: 1026
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss]
       name: Instantiate_Boss
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_Boss
       resultStatus: 1
-      duration: 0.0008757
+      duration: 0.0005068
       messages: 
       output: 
       stacktrace: 
@@ -1032,14 +854,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1007
+    - id: 1027
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy]
       name: Instantiate_EnemySlot1_When_1_Enemy
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot1_When_1_Enemy
       resultStatus: 1
-      duration: 0.0007642
+      duration: 0.0024906
       messages: 
       output: 
       stacktrace: 
@@ -1049,14 +871,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1008
+    - id: 1028
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies]
       name: Instantiate_EnemySlot2_When_2_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot2_When_2_Enemies
       resultStatus: 1
-      duration: 0.0007224
+      duration: 0.0003676
       messages: 
       output: 
       stacktrace: 
@@ -1066,14 +888,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1009
+    - id: 1029
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies]
       name: Instantiate_EnemySlot3_When_3_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot3_When_3_Enemies
       resultStatus: 1
-      duration: 0.000753
+      duration: 0.0003363
       messages: 
       output: 
       stacktrace: 
@@ -1083,14 +905,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1010
+    - id: 1030
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies]
       name: Instantiate_EnemySlot4_When_4_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot4_When_4_Enemies
       resultStatus: 1
-      duration: 0.0007473
+      duration: 0.0003952
       messages: 
       output: 
       stacktrace: 
@@ -1100,14 +922,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1011
+    - id: 1031
       uniqueId: EditMode.dll/BattleSceneTests+InstantiateCharactersForBattle_Method/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies]
       name: Instantiate_EnemySlot5_When_5_Enemies
       fullName: BattleSceneTests+InstantiateCharactersForBattle_Method.Instantiate_EnemySlot5_When_5_Enemies
       resultStatus: 1
-      duration: 0.0007857
+      duration: 0.0005214
       messages: 
       output: 
       stacktrace: 
@@ -1117,14 +939,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1025
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+InstantiateCharactersForBattle_Method][suite]
-    - id: 1013
+    - id: 1033
       uniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
       name: BattleSceneTests+TransistionToState_Method
       fullName: BattleSceneTests+TransistionToState_Method
       resultStatus: 2
-      duration: 0.0242693
+      duration: 0.0210024
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1133,24 +955,36 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1014
+    - id: 1034
       uniqueId: EditMode.dll/BattleSceneTests+TransistionToState_Method/[EditMode][BattleSceneTests+TransistionToState_Method.Transition_To_startState]
       name: Transition_To_startState
       fullName: BattleSceneTests+TransistionToState_Method.Transition_To_startState
       resultStatus: 2
-      duration: 0.0124498
-      messages: 'System.InvalidOperationException : Sequence contains no elements'
+      duration: 0.0030006
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
-        source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartState.PopulateCharactersInBattle
-        (BattleSystem battleSystem) [0x000bc] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\Battle States\\BattleStartState.cs:112 \r\n  at BattleStartState.EnterState
+      stacktrace: "  at BattleStartState+<>c.<PopulateCharactersInBattle>b__3_0 (UnityEngine.GameObject
+        character) [0x00000] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattleStartState.cs:68 \r\n  at System.Linq.EnumerableSorter`2[TElement,TKey].ComputeKeys
+        (TElement[] elements, System.Int32 count) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+        \r\n  at System.Linq.EnumerableSorter`1[TElement].ComputeMap (TElement[]
+        elements, System.Int32 count) [0x00000] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+        \r\n  at System.Linq.EnumerableSorter`1[TElement].Sort (TElement[] elements,
+        System.Int32 count) [0x00000] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n 
+        at System.Linq.OrderedEnumerable`1[TElement].SortedMap (System.Linq.Buffer`1[TElement]
+        buffer) [0x00006] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at System.Linq.OrderedEnumerable`1[TElement].ToList
+        () [0x0001f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at System.Linq.Enumerable.ToList[TSource]
+        (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+        \r\n  at BattleStartState.PopulateCharactersInBattle (BattleSystem battleSystem)
+        [0x00087] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
+        System\\Battle States\\BattleStartState.cs:68 \r\n  at BattleStartState.EnterState
         (BattleSystem battleSystem) [0x00009] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
         System\\Battle States\\BattleStartState.cs:11 \r\n  at BattleSystem.TransitionToState
         (BattleBaseState state) [0x00008] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Scripts\\Battle
-        System\\BattleSystem.cs:129 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
+        System\\BattleSystem.cs:30 \r\n  at BattleSceneTests+TransistionToState_Method.Transition_To_startState
         () [0x00001] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleSceneTests.cs:186
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
@@ -1162,14 +996,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1013
+      parentId: 1033
       parentUniqueId: EditMode.dll/[EditMode][BattleSceneTests+TransistionToState_Method][suite]
-    - id: 1015
+    - id: 1035
       uniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
       name: BattleStartStateTests+PopulatePrefabsInBattle_Method
       fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method
       resultStatus: 2
-      duration: 0.1554035
+      duration: 0.0099483
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1178,19 +1012,19 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1016
+    - id: 1036
       uniqueId: EditMode.dll/BattleStartStateTests+PopulatePrefabsInBattle_Method/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First]
       name: Single_Enemy_Is_First
       fullName: BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
       resultStatus: 2
-      duration: 0.0015116
+      duration: 0.0011959
       messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
       stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
         source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleStartStateTests+PopulatePrefabsInBattle_Method.Single_Enemy_Is_First
-        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleStartStateTests.cs:55
+        () [0x0001c] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleStartStateTests.cs:54
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
@@ -1201,14 +1035,52 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1015
+      parentId: 1035
       parentUniqueId: EditMode.dll/[EditMode][BattleStartStateTests+PopulatePrefabsInBattle_Method][suite]
-    - id: 1019
+    - id: 1001
+      uniqueId: EditMode.dll/[EditMode][BattleUITests][suite]
+      name: BattleUITests
+      fullName: BattleUITests
+      resultStatus: 1
+      duration: 0.018942
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1002
+      uniqueId: EditMode.dll/BattleUITests/[EditMode][BattleUITests.UseSkillTest]
+      name: UseSkillTest
+      fullName: BattleUITests.UseSkillTest
+      resultStatus: 1
+      duration: 0.0095368
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][BattleUITests][suite]
+    - id: 1039
       uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
       name: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
       fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method
       resultStatus: 1
-      duration: 0.0115847
+      duration: 0.0108957
       messages: 
       output: 
       stacktrace: 
@@ -1217,14 +1089,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1021
+    - id: 1041
       uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet]
       name: If_Someone_Has_Not_Gone_Yet
       fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.If_Someone_Has_Not_Gone_Yet
       resultStatus: 1
-      duration: 0.0008601
+      duration: 0.0006088
       messages: 
       output: 
       stacktrace: 
@@ -1234,14 +1106,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1019
+      parentId: 1039
       parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1020
+    - id: 1040
       uniqueId: EditMode.dll/BattleWhosNextStateTests+DidEveryoneTakeATurn_Method/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters]
       name: Once_Everyone_Has_Gone_Reset_Alive_Characters
       fullName: BattleWhosNextStateTests+DidEveryoneTakeATurn_Method.Once_Everyone_Has_Gone_Reset_Alive_Characters
       resultStatus: 1
-      duration: 0.000289
+      duration: 0.0003005
       messages: 
       output: 
       stacktrace: 
@@ -1251,14 +1123,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1019
+      parentId: 1039
       parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+DidEveryoneTakeATurn_Method][suite]
-    - id: 1017
+    - id: 1037
       uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
       name: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
       fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method
       resultStatus: 2
-      duration: 0.0119847
+      duration: 0.0100746
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1267,19 +1139,19 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1018
+    - id: 1038
       uniqueId: EditMode.dll/BattleWhosNextStateTests+PopulateCharactersInBattle_Method/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First]
       name: Single_Enemy_Is_First
       fullName: BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
       resultStatus: 2
-      duration: 0.0013629
+      duration: 0.0010948
       messages: 'System.InvalidOperationException : Sequence contains no elements'
       output: 
       stacktrace: "  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T]
         source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \r\n  at BattleWhosNextStateTests+PopulateCharactersInBattle_Method.Single_Enemy_Is_First
-        () [0x0002f] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleWhosNextStateTests.cs:55
+        () [0x0001c] in U:\\Repos\\TheCorruptedVirtues\\CorruptedVirtues\\Assets\\Tests\\EditMode\\BattleWhosNextStateTests.cs:54
         \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
         at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
         invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
@@ -1290,14 +1162,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1017
+      parentId: 1037
       parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+PopulateCharactersInBattle_Method][suite]
-    - id: 1022
+    - id: 1042
       uniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
       name: BattleWhosNextStateTests+WhosNext_Method
       fullName: BattleWhosNextStateTests+WhosNext_Method
       resultStatus: 2
-      duration: 0.0184275
+      duration: 0.0161617
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1306,18 +1178,18 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1023
+    - id: 1043
       uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next]
       name: Enemy_Is_Next
       fullName: BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next
       resultStatus: 2
-      duration: 0.0049915
+      duration: 0.0039439
       messages: "  Expected: null\r\n  But was:  <BattleEnemyState>\r\n"
       output: 
       stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Enemy_Is_Next () [0x00065]
-        in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:119
+        in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:117
 
 '
       notRunnable: 0
@@ -1326,18 +1198,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1022
+      parentId: 1042
       parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-    - id: 1024
+    - id: 1044
       uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next]
       name: Player_Is_Next
       fullName: BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next
       resultStatus: 2
-      duration: 0.0008293
+      duration: 0.0006885
       messages: "  Expected: null\r\n  But was:  <BattlePlayerState>\r\n"
       output: 
       stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.Player_Is_Next ()
-        [0x00065] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:131
+        [0x00065] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:129
 
 '
       notRunnable: 0
@@ -1346,18 +1218,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1022
+      parentId: 1042
       parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-    - id: 1025
+    - id: 1045
       uniqueId: EditMode.dll/BattleWhosNextStateTests+WhosNext_Method/[EditMode][BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next]
       name: The_End_Is_Next
       fullName: BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next
       resultStatus: 2
-      duration: 0.0007542
+      duration: 0.0008916
       messages: "  Expected: null\r\n  But was:  <BattleEndState>\r\n"
       output: 
       stacktrace: 'at BattleWhosNextStateTests+WhosNext_Method.The_End_Is_Next ()
-        [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:138
+        [0x00007] in U:\Repos\TheCorruptedVirtues\CorruptedVirtues\Assets\Tests\EditMode\BattleWhosNextStateTests.cs:136
 
 '
       notRunnable: 0
@@ -1366,14 +1238,107 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1022
+      parentId: 1042
       parentUniqueId: EditMode.dll/[EditMode][BattleWhosNextStateTests+WhosNext_Method][suite]
-    - id: 1026
+    - id: 1003
+      uniqueId: EditMode.dll/[EditMode][CharacterTests][suite]
+      name: CharacterTests
+      fullName: CharacterTests
+      resultStatus: 1
+      duration: 0.0083727
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1004
+      uniqueId: EditMode.dll/CharacterTests/[EditMode][CharacterTests.Add_Skill_To_Character]
+      name: Add_Skill_To_Character
+      fullName: CharacterTests.Add_Skill_To_Character
+      resultStatus: 1
+      duration: 0.0004193
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditMode.dll/[EditMode][CharacterTests][suite]
+    - id: 1005
+      uniqueId: EditMode.dll/[EditMode][ItemTests][suite]
+      name: ItemTests
+      fullName: ItemTests
+      resultStatus: 1
+      duration: 0.0106136
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1006
+      uniqueId: EditMode.dll/ItemTests/[EditMode][ItemTests.Add_Item_To_Inventory]
+      name: Add_Item_To_Inventory
+      fullName: ItemTests.Add_Item_To_Inventory
+      resultStatus: 1
+      duration: 0.0008216
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditMode.dll/[EditMode][ItemTests][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/ItemTests/[EditMode][ItemTests.ItemType_Can_Be_Craftable]
+      name: ItemType_Can_Be_Craftable
+      fullName: ItemTests.ItemType_Can_Be_Craftable
+      resultStatus: 1
+      duration: 0.0011242
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditMode.dll/[EditMode][ItemTests][suite]
+    - id: 1046
       uniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
       name: QuestTests+IsQuestEnemyMethod
       fullName: QuestTests+IsQuestEnemyMethod
       resultStatus: 1
-      duration: 0.0160978
+      duration: 0.0130657
       messages: 
       output: 
       stacktrace: 
@@ -1382,14 +1347,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1033
+      parentId: 1053
       parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1027
+    - id: 1047
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager]
       name: Quest_Can_Be_Added_To_GameManager
       fullName: QuestTests+IsQuestEnemyMethod.Quest_Can_Be_Added_To_GameManager
       resultStatus: 1
-      duration: 0.0016797
+      duration: 0.0007259
       messages: 
       output: 
       stacktrace: 
@@ -1399,14 +1364,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
+      parentId: 1046
       parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1031
+    - id: 1051
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False]
       name: When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
       fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Does_Not_Meet_GoalAmount_CompleteQuest_False
       resultStatus: 1
-      duration: 0.0014602
+      duration: 0.0007966
       messages: 
       output: 
       stacktrace: 
@@ -1416,14 +1381,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
+      parentId: 1046
       parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1032
+    - id: 1052
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True]
       name: When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
       fullName: QuestTests+IsQuestEnemyMethod.When_CurrentAmount_Meets_GoalAmount_CompleteQuest_True
       resultStatus: 1
-      duration: 0.0003361
+      duration: 0.0002867
       messages: 
       output: 
       stacktrace: 
@@ -1433,14 +1398,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
+      parentId: 1046
       parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1028
+    - id: 1048
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False]
       name: When_KilledEnemy_Is_Not_QuestEnemy_Return_False
       fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_Not_QuestEnemy_Return_False
       resultStatus: 1
-      duration: 0.000452
+      duration: 0.0003796
       messages: 
       output: 
       stacktrace: 
@@ -1450,14 +1415,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
+      parentId: 1046
       parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1029
+    - id: 1049
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True]
       name: When_KilledEnemy_Is_QuestEnemy_Return_True
       fullName: QuestTests+IsQuestEnemyMethod.When_KilledEnemy_Is_QuestEnemy_Return_True
       resultStatus: 1
-      duration: 0.0002836
+      duration: 0.0003014
       messages: 
       output: 
       stacktrace: 
@@ -1467,14 +1432,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
+      parentId: 1046
       parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    - id: 1030
+    - id: 1050
       uniqueId: EditMode.dll/QuestTests+IsQuestEnemyMethod/[EditMode][QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount]
       name: When_QuestEnemy_Killed_Increase_CurrentAmount
       fullName: QuestTests+IsQuestEnemyMethod.When_QuestEnemy_Killed_Increase_CurrentAmount
       resultStatus: 1
-      duration: 0.0002756
+      duration: 0.0004535
       messages: 
       output: 
       stacktrace: 
@@ -1484,15 +1449,240 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
+      parentId: 1046
       parentUniqueId: EditMode.dll/[EditMode][QuestTests+IsQuestEnemyMethod][suite]
-    m_ResultText: 
+    - id: 1008
+      uniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+      name: SkillsTests
+      fullName: SkillsTests
+      resultStatus: 1
+      duration: 0.0304431
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: '[EditMode][U:/Repos/TheCorruptedVirtues/CorruptedVirtues/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1018
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.Add_Skill_To_Character]
+      name: Add_Skill_To_Character
+      fullName: SkillsTests.Add_Skill_To_Character
+      resultStatus: 1
+      duration: 0.0013098
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.Skill_Has_Amout]
+      name: Skill_Has_Amout
+      fullName: SkillsTests.Skill_Has_Amout
+      resultStatus: 1
+      duration: 0.000574
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1019
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.Skill_Has_Name]
+      name: Skill_Has_Name
+      fullName: SkillsTests.Skill_Has_Name
+      resultStatus: 1
+      duration: 0.0005567
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1011
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternDouble]
+      name: SkillPatternDouble
+      fullName: SkillsTests.SkillPatternDouble
+      resultStatus: 1
+      duration: 0.0007012
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1012
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternDoubleEveryOtherSlot]
+      name: SkillPatternDoubleEveryOtherSlot
+      fullName: SkillsTests.SkillPatternDoubleEveryOtherSlot
+      resultStatus: 1
+      duration: 0.0007309
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1017
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternPentaSlot]
+      name: SkillPatternPentaSlot
+      fullName: SkillsTests.SkillPatternPentaSlot
+      resultStatus: 1
+      duration: 0.0007837
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternQuad2X2SlotSlot]
+      name: SkillPatternQuad2X2SlotSlot
+      fullName: SkillsTests.SkillPatternQuad2X2SlotSlot
+      resultStatus: 1
+      duration: 0.0007878
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternQuadSlot]
+      name: SkillPatternQuadSlot
+      fullName: SkillsTests.SkillPatternQuadSlot
+      resultStatus: 1
+      duration: 0.001086
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1010
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternSingle]
+      name: SkillPatternSingle
+      fullName: SkillsTests.SkillPatternSingle
+      resultStatus: 1
+      duration: 0.000617
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternTripleEveryOtherSlot]
+      name: SkillPatternTripleEveryOtherSlot
+      fullName: SkillsTests.SkillPatternTripleEveryOtherSlot
+      resultStatus: 1
+      duration: 0.0007569
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.SkillPatternTripleSlot]
+      name: SkillPatternTripleSlot
+      fullName: SkillsTests.SkillPatternTripleSlot
+      resultStatus: 1
+      duration: 0.000685
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    - id: 1009
+      uniqueId: EditMode.dll/SkillsTests/[EditMode][SkillsTests.UseSkillTest]
+      name: UseSkillTest
+      fullName: SkillsTests.UseSkillTest
+      resultStatus: 1
+      duration: 0.0005651
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/[EditMode][SkillsTests][suite]
+    m_ResultText: UseSkillTest (0.001s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0ed96ac2a76b74ce906479d4349e00e159ce200cf21f3c1ede1ac921a787ce4143ff804923b4a06effffff7f
+      scrollPos: {x: 0, y: 232}
+      m_SelectedIDs: c04f8a87
+      m_LastClickedID: -2020978752
+      m_ExpandedIDs: 4d4334830ed96ac2a76b74ce2cdc44d3906479d4349e00e159ce200cf21f3c1ede1ac921a787ce4143ff80496200434bed6c816523b4a06effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1518,3 +1708,40 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1467
+    y: 73
+    width: 452
+    height: 918
+  m_ViewDataDictionary: {fileID: 0}
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -19784
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}

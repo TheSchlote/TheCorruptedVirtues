@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +7,100 @@ public class BattleUI : MonoBehaviour
 
     public GameObject[] EnemySprites = new GameObject[5];
     public GameObject[] PlayerSprites = new GameObject[3];
-    public GameObject TurnOrder, PlayerChoice, PlayerStat, PlayerCharacters, EnemyCharacters;
-    
-    public bool attack, flee, returnToOverWorld;
-    public int attackSlot;
+    public GameObject TurnOrder, PlayerChoice, PlayerStat, PlayerCharacters, EnemyCharacters, CharacterTurn;
+    bool verticalInputInUse, horizontalInputInUse = false;
+
     private void Awake()
     {
         InstantiateCharactersForBattle();
+
+        for (int PartySlot = 0; PartySlot < GameManger.gameManger.party.PlayerParty.Count; PartySlot++)
+        {
+            SetPlayerStatPanel(PartySlot);
+        }
+    }
+    private void Start()
+    {
+        //Vector2 joey = CharacterTurn.transform.position;
+        //foreach (GameObject character in battleSystem.charactersInBattle)
+        //{
+        //    Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
+        //    CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
+        //    CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
+        //    joey = TurnOrder.transform.position.y + joey.y;
+        //    Instantiate(CharacterTurn, joey);
+        //}
+    }
+    private void Update()
+    {
+        EnemySelection();
+    }
+
+    private void EnemySelection()
+    {
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
+        if (verticalInput == 0)
+        {
+            verticalInputInUse = false;
+        }
+        if (horizontalInput == 0)
+        {
+            horizontalInputInUse = false;
+        }
+        if (battleSystem.attack)
+        {
+            if (verticalInput > 0 && !verticalInputInUse)
+            {
+                verticalInputInUse = true;
+                if (battleSystem.attackSlot < 4)
+                {
+                    battleSystem.attackSlot++;
+                }
+                if (battleSystem.frontRow)
+                {
+                    EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+                    EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot - 1).transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else
+                {
+                    EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+                    EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot - 1).transform.GetChild(0).gameObject.SetActive(false);
+                }
+            }
+            if (verticalInput < 0 && !verticalInputInUse)
+            {
+                verticalInputInUse = true;
+                if (battleSystem.attackSlot > 0)
+                {
+                    battleSystem.attackSlot--;
+                }
+                if (battleSystem.frontRow)
+                {
+                    EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+                    EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else
+                {
+                    EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+                    EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(false);
+                }
+            }
+            if (horizontalInput < 0 && !horizontalInputInUse)
+            {
+                horizontalInputInUse = true;
+                battleSystem.frontRow = true;
+                EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+                EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(false);
+            }
+            if (horizontalInput > 0 && !horizontalInputInUse)
+            {
+                horizontalInputInUse = true;
+                battleSystem.frontRow = false;
+                EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+                EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(false);
+            }
+        }
     }
 
     //PlayerOnScreen.healthbar.SetHeatlh(Player.characterDefinition);
@@ -114,7 +199,7 @@ public class BattleUI : MonoBehaviour
         if (GameManger.gameManger.bossBattle)
         {
             GameObject boss = GameManger.gameManger.areaData.possibleEnemys[5];
-            EnemySprites[2] = Instantiate(boss, EnemyCharacters.transform.GetChild(2).transform.GetChild(0));
+            EnemySprites[2] = Instantiate(boss, EnemyCharacters.transform.GetChild(0).transform.GetChild(2));
             EnemySprites[2].name = boss.name;
         }
         else
@@ -127,7 +212,7 @@ public class BattleUI : MonoBehaviour
                     {
                         if (GameManger.gameManger.EncounteredEnemyNames[i] == enemy.name)
                         {
-                            EnemySprites[i] = Instantiate(enemy,EnemyCharacters.transform.GetChild(i).transform.GetChild(CoinFlip));
+                            EnemySprites[i] = Instantiate(enemy,EnemyCharacters.transform.GetChild(CoinFlip).transform.GetChild(i));
                             EnemySprites[i].name = enemy.name;
                             break;
                         }
@@ -135,7 +220,6 @@ public class BattleUI : MonoBehaviour
                 }
             }
         }
-        
 
         for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
         {
@@ -143,45 +227,51 @@ public class BattleUI : MonoBehaviour
             {
                 //dont use coinflip save this info somewhere in gamemanager
                 PlayerSprites[i] = Instantiate(GameManger.gameManger.party.PlayerParty[i],
-                                                                PlayerCharacters.transform.GetChild(i).transform.GetChild(CoinFlip));
+                                                                PlayerCharacters.transform.GetChild(CoinFlip).transform.GetChild(i));
                 PlayerSprites[i].name = GameManger.gameManger.party.PlayerParty[i].name;
             }
         }
     }
-//            for (int PartySlot = 0; PartySlot<GameManger.gameManger.party.PlayerParty.Count; PartySlot++)
-//        {
-//            SetPlayerStatPanel(PartySlot);
-//}
-public void SetPlayerStatPanel(int playernumber)
+
+    public void SetPlayerStatPanel(int playernumber)
     {
-        Image PlayerImage = PlayerStat.transform.GetChild(playernumber).GetChild(0).GetComponent<Image>();
         GameObject PlayerGameObject = GameManger.gameManger.party.PlayerParty[playernumber];
         SpriteRenderer PlayerPartyImage = PlayerGameObject.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>();
-        PlayerImage.sprite = PlayerPartyImage.sprite;
-        Text PlayerName = PlayerStat.transform.GetChild(playernumber).GetChild(1).GetComponent<Text>();
-        PlayerName.text = GameManger.gameManger.party.PlayerParty[playernumber].name;
-        Slider PlayerStatHealthBar = PlayerStat.transform.GetChild(playernumber).GetChild(2).GetComponent<Slider>();
+        PlayerStat.transform.GetChild(playernumber).GetChild(4).GetComponent<SpriteRenderer>().sprite = PlayerPartyImage.sprite;
+        Slider PlayerStatHealthBar = PlayerStat.transform.GetChild(playernumber).GetChild(1).GetComponent<Slider>();
         int maxHealth = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.maxHealth;
         PlayerStatHealthBar.maxValue = maxHealth;
         int currentHealth = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.currentHealth;
         PlayerStatHealthBar.value = currentHealth;
         PlayerStatHealthBar.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green, PlayerStatHealthBar.normalizedValue);
+        Slider PlayerStatMagicBar = PlayerStat.transform.GetChild(playernumber).GetChild(2).GetComponent<Slider>();
+        int maxMagic = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.maxMagic;
+        PlayerStatMagicBar.maxValue = maxMagic;
+        int currentMagic = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.currentMagic;
+        PlayerStatMagicBar.value = currentMagic;
+        PlayerStatMagicBar.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green, PlayerStatMagicBar.normalizedValue);
     }
 
-    public void AttackButton() => attack = true;
-    public void FleeButton() => flee = true;
-    public void AttackSlot1() => attackSlot = 1;
-    public void AttackSlot2() => attackSlot = 2;
-    public void AttackSlot3() => attackSlot = 3;
-    public void AttackSlot4() => attackSlot = 4;
-    public void AttackSlot5() => attackSlot = 5;
+    public void AttackButton()
+    {
+        battleSystem.attack = true;
+        battleSystem.frontRow = true;
+        battleSystem.attackSlot = 2;
+        EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+    } 
+    public void SkillsButton()
+    {
+
+    }
+    public void FleeButton() => battleSystem.flee = true;
+
     public void ReturnButton()
     {
         if (!GameManger.gameManger.bossBattle)
         {
             GameManger.gameManger.battleHasStarted = false;
         }
-        returnToOverWorld = true;
+        battleSystem.returnToOverWorld = true;
     }
 
     private int CoinFlip => Random.Range(0, 2);

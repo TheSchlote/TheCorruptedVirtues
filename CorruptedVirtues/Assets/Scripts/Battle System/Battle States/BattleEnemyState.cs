@@ -28,7 +28,6 @@ public class BattleEnemyState : BattleBaseState
         CharacterStats Player = battleSystem.PlayersInBattle[PlayerSlot].GetComponent<CharacterStats>();
 
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
-        
 
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
 

@@ -16,7 +16,7 @@ public class BattleSystem : MonoBehaviour
     public GameObject[] EnemiesInBattle = new GameObject[5];
     public GameObject[] PlayersInBattle = new GameObject[3];
 
-    public bool attack, flee, returnToOverWorld;
+    public bool attack, frontRow, flee, returnToOverWorld;
     public int attackSlot, TotalEnemyXP;
 
     private void Start()
