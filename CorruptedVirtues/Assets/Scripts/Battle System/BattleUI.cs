@@ -21,15 +21,14 @@ public class BattleUI : MonoBehaviour
     }
     private void Start()
     {
-        //Vector2 joey = CharacterTurn.transform.position;
-        //foreach (GameObject character in battleSystem.charactersInBattle)
-        //{
-        //    Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
-        //    CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
-        //    CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
-        //    joey = TurnOrder.transform.position.y + joey.y;
-        //    Instantiate(CharacterTurn, joey);
-        //}
+        for (int i = 0; i < battleSystem.charactersInBattle.Count; i++)
+        {
+            GameObject character = battleSystem.charactersInBattle[i];
+            Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
+            CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
+            CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
+            Instantiate(CharacterTurn, new Vector3(TurnOrder.transform.position.x, TurnOrder.transform.position.y*2 - i, TurnOrder.transform.position.z), Quaternion.identity, TurnOrder.transform);
+        }
     }
     private void Update()
     {
