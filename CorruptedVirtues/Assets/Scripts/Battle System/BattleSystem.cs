@@ -1,9 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BattleSystem : MonoBehaviour
 {
-    private BattleBaseState currentState;
+    public BattleBaseState currentState;
     public BattleBaseState CurrentState { get { return currentState; } }
 
     public readonly BattleStartState startState = new BattleStartState();
@@ -27,6 +28,13 @@ public class BattleSystem : MonoBehaviour
     public void TransitionToState(BattleBaseState state)
     {
         currentState = state;
+        Debug.Log(state);
+        StartCoroutine(WaitForOneSec());
+    }
+
+    IEnumerator WaitForOneSec()
+    {
+        yield return new WaitForSeconds(1);
         currentState.EnterState(this);
     }
 }

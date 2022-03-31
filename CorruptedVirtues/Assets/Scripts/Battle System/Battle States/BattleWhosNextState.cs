@@ -5,7 +5,6 @@ public class BattleWhosNextState : BattleBaseState
     public override void EnterState(BattleSystem battleSystem)
     {
         DidEveryoneTakeATurn(battleSystem);
-
         TransitionToCorrectState(battleSystem);
     }
 

@@ -8,7 +8,7 @@ public class BattleUI : MonoBehaviour
     public GameObject[] EnemySprites = new GameObject[5];
     public GameObject[] PlayerSprites = new GameObject[3];
     public GameObject TurnOrder, PlayerChoice, PlayerStat, PlayerCharacters, EnemyCharacters, CharacterTurn;
-    bool verticalInputInUse, horizontalInputInUse = false;
+    bool verticalInputInUse = false, horizontalInputInUse = false, updateTurnOrder;
 
     private void Awake()
     {
@@ -21,18 +21,55 @@ public class BattleUI : MonoBehaviour
     }
     private void Start()
     {
-        for (int i = 0; i < battleSystem.charactersInBattle.Count; i++)
+        
+    }
+
+    private void UpdateTurnOrder()
+    {
+        if (updateTurnOrder)
         {
-            GameObject character = battleSystem.charactersInBattle[i];
-            Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
-            CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
-            CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
-            Instantiate(CharacterTurn, new Vector3(TurnOrder.transform.position.x, TurnOrder.transform.position.y*2 - i, TurnOrder.transform.position.z), Quaternion.identity, TurnOrder.transform);
+            foreach(Transform characterturns in TurnOrder.transform)
+            {
+                Destroy(characterturns.gameObject);
+            }
+
+            for (int i = 0; i < battleSystem.charactersInBattle.Count; i++)
+            {
+                GameObject character = battleSystem.charactersInBattle[i];
+                Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
+                CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
+                CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
+                Instantiate(CharacterTurn, new Vector3(TurnOrder.transform.position.x, TurnOrder.transform.position.y + 4 - i, TurnOrder.transform.position.z), Quaternion.identity, TurnOrder.transform);
+            }
+            updateTurnOrder = false;
         }
     }
+
     private void Update()
     {
-        EnemySelection();
+        switch (battleSystem.currentState)
+        {
+            case BattleStartState battleStartState:
+                updateTurnOrder = true;
+                break;
+            case BattleWhosNextState battleWhosNextState:
+                UpdateTurnOrder();
+                break;
+            case BattlePlayerState battlePlayerState:
+                EnemySelection();
+                if(!updateTurnOrder)
+                updateTurnOrder = true;
+                break;
+            case BattleEnemyState battleEnemyState:
+                updateTurnOrder = true;
+                break;
+            case BattleEndState battleEndState:
+                //
+                break;
+            default:
+                Debug.Log("DEFAULT");
+                break;
+        }
     }
 
     private void EnemySelection()
@@ -98,6 +135,11 @@ public class BattleUI : MonoBehaviour
                 battleSystem.frontRow = false;
                 EnemyCharacters.transform.GetChild(1).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(false);
+            }
+
+            if (Input.GetButton("Submit"))
+            {
+                battleSystem.playerState.AttackEnemy(battleSystem, battleSystem.attackSlot);
             }
         }
     }
