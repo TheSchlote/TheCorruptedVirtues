@@ -16,7 +16,7 @@ MonoBehaviour:
   saveDataOnClose: 0
   Enemy: 0
   maxHealth: 5
-  currentHealth: 1
+  currentHealth: 3
   maxMagic: 0
   currentMagic: 0
   Wealth: 0
@@ -45,3 +45,6 @@ MonoBehaviour:
     baseSpeed: 2
   SkillList:
   - {fileID: 11400000, guid: 97549df6bac123241b8908f77c5303ab, type: 2}
+  - {fileID: 11400000, guid: d5fcc42859b2e954caf270823ab5e0cd, type: 2}
+  - {fileID: 11400000, guid: 01061f1ee340ecc43a1e5c4902ed7d44, type: 2}
+  - {fileID: 11400000, guid: 77743ca124bfc1a4ba63b13fcb27fa2d, type: 2}
