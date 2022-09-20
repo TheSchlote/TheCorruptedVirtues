@@ -55,7 +55,7 @@ public class BattlePlayerState : BattleBaseState
     {
         SkillPatternUtil skillPattern = new SkillPatternUtil();
         skillPattern.WhichSkillToUse(battleSystem, EnemySlot, skill);
-        //EndOfPlayersTurn(battleSystem);
+        EndOfPlayersTurn(battleSystem);
     }
 
     public void EndOfPlayersTurn(BattleSystem battleSystem)

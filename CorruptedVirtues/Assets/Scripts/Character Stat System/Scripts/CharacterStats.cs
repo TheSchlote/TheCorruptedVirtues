@@ -16,7 +16,7 @@ public class CharacterStats : MonoBehaviour
     #region Initializations
     private void Start()
     {
-
+    
     }
     #endregion
 

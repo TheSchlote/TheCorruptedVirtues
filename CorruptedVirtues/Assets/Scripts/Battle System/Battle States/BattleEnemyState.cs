@@ -23,12 +23,13 @@ public class BattleEnemyState : BattleBaseState
         if (battleSystem.PlayersInBattle[PlayerSlot] == null)
         {
             battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
+            Debug.Log("Turn Skipped");
             return;
         }
         CharacterStats Player = battleSystem.PlayersInBattle[PlayerSlot].GetComponent<CharacterStats>();
 
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
-
+        Debug.Log(Player.name + " HP: " + Player.GetHealth() + "/" + Player.characterDefinition.maxHealth);
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
 
         if (Player.characterDefinition.currentHealth <= 0)

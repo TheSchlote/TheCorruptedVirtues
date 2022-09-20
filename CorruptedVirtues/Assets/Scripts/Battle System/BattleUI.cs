@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,15 +16,14 @@ public class BattleUI : MonoBehaviour
     private void Awake()
     {
         InstantiateCharactersForBattle();
+    }
+    private void Start()
+    {
 
         for (int PartySlot = 0; PartySlot < GameManger.gameManger.party.PlayerParty.Count; PartySlot++)
         {
             SetPlayerStatPanel(PartySlot);
         }
-    }
-    private void Start()
-    {
-        
     }
 
     private void UpdateTurnOrder()
@@ -55,6 +55,8 @@ public class BattleUI : MonoBehaviour
                 updateTurnOrder = true;
                 break;
             case BattleWhosNextState battleWhosNextState:
+                RemoveDeadCharacters();
+                GiveCharactersInBattleHealthbars(battleSystem);
                 UpdateTurnOrder();
                 break;
             case BattlePlayerState battlePlayerState:
@@ -73,6 +75,26 @@ public class BattleUI : MonoBehaviour
                 break;
         }
     }
+
+    private void RemoveDeadCharacters()
+    {
+        for (int i = 0; i < battleSystem.EnemiesInBattle.Length; i++)
+        {
+            if (battleSystem.EnemiesInBattle[i] != null && battleSystem.EnemiesInBattle[i].GetComponent<CharacterStats>().characterDefinition.currentHealth <= 0)
+            {
+                DestroyEnemy(i);
+            }
+        }
+
+        for (int i = 0; i < battleSystem.PlayersInBattle.Length; i++)
+        {
+            if (battleSystem.PlayersInBattle[i] != null && battleSystem.PlayersInBattle[i].GetComponent<CharacterStats>().characterDefinition.currentHealth <= 0)
+            {
+                DestroyPlayer(i);
+            }
+        }
+    }
+
     public void RemoveCharactersInBattleHealthbars(BattleSystem battleSystem)
     {
         //prolly switch to using characters in battle
@@ -280,7 +302,14 @@ public class BattleUI : MonoBehaviour
             if (Input.GetButton("Submit"))
             {
                 SkillPatternUtil skillPattern = new SkillPatternUtil();
+                DeSelectAllSlots();
+                PlayerChoice.SetActive(true);
+                SkillChoice.SetActive(false);
                 skillPattern.WhichSkillToUse(battleSystem, battleSystem.attackSlot, skill);
+                battleSystem.attack = false;
+                battleSystem.attackSlot = 0;
+                battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
+                battleSystem.TransitionToState(battleSystem.whosNextState);
             }
         }
     }
@@ -371,13 +400,13 @@ public class BattleUI : MonoBehaviour
 
     public void DestroyEnemy(int CharacterSlot)
     {
-        //EnemyPrefabsInBattle[CharacterSlot - 1] = null;
-        Destroy(EnemySprites[CharacterSlot - 1]);
+        EnemySprites[CharacterSlot] = null;
+        Destroy(EnemySprites[CharacterSlot]);
     }
 
     public void DestroyPlayer(int CharacterSlot)
     {
-        //PlayerPrefabsInBattle[CharacterSlot] = null;
+        PlayerSprites[CharacterSlot] = null;
         Destroy(PlayerSprites[CharacterSlot]);
     }
 }

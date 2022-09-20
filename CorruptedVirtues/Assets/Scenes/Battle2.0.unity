@@ -1548,6 +1548,7 @@ MonoBehaviour:
     maxAmountEnemys: 5
     possibleEnemys:
     - {fileID: 221407104402842180, guid: 07dc3db3f79d2044bbbfd6c07bff21a8, type: 3}
+    - {fileID: 3803516505945676687, guid: 93d9ce57c33f86248b5797e922217c66, type: 3}
   OverWorldCharacter: {fileID: 0}
   nextCharacterPosition: {fileID: 0}
   lastCharacterPosition: {fileID: 0}
@@ -1563,13 +1564,13 @@ MonoBehaviour:
   - ProtoHornet
   - ProtoHornet
   - ProtoHornet
-  - ProtoHornet
+  - ProtoSpider
   OverworldEnemyFought:
   - ProtoHornet
   - ProtoHornet
   - ProtoHornet
   - ProtoHornet
-  - ProtoHornet
+  - ProtoSpider
 --- !u!4 &487603963
 Transform:
   m_ObjectHideFlags: 0

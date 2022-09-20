@@ -4,6 +4,7 @@ public class BattleWhosNextState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
+        CheckCharactersHealth(battleSystem);
         DidEveryoneTakeATurn(battleSystem);
         TransitionToCorrectState(battleSystem);
     }
@@ -30,6 +31,26 @@ public class BattleWhosNextState : BattleBaseState
     public override void Update(BattleSystem battleSystem)
     {
     }
+
+    public void CheckCharactersHealth(BattleSystem battleSystem)
+    {
+        for (int i = 0; i < battleSystem.EnemiesInBattle.Length; i++)
+        {
+            if (battleSystem.EnemiesInBattle[i] != null && battleSystem.EnemiesInBattle[i].GetComponent<CharacterStats>().characterDefinition.currentHealth <= 0)
+            {
+                battleSystem.EnemiesInBattle[i] = null;
+            }
+        }
+
+        for (int i = 0; i < battleSystem.PlayersInBattle.Length; i++)
+        {
+            if (battleSystem.PlayersInBattle[i] != null && battleSystem.PlayersInBattle[i].GetComponent<CharacterStats>().characterDefinition.currentHealth <= 0)
+            {
+                battleSystem.PlayersInBattle[i] = null;
+            }
+        }
+    }
+
     public bool DidEveryoneTakeATurn(BattleSystem battleSystem)
     {
         if (battleSystem.charactersInBattle.Count == 0)
