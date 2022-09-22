@@ -37,9 +37,9 @@ public class SkillPatternUtil
 
     public void AttackEnemyWithSkill(BattleSystem battleSystem, int EnemySlot, Skill_SO skill)
     {
-        if (battleSystem.EnemiesInBattle[EnemySlot - 1] != null)
+        if (battleSystem.EnemiesInBattle[EnemySlot] != null)
         {
-            CharacterStats Enemy = battleSystem.EnemiesInBattle[EnemySlot - 1].GetComponent<CharacterStats>();
+            CharacterStats Enemy = battleSystem.EnemiesInBattle[EnemySlot].GetComponent<CharacterStats>();
             int damage = GetDamageType(battleSystem, skill) + skill.skillAmout;
             Enemy.TakeDamage(damage);
         }

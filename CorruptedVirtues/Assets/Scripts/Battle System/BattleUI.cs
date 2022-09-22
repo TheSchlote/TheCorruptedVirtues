@@ -20,10 +20,6 @@ public class BattleUI : MonoBehaviour
     private void Start()
     {
 
-        for (int PartySlot = 0; PartySlot < GameManger.gameManger.party.PlayerParty.Count; PartySlot++)
-        {
-            SetPlayerStatPanel(PartySlot);
-        }
     }
 
     private void UpdateTurnOrder()
@@ -53,10 +49,10 @@ public class BattleUI : MonoBehaviour
         {
             case BattleStartState battleStartState:
                 updateTurnOrder = true;
+                //GiveCharactersInBattleHealthbars(battleSystem);
                 break;
             case BattleWhosNextState battleWhosNextState:
                 RemoveDeadCharacters();
-                GiveCharactersInBattleHealthbars(battleSystem);
                 UpdateTurnOrder();
                 break;
             case BattlePlayerState battlePlayerState:
@@ -212,25 +208,6 @@ public class BattleUI : MonoBehaviour
         }
     }
 
-    public void SetPlayerStatPanel(int playernumber)
-    {
-        GameObject PlayerGameObject = GameManger.gameManger.party.PlayerParty[playernumber];
-        SpriteRenderer PlayerPartyImage = PlayerGameObject.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>();
-        PlayerStat.transform.GetChild(playernumber).GetChild(4).GetComponent<SpriteRenderer>().sprite = PlayerPartyImage.sprite;
-        Slider PlayerStatHealthBar = PlayerStat.transform.GetChild(playernumber).GetChild(1).GetComponent<Slider>();
-        int maxHealth = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.maxHealth;
-        PlayerStatHealthBar.maxValue = maxHealth;
-        int currentHealth = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.currentHealth;
-        PlayerStatHealthBar.value = currentHealth;
-        PlayerStatHealthBar.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green, PlayerStatHealthBar.normalizedValue);
-        Slider PlayerStatMagicBar = PlayerStat.transform.GetChild(playernumber).GetChild(2).GetComponent<Slider>();
-        int maxMagic = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.maxMagic;
-        PlayerStatMagicBar.maxValue = maxMagic;
-        int currentMagic = GameManger.gameManger.party.PlayerParty[playernumber].transform.GetComponent<CharacterStats>().characterDefinition.currentMagic;
-        PlayerStatMagicBar.value = currentMagic;
-        PlayerStatMagicBar.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Color.red, Color.green, PlayerStatMagicBar.normalizedValue);
-    }
-
     public void AttackButton()
     {
         battleSystem.attack = true;
@@ -243,10 +220,13 @@ public class BattleUI : MonoBehaviour
         switch (battleSystem.currentState)
         {
             case BattlePlayerState battlePlayerState:
-                PlayerChoice.SetActive(false);
-                SkillChoice.SetActive(true);
                 List<Skill_SO> skills = battleSystem.charactersInBattle[0].GetComponent<CharacterStats>().characterDefinition.SkillList;
                 int numberOfSkills = skills.Count;
+                if(numberOfSkills > 0)
+                {
+                    PlayerChoice.SetActive(false);
+                    SkillChoice.SetActive(true);
+                }
                 for (int i = 0; i < numberOfSkills; i++)
                 {
                     btnSkill.transform.GetChild(0).GetComponent<Text>().text = skills[i].skillName;
@@ -255,8 +235,8 @@ public class BattleUI : MonoBehaviour
                     go.GetComponent<Button>().onClick.AddListener(() =>
                     {
                         int skillIndex = int.Parse(go.transform.GetChild(1).GetComponent<Text>().text);
-                        Debug.Log(skillIndex);
                         skill = skills[skillIndex];
+                        Debug.Log(skill.name);
                         battleSystem.attack = true;
                         battleSystem.attackSlot = 2;
                         SelectProperSlots();
@@ -400,13 +380,14 @@ public class BattleUI : MonoBehaviour
 
     public void DestroyEnemy(int CharacterSlot)
     {
-        EnemySprites[CharacterSlot] = null;
+        battleSystem.EnemiesInBattle[CharacterSlot] = null;
         Destroy(EnemySprites[CharacterSlot]);
+        EnemySprites[CharacterSlot] = null;
     }
 
     public void DestroyPlayer(int CharacterSlot)
     {
-        PlayerSprites[CharacterSlot] = null;
         Destroy(PlayerSprites[CharacterSlot]);
+        PlayerSprites[CharacterSlot] = null;
     }
 }
