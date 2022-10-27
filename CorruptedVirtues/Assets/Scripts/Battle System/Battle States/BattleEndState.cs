@@ -4,7 +4,6 @@ public class BattleEndState : BattleBaseState
 {
     public override void EnterState(BattleSystem battleSystem)
     {
-        //RemoveCharactersInBattleHealthbars(battleSystem);
         if (battleSystem.flee)
         {
             GameManger.gameManger.OverworldEnemyFought.Clear();

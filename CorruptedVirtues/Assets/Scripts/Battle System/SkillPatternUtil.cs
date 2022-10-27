@@ -4,34 +4,44 @@ public class SkillPatternUtil
 {
     public void WhichSkillToUse(BattleSystem battleSystem, int EnemySlot, Skill_SO skill)
     {
-        switch (skill.skillPattern)
+        if (battleSystem.attack)
         {
-            case Skill_SO.SkillPattern.Single:
-                SingleSlot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.Double:
-                DoubleSlot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.DoubleEveryOther:
-                DoubleEveryOtherSlot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.Triple:
-                TripleSlot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.TripleEveryOther:
-                TripleEveryOtherSlot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.Quad:
-                QuadSlot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.Quad2X2Slot:
-                Quad2X2Slot(battleSystem, EnemySlot, skill);
-                break;
-            case Skill_SO.SkillPattern.Penta:
-                PentaSlot(battleSystem, EnemySlot, skill);
-                break;
-            default:
-                break;
+            if (battleSystem.EnemiesInBattle[EnemySlot] != null)
+            {
+                CharacterStats Enemy = battleSystem.EnemiesInBattle[EnemySlot].GetComponent<CharacterStats>();
+                Enemy.TakeDamage(10);
+            }
+        }
+        else {
+            switch (skill.skillPattern)
+            {
+                case Skill_SO.SkillPattern.Single:
+                    SingleSlot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.Double:
+                    DoubleSlot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.DoubleEveryOther:
+                    DoubleEveryOtherSlot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.Triple:
+                    TripleSlot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.TripleEveryOther:
+                    TripleEveryOtherSlot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.Quad:
+                    QuadSlot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.Quad2X2Slot:
+                    Quad2X2Slot(battleSystem, EnemySlot, skill);
+                    break;
+                case Skill_SO.SkillPattern.Penta:
+                    PentaSlot(battleSystem, EnemySlot, skill);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 

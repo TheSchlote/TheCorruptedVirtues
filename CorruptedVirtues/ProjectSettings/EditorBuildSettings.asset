@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tut Forest.unity
     guid: 71e277227042add4f95d808484e3d769
+  - enabled: 1
+    path: Assets/Scenes/Battle2.0.unity
+    guid: ca485ed3ce3f8b4468da21f67cf4badf
   m_configObjects: {}

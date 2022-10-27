@@ -38,4 +38,12 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1);
         currentState.EnterState(this);
     }
+    public void ReturnButton()
+    {
+        if (!GameManger.gameManger.bossBattle)
+        {
+            GameManger.gameManger.battleHasStarted = false;
+        }
+        returnToOverWorld = true;
+    }
 }

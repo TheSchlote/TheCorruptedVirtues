@@ -19,7 +19,7 @@ public class BattleEnemyState : BattleBaseState
         CharacterStats Enemy = battleSystem.charactersInBattle.First().GetComponent<CharacterStats>();
 
         //Needs work
-        int PlayerSlot = Random.Range(0, 3);
+         int PlayerSlot = Random.Range(0, 3);
         if (battleSystem.PlayersInBattle[PlayerSlot] == null)
         {
             battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
@@ -29,7 +29,7 @@ public class BattleEnemyState : BattleBaseState
         CharacterStats Player = battleSystem.PlayersInBattle[PlayerSlot].GetComponent<CharacterStats>();
 
         Player.TakeDamage(Enemy.characterDefinition.currentAttack);
-        Debug.Log(Player.name + " HP: " + Player.GetHealth() + "/" + Player.characterDefinition.maxHealth);
+        //Debug.Log(Player.name + " HP: " + Player.GetHealth() + "/" + Player.characterDefinition.maxHealth);
         battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
 
         if (Player.characterDefinition.currentHealth <= 0)
