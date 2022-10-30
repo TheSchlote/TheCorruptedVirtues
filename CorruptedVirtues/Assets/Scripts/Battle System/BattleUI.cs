@@ -40,10 +40,10 @@ public class BattleUI : MonoBehaviour
                 updateTurnOrder = false;
                 break;
             case BattlePlayerState battlePlayerState:
-                PlayerChoice.SetActive(true);
                 EnemySelection();
                 if (!updateTurnOrder)
                 {
+                    PlayerChoice.SetActive(true);
                     updateTurnOrder = true;
                 }
 
@@ -98,22 +98,13 @@ public class BattleUI : MonoBehaviour
     }
     private void UpdateHealthbars()
     {
-        if (GameManger.gameManger.bossBattle)
+        foreach (GameObject enemy in EnemySprites)
         {
-            Healthbar enemyHealthbar = battleSystem.EnemiesInBattle[2].GetComponent<CharacterStats>().healthbar;
-            CharacterStats_SO enemyCharacterDefinition = battleSystem.EnemiesInBattle[2].GetComponent<CharacterStats>().characterDefinition;
-            enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
-        }
-        else
-        {
-            foreach (GameObject enemy in EnemySprites)
+            if (enemy != null)
             {
-                if (enemy != null)
-                {
-                    Healthbar enemyHealthbar = enemy.GetComponent<CharacterStats>().healthbar;
-                    CharacterStats_SO enemyCharacterDefinition = enemy.GetComponent<CharacterStats>().characterDefinition;
-                    enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
-                }
+                Healthbar enemyHealthbar = enemy.GetComponent<CharacterStats>().healthbar;
+                CharacterStats_SO enemyCharacterDefinition = enemy.GetComponent<CharacterStats>().characterDefinition;
+                enemyHealthbar.SetHeatlh(enemyCharacterDefinition);
             }
         }
         foreach (GameObject player in PlayerSprites)
@@ -197,6 +188,8 @@ public class BattleUI : MonoBehaviour
                         battleSystem.attack = true;
                         battleSystem.attackSlot = 2;
                         SelectProperSlots();
+                        SkillChoice.SetActive(false);
+                        PlayerChoice.SetActive(false);
                     });
                 }
                 break;
@@ -222,10 +215,12 @@ public class BattleUI : MonoBehaviour
                 if (verticalInput > 0 && battleSystem.attackSlot < 4)
                 {
                     battleSystem.attackSlot++;
+                    Debug.Log("AttackSlot increased to " + battleSystem.attackSlot);
                 }
                 if (verticalInput < 0 && battleSystem.attackSlot > 0)
                 {
                     battleSystem.attackSlot--;
+                    Debug.Log("AttackSlot decreased to " + battleSystem.attackSlot);
                 }
                 SelectProperSlots();
             }
@@ -242,6 +237,7 @@ public class BattleUI : MonoBehaviour
                 DeSelectAllSlots();
                 PlayerChoice.SetActive(true);
                 SkillChoice.SetActive(false);
+                Debug.Log("AttackSlot " + battleSystem.attackSlot + " was attacked");
                 skillPattern.WhichSkillToUse(battleSystem, battleSystem.attackSlot, skill);
                 battleSystem.attack = false;
                 battleSystem.attackSlot = 0;
@@ -262,33 +258,43 @@ public class BattleUI : MonoBehaviour
                 break;
             case Skill_SO.SkillPattern.Double:
                 if (battleSystem.attackSlot > 3)
+                {
                     battleSystem.attackSlot = 3;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case Skill_SO.SkillPattern.DoubleEveryOther:
                 if (battleSystem.attackSlot > 2)
+                {
                     battleSystem.attackSlot = 2;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 2).transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case Skill_SO.SkillPattern.Triple:
                 if (battleSystem.attackSlot > 2)
+                {
                     battleSystem.attackSlot = 2;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 2).transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case Skill_SO.SkillPattern.TripleEveryOther:
                 if (battleSystem.attackSlot > 0)
+                {
                     battleSystem.attackSlot = 0;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 2).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 4).transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case Skill_SO.SkillPattern.Quad:
                 if (battleSystem.attackSlot > 1)
+                {
                     battleSystem.attackSlot = 1;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 2).transform.GetChild(0).gameObject.SetActive(true);
@@ -296,7 +302,9 @@ public class BattleUI : MonoBehaviour
                 break;
             case Skill_SO.SkillPattern.Quad2X2Slot:
                 if (battleSystem.attackSlot > 0)
+                {
                     battleSystem.attackSlot = 0;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 3).transform.GetChild(0).gameObject.SetActive(true);
@@ -304,7 +312,9 @@ public class BattleUI : MonoBehaviour
                 break;
             case Skill_SO.SkillPattern.Penta:
                 if (battleSystem.attackSlot > 0)
+                {
                     battleSystem.attackSlot = 0;
+                }
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 1).transform.GetChild(0).gameObject.SetActive(true);
                 EnemyCharacters.transform.GetChild(row).transform.GetChild(battleSystem.attackSlot + 2).transform.GetChild(0).gameObject.SetActive(true);
