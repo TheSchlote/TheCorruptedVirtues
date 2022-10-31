@@ -9,6 +9,8 @@ public class OverworldMovement : MonoBehaviour
 
     public float runSpeed = 5.0f;
     public SpriteRenderer sprite;
+    public Animator animator;
+    private Vector2 movement;
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -18,9 +20,16 @@ public class OverworldMovement : MonoBehaviour
     {
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
+        movement.x = horizontal;
+        animator.SetFloat("Horizontal", horizontal);
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+        movement.y = vertical;
+        animator.SetFloat("Vertical", vertical);
+
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+        
         KeepSpriteFromSpinning();
-        FlipSprite();
+        //FlipSprite();
     }
 
     private void KeepSpriteFromSpinning()

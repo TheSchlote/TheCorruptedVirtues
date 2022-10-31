@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 5
   sprite: {fileID: 4142343678533103601}
+  animator: {fileID: 44161801192518616}
 --- !u!50 &4142343678533103607
 Rigidbody2D:
   serializedVersion: 4
