@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 1572641233158995646}
   - component: {fileID: 1572641233158995647}
   - component: {fileID: 1639798757522349309}
-  - component: {fileID: 1639798757522349308}
   - component: {fileID: 1639798757522349306}
+  - component: {fileID: 4731650073614888862}
   m_Layer: 0
-  m_Name: ProtoOverworldBoss
+  m_Name: 0_Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
---- !u!60 &1639798757522349308
+--- !u!114 &1639798757522349306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572641233158995644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bbe0153fbcf3744b5749a9b56122b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyName: 0_Boss
+--- !u!60 &4731650073614888862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,43 +107,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.4740702, y: 0.31991833}
-      - {x: -0.53839123, y: 0.20912963}
-      - {x: -0.49267244, y: 0.0934836}
-      - {x: -0.57610184, y: -0.08534087}
-      - {x: -0.54645735, y: -0.32127982}
-      - {x: -0.4197297, y: -0.34397984}
-      - {x: -0.4964956, y: -0.6977482}
-      - {x: -0.37489128, y: -0.6942873}
-      - {x: -0.3559556, y: -0.48823357}
-      - {x: -0.17696476, y: -0.58176804}
-      - {x: 0.10318327, y: -0.45333958}
-      - {x: 0.17982626, y: -0.68340707}
-      - {x: 0.3525389, y: -0.6735841}
-      - {x: 0.21354008, y: -0.37834954}
-      - {x: 0.4117427, y: -0.34704804}
-      - {x: 0.6144589, y: -0.2033791}
-      - {x: 0.30505294, y: 0.053667136}
-      - {x: 0.11999178, y: 0.19948769}
-      - {x: 0.5391555, y: 0.22428942}
-      - {x: 0.45281124, y: 0.35822514}
-      - {x: 0.08197498, y: 0.30238104}
-      - {x: -0.027462006, y: 0.48012447}
-      - {x: -0.23588419, y: 0.6583781}
-      - {x: -0.50859606, y: 0.44204226}
---- !u!114 &1639798757522349306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572641233158995644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9bbe0153fbcf3744b5749a9b56122b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyName: ProtoBoss
+    - - {x: -0.26937342, y: 0.5274925}
+      - {x: -0.32398993, y: -0.17673871}
+      - {x: -0.3139953, y: -0.504316}
+      - {x: 0.22567666, y: -0.50431585}
+      - {x: 0.32030725, y: -0.1189909}
+      - {x: 0.32603264, y: 0.26186037}
+      - {x: 0.22683907, y: 0.39733642}
 --- !u!1 &1572641233757618150
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +258,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 55f692fc20961c649b7048581d032b79, type: 3}
+  m_Sprite: {fileID: -1080961568072635559, guid: 2006201ce05e2594e9430579bbe5f051, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class BattleUI : MonoBehaviour
 {
     public BattleSystem battleSystem;
+    private readonly BattleEndState endState = new BattleEndState();
 
     public GameObject[] EnemySprites = new GameObject[5];
     public GameObject[] PlayerSprites = new GameObject[3];
-    public GameObject TurnOrder, PlayerChoice, PlayerStat, PlayerCharacters, EnemyCharacters, CharacterTurn, SkillChoice, btnSkill, EndBattlePanel;
+    public GameObject TurnOrder, PlayerChoice, PlayerStat, PlayerCharacters, EnemyCharacters, CharacterTurn, SkillChoice, btnSkill, EndBattlePanel, AttackOrBack;
     bool verticalInputInUse = false, horizontalInputInUse = false, updateTurnOrder;
     public Skill_SO skill;
 
@@ -90,8 +91,8 @@ public class BattleUI : MonoBehaviour
         for (int i = 0; i < battleSystem.charactersInBattle.Count; i++)
         {
             GameObject character = battleSystem.charactersInBattle[i];
-            Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
-            CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
+            //Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
+            //CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
             CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
             Instantiate(CharacterTurn, new Vector3(TurnOrder.transform.position.x, TurnOrder.transform.position.y - i + 3, TurnOrder.transform.position.z), Quaternion.identity, TurnOrder.transform);
         }
@@ -158,11 +159,26 @@ public class BattleUI : MonoBehaviour
 
     public void AttackButton()
     {
-        battleSystem.attack = true;
-        battleSystem.frontRow = true;
-        battleSystem.attackSlot = 2;
-        EnemyCharacters.transform.GetChild(0).transform.GetChild(battleSystem.attackSlot).transform.GetChild(0).gameObject.SetActive(true);
+        SkillPatternUtil skillPattern = new SkillPatternUtil();
+        DeSelectAllSlots();
+        PlayerChoice.SetActive(true);
+        SkillChoice.SetActive(false);
+        Debug.Log("AttackSlot " + battleSystem.attackSlot + " was attacked");
+        skillPattern.WhichSkillToUse(battleSystem, battleSystem.attackSlot, skill);
+        battleSystem.attack = false;
+        battleSystem.attackSlot = 0;
+        battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
+        battleSystem.TransitionToState(battleSystem.whosNextState);
+        PlayerChoice.SetActive(false);
+        AttackOrBack.SetActive(false);
     } 
+
+    public void BackButton()
+    {
+        DeSelectAllSlots();
+        AttackOrBack.SetActive(false);
+        PlayerChoice.SetActive(true);
+    }
     public void SkillsButton()
     {
         switch (battleSystem.currentState)
@@ -190,6 +206,7 @@ public class BattleUI : MonoBehaviour
                         SelectProperSlots();
                         SkillChoice.SetActive(false);
                         PlayerChoice.SetActive(false);
+                        AttackOrBack.SetActive(true);
                     });
                 }
                 break;
@@ -233,20 +250,12 @@ public class BattleUI : MonoBehaviour
 
             if (Input.GetButton("Submit"))
             {
-                SkillPatternUtil skillPattern = new SkillPatternUtil();
-                DeSelectAllSlots();
-                PlayerChoice.SetActive(true);
-                SkillChoice.SetActive(false);
-                Debug.Log("AttackSlot " + battleSystem.attackSlot + " was attacked");
-                skillPattern.WhichSkillToUse(battleSystem, battleSystem.attackSlot, skill);
-                battleSystem.attack = false;
-                battleSystem.attackSlot = 0;
-                battleSystem.charactersInBattle.Remove(battleSystem.charactersInBattle.First());
-                battleSystem.TransitionToState(battleSystem.whosNextState);
-                PlayerChoice.SetActive(false);
+                AttackButton();
             }
         }
     }
+
+
     private void SelectProperSlots()
     {
         int row = battleSystem.frontRow ? 0 : 1;
@@ -333,7 +342,11 @@ public class BattleUI : MonoBehaviour
             EnemyCharacters.transform.GetChild(1).transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(false);
         }
     }
-    public void FleeButton() => battleSystem.flee = true;
+    public void FleeButton()
+    {
+        battleSystem.flee = true;
+        battleSystem.TransitionToState(endState);
+    }
 
     public void ReturnButton()
     {

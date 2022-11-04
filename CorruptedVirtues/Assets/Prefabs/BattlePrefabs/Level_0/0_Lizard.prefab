@@ -161,9 +161,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a9e282588480c364c9a5537121dfe335, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef05975707831d74a9c8d99bbccf5dde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.16, y: 0.8}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 8484753696167069367}
   - component: {fileID: 8484753696167069366}
   m_Layer: 0
-  m_Name: ProtoWolf
+  m_Name: 0_Lizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

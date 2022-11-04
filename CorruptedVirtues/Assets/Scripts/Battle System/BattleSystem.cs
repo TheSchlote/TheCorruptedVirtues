@@ -22,7 +22,6 @@ public class BattleSystem : MonoBehaviour
 
     private void Start()
     {
-
         TransitionToState(startState);
     }
 
