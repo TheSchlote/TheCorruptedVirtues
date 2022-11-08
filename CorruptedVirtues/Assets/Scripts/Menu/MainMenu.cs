@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
         {
             gameManger.party.PlayerParty.Add(guardian);
             gameManger.inMenuScreen = false;
-            SceneManager.LoadScene("Town"); //Town
+            SceneManager.LoadScene("Tut Forest"); //Town
         }
     }
 

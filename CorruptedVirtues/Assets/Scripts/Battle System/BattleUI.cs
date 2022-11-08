@@ -22,6 +22,7 @@ public class BattleUI : MonoBehaviour
     private void Start()
     {
         PlayerChoice.SetActive(false);
+        EndBattlePanel.SetActive(false);
     }
 
     private void Update()
@@ -56,11 +57,41 @@ public class BattleUI : MonoBehaviour
                 PlayerCharacters.SetActive(false);
                 EnemyCharacters.SetActive(false);
                 EndBattlePanel.SetActive(true);
+                FillEndBattleStats();
                 break;
             default:
                 Debug.Log("DEFAULT");
                 break;
         }
+    }
+
+    private void FillEndBattleStats()
+    {
+        for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
+        {
+            //EndBattlePanel.transform.GetChild(0).GetComponent<Image>().sprite = GameManger.gameManger.party.PlayerParty[i].GetComponent<SpriteRenderer>().GetComponentInChildren<SpriteRenderer>().sprite;
+            CharacterStats_SO characterDefinition = GameManger.gameManger.party.PlayerParty[i].GetComponent<CharacterStats>().characterDefinition;
+            EndBattlePanel.gameObject.transform.GetChild(i).GetComponentInChildren<Text>().text = $"HP: {characterDefinition.maxHealth.ToString()}\n" +
+                                                                 $"MP: {characterDefinition.maxMagic.ToString()}\n" +
+                                                                 $"ATK: {characterDefinition.baseAttack.ToString()}\n" +
+                                                                 $"SATK: {characterDefinition.baseSpecialAttack.ToString()}\n" +
+                                                                 $"DEF: {characterDefinition.baseDefense.ToString()}\n" +
+                                                                 $"SDEF: {characterDefinition.baseSpecialDefense.ToString()}\n" +
+                                                                 $"SPD: {characterDefinition.baseSpeed.ToString()}";
+            int joey;
+            if (characterDefinition.charLevel == 0)
+            {
+                joey = 1;
+            }
+            else
+            {
+                joey = characterDefinition.charLevel;
+            }
+        
+            EndBattlePanel.gameObject.transform.GetChild(i).GetComponentInChildren<Slider>().maxValue = joey * 10;
+            EndBattlePanel.gameObject.transform.GetChild(i).GetComponentInChildren<Slider>().value = characterDefinition.charExperience;
+        }
+        
     }
 
     private void RemoveDeadCharacters()
@@ -91,10 +122,11 @@ public class BattleUI : MonoBehaviour
         for (int i = 0; i < battleSystem.charactersInBattle.Count; i++)
         {
             GameObject character = battleSystem.charactersInBattle[i];
-            //Sprite chracterImage = character.transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite;
-            //CharacterTurn.transform.GetChild(0).GetComponent<Image>().sprite = chracterImage;
-            CharacterTurn.transform.GetChild(1).GetComponent<Text>().text = character.gameObject.name;
-            Instantiate(CharacterTurn, new Vector3(TurnOrder.transform.position.x, TurnOrder.transform.position.y - i + 3, TurnOrder.transform.position.z), Quaternion.identity, TurnOrder.transform);
+            CharacterTurn.transform.GetChild(0).GetComponent<Text>().text = character.gameObject.name;
+            Instantiate(CharacterTurn,
+                        new Vector3(TurnOrder.transform.position.x, TurnOrder.transform.position.y - i + 3, TurnOrder.transform.position.z),
+                        Quaternion.identity,
+                        TurnOrder.transform);
         }
     }
     private void UpdateHealthbars()
@@ -214,12 +246,12 @@ public class BattleUI : MonoBehaviour
     }
     public void EnemySelection()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
         if (verticalInput == 0)
         {
             verticalInputInUse = false;
         }
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
         if (horizontalInput == 0)
         {
             horizontalInputInUse = false;
@@ -255,11 +287,10 @@ public class BattleUI : MonoBehaviour
         }
     }
 
-
     private void SelectProperSlots()
     {
-        int row = battleSystem.frontRow ? 0 : 1;
         DeSelectAllSlots();
+        int row = battleSystem.frontRow ? 0 : 1;
         switch (skill.skillPattern)
         {
             case Skill_SO.SkillPattern.Single:
