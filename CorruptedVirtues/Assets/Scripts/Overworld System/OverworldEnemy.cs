@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class OverworldEnemy : MonoBehaviour
@@ -48,7 +49,10 @@ public class OverworldEnemy : MonoBehaviour
     {
         if (RegularEnemyTouchesPlayer(other))
         {
-            Debug.Log("This Enemy will be added to the battle " + EnemyName);
+            if (GameManger.gameManger.EncounteredEnemyNames.Contains(EnemyName))
+            {
+                EnemyName = $"{EnemyName} {GameManger.gameManger.EncounteredEnemyNames.Count}";
+            }
             GameManger.gameManger.EncounteredEnemyNames.Add(EnemyName);
         }
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Boss"))

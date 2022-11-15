@@ -69,7 +69,7 @@ public class BattleUI : MonoBehaviour
     {
         for (int i = 0; i < GameManger.gameManger.party.PlayerParty.Count; i++)
         {
-            //EndBattlePanel.transform.GetChild(0).GetComponent<Image>().sprite = GameManger.gameManger.party.PlayerParty[i].GetComponent<SpriteRenderer>().GetComponentInChildren<SpriteRenderer>().sprite;
+            EndBattlePanel.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite = GameManger.gameManger.party.PlayerParty[i].transform.GetChild(2).GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite; ;
             CharacterStats_SO characterDefinition = GameManger.gameManger.party.PlayerParty[i].GetComponent<CharacterStats>().characterDefinition;
             EndBattlePanel.gameObject.transform.GetChild(i).GetComponentInChildren<Text>().text = $"HP: {characterDefinition.maxHealth.ToString()}\n" +
                                                                  $"MP: {characterDefinition.maxMagic.ToString()}\n" +

@@ -553,7 +553,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.65618277}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024414062, y: -1.0669861}
+  m_AnchoredPosition: {x: 0.0024414062, y: -1.0669556}
   m_SizeDelta: {x: 0.0050049, y: 2.134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157815709
@@ -805,11 +805,11 @@ PrefabInstance:
     - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
       propertyPath: areaData.possibleEnemys.Array.data[1]
       value: 
-      objectReference: {fileID: 3803516505945676687, guid: 93d9ce57c33f86248b5797e922217c66, type: 3}
+      objectReference: {fileID: 221407104402842180, guid: 52c105476883625448bf556428798dcc, type: 3}
     - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
       propertyPath: areaData.possibleEnemys.Array.data[2]
       value: 
-      objectReference: {fileID: 7077343242557634593, guid: c7bb5c7a67977a348816eb277bb84675, type: 3}
+      objectReference: {fileID: 221407104402842180, guid: 3adb1e352ff461f4583d9879a3515374, type: 3}
     - target: {fileID: 1475658113118127192, guid: 56174873405f7ae4fb75d2951e417334, type: 3}
       propertyPath: areaData.possibleEnemys.Array.data[3]
       value: 
